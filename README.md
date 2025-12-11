@@ -34,3 +34,9 @@ conda activate HomeWork
 ```bash
 pip install -r requirement.txt
 ```
+
+执行
+
+```bash
+python3 src/main.py
+```
