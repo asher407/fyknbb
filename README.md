@@ -21,3 +21,16 @@
 ### quick start
 
 #### 环境依赖
+
+使用conda创建一个虚拟环境,
+
+```bash
+conda create -n HomeWork python=3.10
+conda activate HomeWork
+```
+
+使用conda或者pip下载需要的依赖。
+
+```bash
+pip install -r requirement.txt
+```
