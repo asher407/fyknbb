@@ -1,0 +1,4426 @@
+{
+  "date": "2025-12-08",
+  "count": 442,
+  "data": [
+    {
+      "rank": 1,
+      "title": "日本地震",
+      "category": "社会",
+      "heat": 1087.82,
+      "reads": 458000.0,
+      "discussions": 102.5,
+      "originals": 14.4,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 2,
+      "title": "星光大赏阵容官宣",
+      "category": "综艺",
+      "heat": 183.13,
+      "reads": 94000.0,
+      "discussions": 348.8,
+      "originals": 2.4,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 3,
+      "title": "盒马承认生产草莓蛋糕出问题",
+      "category": "社会",
+      "heat": 117.94,
+      "reads": 11000.0,
+      "discussions": 3.0,
+      "originals": 0.36,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 4,
+      "title": "经典版QQ回归",
+      "category": "财经",
+      "heat": 115.02,
+      "reads": 2650.2,
+      "discussions": 1.3,
+      "originals": 0.23,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 5,
+      "title": "1818名包括明星网红在内双高人员被查",
+      "category": "社会",
+      "heat": 113.43,
+      "reads": 1586.5,
+      "discussions": 0.46,
+      "originals": 0.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 6,
+      "title": "苟仲文一审被判死缓",
+      "category": "社会",
+      "heat": 112.49,
+      "reads": 5252.2,
+      "discussions": 1.5,
+      "originals": 0.24,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 7,
+      "title": "胖东来因抢购停售小方糖戒指",
+      "category": "社会",
+      "heat": 110.57,
+      "reads": 2505.2,
+      "discussions": 0.39,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 8,
+      "title": "多校撤销外语专业",
+      "category": "社会",
+      "heat": 108.93,
+      "reads": 5272.7,
+      "discussions": 2.1,
+      "originals": 0.32,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 9,
+      "title": "杨瀚森转身暴扣",
+      "category": "体育",
+      "heat": 105.89,
+      "reads": 1283.6,
+      "discussions": 0.31,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 10,
+      "title": "苟仲文被判死缓终身监禁不得减刑假释",
+      "category": "社会",
+      "heat": 95.25,
+      "reads": 1636.4,
+      "discussions": 0.33,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 11,
+      "title": "退学北大考上清华小伙被白嫖家教费",
+      "category": "社会",
+      "heat": 87.03,
+      "reads": 2262.7,
+      "discussions": 0.41,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 12,
+      "title": "尔滨雪人先生即将上线",
+      "category": "社会",
+      "heat": 86.25,
+      "reads": 1581.5,
+      "discussions": 0.44,
+      "originals": 0.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 13,
+      "title": "我叫李飞",
+      "category": "",
+      "heat": 85.61,
+      "reads": 1397.1,
+      "discussions": 1.1,
+      "originals": 0.27,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 14,
+      "title": "日本三季度GDP降幅扩大",
+      "category": "社会",
+      "heat": 84.38,
+      "reads": 272.2,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 15,
+      "title": "得闲谨制",
+      "category": "电影",
+      "heat": 83.01,
+      "reads": 38000.0,
+      "discussions": 474.2,
+      "originals": 12.4,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 16,
+      "title": "中方不接受日方所谓交涉",
+      "category": "社会",
+      "heat": 82.92,
+      "reads": 5032.1,
+      "discussions": 0.99,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 17,
+      "title": "iPhone17Pro系列破发",
+      "category": "财经",
+      "heat": 82.37,
+      "reads": 1164.1,
+      "discussions": 0.32,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 18,
+      "title": "一起为7000多名残疾人运动员加油",
+      "category": "体育",
+      "heat": 81.43,
+      "reads": 340.4,
+      "discussions": 0.2,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 19,
+      "title": "残特奥会今日开幕",
+      "category": "社会",
+      "heat": 80.8,
+      "reads": 739.6,
+      "discussions": 0.41,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 20,
+      "title": "A股行情",
+      "category": "",
+      "heat": 80.79,
+      "reads": 18000.0,
+      "discussions": 40.3,
+      "originals": 0.81,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 21,
+      "title": "红楼梦 悼明",
+      "category": "",
+      "heat": 79.91,
+      "reads": 1725.4,
+      "discussions": 1.1,
+      "originals": 0.25,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 22,
+      "title": "白鹿 张凌赫",
+      "category": "",
+      "heat": 78.07,
+      "reads": 94000.0,
+      "discussions": 49.0,
+      "originals": 4.5,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 23,
+      "title": "盘点2025",
+      "category": "社会",
+      "heat": 69.56,
+      "reads": 787.1,
+      "discussions": 2.3,
+      "originals": 0.08,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 24,
+      "title": "中央定调明年经济政策",
+      "category": "社会",
+      "heat": 69.37,
+      "reads": 1846.3,
+      "discussions": 0.22,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 25,
+      "title": "日本7.2级地震",
+      "category": "社会",
+      "heat": 67.73,
+      "reads": 812.8,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 26,
+      "title": "日军被爆引导美军轰炸平民",
+      "category": "",
+      "heat": 65.01,
+      "reads": 1929.7,
+      "discussions": 0.32,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 27,
+      "title": "Chovy剃寸头了",
+      "category": "游戏",
+      "heat": 62.14,
+      "reads": 315.8,
+      "discussions": 0.19,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 28,
+      "title": "日本一成人商店惊现婴儿残尸",
+      "category": "社会",
+      "heat": 62.07,
+      "reads": 7139.3,
+      "discussions": 0.76,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 29,
+      "title": "孟子义李昀锐 星光大赏",
+      "category": "",
+      "heat": 61.83,
+      "reads": 546.2,
+      "discussions": 0.56,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 30,
+      "title": "俄罗斯 盗版疯狂动物城上映",
+      "category": "",
+      "heat": 61.33,
+      "reads": 2108.5,
+      "discussions": 1.0,
+      "originals": 0.18,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 31,
+      "title": "痞幼自曝曾被两个恋综拒绝",
+      "category": "",
+      "heat": 60.62,
+      "reads": 3922.0,
+      "discussions": 1.2,
+      "originals": 0.16,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 32,
+      "title": "WE对战DYG",
+      "category": "游戏",
+      "heat": 59.26,
+      "reads": 10000.0,
+      "discussions": 4.3,
+      "originals": 0.38,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 33,
+      "title": "王楚钦独守男单上半区",
+      "category": "",
+      "heat": 59.18,
+      "reads": 256.3,
+      "discussions": 0.18,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 34,
+      "title": "鹅鸭杀公测定档",
+      "category": "游戏",
+      "heat": 58.31,
+      "reads": 837.8,
+      "discussions": 0.17,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 35,
+      "title": "明日方舟",
+      "category": "游戏",
+      "heat": 57.55,
+      "reads": 10854000.0,
+      "discussions": 4679.1,
+      "originals": 69.9,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 36,
+      "title": "泰国对柬埔寨发动空袭",
+      "category": "",
+      "heat": 57.15,
+      "reads": 1015.4,
+      "discussions": 0.13,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 37,
+      "title": "朱孝天回应缺席F4演唱会",
+      "category": "明星",
+      "heat": 57.02,
+      "reads": 2645.5,
+      "discussions": 1.2,
+      "originals": 0.16,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 38,
+      "title": "梁靖崑家里人多拿走王楚钦的熊猫",
+      "category": "",
+      "heat": 55.77,
+      "reads": 336.9,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 39,
+      "title": "5月龄女婴手术离世鉴定程序中止",
+      "category": "社会",
+      "heat": 55.5,
+      "reads": 1349.6,
+      "discussions": 0.72,
+      "originals": 0.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 40,
+      "title": "看极光去北欧要3万去漠河仅3千",
+      "category": "社会",
+      "heat": 53.56,
+      "reads": 159.9,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 41,
+      "title": "税务师成绩",
+      "category": "教育",
+      "heat": 52.36,
+      "reads": 20000.0,
+      "discussions": 7.5,
+      "originals": 1.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 42,
+      "title": "未定事件簿",
+      "category": "游戏",
+      "heat": 51.66,
+      "reads": 965000.0,
+      "discussions": 1623.7,
+      "originals": 145.3,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 43,
+      "title": "王楚然提抹胸",
+      "category": "明星",
+      "heat": 50.53,
+      "reads": 1554.8,
+      "discussions": 0.63,
+      "originals": 0.08,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 44,
+      "title": "冰雪经济新玩法带动新消费",
+      "category": "社会",
+      "heat": 49.36,
+      "reads": 99.2,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 45,
+      "title": "商家故意不打包让骑手干等",
+      "category": "社会",
+      "heat": 48.98,
+      "reads": 2127.2,
+      "discussions": 0.43,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 46,
+      "title": "中央政治局12月8日召开会议",
+      "category": "",
+      "heat": 48.87,
+      "reads": 527.6,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 47,
+      "title": "红楼梦悼明争议",
+      "category": "",
+      "heat": 48.36,
+      "reads": 1046.2,
+      "discussions": 0.69,
+      "originals": 0.16,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 48,
+      "title": "林俊杰 大牌小耍",
+      "category": "",
+      "heat": 46.2,
+      "reads": 827.8,
+      "discussions": 0.29,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 49,
+      "title": "张柏芝庭审情绪失控崩溃大哭",
+      "category": "明星",
+      "heat": 45.48,
+      "reads": 17000.0,
+      "discussions": 2.4,
+      "originals": 0.56,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 50,
+      "title": "韩国的咖啡已经进化到这种程度了吗",
+      "category": "搞笑",
+      "heat": 45.32,
+      "reads": 1761.7,
+      "discussions": 0.2,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 51,
+      "title": "小洛熙妈妈发声",
+      "category": "",
+      "heat": 44.24,
+      "reads": 338.3,
+      "discussions": 0.08,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 52,
+      "title": "郭德纲相声被举报内容低俗",
+      "category": "社会",
+      "heat": 43.77,
+      "reads": 1527.0,
+      "discussions": 0.31,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 53,
+      "title": "孙颖莎王楚钦混双战绩恐怖如斯",
+      "category": "体育",
+      "heat": 40.8,
+      "reads": 1613.8,
+      "discussions": 0.64,
+      "originals": 0.24,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 54,
+      "title": "让成毅徐璐演兄妹的是天才",
+      "category": "",
+      "heat": 38.26,
+      "reads": 477.8,
+      "discussions": 1.2,
+      "originals": 0.23,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 55,
+      "title": "WTT总决赛签表",
+      "category": "",
+      "heat": 38.18,
+      "reads": 177.9,
+      "discussions": 0.18,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 56,
+      "title": "WTT香港总决赛混双分组",
+      "category": "体育",
+      "heat": 37.91,
+      "reads": 52.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 57,
+      "title": "浙江卫视跨年晚会官宣",
+      "category": "综艺",
+      "heat": 37.61,
+      "reads": 6957.4,
+      "discussions": 4.9,
+      "originals": 0.23,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 58,
+      "title": "国产挖掘机零下40摄氏度一秒启动",
+      "category": "社会",
+      "heat": 37.28,
+      "reads": 1552.7,
+      "discussions": 0.58,
+      "originals": 0.08,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 59,
+      "title": "iPhone17Pro官方破价",
+      "category": "财经",
+      "heat": 35.88,
+      "reads": 2339.3,
+      "discussions": 0.5,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 60,
+      "title": "DYG战胜WE",
+      "category": "游戏",
+      "heat": 35.64,
+      "reads": 3364.3,
+      "discussions": 1.4,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 61,
+      "title": "浙大回应26岁研究员任博导",
+      "category": "社会",
+      "heat": 35.3,
+      "reads": 1253.8,
+      "discussions": 0.16,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 62,
+      "title": "詹姆斯戴王冠",
+      "category": "",
+      "heat": 35.08,
+      "reads": 304.2,
+      "discussions": 0.19,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 63,
+      "title": "内娱顶流圈现状",
+      "category": "",
+      "heat": 34.85,
+      "reads": 1155.6,
+      "discussions": 0.96,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 64,
+      "title": "厦门正在更新你的未来生活",
+      "category": "社会",
+      "heat": 34.82,
+      "reads": 375.3,
+      "discussions": 1.2,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 65,
+      "title": "钟丽缇想让女儿上清北",
+      "category": "",
+      "heat": 34.81,
+      "reads": 887.7,
+      "discussions": 0.38,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 66,
+      "title": "狙击蝴蝶 黑马",
+      "category": "",
+      "heat": 34.69,
+      "reads": 604.3,
+      "discussions": 0.34,
+      "originals": 0.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 67,
+      "title": "星光大赏 没有85花",
+      "category": "",
+      "heat": 34.66,
+      "reads": 410.5,
+      "discussions": 0.25,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 68,
+      "title": "日本婴儿残尸有刀具切割痕迹",
+      "category": "社会",
+      "heat": 34.54,
+      "reads": 2005.4,
+      "discussions": 0.16,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 69,
+      "title": "婴儿被褥印不雅英文没有底线的操作",
+      "category": "社会",
+      "heat": 34.51,
+      "reads": 92.2,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 70,
+      "title": "秦岚 男人不重要",
+      "category": "",
+      "heat": 34.5,
+      "reads": 472.4,
+      "discussions": 0.5,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 71,
+      "title": "张凌赫偷瞄白鹿",
+      "category": "",
+      "heat": 34.44,
+      "reads": 6960.9,
+      "discussions": 3.2,
+      "originals": 0.7,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 72,
+      "title": "狼队对战KSG",
+      "category": "游戏",
+      "heat": 33.73,
+      "reads": 41000.0,
+      "discussions": 23.4,
+      "originals": 1.8,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 73,
+      "title": "零下30℃的漠河室内外温差达60℃",
+      "category": "社会",
+      "heat": 33.67,
+      "reads": 195.9,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 74,
+      "title": "鸿蒙智行五界首聚直播",
+      "category": "社会",
+      "heat": 33.66,
+      "reads": 1146.0,
+      "discussions": 1.1,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 75,
+      "title": "杨幂 于和伟我罩的",
+      "category": "",
+      "heat": 33.66,
+      "reads": 432.5,
+      "discussions": 0.44,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 76,
+      "title": "香港麦当劳居然这么好吃",
+      "category": "",
+      "heat": 33.57,
+      "reads": 589.6,
+      "discussions": 0.14,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 77,
+      "title": "狙击蝴蝶 男主穿女主衬衫下衣失踪",
+      "category": "",
+      "heat": 33.54,
+      "reads": 439.4,
+      "discussions": 0.2,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 78,
+      "title": "北大原副校长被双开",
+      "category": "社会",
+      "heat": 32.98,
+      "reads": 1175.7,
+      "discussions": 0.18,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 79,
+      "title": "男子欠近5000元房费酒店倒贴都不搬",
+      "category": "社会",
+      "heat": 32.11,
+      "reads": 5892.4,
+      "discussions": 0.67,
+      "originals": 0.12,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 80,
+      "title": "刘亦菲瘦了",
+      "category": "明星",
+      "heat": 32.09,
+      "reads": 3008.6,
+      "discussions": 1.5,
+      "originals": 0.24,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 81,
+      "title": "星光大赏名单",
+      "category": "",
+      "heat": 31.0,
+      "reads": 6597.7,
+      "discussions": 8.5,
+      "originals": 0.62,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 82,
+      "title": "得闲谨制票房",
+      "category": "电影",
+      "heat": 30.96,
+      "reads": 3387.4,
+      "discussions": 3.9,
+      "originals": 0.53,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 83,
+      "title": "网警查处编造汽车造成8杀网络谣言案",
+      "category": "社会",
+      "heat": 30.88,
+      "reads": 372.0,
+      "discussions": 0.14,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 84,
+      "title": "庆功宴唯一素颜明星是黄景瑜",
+      "category": "",
+      "heat": 30.88,
+      "reads": 3394.1,
+      "discussions": 1.7,
+      "originals": 0.19,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 85,
+      "title": "郎平置换了髋关节和颈椎",
+      "category": "社会",
+      "heat": 30.86,
+      "reads": 1725.5,
+      "discussions": 0.24,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 86,
+      "title": "台日竟然还想夹击解放军",
+      "category": "社会",
+      "heat": 30.81,
+      "reads": 3167.1,
+      "discussions": 0.36,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 87,
+      "title": "曝iPhone18系列测试拼接微透玻璃",
+      "category": "财经",
+      "heat": 30.73,
+      "reads": 2081.8,
+      "discussions": 0.74,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 88,
+      "title": "外来媳妇本地郎大结局",
+      "category": "",
+      "heat": 29.78,
+      "reads": 1646.9,
+      "discussions": 0.3,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 89,
+      "title": "上海一31岁女教师因病去世",
+      "category": "社会",
+      "heat": 29.73,
+      "reads": 2199.1,
+      "discussions": 0.17,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 90,
+      "title": "全季酒店保洁用毛巾擦马桶",
+      "category": "社会",
+      "heat": 29.6,
+      "reads": 2061.1,
+      "discussions": 0.24,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 91,
+      "title": "原来是迟蓬提醒的杨幂",
+      "category": "",
+      "heat": 29.59,
+      "reads": 1079.7,
+      "discussions": 0.42,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 92,
+      "title": "丈夫帮剖宫产妻子换药看到伤口泪崩",
+      "category": "社会",
+      "heat": 29.46,
+      "reads": 2174.8,
+      "discussions": 0.39,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 93,
+      "title": "王楚钦说徐瑛彬凭实力得到世界冠军",
+      "category": "社会",
+      "heat": 29.11,
+      "reads": 1017.7,
+      "discussions": 0.23,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 94,
+      "title": "日本近海7.5级强震",
+      "category": "社会",
+      "heat": 28.98,
+      "reads": 2375.1,
+      "discussions": 0.67,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 95,
+      "title": "成毅演了李莲花的反义词",
+      "category": "",
+      "heat": 28.78,
+      "reads": 638.0,
+      "discussions": 3.1,
+      "originals": 0.63,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 96,
+      "title": "白鹿张凌赫 过期糖",
+      "category": "",
+      "heat": 28.71,
+      "reads": 482.5,
+      "discussions": 0.13,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 97,
+      "title": "湖人战胜76人",
+      "category": "体育",
+      "heat": 28.67,
+      "reads": 3876.5,
+      "discussions": 0.81,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 98,
+      "title": "什么叫做假性亲密关系",
+      "category": "",
+      "heat": 28.62,
+      "reads": 1105.0,
+      "discussions": 0.35,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 99,
+      "title": "李亚鹏谈第四个女儿",
+      "category": "明星",
+      "heat": 28.46,
+      "reads": 1247.0,
+      "discussions": 0.15,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 100,
+      "title": "该让全网最忙五人组歇歇了",
+      "category": "社会",
+      "heat": 28.35,
+      "reads": 47.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 101,
+      "title": "张本美和说每次输王曼昱方式都一样",
+      "category": "",
+      "heat": 28.29,
+      "reads": 415.4,
+      "discussions": 0.16,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 102,
+      "title": "于正官宣张婉莹女一号",
+      "category": "明星",
+      "heat": 28.13,
+      "reads": 3605.3,
+      "discussions": 0.79,
+      "originals": 0.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 103,
+      "title": "警方通报44岁男子公园搂抱女童",
+      "category": "社会",
+      "heat": 28.06,
+      "reads": 1244.5,
+      "discussions": 0.25,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 104,
+      "title": "朱孝天看新闻才知道被退出F4",
+      "category": "社会",
+      "heat": 27.74,
+      "reads": 384.6,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 105,
+      "title": "地铁上用围巾擦奶茶的女生找到啦",
+      "category": "社会",
+      "heat": 27.5,
+      "reads": 3565.5,
+      "discussions": 0.63,
+      "originals": 0.13,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 106,
+      "title": "领养剩下三只 可以和惠英红做亲戚",
+      "category": "",
+      "heat": 27.48,
+      "reads": 122.3,
+      "discussions": 0.32,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 107,
+      "title": "泰柬边境冲突现场画面",
+      "category": "社会",
+      "heat": 27.45,
+      "reads": 83.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 108,
+      "title": "三价流感疫苗降至5.5元比奶茶便宜",
+      "category": "财经",
+      "heat": 27.28,
+      "reads": 72.3,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 109,
+      "title": "WTT香港总决赛选手城市照",
+      "category": "",
+      "heat": 27.12,
+      "reads": 52.4,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 110,
+      "title": "胖东来回应下架小方糖戒指",
+      "category": "社会",
+      "heat": 27.04,
+      "reads": 86.5,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 111,
+      "title": "张子枫纹身",
+      "category": "",
+      "heat": 26.76,
+      "reads": 5431.4,
+      "discussions": 1.3,
+      "originals": 0.3,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 112,
+      "title": "放了很久的衣服不要穿",
+      "category": "",
+      "heat": 26.7,
+      "reads": 1467.5,
+      "discussions": 0.67,
+      "originals": 0.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 113,
+      "title": "秦岚魏大勋分手了吗",
+      "category": "",
+      "heat": 26.61,
+      "reads": 6910.0,
+      "discussions": 3.6,
+      "originals": 0.5,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 114,
+      "title": "印度警察为逃避工作深夜抛尸",
+      "category": "社会",
+      "heat": 26.54,
+      "reads": 948.9,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 115,
+      "title": "90花 结婚",
+      "category": "",
+      "heat": 26.53,
+      "reads": 1625.9,
+      "discussions": 0.57,
+      "originals": 0.08,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 116,
+      "title": "李现澳门扫街被路人警告",
+      "category": "明星",
+      "heat": 26.52,
+      "reads": 2810.7,
+      "discussions": 0.58,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 117,
+      "title": "白鹿碰了张凌赫头发他当场就变脸了",
+      "category": "明星",
+      "heat": 26.44,
+      "reads": 2468.7,
+      "discussions": 0.23,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 118,
+      "title": "蒋易孙天宇演我上班",
+      "category": "明星",
+      "heat": 26.29,
+      "reads": 24000.0,
+      "discussions": 4.5,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 119,
+      "title": "谭松韵要开演唱会了",
+      "category": "明星",
+      "heat": 26.25,
+      "reads": 2504.9,
+      "discussions": 1.1,
+      "originals": 0.18,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 120,
+      "title": "张柏芝庭审 答非所问",
+      "category": "",
+      "heat": 26.25,
+      "reads": 1425.6,
+      "discussions": 0.39,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 121,
+      "title": "马克龙叫嚣欧盟或对华加征关税",
+      "category": "",
+      "heat": 26.24,
+      "reads": 642.6,
+      "discussions": 0.19,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 122,
+      "title": "苟仲文",
+      "category": "",
+      "heat": 26.03,
+      "reads": 281.5,
+      "discussions": 2.0,
+      "originals": 0.23,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 123,
+      "title": "F1",
+      "category": "体育",
+      "heat": 25.79,
+      "reads": 1443000.0,
+      "discussions": 551.7,
+      "originals": 14.2,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 124,
+      "title": "专业画手分析肖战小肌群的抖动",
+      "category": "明星",
+      "heat": 25.69,
+      "reads": 344.7,
+      "discussions": 0.9,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 125,
+      "title": "日本记者找不到中国游客采访",
+      "category": "社会",
+      "heat": 25.47,
+      "reads": 2730.3,
+      "discussions": 0.41,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 126,
+      "title": "东京震感",
+      "category": "",
+      "heat": 25.13,
+      "reads": 181.2,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 127,
+      "title": "造谣安全员骚扰女选手当事人致歉",
+      "category": "社会",
+      "heat": 25.07,
+      "reads": 457.9,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 128,
+      "title": "王鹤棣带沈月去了他的中学",
+      "category": "明星",
+      "heat": 25.06,
+      "reads": 3706.3,
+      "discussions": 1.2,
+      "originals": 0.21,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 129,
+      "title": "车澈 谁也没有时光机器",
+      "category": "",
+      "heat": 24.85,
+      "reads": 811.7,
+      "discussions": 0.23,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 130,
+      "title": "白鹿曾舜晞关系好成这样了",
+      "category": "明星",
+      "heat": 24.81,
+      "reads": 2227.1,
+      "discussions": 0.48,
+      "originals": 0.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 131,
+      "title": "很多胃癌是一口一口吃出来的",
+      "category": "",
+      "heat": 24.73,
+      "reads": 6740.8,
+      "discussions": 0.97,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 132,
+      "title": "白年好赫",
+      "category": "明星",
+      "heat": 24.62,
+      "reads": 11000.0,
+      "discussions": 9.3,
+      "originals": 0.54,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 133,
+      "title": "美国没支持日本慌了",
+      "category": "",
+      "heat": 24.58,
+      "reads": 528.8,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 134,
+      "title": "马克龙回国后呼吁中国投资欧洲",
+      "category": "",
+      "heat": 24.25,
+      "reads": 337.5,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 135,
+      "title": "乌将美和平计划比作慕尼黑协定",
+      "category": "社会",
+      "heat": 24.24,
+      "reads": 36.3,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 136,
+      "title": "狙击蝴蝶",
+      "category": "电视剧",
+      "heat": 24.21,
+      "reads": 38000.0,
+      "discussions": 324.6,
+      "originals": 3.4,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 137,
+      "title": "马航MH370部分家属索赔案一审宣判",
+      "category": "社会",
+      "heat": 24.1,
+      "reads": 32.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 138,
+      "title": "易烊千玺淘宝",
+      "category": "社会",
+      "heat": 23.98,
+      "reads": 1777.0,
+      "discussions": 1.9,
+      "originals": 0.17,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 139,
+      "title": "韩泰等国发力承接中国游客",
+      "category": "社会",
+      "heat": 23.98,
+      "reads": 801.8,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 140,
+      "title": "小青盒建议流感别叫流感",
+      "category": "",
+      "heat": 23.84,
+      "reads": 2361.6,
+      "discussions": 1.0,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 141,
+      "title": "偶遇窦骁何超莲一起吃早餐",
+      "category": "明星",
+      "heat": 23.76,
+      "reads": 2391.5,
+      "discussions": 0.15,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 142,
+      "title": "学信网的含金量还在上升",
+      "category": "",
+      "heat": 23.73,
+      "reads": 1100.2,
+      "discussions": 0.19,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 143,
+      "title": "1178名缅甸涉电诈嫌犯被分批押解回国",
+      "category": "社会",
+      "heat": 23.5,
+      "reads": 87.1,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 144,
+      "title": "金晨 再也不自己乱化妆了",
+      "category": "",
+      "heat": 23.31,
+      "reads": 8571.7,
+      "discussions": 1.7,
+      "originals": 0.4,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 145,
+      "title": "华晨宇 刚学唱歌的人就想飙高音",
+      "category": "",
+      "heat": 23.26,
+      "reads": 240.3,
+      "discussions": 0.55,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 146,
+      "title": "偶像练习生七年后居然还有售后",
+      "category": "",
+      "heat": 23.07,
+      "reads": 288.4,
+      "discussions": 0.65,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 147,
+      "title": "张钧甯带助理减肥36斤",
+      "category": "",
+      "heat": 22.74,
+      "reads": 283.1,
+      "discussions": 0.39,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 148,
+      "title": "外卖员最不建议点的外卖",
+      "category": "",
+      "heat": 22.32,
+      "reads": 572.6,
+      "discussions": 0.22,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 149,
+      "title": "吊牌侠在滑雪场帮人剪衣服吊牌",
+      "category": "社会",
+      "heat": 21.98,
+      "reads": 147.8,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 150,
+      "title": "白鹿编辑记录",
+      "category": "",
+      "heat": 21.97,
+      "reads": 934.9,
+      "discussions": 0.59,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 151,
+      "title": "郑恺搂着孩子亲苗苗",
+      "category": "",
+      "heat": 21.96,
+      "reads": 1171.5,
+      "discussions": 0.69,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 152,
+      "title": "这六位艺人没一个能体面的上台",
+      "category": "",
+      "heat": 21.91,
+      "reads": 185.6,
+      "discussions": 0.31,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 153,
+      "title": "许绍雄女儿斥责钱翰群泄露丧礼细节",
+      "category": "明星",
+      "heat": 21.84,
+      "reads": 1073.4,
+      "discussions": 0.11,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 154,
+      "title": "Hero久竞战胜LGDNBW",
+      "category": "",
+      "heat": 21.58,
+      "reads": 8.1,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 155,
+      "title": "周杰伦晒和林俊杰合照",
+      "category": "明星",
+      "heat": 21.51,
+      "reads": 508.5,
+      "discussions": 0.38,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 156,
+      "title": "印尼男子性侵残疾女子遭围殴致死",
+      "category": "社会",
+      "heat": 21.48,
+      "reads": 1127.1,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 157,
+      "title": "鸭头糖葫芦30元1串",
+      "category": "社会",
+      "heat": 21.29,
+      "reads": 275.7,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 158,
+      "title": "醉酒丈夫负气离家落水遭死亡缠绕",
+      "category": "社会",
+      "heat": 21.12,
+      "reads": 155.6,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 159,
+      "title": "00花王梓莼没来吗",
+      "category": "明星",
+      "heat": 20.98,
+      "reads": 765.2,
+      "discussions": 0.35,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 160,
+      "title": "被这位婆婆的一天累到了",
+      "category": "",
+      "heat": 20.86,
+      "reads": 274.5,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 161,
+      "title": "1600元泰兰尼斯童鞋拿货价不到3折",
+      "category": "财经",
+      "heat": 20.58,
+      "reads": 240.3,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 162,
+      "title": "一人一句为残特奥会运动员加油",
+      "category": "社会",
+      "heat": 20.56,
+      "reads": 837.8,
+      "discussions": 0.26,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 163,
+      "title": "A股",
+      "category": "财经",
+      "heat": 20.48,
+      "reads": 4315000.0,
+      "discussions": 2321.9,
+      "originals": 82.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 164,
+      "title": "CP感 玄学",
+      "category": "",
+      "heat": 20.45,
+      "reads": 2629.5,
+      "discussions": 0.85,
+      "originals": 0.15,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 165,
+      "title": "向佐 娱乐圈的人很恐怖",
+      "category": "",
+      "heat": 20.32,
+      "reads": 879.1,
+      "discussions": 0.9,
+      "originals": 0.17,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 166,
+      "title": "白鹿晒和小酒窝合照",
+      "category": "明星",
+      "heat": 20.18,
+      "reads": 549.7,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 167,
+      "title": "立威廉患甲状腺癌",
+      "category": "明星",
+      "heat": 20.15,
+      "reads": 2978.8,
+      "discussions": 0.51,
+      "originals": 0.09,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 168,
+      "title": "成何体统 剧宣",
+      "category": "",
+      "heat": 19.98,
+      "reads": 245.3,
+      "discussions": 0.14,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 169,
+      "title": "杨瀚森生涯首次首发",
+      "category": "体育",
+      "heat": 19.94,
+      "reads": 1328.7,
+      "discussions": 0.28,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 170,
+      "title": "江西地震",
+      "category": "社会",
+      "heat": 19.94,
+      "reads": 878.0,
+      "discussions": 0.36,
+      "originals": 0.16,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 171,
+      "title": "幼儿园虐童视频多到要用硬盘存",
+      "category": "社会",
+      "heat": 19.83,
+      "reads": 1121.9,
+      "discussions": 0.24,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 172,
+      "title": "新音 重庆",
+      "category": "",
+      "heat": 19.62,
+      "reads": 329.7,
+      "discussions": 2.6,
+      "originals": 0.26,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 173,
+      "title": "女子长12根手指自称灵活好用",
+      "category": "社会",
+      "heat": 19.44,
+      "reads": 562.6,
+      "discussions": 0.07,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 174,
+      "title": "QQ空间vs微信朋友圈",
+      "category": "",
+      "heat": 19.38,
+      "reads": 164.9,
+      "discussions": 0.1,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 175,
+      "title": "网友首尔偶遇Angelababy",
+      "category": "",
+      "heat": 18.74,
+      "reads": 731.3,
+      "discussions": 0.43,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 176,
+      "title": "男子吸烟被白鲸吐水系禁烟宣传视频",
+      "category": "社会",
+      "heat": 18.71,
+      "reads": 64.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 177,
+      "title": "WTT女单签表",
+      "category": "",
+      "heat": 18.59,
+      "reads": 0.17,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 178,
+      "title": "LGDNBW对战Hero久竞",
+      "category": "",
+      "heat": 18.4,
+      "reads": 67.6,
+      "discussions": 0.14,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 179,
+      "title": "偶遇胡歌老婆从医院出来",
+      "category": "明星",
+      "heat": 18.29,
+      "reads": 957.3,
+      "discussions": 0.16,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 180,
+      "title": "酒企女主播公开地域黑成都",
+      "category": "社会",
+      "heat": 18.15,
+      "reads": 23.3,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 181,
+      "title": "男子上山遇60斤蟒蛇晒太阳",
+      "category": "社会",
+      "heat": 17.97,
+      "reads": 294.8,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 182,
+      "title": "腾讯视频星光大赏",
+      "category": "综艺",
+      "heat": 17.95,
+      "reads": 1381000.0,
+      "discussions": 18000.0,
+      "originals": 10.3,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 183,
+      "title": "李纯新剧又来吐蛇信子了",
+      "category": "",
+      "heat": 17.94,
+      "reads": 20.9,
+      "discussions": 0.38,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 184,
+      "title": "当我冲着女儿的颜值生了二胎",
+      "category": "",
+      "heat": 17.86,
+      "reads": 1304.9,
+      "discussions": 0.19,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 185,
+      "title": "小狗体检小肚子duang一下弹出来了",
+      "category": "",
+      "heat": 17.74,
+      "reads": 27.8,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 186,
+      "title": "国乒冠军自拍",
+      "category": "",
+      "heat": 17.66,
+      "reads": 365.9,
+      "discussions": 0.2,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 187,
+      "title": "尖叫之夜魏大勋前任现任都在",
+      "category": "明星",
+      "heat": 17.64,
+      "reads": 977.1,
+      "discussions": 0.33,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 188,
+      "title": "狙击蝴蝶吻戏 很欲",
+      "category": "",
+      "heat": 17.25,
+      "reads": 21.2,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 189,
+      "title": "老祖宗的养生智慧绝了",
+      "category": "搞笑",
+      "heat": 17.11,
+      "reads": 25.2,
+      "discussions": 0.06,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 190,
+      "title": "易梦玲素颜",
+      "category": "明星",
+      "heat": 17.07,
+      "reads": 16000.0,
+      "discussions": 4.8,
+      "originals": 0.33,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 191,
+      "title": "人贩子被判死缓后对被害人破口大骂",
+      "category": "社会",
+      "heat": 17.07,
+      "reads": 5989.2,
+      "discussions": 1.4,
+      "originals": 0.2,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 192,
+      "title": "狙击蝴蝶重拾长剧信心",
+      "category": "",
+      "heat": 16.99,
+      "reads": 140.5,
+      "discussions": 0.26,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 193,
+      "title": "日本8比3德国",
+      "category": "体育",
+      "heat": 16.96,
+      "reads": 799.8,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 194,
+      "title": "耳帝连发两篇小作文锐评林忆莲",
+      "category": "",
+      "heat": 16.88,
+      "reads": 186.9,
+      "discussions": 0.34,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 195,
+      "title": "刘亦菲阿联酋素颜照",
+      "category": "明星",
+      "heat": 16.84,
+      "reads": 711.8,
+      "discussions": 0.27,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 196,
+      "title": "星光大赏官宣热度",
+      "category": "电视剧",
+      "heat": 16.77,
+      "reads": 142.9,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 197,
+      "title": "华晨宇让小迪丽热巴别辜负那英",
+      "category": "",
+      "heat": 16.75,
+      "reads": 152.9,
+      "discussions": 0.48,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 198,
+      "title": "张柏芝庭审大喊所有事情都是假的",
+      "category": "明星",
+      "heat": 16.75,
+      "reads": 2841.5,
+      "discussions": 0.23,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 199,
+      "title": "南宁地震",
+      "category": "社会",
+      "heat": 16.64,
+      "reads": 1877.1,
+      "discussions": 0.81,
+      "originals": 0.34,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 200,
+      "title": "特朗普要求高市早苗不要挑衅中国",
+      "category": "社会",
+      "heat": 16.58,
+      "reads": 485.3,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 201,
+      "title": "26岁确诊胃癌前身体发出的信号",
+      "category": "",
+      "heat": 16.46,
+      "reads": 6943.7,
+      "discussions": 1.8,
+      "originals": 0.24,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 202,
+      "title": "王楚钦孙颖莎3比0松岛辉空大藤沙月",
+      "category": "体育",
+      "heat": 16.39,
+      "reads": 959.6,
+      "discussions": 0.83,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 203,
+      "title": "现在的安睡裤怎么变成这样了",
+      "category": "搞笑",
+      "heat": 16.24,
+      "reads": 1325.6,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 204,
+      "title": "男子隐瞒病史女儿患病",
+      "category": "",
+      "heat": 16.16,
+      "reads": 2122.8,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 205,
+      "title": "杨紫包场支持得闲谨制",
+      "category": "明星",
+      "heat": 16.11,
+      "reads": 2793.9,
+      "discussions": 1.1,
+      "originals": 0.16,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 206,
+      "title": "放门口就行 汉武帝",
+      "category": "",
+      "heat": 16.03,
+      "reads": 73.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 207,
+      "title": "上海市对樊振东等记大功奖励",
+      "category": "",
+      "heat": 16.0,
+      "reads": 104.8,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 208,
+      "title": "留几手曝Angelababy离婚后谈过男友",
+      "category": "明星",
+      "heat": 16.0,
+      "reads": 1864.3,
+      "discussions": 0.44,
+      "originals": 0.16,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 209,
+      "title": "花漾少女杀人事件",
+      "category": "",
+      "heat": 15.98,
+      "reads": 1821.6,
+      "discussions": 0.96,
+      "originals": 0.18,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 210,
+      "title": "台湾地震",
+      "category": "社会",
+      "heat": 15.81,
+      "reads": 177000.0,
+      "discussions": 95.8,
+      "originals": 8.1,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 211,
+      "title": "星光大赏官宣时代少年团",
+      "category": "明星",
+      "heat": 15.71,
+      "reads": 173.1,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 212,
+      "title": "赵昭仪这次不是妹宝是女帝",
+      "category": "",
+      "heat": 15.33,
+      "reads": 53.2,
+      "discussions": 0.32,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 213,
+      "title": "企业被围堵镇政府说钱捐得不够",
+      "category": "社会",
+      "heat": 15.2,
+      "reads": 64.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 214,
+      "title": "周柯宇对陈妍希跳姐姐真漂亮",
+      "category": "明星",
+      "heat": 15.06,
+      "reads": 219.2,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 215,
+      "title": "林子烨艾米 小张凌赫小张婧仪",
+      "category": "",
+      "heat": 15.01,
+      "reads": 391.0,
+      "discussions": 0.46,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 216,
+      "title": "刘诗诗粉丝向爱奇艺维权成功",
+      "category": "明星",
+      "heat": 14.8,
+      "reads": 804.2,
+      "discussions": 0.22,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 217,
+      "title": "波兰总理发帖哀求美国人被指丢脸",
+      "category": "",
+      "heat": 14.67,
+      "reads": 1.6,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 218,
+      "title": "长期不吃早餐有什么影响",
+      "category": "",
+      "heat": 14.66,
+      "reads": 186.7,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 219,
+      "title": "韦雪前男友回应有新女友",
+      "category": "明星",
+      "heat": 14.61,
+      "reads": 328.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 220,
+      "title": "官方通报网曝食用油罐车拉化学品",
+      "category": "社会",
+      "heat": 14.45,
+      "reads": 226.0,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 221,
+      "title": "外媒关注中国发布全球首款AI手机",
+      "category": "数码",
+      "heat": 14.3,
+      "reads": 287.9,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 222,
+      "title": "苟仲文受贿2.36亿余元",
+      "category": "社会",
+      "heat": 14.28,
+      "reads": 151.6,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 223,
+      "title": "中国驻柬埔寨使馆发安全提醒",
+      "category": "社会",
+      "heat": 14.26,
+      "reads": 204.8,
+      "discussions": 0.06,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 224,
+      "title": "皮皮朱说月薪3千不适合结婚",
+      "category": "明星",
+      "heat": 14.24,
+      "reads": 341.1,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 225,
+      "title": "徐冬冬 寸头也和婚礼不冲突",
+      "category": "",
+      "heat": 14.22,
+      "reads": 126.5,
+      "discussions": 0.41,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 226,
+      "title": "敖瑞鹏借王楚然的眼药水",
+      "category": "",
+      "heat": 14.15,
+      "reads": 156.6,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 227,
+      "title": "刘亦菲8秒换轮胎这段",
+      "category": "明星",
+      "heat": 14.13,
+      "reads": 271.4,
+      "discussions": 0.38,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 228,
+      "title": "南昌大学一附院被曝患者砍伤医生",
+      "category": "社会",
+      "heat": 14.12,
+      "reads": 371.9,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 229,
+      "title": "iPhone18系列确认测试屏下FaceID",
+      "category": "互联网",
+      "heat": 14.11,
+      "reads": 316.7,
+      "discussions": 0.07,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 230,
+      "title": "山东潍坊多名男子跳过近3米远高崖",
+      "category": "社会",
+      "heat": 14.09,
+      "reads": 282.5,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 231,
+      "title": "泰国男子杀人藏尸将母亲囚禁在同屋",
+      "category": "社会",
+      "heat": 14.07,
+      "reads": 86.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 232,
+      "title": "KK园区333栋违法建筑已拆除",
+      "category": "社会",
+      "heat": 14.06,
+      "reads": 188.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 233,
+      "title": "47岁刘烨减重17斤新剧状态",
+      "category": "",
+      "heat": 14.04,
+      "reads": 95.3,
+      "discussions": 0.5,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 234,
+      "title": "向鱼回归",
+      "category": "",
+      "heat": 14.01,
+      "reads": 4.0,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 235,
+      "title": "陈晓剧里结婚忘掀盖头",
+      "category": "",
+      "heat": 13.94,
+      "reads": 83.5,
+      "discussions": 0.45,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 236,
+      "title": "鞠婧祎9年后再出席星光大赏",
+      "category": "明星",
+      "heat": 13.89,
+      "reads": 311.2,
+      "discussions": 0.65,
+      "originals": 0.09,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 237,
+      "title": "日本分析师称春节旅游情况将十分严峻",
+      "category": "社会",
+      "heat": 13.88,
+      "reads": 250.6,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 238,
+      "title": "男子犯低血糖一头栽进麻辣烫",
+      "category": "",
+      "heat": 13.81,
+      "reads": 974.1,
+      "discussions": 0.21,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 239,
+      "title": "卢克文公众号被封",
+      "category": "",
+      "heat": 13.61,
+      "reads": 72.8,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 240,
+      "title": "狙击蝴蝶 梦男文学",
+      "category": "",
+      "heat": 13.6,
+      "reads": 88.7,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 241,
+      "title": "易烊千玺说粉丝让他有底气去试错",
+      "category": "明星",
+      "heat": 13.37,
+      "reads": 183.0,
+      "discussions": 0.41,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 242,
+      "title": "南昌一医院发生伤人事件",
+      "category": "社会",
+      "heat": 13.36,
+      "reads": 422.9,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 243,
+      "title": "节食减重50斤吃麻辣烫时晕倒被烫伤",
+      "category": "社会",
+      "heat": 13.28,
+      "reads": 3996.1,
+      "discussions": 0.47,
+      "originals": 0.09,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 244,
+      "title": "白桃星座",
+      "category": "星座",
+      "heat": 13.26,
+      "reads": 1154000.0,
+      "discussions": 284.3,
+      "originals": 8.7,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 245,
+      "title": "刘耀文你睁开眼看看不信你两眼空空",
+      "category": "",
+      "heat": 13.26,
+      "reads": 55.3,
+      "discussions": 0.31,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 246,
+      "title": "官方通报一电梯卡人致1人死亡",
+      "category": "社会",
+      "heat": 13.19,
+      "reads": 78.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 247,
+      "title": "日本发海啸预警",
+      "category": "社会",
+      "heat": 13.14,
+      "reads": 384.7,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 248,
+      "title": "女护士患癌请病假遭拒",
+      "category": "",
+      "heat": 13.1,
+      "reads": 345.6,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 249,
+      "title": "傅首尔 导演",
+      "category": "",
+      "heat": 13.05,
+      "reads": 75.1,
+      "discussions": 0.26,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 250,
+      "title": "谁教陈晓这样撒娇的",
+      "category": "",
+      "heat": 12.97,
+      "reads": 27.1,
+      "discussions": 0.44,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 251,
+      "title": "1年旷工5次被开除遭索赔80万",
+      "category": "社会",
+      "heat": 12.95,
+      "reads": 61.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 252,
+      "title": "美国官方发文纪念珍珠港事件",
+      "category": "",
+      "heat": 12.95,
+      "reads": 1.6,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 253,
+      "title": "国外88岁大爷为救病妻每天收银8小时",
+      "category": "",
+      "heat": 12.94,
+      "reads": 27.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 254,
+      "title": "被孙颖莎帅到了",
+      "category": "",
+      "heat": 12.93,
+      "reads": 13.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 255,
+      "title": "邓超一个偷亲逗笑孙俪",
+      "category": "明星",
+      "heat": 12.92,
+      "reads": 181.7,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 256,
+      "title": "一个肚子同时生出了捧哏和逗哏",
+      "category": "",
+      "heat": 12.83,
+      "reads": 135.4,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 257,
+      "title": "数学学到最后已经看不到数字了",
+      "category": "",
+      "heat": 12.83,
+      "reads": 50.5,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 258,
+      "title": "手机里什么APP最耗电",
+      "category": "数码",
+      "heat": 12.83,
+      "reads": 219.2,
+      "discussions": 0.25,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 259,
+      "title": "刘同得奖被一顿爆锤",
+      "category": "",
+      "heat": 12.8,
+      "reads": 126.3,
+      "discussions": 0.4,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 260,
+      "title": "刘萧旭 他叫何聪睿",
+      "category": "",
+      "heat": 12.76,
+      "reads": 71.9,
+      "discussions": 0.24,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 261,
+      "title": "日本不同年薪的人群画像",
+      "category": "",
+      "heat": 12.69,
+      "reads": 2.9,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 262,
+      "title": "狙击蝴蝶热度",
+      "category": "",
+      "heat": 12.63,
+      "reads": 618.3,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 263,
+      "title": "地震快讯",
+      "category": "公益",
+      "heat": 12.5,
+      "reads": 3413000.0,
+      "discussions": 709.2,
+      "originals": 8.8,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 264,
+      "title": "A股商业航天板块高开",
+      "category": "财经",
+      "heat": 12.48,
+      "reads": 48.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 265,
+      "title": "冬天的第一件羽绒服怎么买",
+      "category": "情感",
+      "heat": 12.46,
+      "reads": 214.6,
+      "discussions": 0.13,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 266,
+      "title": "杨超越片场自拍",
+      "category": "电视剧",
+      "heat": 12.46,
+      "reads": 113.7,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 267,
+      "title": "仅退款225件女子被曝有同伙",
+      "category": "社会",
+      "heat": 12.46,
+      "reads": 59.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 268,
+      "title": "詹姆斯关键时刻连得10分",
+      "category": "体育",
+      "heat": 12.45,
+      "reads": 669.0,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 269,
+      "title": "富婆一招让老公的女助理自愿离职",
+      "category": "",
+      "heat": 12.4,
+      "reads": 58.4,
+      "discussions": 0.43,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 270,
+      "title": "谁家剧放眼望去全是中戏的",
+      "category": "",
+      "heat": 12.39,
+      "reads": 25.4,
+      "discussions": 0.4,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 271,
+      "title": "刘亦菲阿布扎比观赛F1",
+      "category": "明星",
+      "heat": 12.38,
+      "reads": 2694.6,
+      "discussions": 1.0,
+      "originals": 0.13,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 272,
+      "title": "喜欢拍照是高生命力的一种表现",
+      "category": "",
+      "heat": 12.33,
+      "reads": 12.1,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 273,
+      "title": "台湾花莲海域发生5.1级地震",
+      "category": "社会",
+      "heat": 12.33,
+      "reads": 1469.8,
+      "discussions": 0.18,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 274,
+      "title": "华晨宇 上一期没来亏了",
+      "category": "",
+      "heat": 12.33,
+      "reads": 35.6,
+      "discussions": 0.53,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 275,
+      "title": "观众给杨洋的韩立干到返场了",
+      "category": "",
+      "heat": 12.33,
+      "reads": 66.1,
+      "discussions": 0.48,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 276,
+      "title": "穆祉丞深夜感慨",
+      "category": "明星",
+      "heat": 12.32,
+      "reads": 326.6,
+      "discussions": 0.45,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 277,
+      "title": "迪丽热巴演出了非人感",
+      "category": "",
+      "heat": 12.15,
+      "reads": 179.6,
+      "discussions": 0.3,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 278,
+      "title": "陈幸同辟谣执教澳大利亚",
+      "category": "体育",
+      "heat": 12.1,
+      "reads": 64.8,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 279,
+      "title": "51岁男子不会打字遭电诈园区转卖",
+      "category": "社会",
+      "heat": 12.06,
+      "reads": 439.2,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 280,
+      "title": "任前公示中县委副书记年龄打架",
+      "category": "社会",
+      "heat": 12.04,
+      "reads": 137.8,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 281,
+      "title": "刘亦菲由内而外散发出的好状态",
+      "category": "明星",
+      "heat": 12.03,
+      "reads": 609.4,
+      "discussions": 0.13,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 282,
+      "title": "16岁的娜扎",
+      "category": "明星",
+      "heat": 12.0,
+      "reads": 49.3,
+      "discussions": 0.25,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 283,
+      "title": "得闲谨制里天地玄黄地位约等于abandon",
+      "category": "",
+      "heat": 11.92,
+      "reads": 55.6,
+      "discussions": 0.51,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 284,
+      "title": "胡先煦眼眶泛红这一下",
+      "category": "明星",
+      "heat": 11.89,
+      "reads": 51.5,
+      "discussions": 0.56,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 285,
+      "title": "男子见到干草堆就忍不住放火",
+      "category": "社会",
+      "heat": 11.85,
+      "reads": 51.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 286,
+      "title": "时代少年团世纪大糖",
+      "category": "明星",
+      "heat": 11.82,
+      "reads": 263.1,
+      "discussions": 0.19,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 287,
+      "title": "中方批评日本挑战战后国际秩序",
+      "category": "",
+      "heat": 11.8,
+      "reads": 87.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 288,
+      "title": "迪丽热巴两部剧人气TOP10",
+      "category": "明星",
+      "heat": 11.76,
+      "reads": 541.1,
+      "discussions": 2.1,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 289,
+      "title": "得闲谨制里为什么让小孩抱公鸡",
+      "category": "电影",
+      "heat": 11.72,
+      "reads": 69.7,
+      "discussions": 0.45,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 290,
+      "title": "美防长称美国无意改变台海现状",
+      "category": "",
+      "heat": 11.7,
+      "reads": 120.6,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 291,
+      "title": "杨瀚森4分5板2助",
+      "category": "体育",
+      "heat": 11.69,
+      "reads": 50.8,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 292,
+      "title": "周柯宇 弟圈天菜",
+      "category": "",
+      "heat": 11.69,
+      "reads": 46.9,
+      "discussions": 0.4,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 293,
+      "title": "罗永浩曝很多企业家想花钱上播客",
+      "category": "互联网",
+      "heat": 11.66,
+      "reads": 65.0,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 294,
+      "title": "以为是那个李飞",
+      "category": "",
+      "heat": 11.66,
+      "reads": 1.7,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 295,
+      "title": "迅猛龙自曝23岁借钱付违约金",
+      "category": "明星",
+      "heat": 11.48,
+      "reads": 1179.2,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 296,
+      "title": "阿凡达3",
+      "category": "电影",
+      "heat": 11.47,
+      "reads": 3313.7,
+      "discussions": 2.1,
+      "originals": 0.11,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 297,
+      "title": "3人疑在鄱阳湖湿地投毒被抓",
+      "category": "社会",
+      "heat": 11.4,
+      "reads": 288.9,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 298,
+      "title": "1178名中国籍涉诈人员被押解回国",
+      "category": "社会",
+      "heat": 11.37,
+      "reads": 59.8,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 299,
+      "title": "罗永浩谈豆包被部分app封杀",
+      "category": "互联网",
+      "heat": 11.25,
+      "reads": 371.0,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 300,
+      "title": "曝79岁雪儿将与39岁男友结婚",
+      "category": "明星",
+      "heat": 11.16,
+      "reads": 1120.7,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 301,
+      "title": "王楚钦采访太霸气了",
+      "category": "",
+      "heat": 11.14,
+      "reads": 110.7,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 302,
+      "title": "原来伤心是真的伤心脏",
+      "category": "社会",
+      "heat": 11.12,
+      "reads": 184.0,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 303,
+      "title": "5月龄女婴手术离世母亲再发声",
+      "category": "社会",
+      "heat": 11.08,
+      "reads": 577.3,
+      "discussions": 0.46,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 304,
+      "title": "他错了题但做对了人生",
+      "category": "",
+      "heat": 11.06,
+      "reads": 325.8,
+      "discussions": 0.31,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 305,
+      "title": "德国外长访华前表态",
+      "category": "",
+      "heat": 11.06,
+      "reads": 122.7,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 306,
+      "title": "郭德纲 艺高人胆小",
+      "category": "",
+      "heat": 11.0,
+      "reads": 51.1,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 307,
+      "title": "孙颖莎王楚钦球员城市照",
+      "category": "",
+      "heat": 10.96,
+      "reads": 27.1,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 308,
+      "title": "檀健次从屁股兜掏手机发微博",
+      "category": "",
+      "heat": 10.94,
+      "reads": 346.0,
+      "discussions": 1.0,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 309,
+      "title": "盒马草莓蛋糕去年狂卖上亿",
+      "category": "社会",
+      "heat": 10.93,
+      "reads": 123.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 310,
+      "title": "职场发小",
+      "category": "",
+      "heat": 10.92,
+      "reads": 8.2,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 311,
+      "title": "弗朗西斯卡说看全运会学到很多",
+      "category": "",
+      "heat": 10.91,
+      "reads": 7.7,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 312,
+      "title": "曾舜晞上脸 刘宇宁追着调侃",
+      "category": "",
+      "heat": 10.9,
+      "reads": 330.5,
+      "discussions": 0.41,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 313,
+      "title": "新娘入场被老人抢喜司仪妙语解气",
+      "category": "社会",
+      "heat": 10.89,
+      "reads": 619.5,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 314,
+      "title": "钎城偷拍小乐",
+      "category": "明星",
+      "heat": 10.89,
+      "reads": 62.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 315,
+      "title": "特朗普高市早苗涉台通话内容曝光",
+      "category": "社会",
+      "heat": 10.88,
+      "reads": 559.1,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 316,
+      "title": "氢气球爆炸致孩子烧伤妈妈含泪提醒",
+      "category": "社会",
+      "heat": 10.85,
+      "reads": 208.8,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 317,
+      "title": "李小鹏回应女儿花滑天赋",
+      "category": "社会",
+      "heat": 10.81,
+      "reads": 200.4,
+      "discussions": 0.07,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 318,
+      "title": "黄景瑜发言把秦岚郭京飞笑醒了",
+      "category": "",
+      "heat": 10.78,
+      "reads": 134.3,
+      "discussions": 0.36,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 319,
+      "title": "刘宇宁吃席打包",
+      "category": "",
+      "heat": 10.74,
+      "reads": 564.7,
+      "discussions": 0.72,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 320,
+      "title": "我这一身聚酯纤维派上用场了",
+      "category": "",
+      "heat": 10.68,
+      "reads": 25.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 321,
+      "title": "狼队三十二强",
+      "category": "游戏",
+      "heat": 10.64,
+      "reads": 1161.6,
+      "discussions": 0.22,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 322,
+      "title": "南昌警方通报伤医事件",
+      "category": "社会",
+      "heat": 10.6,
+      "reads": 139.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 323,
+      "title": "这个顶流发饰太上头了",
+      "category": "社会",
+      "heat": 10.58,
+      "reads": 280.2,
+      "discussions": 0.34,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 324,
+      "title": "邓紫棋到底在给谁作词",
+      "category": "明星",
+      "heat": 10.57,
+      "reads": 132.4,
+      "discussions": 0.5,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 325,
+      "title": "土豆吕严",
+      "category": "",
+      "heat": 10.57,
+      "reads": 345.6,
+      "discussions": 0.18,
+      "originals": 0.08,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 326,
+      "title": "汪苏泷疑似在报沈梦辰念热搜之仇",
+      "category": "",
+      "heat": 10.53,
+      "reads": 294.0,
+      "discussions": 0.42,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 327,
+      "title": "列车长称洗手池混洗水果的是实习生",
+      "category": "社会",
+      "heat": 10.49,
+      "reads": 42.1,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 328,
+      "title": "王曼昱首轮对阵张本美和",
+      "category": "体育",
+      "heat": 10.48,
+      "reads": 268.4,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 329,
+      "title": "一顿饭吃完倒欠200大卡",
+      "category": "",
+      "heat": 10.44,
+      "reads": 3.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 330,
+      "title": "易烊千玺说担心被标签化",
+      "category": "明星",
+      "heat": 10.37,
+      "reads": 116.4,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 331,
+      "title": "榕江通报荒野求生女选手疑遭骚扰",
+      "category": "社会",
+      "heat": 10.35,
+      "reads": 963.4,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 332,
+      "title": "经济上行期的小妞电影有多敢拍",
+      "category": "",
+      "heat": 10.35,
+      "reads": 87.6,
+      "discussions": 0.42,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 333,
+      "title": "肖战彭昱畅阿如那搭肩",
+      "category": "电影",
+      "heat": 10.21,
+      "reads": 357.5,
+      "discussions": 0.18,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 334,
+      "title": "九尾重返首发",
+      "category": "",
+      "heat": 10.21,
+      "reads": 28.6,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 335,
+      "title": "诡秘肖战这次真的不一样",
+      "category": "",
+      "heat": 10.21,
+      "reads": 131.7,
+      "discussions": 0.69,
+      "originals": 0.09,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 336,
+      "title": "2026金球奖提名",
+      "category": "电影",
+      "heat": 10.21,
+      "reads": 424.5,
+      "discussions": 0.12,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 337,
+      "title": "金球奖",
+      "category": "电影",
+      "heat": 10.21,
+      "reads": 463000.0,
+      "discussions": 167.1,
+      "originals": 5.8,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 338,
+      "title": "日本预测大地震或致近2万人遇难",
+      "category": "社会",
+      "heat": 10.11,
+      "reads": 1211.7,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 339,
+      "title": "男子冷静期毒杀儿女案妻子盼死刑",
+      "category": "社会",
+      "heat": 10.04,
+      "reads": 137.8,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 340,
+      "title": "留学生遭电诈2次飞回国转账",
+      "category": "社会",
+      "heat": 9.88,
+      "reads": 133.1,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 341,
+      "title": "管道错接导致洗衣机水流入河道",
+      "category": "社会",
+      "heat": 9.84,
+      "reads": 148.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 342,
+      "title": "是时候重新认识流感了",
+      "category": "健康",
+      "heat": 9.82,
+      "reads": 207.2,
+      "discussions": 0.18,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 343,
+      "title": "白鹿时隔8年再来星光大赏",
+      "category": "",
+      "heat": 9.75,
+      "reads": 218.7,
+      "discussions": 0.72,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 344,
+      "title": "张凌赫问柚子叶是什么意思",
+      "category": "综艺",
+      "heat": 9.61,
+      "reads": 352.8,
+      "discussions": 0.24,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 345,
+      "title": "狼队清清首发",
+      "category": "游戏",
+      "heat": 9.57,
+      "reads": 448.5,
+      "discussions": 0.05,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 346,
+      "title": "2026江苏卫视跨年演唱会官宣",
+      "category": "综艺",
+      "heat": 9.57,
+      "reads": 114.2,
+      "discussions": 0.68,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 347,
+      "title": "12306回应商务座一擦全是黑印",
+      "category": "社会",
+      "heat": 9.56,
+      "reads": 380.4,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 348,
+      "title": "鹅鸭杀手游公测",
+      "category": "",
+      "heat": 9.41,
+      "reads": 1.6,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 349,
+      "title": "警方回应青岛一商圈电梯夹死人",
+      "category": "社会",
+      "heat": 9.33,
+      "reads": 246.8,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 350,
+      "title": "往返中日两国的渡轮暂停运营",
+      "category": "社会",
+      "heat": 9.26,
+      "reads": 169.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 351,
+      "title": "曾舜晞刘宇宁 共用口罩",
+      "category": "",
+      "heat": 9.16,
+      "reads": 447.8,
+      "discussions": 0.47,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 352,
+      "title": "孙天宇发的杨雨光",
+      "category": "",
+      "heat": 9.15,
+      "reads": 20.3,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 353,
+      "title": "男子开保时捷跑顺风车盗190块电瓶",
+      "category": "社会",
+      "heat": 9.09,
+      "reads": 81.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 354,
+      "title": "14岁的我23岁的我需要你",
+      "category": "",
+      "heat": 9.08,
+      "reads": 39.7,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 355,
+      "title": "得闲谨制票房是排片的两倍",
+      "category": "明星",
+      "heat": 9.08,
+      "reads": 590.3,
+      "discussions": 0.43,
+      "originals": 0.09,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 356,
+      "title": "金士杰近60岁生了龙凤胎",
+      "category": "",
+      "heat": 8.94,
+      "reads": 1813.3,
+      "discussions": 0.56,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 357,
+      "title": "杨瀚森出场时间生涯新高",
+      "category": "体育",
+      "heat": 8.91,
+      "reads": 39.8,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 358,
+      "title": "王橹杰高会",
+      "category": "",
+      "heat": 8.82,
+      "reads": 3203.9,
+      "discussions": 5.6,
+      "originals": 0.68,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 359,
+      "title": "没有父母托举的普通人一生的任务",
+      "category": "",
+      "heat": 8.8,
+      "reads": 102.1,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 360,
+      "title": "虞书欣的12分18秒",
+      "category": "明星",
+      "heat": 8.78,
+      "reads": 4019.0,
+      "discussions": 1.2,
+      "originals": 0.19,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 361,
+      "title": "即刻上场",
+      "category": "电视剧",
+      "heat": 8.77,
+      "reads": 18000.0,
+      "discussions": 209.6,
+      "originals": 0.56,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 362,
+      "title": "张韶涵新专",
+      "category": "",
+      "heat": 8.72,
+      "reads": 45.9,
+      "discussions": 0.14,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 363,
+      "title": "肖战得闲谨制登上新闻联播",
+      "category": "电影",
+      "heat": 8.71,
+      "reads": 2352.2,
+      "discussions": 2.6,
+      "originals": 0.41,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 364,
+      "title": "12306出新功能了",
+      "category": "社会",
+      "heat": 8.71,
+      "reads": 2712.4,
+      "discussions": 0.25,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 365,
+      "title": "刘国梁和国乒全员握手",
+      "category": "体育",
+      "heat": 8.71,
+      "reads": 535.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 366,
+      "title": "你的婚纱照可能被卖了",
+      "category": "社会",
+      "heat": 8.71,
+      "reads": 3503.5,
+      "discussions": 0.43,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 367,
+      "title": "榕江公安已介入调查",
+      "category": "社会",
+      "heat": 8.71,
+      "reads": 630.1,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 368,
+      "title": "日籍八路军战士之子发声",
+      "category": "社会",
+      "heat": 8.71,
+      "reads": 1143.7,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 369,
+      "title": "美防长警告日本",
+      "category": "",
+      "heat": 8.71,
+      "reads": 2333.0,
+      "discussions": 0.23,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 370,
+      "title": "一口一个姐姐一步一个心机",
+      "category": "",
+      "heat": 8.71,
+      "reads": 251.5,
+      "discussions": 0.87,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 371,
+      "title": "心疼花海",
+      "category": "游戏",
+      "heat": 8.7,
+      "reads": 3132.3,
+      "discussions": 1.6,
+      "originals": 0.21,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 372,
+      "title": "难不倒小学生却难倒了大学生",
+      "category": "",
+      "heat": 8.7,
+      "reads": 55.7,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 373,
+      "title": "土豆对仙子酒后丑态的分享欲",
+      "category": "",
+      "heat": 8.7,
+      "reads": 116.3,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 374,
+      "title": "勒克莱尔第四",
+      "category": "",
+      "heat": 8.7,
+      "reads": 35.4,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 375,
+      "title": "孙颖莎说冠军属于我们大家",
+      "category": "体育",
+      "heat": 8.7,
+      "reads": 286.6,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 376,
+      "title": "季节 这都能输为啥不退役啊",
+      "category": "",
+      "heat": 8.7,
+      "reads": 249.6,
+      "discussions": 0.14,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 377,
+      "title": "入室抢婴案",
+      "category": "社会",
+      "heat": 8.7,
+      "reads": 1094.4,
+      "discussions": 1.1,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 378,
+      "title": "杨幂嫌弃董璇拍照",
+      "category": "",
+      "heat": 8.7,
+      "reads": 4213.0,
+      "discussions": 2.0,
+      "originals": 0.24,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 379,
+      "title": "俄罗斯百辆保时捷瘫痪",
+      "category": "",
+      "heat": 8.7,
+      "reads": 6.1,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 380,
+      "title": "王鹤润这个腰",
+      "category": "",
+      "heat": 8.65,
+      "reads": 34.0,
+      "discussions": 0.33,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 381,
+      "title": "谢楠小儿子一把抱住陈妍希儿子",
+      "category": "明星",
+      "heat": 8.58,
+      "reads": 2866.0,
+      "discussions": 0.19,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 382,
+      "title": "卢浮宫严重漏水致大量古籍受损",
+      "category": "社会",
+      "heat": 8.52,
+      "reads": 40.7,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 383,
+      "title": "太奶论文法",
+      "category": "",
+      "heat": 8.46,
+      "reads": 4.7,
+      "discussions": 0.15,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 384,
+      "title": "以为是脾气不好结果是真没选到喜欢的",
+      "category": "",
+      "heat": 8.43,
+      "reads": 17.8,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 385,
+      "title": "杨瀚森倒地被裁判无视",
+      "category": "体育",
+      "heat": 8.42,
+      "reads": 82.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 386,
+      "title": "向佐 郭碧婷是个很有主见的人",
+      "category": "",
+      "heat": 8.32,
+      "reads": 186.9,
+      "discussions": 0.48,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 387,
+      "title": "被黑熊扑倒驯养员解释再次靠近原因",
+      "category": "社会",
+      "heat": 8.32,
+      "reads": 603.9,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 388,
+      "title": "山西一工地发现2.9亿年前大型木化石",
+      "category": "社会",
+      "heat": 8.29,
+      "reads": 973.2,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 389,
+      "title": "王晶回应曾说王祖贤腿丑",
+      "category": "明星",
+      "heat": 8.29,
+      "reads": 1312.4,
+      "discussions": 0.09,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 390,
+      "title": "王一博微指破亿",
+      "category": "明星",
+      "heat": 8.28,
+      "reads": 1153.4,
+      "discussions": 3.8,
+      "originals": 0.46,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 391,
+      "title": "用挖耳勺给厨师拍宣传片",
+      "category": "",
+      "heat": 8.27,
+      "reads": 110.9,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 392,
+      "title": "哈尔滨的面包树上停满了小鸟",
+      "category": "",
+      "heat": 8.27,
+      "reads": 324.2,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 393,
+      "title": "高价鸡蛋是智商税吗",
+      "category": "社会",
+      "heat": 8.27,
+      "reads": 330.2,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 394,
+      "title": "美国不再将俄罗斯称为直接威胁",
+      "category": "",
+      "heat": 8.26,
+      "reads": 1073.0,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 395,
+      "title": "婴儿被褥印不雅英文",
+      "category": "社会",
+      "heat": 8.26,
+      "reads": 527.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 396,
+      "title": "关晓彤 小时候拍戏条件不好",
+      "category": "",
+      "heat": 8.25,
+      "reads": 457.7,
+      "discussions": 0.3,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 397,
+      "title": "水果姐特鲁多 CCTV3和CCTV1串台了",
+      "category": "",
+      "heat": 8.24,
+      "reads": 18.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 398,
+      "title": "义勇军进行曲响彻赛场",
+      "category": "社会",
+      "heat": 8.24,
+      "reads": 655.0,
+      "discussions": 0.19,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 399,
+      "title": "周深但行好事前程已至",
+      "category": "音乐",
+      "heat": 8.23,
+      "reads": 142.6,
+      "discussions": 0.99,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 400,
+      "title": "杨幂尖叫之夜最高荣誉",
+      "category": "明星",
+      "heat": 8.23,
+      "reads": 495.0,
+      "discussions": 0.15,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 401,
+      "title": "冰面碎了初中女生拉住4岁男童",
+      "category": "社会",
+      "heat": 8.23,
+      "reads": 866.7,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 402,
+      "title": "王楚然张晚意热聊",
+      "category": "明星",
+      "heat": 8.23,
+      "reads": 832.4,
+      "discussions": 0.09,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 403,
+      "title": "酒店回应中国女游客从9楼坠亡",
+      "category": "社会",
+      "heat": 8.23,
+      "reads": 694.7,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 404,
+      "title": "大生意人",
+      "category": "电视剧",
+      "heat": 8.22,
+      "reads": 51000.0,
+      "discussions": 1560.5,
+      "originals": 1.5,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 405,
+      "title": "于正说杨幂值得更好的",
+      "category": "明星",
+      "heat": 8.22,
+      "reads": 847.5,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 406,
+      "title": "美国战争部长称清楚自己的实际实力",
+      "category": "",
+      "heat": 8.21,
+      "reads": 31.0,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 407,
+      "title": "泡泡玛特新品开箱合集",
+      "category": "",
+      "heat": 8.14,
+      "reads": 0.59,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 408,
+      "title": "杨瀚森犯规",
+      "category": "体育",
+      "heat": 8.13,
+      "reads": 425.2,
+      "discussions": 0.24,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 409,
+      "title": "三门峡塌方事故致5人遇难亲属发声",
+      "category": "社会",
+      "heat": 8.08,
+      "reads": 339.1,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 410,
+      "title": "尹正想演军人但是被调剂了",
+      "category": "电影",
+      "heat": 7.55,
+      "reads": 1893.8,
+      "discussions": 0.15,
+      "originals": 0.05,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 411,
+      "title": "董璇晒18张尖叫之夜照片",
+      "category": "明星",
+      "heat": 7.16,
+      "reads": 842.8,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 412,
+      "title": "写生至少得写吧",
+      "category": "",
+      "heat": 7.16,
+      "reads": 3.4,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 413,
+      "title": "黄霄雲被工作室做局了",
+      "category": "明星",
+      "heat": 7.16,
+      "reads": 137.3,
+      "discussions": 0.61,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 414,
+      "title": "被成毅新剧爽到了",
+      "category": "电视剧",
+      "heat": 7.15,
+      "reads": 697.0,
+      "discussions": 0.54,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 415,
+      "title": "又一全国比赛获奖名单批量复制姓名",
+      "category": "社会",
+      "heat": 7.07,
+      "reads": 210.3,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 416,
+      "title": "31岁女教师去世重病时仍安慰他人",
+      "category": "社会",
+      "heat": 6.98,
+      "reads": 267.5,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 417,
+      "title": "杨瀚森连得4分",
+      "category": "体育",
+      "heat": 6.82,
+      "reads": 143.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 418,
+      "title": "皇马0比2塞尔塔",
+      "category": "",
+      "heat": 5.24,
+      "reads": 24.3,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 419,
+      "title": "刘国梁拍了下王楚钦肩膀",
+      "category": "",
+      "heat": 5.17,
+      "reads": 50.4,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 420,
+      "title": "这些明星简直演我嗑cp",
+      "category": "",
+      "heat": 4.89,
+      "reads": 23.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 421,
+      "title": "红秀",
+      "category": "",
+      "heat": 4.54,
+      "reads": 1305.1,
+      "discussions": 3.0,
+      "originals": 0.27,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 422,
+      "title": "杨幂曾吃糖葫芦把牙崩了",
+      "category": "明星",
+      "heat": 4.52,
+      "reads": 84.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 423,
+      "title": "朱志鑫纯欧巴",
+      "category": "",
+      "heat": 3.79,
+      "reads": 194.3,
+      "discussions": 0.82,
+      "originals": 0.18,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 424,
+      "title": "枭起青壤 黑白涧大战",
+      "category": "",
+      "heat": 3.46,
+      "reads": 113.7,
+      "discussions": 0.18,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 425,
+      "title": "中法元首再次进行不打领带的友好交流",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 3203.5,
+      "discussions": 0.18,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 426,
+      "title": "淘宝双12来了",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 90000.0,
+      "discussions": 69.8,
+      "originals": 0.21,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 427,
+      "title": "易烊千玺淘宝天猫全球代言人",
+      "category": "明星",
+      "heat": 0.0,
+      "reads": 177000.0,
+      "discussions": 39.0,
+      "originals": 1.2,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 428,
+      "title": "找到冬季皮肤过敏的救星了",
+      "category": "健康",
+      "heat": 0.0,
+      "reads": 3217.0,
+      "discussions": 1.2,
+      "originals": 0.03,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 429,
+      "title": "单依纯的钻石宣言",
+      "category": "明星",
+      "heat": 0.0,
+      "reads": 237.0,
+      "discussions": 0.27,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 430,
+      "title": "比亚迪海洋圆梦车主约球香港明星",
+      "category": "汽车",
+      "heat": 0.0,
+      "reads": 3247.0,
+      "discussions": 1.1,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 431,
+      "title": "人人都是中国智驾合伙人",
+      "category": "汽车",
+      "heat": 0.0,
+      "reads": 10000.0,
+      "discussions": 1.7,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 432,
+      "title": "徐明浩的新年耀澄8londe",
+      "category": "明星",
+      "heat": 0.0,
+      "reads": 3062.5,
+      "discussions": 2.8,
+      "originals": 0.04,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 433,
+      "title": "京东双12年终福袋1元实现美妆零食自由",
+      "category": "电商",
+      "heat": 0.0,
+      "reads": 13000.0,
+      "discussions": 3.6,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 434,
+      "title": "刘德华粤语献唱残特奥会会歌",
+      "category": "体育",
+      "heat": 0.0,
+      "reads": 360.1,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 435,
+      "title": "2025动漫嘉年华",
+      "category": "动漫",
+      "heat": 0.0,
+      "reads": 2249.8,
+      "discussions": 19.0,
+      "originals": 0.28,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 436,
+      "title": "王一博大魔王品牌全球代言人",
+      "category": "明星",
+      "heat": 0.0,
+      "reads": 34000.0,
+      "discussions": 153.1,
+      "originals": 6.2,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 437,
+      "title": "KPL圣诞异形卡来喽",
+      "category": "游戏",
+      "heat": 0.0,
+      "reads": 284.2,
+      "discussions": 0.14,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 438,
+      "title": "山河故人十周年重映特别直播",
+      "category": "电影",
+      "heat": 0.0,
+      "reads": 702.1,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 439,
+      "title": "中共中央政治局召开会议",
+      "category": "",
+      "heat": 0.0,
+      "reads": 48000.0,
+      "discussions": 3.7,
+      "originals": 0.29,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 440,
+      "title": "微博夸夸大会",
+      "category": "搞笑",
+      "heat": 0.0,
+      "reads": 718.0,
+      "discussions": 0.82,
+      "originals": 0.07,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 441,
+      "title": "中共中央召开党外人士座谈会",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 9355.4,
+      "discussions": 0.52,
+      "originals": 0.06,
+      "date": "2025-12-08"
+    },
+    {
+      "rank": 442,
+      "title": "全新问界M7大定销售突破10万台",
+      "category": "汽车",
+      "heat": 0.0,
+      "reads": 13000.0,
+      "discussions": 4.2,
+      "originals": 0.02,
+      "date": "2025-12-08"
+    }
+  ]
+}
