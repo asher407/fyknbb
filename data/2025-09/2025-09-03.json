@@ -1,0 +1,3476 @@
+{
+  "date": "2025-09-03",
+  "count": 347,
+  "data": [
+    {
+      "rank": 1,
+      "title": "东风61",
+      "category": "",
+      "heat": 3252.25,
+      "reads": 46000.0,
+      "discussions": 20.6,
+      "originals": 3.5,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 2,
+      "title": "东风5C打击范围覆盖全球",
+      "category": "社会",
+      "heat": 1996.21,
+      "reads": 41000.0,
+      "discussions": 20.8,
+      "originals": 2.2,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 3,
+      "title": "新华社出图",
+      "category": "综艺",
+      "heat": 1633.64,
+      "reads": 64000.0,
+      "discussions": 52.8,
+      "originals": 3.8,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 4,
+      "title": "九三盛大阅兵",
+      "category": "社会",
+      "heat": 1465.38,
+      "reads": 387000.0,
+      "discussions": 1728.0,
+      "originals": 34.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 5,
+      "title": "文艺晚会",
+      "category": "社会",
+      "heat": 1134.06,
+      "reads": 18000.0,
+      "discussions": 9.2,
+      "originals": 1.6,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 6,
+      "title": "军迷变军盲",
+      "category": "",
+      "heat": 897.69,
+      "reads": 13000.0,
+      "discussions": 3.5,
+      "originals": 0.46,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 7,
+      "title": "法新社出图",
+      "category": "",
+      "heat": 855.94,
+      "reads": 45000.0,
+      "discussions": 9.7,
+      "originals": 1.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 8,
+      "title": "阅兵直播",
+      "category": "社会",
+      "heat": 801.71,
+      "reads": 131000.0,
+      "discussions": 1464.4,
+      "originals": 18.7,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 9,
+      "title": "女兵方阵 飒",
+      "category": "",
+      "heat": 798.33,
+      "reads": 4573.2,
+      "discussions": 3.2,
+      "originals": 0.92,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 10,
+      "title": "放飞和平鸽",
+      "category": "社会",
+      "heat": 773.83,
+      "reads": 12000.0,
+      "discussions": 4.9,
+      "originals": 0.59,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 11,
+      "title": "中华民族伟大复兴势不可挡",
+      "category": "社会",
+      "heat": 498.98,
+      "reads": 3485.2,
+      "discussions": 2.0,
+      "originals": 0.17,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 12,
+      "title": "女民兵方队亮相",
+      "category": "社会",
+      "heat": 497.86,
+      "reads": 5053.8,
+      "discussions": 3.4,
+      "originals": 0.23,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 13,
+      "title": "今天是胜利的日子",
+      "category": "社会",
+      "heat": 459.66,
+      "reads": 2457.9,
+      "discussions": 5.8,
+      "originals": 0.25,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 14,
+      "title": "党和人民完全可以信赖解放军",
+      "category": "",
+      "heat": 392.61,
+      "reads": 986.9,
+      "discussions": 0.38,
+      "originals": 0.08,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 15,
+      "title": "好帅的女机长",
+      "category": "",
+      "heat": 343.88,
+      "reads": 5100.0,
+      "discussions": 1.5,
+      "originals": 0.25,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 16,
+      "title": "看战机眼睛不够用了",
+      "category": "社会",
+      "heat": 330.2,
+      "reads": 3025.2,
+      "discussions": 0.52,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 17,
+      "title": "激光武器",
+      "category": "",
+      "heat": 323.65,
+      "reads": 803.7,
+      "discussions": 0.41,
+      "originals": 0.11,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 18,
+      "title": "受阅女民兵着装",
+      "category": "",
+      "heat": 322.29,
+      "reads": 7839.0,
+      "discussions": 3.3,
+      "originals": 0.23,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 19,
+      "title": "空着的1945检阅车",
+      "category": "社会",
+      "heat": 305.0,
+      "reads": 3299.7,
+      "discussions": 0.65,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 20,
+      "title": "坦克有没有后视镜",
+      "category": "社会",
+      "heat": 304.64,
+      "reads": 8137.4,
+      "discussions": 2.2,
+      "originals": 0.29,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 21,
+      "title": "阅兵飞机",
+      "category": "社会",
+      "heat": 296.07,
+      "reads": 2546.3,
+      "discussions": 1.3,
+      "originals": 0.1,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 22,
+      "title": "军盲时刻",
+      "category": "",
+      "heat": 283.21,
+      "reads": 1933.0,
+      "discussions": 0.79,
+      "originals": 0.22,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 23,
+      "title": "东风5C",
+      "category": "",
+      "heat": 263.54,
+      "reads": 3493.0,
+      "discussions": 0.87,
+      "originals": 0.11,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 24,
+      "title": "歼35",
+      "category": "军事",
+      "heat": 255.18,
+      "reads": 12000.0,
+      "discussions": 2.2,
+      "originals": 0.22,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 25,
+      "title": "劈枪太帅了",
+      "category": "",
+      "heat": 242.12,
+      "reads": 733.4,
+      "discussions": 0.3,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 26,
+      "title": "金正恩抵达",
+      "category": "社会",
+      "heat": 241.85,
+      "reads": 7471.9,
+      "discussions": 0.36,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 27,
+      "title": "红旗见证时代荣光",
+      "category": "社会",
+      "heat": 241.48,
+      "reads": 5971.2,
+      "discussions": 1.1,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 28,
+      "title": "歼20S",
+      "category": "",
+      "heat": 241.35,
+      "reads": 614.3,
+      "discussions": 0.23,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 29,
+      "title": "巨浪3",
+      "category": "",
+      "heat": 240.7,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 30,
+      "title": "80名礼号手寓意抗战胜利80周年",
+      "category": "社会",
+      "heat": 240.28,
+      "reads": 731.5,
+      "discussions": 0.28,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 31,
+      "title": "这几个无人机出来军事博主都沉默了",
+      "category": "",
+      "heat": 239.66,
+      "reads": 7623.5,
+      "discussions": 1.6,
+      "originals": 0.15,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 32,
+      "title": "咱家飞机再也不用飞两遍",
+      "category": "社会",
+      "heat": 235.19,
+      "reads": 7095.7,
+      "discussions": 6.0,
+      "originals": 0.3,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 33,
+      "title": "看到老兵 瞬间泪目",
+      "category": "",
+      "heat": 223.85,
+      "reads": 1037.9,
+      "discussions": 0.49,
+      "originals": 0.13,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 34,
+      "title": "阅兵收视率",
+      "category": "",
+      "heat": 222.45,
+      "reads": 11000.0,
+      "discussions": 2.2,
+      "originals": 0.28,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 35,
+      "title": "军事航天部队方队首次亮相",
+      "category": "社会",
+      "heat": 208.01,
+      "reads": 2863.9,
+      "discussions": 0.3,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 36,
+      "title": "新华社秒了",
+      "category": "",
+      "heat": 207.29,
+      "reads": 8119.7,
+      "discussions": 1.4,
+      "originals": 0.19,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 37,
+      "title": "受阅部队已在长安街列阵",
+      "category": "社会",
+      "heat": 206.01,
+      "reads": 1291.3,
+      "discussions": 0.31,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 38,
+      "title": "机器狼",
+      "category": "",
+      "heat": 200.35,
+      "reads": 522.6,
+      "discussions": 0.31,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 39,
+      "title": "阅兵车牌号是1945和2025",
+      "category": "社会",
+      "heat": 194.65,
+      "reads": 6849.4,
+      "discussions": 1.6,
+      "originals": 0.09,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 40,
+      "title": "中国军队装备已经NextLevel",
+      "category": "社会",
+      "heat": 189.88,
+      "reads": 5801.4,
+      "discussions": 2.7,
+      "originals": 0.19,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 41,
+      "title": "天安门上空这一幕令人震撼",
+      "category": "社会",
+      "heat": 184.43,
+      "reads": 3783.3,
+      "discussions": 2.6,
+      "originals": 0.1,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 42,
+      "title": "阅兵回放",
+      "category": "社会",
+      "heat": 178.64,
+      "reads": 3135.0,
+      "discussions": 5.7,
+      "originals": 0.09,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 43,
+      "title": "笨笨 你是军犬",
+      "category": "",
+      "heat": 177.08,
+      "reads": 2407.0,
+      "discussions": 0.58,
+      "originals": 0.15,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 44,
+      "title": "99B坦克率先亮相",
+      "category": "社会",
+      "heat": 170.65,
+      "reads": 4218.3,
+      "discussions": 0.3,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 45,
+      "title": "长剑1000导弹",
+      "category": "社会",
+      "heat": 169.47,
+      "reads": 2392.0,
+      "discussions": 0.17,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 46,
+      "title": "耿爽发言含金量",
+      "category": "",
+      "heat": 169.33,
+      "reads": 4667.8,
+      "discussions": 0.32,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 47,
+      "title": "无人机 科幻",
+      "category": "",
+      "heat": 166.67,
+      "reads": 712.2,
+      "discussions": 0.16,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 48,
+      "title": "嘉奖参加阅兵全体人员",
+      "category": "",
+      "heat": 164.97,
+      "reads": 3903.2,
+      "discussions": 0.42,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 49,
+      "title": "鸠山由纪夫来了",
+      "category": "",
+      "heat": 161.85,
+      "reads": 3368.2,
+      "discussions": 0.43,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 50,
+      "title": "文艺晚会 好哭",
+      "category": "",
+      "heat": 159.56,
+      "reads": 2099.7,
+      "discussions": 0.65,
+      "originals": 0.14,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 51,
+      "title": "东风41",
+      "category": "",
+      "heat": 158.79,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 52,
+      "title": "阅兵时五角大楼附近披萨订单激增",
+      "category": "社会",
+      "heat": 154.7,
+      "reads": 5332.6,
+      "discussions": 0.74,
+      "originals": 0.08,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 53,
+      "title": "杜江现场观礼",
+      "category": "",
+      "heat": 154.19,
+      "reads": 4414.8,
+      "discussions": 1.8,
+      "originals": 0.17,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 54,
+      "title": "文艺晚会真的好震撼",
+      "category": "",
+      "heat": 151.39,
+      "reads": 2521.3,
+      "discussions": 0.34,
+      "originals": 0.08,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 55,
+      "title": "新华社好贴心",
+      "category": "",
+      "heat": 150.95,
+      "reads": 367.4,
+      "discussions": 0.03,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 56,
+      "title": "雷军晒观礼请柬",
+      "category": "社会",
+      "heat": 147.89,
+      "reads": 6194.5,
+      "discussions": 0.28,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 57,
+      "title": "咱们有飞飞飞飞飞不完的飞机了",
+      "category": "社会",
+      "heat": 147.33,
+      "reads": 1096.9,
+      "discussions": 0.27,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 58,
+      "title": "正义必胜 和平必胜 人民必胜",
+      "category": "",
+      "heat": 142.95,
+      "reads": 584.9,
+      "discussions": 0.82,
+      "originals": 0.35,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 59,
+      "title": "真理",
+      "category": "",
+      "heat": 138.62,
+      "reads": 9295.2,
+      "discussions": 11.9,
+      "originals": 1.3,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 60,
+      "title": "金正恩对韩国会议长只说了一个字",
+      "category": "社会",
+      "heat": 136.01,
+      "reads": 1162.7,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 61,
+      "title": "流浪地球 纪录片",
+      "category": "",
+      "heat": 128.45,
+      "reads": 890.4,
+      "discussions": 0.25,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 62,
+      "title": "网络空间部队",
+      "category": "",
+      "heat": 128.11,
+      "reads": 79.4,
+      "discussions": 0.04,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 63,
+      "title": "郭帆回应改剧本",
+      "category": "明星",
+      "heat": 128.11,
+      "reads": 2290.7,
+      "discussions": 0.13,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 64,
+      "title": "抗战老兵提起战争经历时的眼神",
+      "category": "社会",
+      "heat": 126.95,
+      "reads": 1549.7,
+      "discussions": 0.42,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 65,
+      "title": "加快建设世界一流军队",
+      "category": "",
+      "heat": 126.92,
+      "reads": 286.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 66,
+      "title": "这是您浴血守卫的山河",
+      "category": "社会",
+      "heat": 125.81,
+      "reads": 1956.0,
+      "discussions": 1.6,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 67,
+      "title": "特朗普祝中国人民度过美好庆祝日",
+      "category": "社会",
+      "heat": 125.71,
+      "reads": 9344.8,
+      "discussions": 0.96,
+      "originals": 0.14,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 68,
+      "title": "为什么没有东风51",
+      "category": "",
+      "heat": 121.56,
+      "reads": 3050.1,
+      "discussions": 0.12,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 69,
+      "title": "九三阅兵解读",
+      "category": "军事",
+      "heat": 118.39,
+      "reads": 21000.0,
+      "discussions": 9.8,
+      "originals": 0.26,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 70,
+      "title": "第一批复制粘贴照来了",
+      "category": "社会",
+      "heat": 116.81,
+      "reads": 5078.7,
+      "discussions": 3.8,
+      "originals": 0.12,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 71,
+      "title": "这就是今晨的北京",
+      "category": "社会",
+      "heat": 116.41,
+      "reads": 7465.9,
+      "discussions": 2.2,
+      "originals": 0.15,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 72,
+      "title": "阅兵总指挥",
+      "category": "社会",
+      "heat": 113.98,
+      "reads": 119.0,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 73,
+      "title": "东风51",
+      "category": "",
+      "heat": 113.25,
+      "reads": 498.8,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 74,
+      "title": "和平鸽与国徽同框壁纸",
+      "category": "社会",
+      "heat": 109.41,
+      "reads": 3983.8,
+      "discussions": 3.1,
+      "originals": 0.07,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 75,
+      "title": "文艺晚会能不能全国巡演",
+      "category": "",
+      "heat": 106.09,
+      "reads": 1355.6,
+      "discussions": 0.44,
+      "originals": 0.12,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 76,
+      "title": "听党指挥 能打胜仗",
+      "category": "",
+      "heat": 106.0,
+      "reads": 25.4,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 77,
+      "title": "郭帆 改剧本",
+      "category": "",
+      "heat": 103.25,
+      "reads": 3789.7,
+      "discussions": 0.94,
+      "originals": 0.26,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 78,
+      "title": "杜江说期待世界上最棒的分列式",
+      "category": "社会",
+      "heat": 96.56,
+      "reads": 7932.5,
+      "discussions": 1.4,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 79,
+      "title": "国外网友被中国阅兵震惊",
+      "category": "",
+      "heat": 94.76,
+      "reads": 4789.1,
+      "discussions": 1.8,
+      "originals": 0.07,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 80,
+      "title": "文艺晚会开场短片看泪目了",
+      "category": "社会",
+      "heat": 89.15,
+      "reads": 437.1,
+      "discussions": 0.09,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 81,
+      "title": "这句覆盖全球给我听燃了",
+      "category": "社会",
+      "heat": 89.11,
+      "reads": 2326.7,
+      "discussions": 1.1,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 82,
+      "title": "抗战胜利80周年文艺晚会",
+      "category": "社会",
+      "heat": 88.9,
+      "reads": 10000.0,
+      "discussions": 4.4,
+      "originals": 0.22,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 83,
+      "title": "维和部队",
+      "category": "军事",
+      "heat": 86.81,
+      "reads": 1247.9,
+      "discussions": 0.54,
+      "originals": 0.11,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 84,
+      "title": "99B坦克",
+      "category": "",
+      "heat": 86.34,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 85,
+      "title": "这是胡先煦吗",
+      "category": "",
+      "heat": 86.13,
+      "reads": 2149.1,
+      "discussions": 0.78,
+      "originals": 0.2,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 86,
+      "title": "分列式",
+      "category": "",
+      "heat": 84.16,
+      "reads": 2154.5,
+      "discussions": 1.0,
+      "originals": 0.07,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 87,
+      "title": "检阅部队",
+      "category": "社会",
+      "heat": 82.58,
+      "reads": 12000.0,
+      "discussions": 1.4,
+      "originals": 0.11,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 88,
+      "title": "阅兵解说 刚强宝晓峰",
+      "category": "",
+      "heat": 81.34,
+      "reads": 10.4,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 89,
+      "title": "金正恩把女儿金主爱带来了",
+      "category": "",
+      "heat": 81.3,
+      "reads": 1484.7,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 90,
+      "title": "外交天团现身天安门广场",
+      "category": "社会",
+      "heat": 81.22,
+      "reads": 3504.4,
+      "discussions": 0.27,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 91,
+      "title": "外籍记者看阅兵后忍不住哭泣",
+      "category": "社会",
+      "heat": 81.15,
+      "reads": 3454.0,
+      "discussions": 0.63,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 92,
+      "title": "众多台湾网友观看了阅兵直播",
+      "category": "",
+      "heat": 80.97,
+      "reads": 4526.1,
+      "discussions": 0.51,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 93,
+      "title": "东风61把大家给整不会了",
+      "category": "",
+      "heat": 80.19,
+      "reads": 2605.5,
+      "discussions": 0.83,
+      "originals": 0.08,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 94,
+      "title": "杜江预言家来了",
+      "category": "明星",
+      "heat": 80.01,
+      "reads": 6981.1,
+      "discussions": 0.44,
+      "originals": 0.12,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 95,
+      "title": "抗战胜利80周年招待会隆重举行",
+      "category": "",
+      "heat": 80.0,
+      "reads": 2920.9,
+      "discussions": 0.24,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 96,
+      "title": "去现场观礼的明星",
+      "category": "明星",
+      "heat": 78.51,
+      "reads": 15000.0,
+      "discussions": 1.2,
+      "originals": 0.29,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 97,
+      "title": "反无人机方队",
+      "category": "",
+      "heat": 76.95,
+      "reads": 11.4,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 98,
+      "title": "13个徒步方队完整视频",
+      "category": "社会",
+      "heat": 75.23,
+      "reads": 364.0,
+      "discussions": 0.15,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 99,
+      "title": "运20 胖妞",
+      "category": "",
+      "heat": 75.05,
+      "reads": 1158.8,
+      "discussions": 0.28,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 100,
+      "title": "九三晚会这束光",
+      "category": "社会",
+      "heat": 74.1,
+      "reads": 1706.2,
+      "discussions": 0.34,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 101,
+      "title": "刘敏涛给我演哭了",
+      "category": "",
+      "heat": 72.68,
+      "reads": 2343.9,
+      "discussions": 0.69,
+      "originals": 0.16,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 102,
+      "title": "1945到2025",
+      "category": "社会",
+      "heat": 71.28,
+      "reads": 1130.4,
+      "discussions": 0.16,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 103,
+      "title": "赖冠霖ins晒观礼照",
+      "category": "明星",
+      "heat": 70.92,
+      "reads": 8790.2,
+      "discussions": 1.0,
+      "originals": 0.23,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 104,
+      "title": "阅兵流程",
+      "category": "社会",
+      "heat": 70.82,
+      "reads": 4675.8,
+      "discussions": 1.4,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 105,
+      "title": "霍震霆与两儿子齐聚北京看九三阅兵",
+      "category": "社会",
+      "heat": 70.53,
+      "reads": 3715.6,
+      "discussions": 0.13,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 106,
+      "title": "惊雷1",
+      "category": "",
+      "heat": 70.51,
+      "reads": 36.4,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 107,
+      "title": "吴越吴樾",
+      "category": "",
+      "heat": 69.56,
+      "reads": 1655.2,
+      "discussions": 0.32,
+      "originals": 0.13,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 108,
+      "title": "阅兵",
+      "category": "军事",
+      "heat": 69.53,
+      "reads": 46000.0,
+      "discussions": 16.3,
+      "originals": 1.7,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 109,
+      "title": "我的家在东北松花江上",
+      "category": "社会",
+      "heat": 69.05,
+      "reads": 1049.2,
+      "discussions": 0.18,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 110,
+      "title": "一家人举国旗看阅兵飞机",
+      "category": "社会",
+      "heat": 68.47,
+      "reads": 924.4,
+      "discussions": 2.5,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 111,
+      "title": "国际乒联主席胜诉",
+      "category": "体育",
+      "heat": 68.37,
+      "reads": 3165.7,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 112,
+      "title": "100坦克",
+      "category": "社会",
+      "heat": 68.23,
+      "reads": 1662.0,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 113,
+      "title": "阅兵武器",
+      "category": "",
+      "heat": 68.13,
+      "reads": 453.5,
+      "discussions": 0.18,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 114,
+      "title": "国际乒联就主席选举结果发表声明",
+      "category": "",
+      "heat": 67.0,
+      "reads": 2210.9,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 115,
+      "title": "罗晋台词",
+      "category": "",
+      "heat": 66.99,
+      "reads": 221.8,
+      "discussions": 0.17,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 116,
+      "title": "2025成都国际车展",
+      "category": "汽车",
+      "heat": 66.95,
+      "reads": 3341.7,
+      "discussions": 5.1,
+      "originals": 0.13,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 117,
+      "title": "雷佳音和小栋哲",
+      "category": "",
+      "heat": 66.27,
+      "reads": 273.4,
+      "discussions": 0.09,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 118,
+      "title": "和平鸽也有工资",
+      "category": "",
+      "heat": 64.42,
+      "reads": 1641.7,
+      "discussions": 0.4,
+      "originals": 0.08,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 119,
+      "title": "原来和平鸽是这么被选上的",
+      "category": "",
+      "heat": 63.92,
+      "reads": 1553.9,
+      "discussions": 0.36,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 120,
+      "title": "女民兵受阅前互相整理戎装",
+      "category": "",
+      "heat": 63.31,
+      "reads": 1161.0,
+      "discussions": 0.74,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 121,
+      "title": "普京盛赞九三阅兵",
+      "category": "",
+      "heat": 61.78,
+      "reads": 5335.6,
+      "discussions": 0.33,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 122,
+      "title": "老战士起身敬礼场面看哭了",
+      "category": "社会",
+      "heat": 61.53,
+      "reads": 2472.9,
+      "discussions": 0.85,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 123,
+      "title": "今天14亿中国人都是护旗手",
+      "category": "社会",
+      "heat": 60.43,
+      "reads": 2658.2,
+      "discussions": 3.5,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 124,
+      "title": "歼20S震撼亮相",
+      "category": "军事",
+      "heat": 59.8,
+      "reads": 1907.8,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 125,
+      "title": "放和平鸽的工作人员",
+      "category": "",
+      "heat": 59.67,
+      "reads": 246.6,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 126,
+      "title": "孙颖莎阅兵观后感",
+      "category": "社会",
+      "heat": 59.46,
+      "reads": 2725.2,
+      "discussions": 0.46,
+      "originals": 0.08,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 127,
+      "title": "杨靖宇狼牙山五壮士刘老庄连",
+      "category": "社会",
+      "heat": 58.72,
+      "reads": 1388.5,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 128,
+      "title": "专家说东风61改变了命名规则",
+      "category": "",
+      "heat": 58.07,
+      "reads": 3827.3,
+      "discussions": 0.23,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 129,
+      "title": "彩烟和天坛绝美同框",
+      "category": "社会",
+      "heat": 56.65,
+      "reads": 732.8,
+      "discussions": 1.2,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 130,
+      "title": "永远守护这一抹中国红",
+      "category": "社会",
+      "heat": 56.57,
+      "reads": 762.6,
+      "discussions": 2.6,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 131,
+      "title": "放飞气球",
+      "category": "",
+      "heat": 56.47,
+      "reads": 96.4,
+      "discussions": 14.2,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 132,
+      "title": "张翰舞蹈",
+      "category": "",
+      "heat": 56.43,
+      "reads": 787.9,
+      "discussions": 0.17,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 133,
+      "title": "水下兵器亮相阅兵",
+      "category": "社会",
+      "heat": 56.28,
+      "reads": 688.5,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 134,
+      "title": "阿云嘎郁可唯文艺晚会演唱歌曲",
+      "category": "社会",
+      "heat": 55.54,
+      "reads": 952.2,
+      "discussions": 0.33,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 135,
+      "title": "90岁钟南山院士佩戴共和国勋章观礼",
+      "category": "社会",
+      "heat": 55.33,
+      "reads": 824.4,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 136,
+      "title": "坦克下班",
+      "category": "",
+      "heat": 55.3,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 137,
+      "title": "普京与金正恩在京会谈",
+      "category": "社会",
+      "heat": 55.11,
+      "reads": 1747.9,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 138,
+      "title": "阅兵结束一只和平鸽停在人群中间",
+      "category": "社会",
+      "heat": 54.97,
+      "reads": 2117.2,
+      "discussions": 0.15,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 139,
+      "title": "人民日报东风5C现场图",
+      "category": "社会",
+      "heat": 54.8,
+      "reads": 1101.1,
+      "discussions": 0.14,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 140,
+      "title": "张柏芝在外网发为祖国点赞",
+      "category": "明星",
+      "heat": 53.78,
+      "reads": 3032.6,
+      "discussions": 0.16,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 141,
+      "title": "郑钦文张雨霏坐一起观礼",
+      "category": "体育",
+      "heat": 53.54,
+      "reads": 2588.6,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 142,
+      "title": "华春莹和记者说我跟你一样兴奋",
+      "category": "社会",
+      "heat": 52.79,
+      "reads": 1111.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 143,
+      "title": "吴京",
+      "category": "明星",
+      "heat": 52.21,
+      "reads": 213000.0,
+      "discussions": 203.5,
+      "originals": 10.6,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 144,
+      "title": "救下迷路和平鸽",
+      "category": "",
+      "heat": 51.96,
+      "reads": 436.2,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 145,
+      "title": "文艺晚会节目",
+      "category": "",
+      "heat": 51.43,
+      "reads": 784.6,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 146,
+      "title": "东风快递 使命必达",
+      "category": "",
+      "heat": 50.38,
+      "reads": 244.5,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 147,
+      "title": "马龙也去看了阅兵",
+      "category": "社会",
+      "heat": 49.06,
+      "reads": 888.1,
+      "discussions": 0.07,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 148,
+      "title": "文艺晚会节目单",
+      "category": "",
+      "heat": 48.4,
+      "reads": 239.0,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 149,
+      "title": "第一批参加阅兵的和平鸽已到家",
+      "category": "社会",
+      "heat": 48.32,
+      "reads": 2762.8,
+      "discussions": 0.18,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 150,
+      "title": "你要的超燃阅兵壁纸来了",
+      "category": "社会",
+      "heat": 47.67,
+      "reads": 5188.2,
+      "discussions": 6.1,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 151,
+      "title": "红旗29",
+      "category": "",
+      "heat": 46.49,
+      "reads": 944.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 152,
+      "title": "商家笑了俩小时才退款",
+      "category": "",
+      "heat": 46.47,
+      "reads": 3907.2,
+      "discussions": 0.38,
+      "originals": 0.11,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 153,
+      "title": "文艺晚会舞蹈殇源自紫金草女孩",
+      "category": "",
+      "heat": 46.07,
+      "reads": 70.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 154,
+      "title": "运20",
+      "category": "",
+      "heat": 45.96,
+      "reads": 5076.1,
+      "discussions": 2.1,
+      "originals": 0.16,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 155,
+      "title": "玖月奇迹王小玮现场观礼",
+      "category": "明星",
+      "heat": 45.56,
+      "reads": 1081.6,
+      "discussions": 0.54,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 156,
+      "title": "跟微博网友共享新华社图库",
+      "category": "社会",
+      "heat": 45.29,
+      "reads": 5406.8,
+      "discussions": 7.3,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 157,
+      "title": "阅兵 强迫症狂喜",
+      "category": "",
+      "heat": 45.04,
+      "reads": 68.9,
+      "discussions": 0.03,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 158,
+      "title": "8万羽和平鸽8万只气球",
+      "category": "社会",
+      "heat": 44.98,
+      "reads": 1407.2,
+      "discussions": 0.56,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 159,
+      "title": "军事航天部队",
+      "category": "",
+      "heat": 44.84,
+      "reads": 878.6,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 160,
+      "title": "郭帆边看边记笔记",
+      "category": "明星",
+      "heat": 43.89,
+      "reads": 2589.5,
+      "discussions": 0.16,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 161,
+      "title": "刘昊然台词",
+      "category": "",
+      "heat": 43.88,
+      "reads": 502.6,
+      "discussions": 0.34,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 162,
+      "title": "阅兵细节值得二刷三刷",
+      "category": "社会",
+      "heat": 40.84,
+      "reads": 1020.0,
+      "discussions": 1.8,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 163,
+      "title": "全场高唱国歌超震撼",
+      "category": "社会",
+      "heat": 40.77,
+      "reads": 189.2,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 164,
+      "title": "上班的内容是集体观看阅兵",
+      "category": "",
+      "heat": 40.41,
+      "reads": 1530.0,
+      "discussions": 0.44,
+      "originals": 0.16,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 165,
+      "title": "远程火炮方队",
+      "category": "社会",
+      "heat": 40.38,
+      "reads": 480.2,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 166,
+      "title": "百岁抗战老兵",
+      "category": "",
+      "heat": 39.89,
+      "reads": 772.2,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 167,
+      "title": "赴山海",
+      "category": "电视剧",
+      "heat": 39.64,
+      "reads": 153000.0,
+      "discussions": 3756.7,
+      "originals": 40.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 168,
+      "title": "王楚钦开学",
+      "category": "体育",
+      "heat": 39.35,
+      "reads": 1181.2,
+      "discussions": 0.38,
+      "originals": 0.12,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 169,
+      "title": "中国排面怎么截图都是一个帅",
+      "category": "",
+      "heat": 37.1,
+      "reads": 626.3,
+      "discussions": 1.0,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 170,
+      "title": "是谁看阅兵在不停截图",
+      "category": "社会",
+      "heat": 36.95,
+      "reads": 80.6,
+      "discussions": 0.12,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 171,
+      "title": "多国政要与抗战老战士握手",
+      "category": "",
+      "heat": 36.89,
+      "reads": 1617.0,
+      "discussions": 1.2,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 172,
+      "title": "郑钦文苏炳添亮相天安门广场",
+      "category": "社会",
+      "heat": 36.58,
+      "reads": 1575.6,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 173,
+      "title": "受阅部队跑步登车画面被怒夸",
+      "category": "",
+      "heat": 36.33,
+      "reads": 737.2,
+      "discussions": 0.19,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 174,
+      "title": "王楚钦穿北京大学校服",
+      "category": "",
+      "heat": 35.03,
+      "reads": 278.6,
+      "discussions": 0.16,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 175,
+      "title": "老兵哽咽哪个敢欺负咱们",
+      "category": "",
+      "heat": 34.42,
+      "reads": 1808.9,
+      "discussions": 0.21,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 176,
+      "title": "56门礼炮80响鸣放",
+      "category": "社会",
+      "heat": 34.29,
+      "reads": 824.2,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 177,
+      "title": "中国排面对我眼睛很好",
+      "category": "社会",
+      "heat": 33.27,
+      "reads": 429.7,
+      "discussions": 0.39,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 178,
+      "title": "儿子亮相阅兵那一刻父亲热泪盈眶",
+      "category": "社会",
+      "heat": 32.75,
+      "reads": 558.3,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 179,
+      "title": "我陆海空基战略核力量首次集中展示",
+      "category": "社会",
+      "heat": 32.25,
+      "reads": 1500.8,
+      "discussions": 0.15,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 180,
+      "title": "战旗方队浩荡而来",
+      "category": "社会",
+      "heat": 30.75,
+      "reads": 278.8,
+      "discussions": 0.18,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 181,
+      "title": "张凯丽说作为中国人太幸运了",
+      "category": "明星",
+      "heat": 30.61,
+      "reads": 1122.3,
+      "discussions": 0.07,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 182,
+      "title": "阅兵礼炮弹0污染",
+      "category": "社会",
+      "heat": 30.52,
+      "reads": 3178.7,
+      "discussions": 1.1,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 183,
+      "title": "中国人民坚持走和平发展道路",
+      "category": "",
+      "heat": 30.06,
+      "reads": 243.8,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 184,
+      "title": "王曼昱晒阅兵九宫格",
+      "category": "体育",
+      "heat": 30.03,
+      "reads": 639.6,
+      "discussions": 0.07,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 185,
+      "title": "声入人心",
+      "category": "综艺",
+      "heat": 29.92,
+      "reads": 1118000.0,
+      "discussions": 1567.0,
+      "originals": 26.1,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 186,
+      "title": "武大靖观看阅兵后发文",
+      "category": "社会",
+      "heat": 29.91,
+      "reads": 624.2,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 187,
+      "title": "吴艳妮观看阅兵后发文",
+      "category": "社会",
+      "heat": 29.81,
+      "reads": 801.4,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 188,
+      "title": "许昕说有你们在我们真幸福",
+      "category": "社会",
+      "heat": 29.75,
+      "reads": 407.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 189,
+      "title": "5万余人观礼离场后干干净净",
+      "category": "社会",
+      "heat": 29.67,
+      "reads": 2630.7,
+      "discussions": 0.27,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 190,
+      "title": "乌合麒麟新画败犬降服之时",
+      "category": "社会",
+      "heat": 28.97,
+      "reads": 1263.0,
+      "discussions": 0.29,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 191,
+      "title": "为什么选择在9月3日举行阅兵",
+      "category": "社会",
+      "heat": 28.53,
+      "reads": 2606.8,
+      "discussions": 0.78,
+      "originals": 0.08,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 192,
+      "title": "苏炳添观看阅兵后发文",
+      "category": "社会",
+      "heat": 28.49,
+      "reads": 279.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 193,
+      "title": "九三阅兵怎么看",
+      "category": "社会",
+      "heat": 28.38,
+      "reads": 2811.0,
+      "discussions": 0.75,
+      "originals": 0.07,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 194,
+      "title": "谁给我们胖妞剪成这样了",
+      "category": "",
+      "heat": 27.74,
+      "reads": 69.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 195,
+      "title": "阅兵现场为何要准备热姜茶",
+      "category": "健康",
+      "heat": 27.1,
+      "reads": 533.2,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 196,
+      "title": "妈妈一眼锁定阅兵方阵中儿子",
+      "category": "社会",
+      "heat": 26.73,
+      "reads": 323.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 197,
+      "title": "小伙为参加九三阅兵式推迟婚礼",
+      "category": "社会",
+      "heat": 26.62,
+      "reads": 1055.1,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 198,
+      "title": "霍启刚观看阅兵后发文",
+      "category": "",
+      "heat": 26.43,
+      "reads": 643.4,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 199,
+      "title": "轰炸机列队完成",
+      "category": "社会",
+      "heat": 26.05,
+      "reads": 2227.3,
+      "discussions": 0.49,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 200,
+      "title": "文艺晚会看到郭京飞了",
+      "category": "",
+      "heat": 25.85,
+      "reads": 420.2,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 201,
+      "title": "北京夜景",
+      "category": "",
+      "heat": 25.57,
+      "reads": 1100.8,
+      "discussions": 1.3,
+      "originals": 0.21,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 202,
+      "title": "不敢想象这70分钟有多燃",
+      "category": "社会",
+      "heat": 25.52,
+      "reads": 1879.5,
+      "discussions": 0.62,
+      "originals": 0.07,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 203,
+      "title": "没想到有一天我和金灿荣一个水平",
+      "category": "",
+      "heat": 25.38,
+      "reads": 0.02,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 204,
+      "title": "梨形身材是中了基因彩票",
+      "category": "",
+      "heat": 25.37,
+      "reads": 462.1,
+      "discussions": 0.27,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 205,
+      "title": "阿云嘎郁可唯合唱",
+      "category": "社会",
+      "heat": 25.24,
+      "reads": 665.3,
+      "discussions": 0.28,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 206,
+      "title": "郭帆今天内心写照",
+      "category": "",
+      "heat": 24.88,
+      "reads": 903.4,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 207,
+      "title": "马龙现场观礼晒照",
+      "category": "明星",
+      "heat": 24.86,
+      "reads": 1137.9,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 208,
+      "title": "阅兵时间",
+      "category": "社会",
+      "heat": 24.48,
+      "reads": 119000.0,
+      "discussions": 26.0,
+      "originals": 2.3,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 209,
+      "title": "特朗普称网传抛物视频是AI合成",
+      "category": "社会",
+      "heat": 24.35,
+      "reads": 322.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 210,
+      "title": "郑钦文晒东风5C帅照",
+      "category": "体育",
+      "heat": 24.18,
+      "reads": 1041.9,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 211,
+      "title": "抗战老兵时隔76年再次见证荣光",
+      "category": "社会",
+      "heat": 24.18,
+      "reads": 45.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 212,
+      "title": "中方欢迎印尼总统出席93纪念活动",
+      "category": "",
+      "heat": 23.96,
+      "reads": 1005.4,
+      "discussions": 0.12,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 213,
+      "title": "阅兵版钢铁洪流进行曲MV",
+      "category": "社会",
+      "heat": 23.9,
+      "reads": 162.9,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 214,
+      "title": "陈梦受邀观礼九三阅兵",
+      "category": "体育",
+      "heat": 23.89,
+      "reads": 3035.4,
+      "discussions": 0.16,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 215,
+      "title": "王雷太会演了",
+      "category": "",
+      "heat": 23.26,
+      "reads": 16.5,
+      "discussions": 0.05,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 216,
+      "title": "东风5C导弹威力有多大",
+      "category": "社会",
+      "heat": 23.19,
+      "reads": 696.4,
+      "discussions": 0.09,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 217,
+      "title": "台湾同胞为看阅兵没睡觉",
+      "category": "社会",
+      "heat": 23.01,
+      "reads": 316.1,
+      "discussions": 0.04,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 218,
+      "title": "天安门广场最新画面",
+      "category": "社会",
+      "heat": 23.0,
+      "reads": 1809.6,
+      "discussions": 0.41,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 219,
+      "title": "肖思远烈士弟弟肖荣基参加阅兵活动",
+      "category": "社会",
+      "heat": 22.94,
+      "reads": 804.6,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 220,
+      "title": "和平鸽参加阅兵全过程",
+      "category": "",
+      "heat": 22.8,
+      "reads": 6.2,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 221,
+      "title": "台湾教授苑举正阅兵现场热泪盈眶",
+      "category": "",
+      "heat": 22.75,
+      "reads": 0.02,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 222,
+      "title": "青春力量满满的大合唱",
+      "category": "社会",
+      "heat": 22.17,
+      "reads": 388.5,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 223,
+      "title": "这是阅兵进场最早撤场最晚的队伍",
+      "category": "社会",
+      "heat": 21.95,
+      "reads": 3560.2,
+      "discussions": 0.24,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 224,
+      "title": "这盛世如您所愿",
+      "category": "社会",
+      "heat": 21.68,
+      "reads": 5352.1,
+      "discussions": 4.8,
+      "originals": 0.36,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 225,
+      "title": "歼10 祈年殿",
+      "category": "",
+      "heat": 21.64,
+      "reads": 91.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 226,
+      "title": "因为东风51放假",
+      "category": "",
+      "heat": 21.31,
+      "reads": 264.4,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 227,
+      "title": "云秀行",
+      "category": "",
+      "heat": 21.25,
+      "reads": 28000.0,
+      "discussions": 25.9,
+      "originals": 1.2,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 228,
+      "title": "阅兵武器装备亮相长安街",
+      "category": "社会",
+      "heat": 21.24,
+      "reads": 101.5,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 229,
+      "title": "中国人自己说了算",
+      "category": "社会",
+      "heat": 20.51,
+      "reads": 657.5,
+      "discussions": 0.15,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 230,
+      "title": "100坦克内能看360度影像",
+      "category": "社会",
+      "heat": 20.51,
+      "reads": 1013.5,
+      "discussions": 0.32,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 231,
+      "title": "九三阅兵连军事专家都震撼了",
+      "category": "社会",
+      "heat": 20.5,
+      "reads": 561.3,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 232,
+      "title": "王楚钦祝祖国繁荣昌盛",
+      "category": "",
+      "heat": 20.5,
+      "reads": 68.5,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 233,
+      "title": "霍启刚与姚明同框",
+      "category": "体育",
+      "heat": 20.49,
+      "reads": 372.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 234,
+      "title": "陈梦感慨生在这个和平年代",
+      "category": "社会",
+      "heat": 20.46,
+      "reads": 44.3,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 235,
+      "title": "文艺晚会 音乐剧",
+      "category": "",
+      "heat": 20.41,
+      "reads": 0.39,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 236,
+      "title": "霍启刚身着中山装观看阅兵",
+      "category": "社会",
+      "heat": 20.35,
+      "reads": 1680.2,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 237,
+      "title": "运20压迫感",
+      "category": "",
+      "heat": 20.24,
+      "reads": 146.6,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 238,
+      "title": "阅兵完整视频",
+      "category": "社会",
+      "heat": 20.18,
+      "reads": 1704.2,
+      "discussions": 5.1,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 239,
+      "title": "吴千语和施伯雄现场观礼",
+      "category": "社会",
+      "heat": 20.0,
+      "reads": 619.1,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 240,
+      "title": "这条视频值得中国人今晚一起看看",
+      "category": "社会",
+      "heat": 19.99,
+      "reads": 1098.0,
+      "discussions": 0.46,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 241,
+      "title": "九三阅兵超全观看指南",
+      "category": "社会",
+      "heat": 19.98,
+      "reads": 8691.8,
+      "discussions": 2.7,
+      "originals": 0.54,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 242,
+      "title": "香港代表团成员谈阅兵",
+      "category": "",
+      "heat": 19.94,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 243,
+      "title": "微博上线九三纪念专属昵称icon",
+      "category": "社会",
+      "heat": 19.78,
+      "reads": 2725.8,
+      "discussions": 3.6,
+      "originals": 0.63,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 244,
+      "title": "孙颖莎看阅兵感想",
+      "category": "社会",
+      "heat": 19.72,
+      "reads": 646.7,
+      "discussions": 0.51,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 245,
+      "title": "阅兵壁纸",
+      "category": "",
+      "heat": 19.67,
+      "reads": 113.0,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 246,
+      "title": "满屏飞飞飞飞机需要长长长长图",
+      "category": "军事",
+      "heat": 19.66,
+      "reads": 345.6,
+      "discussions": 0.06,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 247,
+      "title": "直升机组成80字样",
+      "category": "社会",
+      "heat": 19.6,
+      "reads": 366.3,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 248,
+      "title": "看阅兵",
+      "category": "",
+      "heat": 19.14,
+      "reads": 50.9,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 249,
+      "title": "升国旗 唱国歌",
+      "category": "",
+      "heat": 19.07,
+      "reads": 62.0,
+      "discussions": 0.05,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 250,
+      "title": "1945年9月3日中国人永不能忘",
+      "category": "社会",
+      "heat": 19.05,
+      "reads": 356.8,
+      "discussions": 0.15,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 251,
+      "title": "理想汽车第二季度净利润11亿元",
+      "category": "社会",
+      "heat": 18.96,
+      "reads": 842.2,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 252,
+      "title": "台胞看完阅兵希望祖国尽快统一",
+      "category": "",
+      "heat": 18.96,
+      "reads": 1195.2,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 253,
+      "title": "陈梦观看阅兵后发文",
+      "category": "社会",
+      "heat": 18.94,
+      "reads": 681.8,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 254,
+      "title": "陈梦说看到方队瞬间起鸡皮疙瘩",
+      "category": "社会",
+      "heat": 18.86,
+      "reads": 437.3,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 255,
+      "title": "朱雨玲现场观礼阅兵",
+      "category": "体育",
+      "heat": 18.68,
+      "reads": 204.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 256,
+      "title": "马龙陈梦合影",
+      "category": "",
+      "heat": 18.5,
+      "reads": 61.1,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 257,
+      "title": "汪顺观看阅兵后发文",
+      "category": "社会",
+      "heat": 18.44,
+      "reads": 117.5,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 258,
+      "title": "文艺晚会导演",
+      "category": "",
+      "heat": 18.09,
+      "reads": 77.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 259,
+      "title": "女机长谭红梅",
+      "category": "社会",
+      "heat": 17.98,
+      "reads": 338.8,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 260,
+      "title": "韩国会议长与金正恩握手",
+      "category": "社会",
+      "heat": 17.16,
+      "reads": 302.5,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 261,
+      "title": "印尼总统来华",
+      "category": "",
+      "heat": 16.96,
+      "reads": 504.9,
+      "discussions": 0.12,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 262,
+      "title": "王楚钦说感受到了强大的力量",
+      "category": "社会",
+      "heat": 16.37,
+      "reads": 266.8,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 263,
+      "title": "金正恩出席抗战胜利纪念活动",
+      "category": "社会",
+      "heat": 16.18,
+      "reads": 5646.5,
+      "discussions": 0.81,
+      "originals": 0.07,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 264,
+      "title": "马龙王楚钦等看完阅兵交作业了",
+      "category": "社会",
+      "heat": 16.14,
+      "reads": 961.3,
+      "discussions": 0.26,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 265,
+      "title": "U23亚洲杯",
+      "category": "体育",
+      "heat": 16.11,
+      "reads": 24000.0,
+      "discussions": 9.5,
+      "originals": 0.96,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 266,
+      "title": "U22国足险胜东帝汶队",
+      "category": "体育",
+      "heat": 15.79,
+      "reads": 118.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 267,
+      "title": "无人作战群",
+      "category": "社会",
+      "heat": 15.6,
+      "reads": 376.1,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 268,
+      "title": "王曼昱说深感和平来之不易",
+      "category": "社会",
+      "heat": 14.92,
+      "reads": 31.0,
+      "discussions": 0.04,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 269,
+      "title": "国之重器亮相阅兵场",
+      "category": "社会",
+      "heat": 14.57,
+      "reads": 172.0,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 270,
+      "title": "刘国梁说爱我中华",
+      "category": "",
+      "heat": 14.51,
+      "reads": 26.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 271,
+      "title": "三大运营商回应是否支持eSIM版iPhone",
+      "category": "科技",
+      "heat": 14.41,
+      "reads": 164.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 272,
+      "title": "马龙观看阅兵震撼又幸福",
+      "category": "",
+      "heat": 14.37,
+      "reads": 18.2,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 273,
+      "title": "孙杨观看阅兵后发文",
+      "category": "社会",
+      "heat": 14.36,
+      "reads": 142.3,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 274,
+      "title": "舞蹈 殇",
+      "category": "",
+      "heat": 14.0,
+      "reads": 45.1,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 275,
+      "title": "这是今天清晨的天安门广场",
+      "category": "社会",
+      "heat": 13.89,
+      "reads": 3181.0,
+      "discussions": 0.96,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 276,
+      "title": "林高远说有种难以名状的震撼与感动",
+      "category": "体育",
+      "heat": 13.71,
+      "reads": 89.2,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 277,
+      "title": "林高远观看阅兵后发博",
+      "category": "",
+      "heat": 13.68,
+      "reads": 16.7,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 278,
+      "title": "我们不忘永远不忘",
+      "category": "",
+      "heat": 13.26,
+      "reads": 820.2,
+      "discussions": 3.2,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 279,
+      "title": "从伟大胜利走向伟大复兴",
+      "category": "社会",
+      "heat": 13.21,
+      "reads": 987.6,
+      "discussions": 0.11,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 280,
+      "title": "天安门广场上空看现场",
+      "category": "社会",
+      "heat": 13.11,
+      "reads": 17.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 281,
+      "title": "这是中国人不能忘却的5098天",
+      "category": "社会",
+      "heat": 13.09,
+      "reads": 65.1,
+      "discussions": 0.05,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 282,
+      "title": "奶奶租房陪读退租屋子一尘不染",
+      "category": "社会",
+      "heat": 13.08,
+      "reads": 804.0,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 283,
+      "title": "黑河小学开学迎来大批俄罗斯学生",
+      "category": "社会",
+      "heat": 13.02,
+      "reads": 669.1,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 284,
+      "title": "这就是又美又飒的中国仪仗女兵",
+      "category": "社会",
+      "heat": 12.98,
+      "reads": 2796.0,
+      "discussions": 1.3,
+      "originals": 0.07,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 285,
+      "title": "iPhone17Pro涨价",
+      "category": "社会",
+      "heat": 12.71,
+      "reads": 1839.8,
+      "discussions": 0.11,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 286,
+      "title": "巴基斯坦总理参观安贞医院",
+      "category": "",
+      "heat": 12.6,
+      "reads": 950.1,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 287,
+      "title": "王星越周也 行止晚",
+      "category": "",
+      "heat": 12.11,
+      "reads": 231.3,
+      "discussions": 0.11,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 288,
+      "title": "阅兵首次亮相新型装备占比很大",
+      "category": "社会",
+      "heat": 11.56,
+      "reads": 403.4,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 289,
+      "title": "子夜归大结局",
+      "category": "电视剧",
+      "heat": 10.96,
+      "reads": 1858.2,
+      "discussions": 2.6,
+      "originals": 0.26,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 290,
+      "title": "洪秀柱说回台被批判无所谓",
+      "category": "社会",
+      "heat": 10.95,
+      "reads": 1038.2,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 291,
+      "title": "全红婵哥哥参加厨综遗憾落选",
+      "category": "综艺",
+      "heat": 10.53,
+      "reads": 2510.9,
+      "discussions": 0.27,
+      "originals": 0.07,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 292,
+      "title": "微博上线九三纪念专属点赞特效",
+      "category": "社会",
+      "heat": 10.48,
+      "reads": 1744.7,
+      "discussions": 1.2,
+      "originals": 0.23,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 293,
+      "title": "我国已划转万亿国资充实社保基金",
+      "category": "社会",
+      "heat": 10.42,
+      "reads": 1767.2,
+      "discussions": 0.23,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 294,
+      "title": "吴磊李宛妲 剑来",
+      "category": "",
+      "heat": 10.38,
+      "reads": 1163.1,
+      "discussions": 0.45,
+      "originals": 0.13,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 295,
+      "title": "詹姆斯上海",
+      "category": "",
+      "heat": 10.28,
+      "reads": 117.4,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 296,
+      "title": "杭州西湖管理方太严谨了",
+      "category": "",
+      "heat": 10.26,
+      "reads": 198.7,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 297,
+      "title": "生万物",
+      "category": "电视剧",
+      "heat": 10.26,
+      "reads": 200000.0,
+      "discussions": 513.3,
+      "originals": 6.9,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 298,
+      "title": "受阅部队将在全新BGM中霸气登场",
+      "category": "社会",
+      "heat": 9.91,
+      "reads": 1197.7,
+      "discussions": 0.22,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 299,
+      "title": "她是新中国第一位女将军",
+      "category": "公益",
+      "heat": 9.78,
+      "reads": 4355.6,
+      "discussions": 0.56,
+      "originals": 0.14,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 300,
+      "title": "中国最帅天团亮相越南国庆阅兵",
+      "category": "社会",
+      "heat": 9.78,
+      "reads": 1539.3,
+      "discussions": 0.34,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 301,
+      "title": "幼儿园即将迎来一颗魔丸",
+      "category": "",
+      "heat": 9.78,
+      "reads": 1800.4,
+      "discussions": 0.79,
+      "originals": 0.11,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 302,
+      "title": "日本历史教科书竟这样教侵华战争",
+      "category": "",
+      "heat": 9.78,
+      "reads": 512.7,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 303,
+      "title": "请假看阅兵",
+      "category": "",
+      "heat": 9.78,
+      "reads": 3327.7,
+      "discussions": 1.3,
+      "originals": 0.36,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 304,
+      "title": "王楚钦演我开学状态",
+      "category": "体育",
+      "heat": 9.77,
+      "reads": 320.2,
+      "discussions": 0.32,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 305,
+      "title": "苹果折叠屏优势曝光",
+      "category": "互联网",
+      "heat": 9.77,
+      "reads": 361.8,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 306,
+      "title": "五月天上海演唱会",
+      "category": "明星",
+      "heat": 9.77,
+      "reads": 126000.0,
+      "discussions": 106.7,
+      "originals": 11.5,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 307,
+      "title": "他花我的社保我没意见",
+      "category": "",
+      "heat": 9.77,
+      "reads": 651.7,
+      "discussions": 0.15,
+      "originals": 0.05,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 308,
+      "title": "联合军乐团怎么做到千人如一人",
+      "category": "社会",
+      "heat": 9.77,
+      "reads": 258.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 309,
+      "title": "装备方队空中梯队有新创进行曲了",
+      "category": "社会",
+      "heat": 9.77,
+      "reads": 269.1,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 310,
+      "title": "阅兵新装备集中亮相",
+      "category": "社会",
+      "heat": 9.76,
+      "reads": 819.1,
+      "discussions": 0.32,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 311,
+      "title": "iPhone17系列或迈入无卡时代",
+      "category": "财经",
+      "heat": 9.76,
+      "reads": 337.7,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 312,
+      "title": "敬山水",
+      "category": "",
+      "heat": 9.76,
+      "reads": 4209.8,
+      "discussions": 6.5,
+      "originals": 0.86,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 313,
+      "title": "不运动变瘦的7个习惯",
+      "category": "",
+      "heat": 9.76,
+      "reads": 509.4,
+      "discussions": 0.37,
+      "originals": 0.04,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 314,
+      "title": "宋亚轩 敬山水",
+      "category": "",
+      "heat": 9.76,
+      "reads": 9304.7,
+      "discussions": 15.5,
+      "originals": 2.6,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 315,
+      "title": "北京点亮华灯迎九三阅兵",
+      "category": "社会",
+      "heat": 9.76,
+      "reads": 508.0,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 316,
+      "title": "日本破防称抗战阅兵是仇恨教育",
+      "category": "社会",
+      "heat": 9.75,
+      "reads": 4019.5,
+      "discussions": 1.4,
+      "originals": 0.23,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 317,
+      "title": "iPhone17ProMax量产机疑曝光",
+      "category": "财经",
+      "heat": 9.75,
+      "reads": 1172.8,
+      "discussions": 0.27,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 318,
+      "title": "中国博主在国外帮游客找到坠崖儿子",
+      "category": "",
+      "heat": 7.27,
+      "reads": 621.1,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 319,
+      "title": "一图速览九三阅兵精彩看点",
+      "category": "社会",
+      "heat": 7.26,
+      "reads": 224.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 320,
+      "title": "国民党主席称不禁止个人去九三阅兵",
+      "category": "社会",
+      "heat": 7.24,
+      "reads": 4464.1,
+      "discussions": 0.19,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 321,
+      "title": "iG选择EDG",
+      "category": "游戏",
+      "heat": 7.24,
+      "reads": 1131.2,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 322,
+      "title": "宇树科技宣布将在四季度提交IPO申请",
+      "category": "财经",
+      "heat": 7.23,
+      "reads": 1504.3,
+      "discussions": 0.22,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 323,
+      "title": "河南小伙将在天安门广场升起国旗",
+      "category": "社会",
+      "heat": 7.08,
+      "reads": 1116.3,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 324,
+      "title": "天安门放飞的和平鸽大多是赛级精英",
+      "category": "社会",
+      "heat": 6.41,
+      "reads": 199.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 325,
+      "title": "今天的和平来之不易",
+      "category": "社会",
+      "heat": 5.94,
+      "reads": 71.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 326,
+      "title": "阅兵前最新训练现场",
+      "category": "社会",
+      "heat": 5.9,
+      "reads": 97.9,
+      "discussions": 0.09,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 327,
+      "title": "三兵是哪三兵",
+      "category": "社会",
+      "heat": 5.88,
+      "reads": 604.1,
+      "discussions": 0.04,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 328,
+      "title": "阅兵演练合集看一次震撼一次",
+      "category": "社会",
+      "heat": 5.61,
+      "reads": 196.0,
+      "discussions": 0.11,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 329,
+      "title": "纪念大会85种语言多平台传播",
+      "category": "",
+      "heat": 3.57,
+      "reads": 69.4,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 330,
+      "title": "九三阅兵将展示新型坦克",
+      "category": "社会",
+      "heat": 2.99,
+      "reads": 428.1,
+      "discussions": 0.04,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 331,
+      "title": "一图速览阅兵安排",
+      "category": "社会",
+      "heat": 2.9,
+      "reads": 630.3,
+      "discussions": 0.31,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 332,
+      "title": "解放军越南阅兵外国方队打头阵",
+      "category": "",
+      "heat": 2.79,
+      "reads": 399.4,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 333,
+      "title": "胜利日大阅兵",
+      "category": "社会",
+      "heat": 2.78,
+      "reads": 15000.0,
+      "discussions": 58.1,
+      "originals": 0.36,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 334,
+      "title": "天安门广场放音乐",
+      "category": "",
+      "heat": 2.09,
+      "reads": 4.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 335,
+      "title": "iPhone16相机键还能这样用",
+      "category": "",
+      "heat": 2.08,
+      "reads": 53.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 336,
+      "title": "卢卡申科回忆10年前阅兵仍赞叹",
+      "category": "社会",
+      "heat": 2.08,
+      "reads": 333.7,
+      "discussions": 0.05,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 337,
+      "title": "用声音铭记抗战历史",
+      "category": "社会",
+      "heat": 2.08,
+      "reads": 185.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 338,
+      "title": "已经在为看阅兵做功课了",
+      "category": "社会",
+      "heat": 1.76,
+      "reads": 345.5,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 339,
+      "title": "他们誓死守护的中国如今山河锦绣",
+      "category": "社会",
+      "heat": 1.76,
+      "reads": 254.3,
+      "discussions": 1.2,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 340,
+      "title": "习近平讲述的伟大抗战精神",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 1148.1,
+      "discussions": 0.15,
+      "originals": 0.02,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 341,
+      "title": "速览习近平总书记九三重要讲话",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 1727.5,
+      "discussions": 0.65,
+      "originals": 0.06,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 342,
+      "title": "习近平主席发表重要讲话",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 4976.5,
+      "discussions": 4.2,
+      "originals": 0.13,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 343,
+      "title": "大凉山的光影课",
+      "category": "公益",
+      "heat": 0.0,
+      "reads": 281.8,
+      "discussions": 1.6,
+      "originals": 0.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 344,
+      "title": "今日辟谣",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 140000.0,
+      "discussions": 93.4,
+      "originals": 6.0,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 345,
+      "title": "总书记重要讲话金句来了",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 509.4,
+      "discussions": 0.26,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 346,
+      "title": "微博健康医疗盛典",
+      "category": "健康",
+      "heat": 0.0,
+      "reads": 2495.4,
+      "discussions": 0.66,
+      "originals": 0.03,
+      "date": "2025-09-03"
+    },
+    {
+      "rank": 347,
+      "title": "带台大教授参加阅兵观礼",
+      "category": "社会",
+      "heat": 0.0,
+      "reads": 1978.4,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-09-03"
+    }
+  ]
+}
