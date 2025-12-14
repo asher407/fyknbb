@@ -28,6 +28,7 @@ def page_realtime_hot():
     with col_c:
         delay = st.number_input("重试间隔(s)", min_value=0.0, max_value=10.0, value=1.0, step=0.5)
 
+    show_heat = st.checkbox("显示热度列", value=True)
     run = st.button("获取 Top50")
 
     if run:
@@ -42,16 +43,10 @@ def page_realtime_hot():
 
         st.success(f"成功获取 {len(items)} 条")
 
-        # 展示表格（仅排名和标题）
+        # 展示表格
         df = pd.DataFrame(items)
-
-        sort_by = st.selectbox("排序字段", options=["rank", "title"], index=0)
-        ascending = st.checkbox("升序", value=True)
-        if sort_by in df.columns:
-            df = df.sort_values(by=sort_by, ascending=ascending, kind="stable")
-
         display_cols = ["rank", "title"]
-        st.dataframe(df[display_cols], width='stretch')
+        st.dataframe(df[display_cols], width=1000, hide_index=True)
 
         # 下载 JSON
         import json
