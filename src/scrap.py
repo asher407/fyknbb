@@ -860,6 +860,83 @@ class WeiboHotScraper:
         print("=" * 60)
 
 
+def main_realtime():
+    """
+    实时热搜数据获取工具
+    
+    功能：
+        在 Streamlit 外独立运行，获取实时热搜数据并保存到文件
+    """
+    print("=" * 60)
+    print("实时热搜数据获取工具")
+    print("=" * 60)
+    
+    output_file = "output/realtime_hot.json"
+    
+    print(f"\n正在获取实时热搜...")
+    print(f"输出文件: {output_file}")
+    print("-" * 60)
+    
+    # 创建爬虫实例
+    scraper = RealtimeHotScraper(
+        timeout=15,
+        max_retries=3,
+        delay=1.0
+    )
+    
+    # 使用 fetch_and_save 方法
+    success = scraper.fetch_and_save(output_file)
+    
+    if success:
+        # 读取保存的数据来显示
+        try:
+            with open(output_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            hot_items = data.get('data', [])
+            
+            print(f"\n✓ 成功获取 {len(hot_items)} 个热搜")
+            print(f"✓ 数据已保存到: {output_file}")
+            print(f"✓ 更新时间: {data.get('timestamp', 'unknown')}")
+            
+            print("\n前 10 个热搜：")
+            print("-" * 60)
+            for item in hot_items[:10]:
+                print(f"{item['rank']:2d}. {item['title']}")
+            
+            if len(hot_items) > 10:
+                print(f"... 以及 {len(hot_items) - 10} 个更多")
+            
+            print("\n" + "=" * 60)
+            print("提示：")
+            print("- 可以将此脚本添加到定时任务中定期更新数据")
+            print("- Windows: 使用任务计划程序")
+            print("- Linux/Mac: 使用 crontab")
+            print("- 示例 (每小时): 0 * * * * cd /path/to/fyknbb && python src/scrap.py realtime")
+            print("=" * 60)
+            
+            return 0
+        except Exception as e:
+            print(f"\n✗ 读取保存的数据失败: {e}")
+            return 1
+    else:
+        print("\n✗ 未能获取热搜数据")
+        print("\n可能的原因：")
+        print("1. 网络连接问题")
+        print("2. 微博访客验证（最常见）")
+        print("3. 页面结构变化")
+        
+        print("\n建议：")
+        print("1. 确保已安装 Playwright:")
+        print("   pip install playwright")
+        print("   python -m playwright install chromium")
+        print("2. 检查网络连接")
+        print("3. 稍后重试")
+        
+        print("\n" + "=" * 60)
+        return 1
+
+
 def main():
     """
     主函数，用于测试和演示爬虫功能
@@ -875,30 +952,41 @@ def main():
     print("  1. python src/scrap.py                # 运行完整爬取")
     print("  2. python src/scrap.py test          # 测试解析功能")
     print("  3. python src/scrap.py single <date> # 爬取单日数据")
+    print("  4. python src/scrap.py realtime      # 获取实时热搜")
     print("=" * 60)
 
     import sys
 
     try:
-        # 创建爬虫实例
-        scraper = WeiboHotScraper(
-            output_dir="data",
-            delay=2.0,  # 适当延迟，避免被封IP
-            max_retries=3,
-        )
-
         # 检查命令行参数
         if len(sys.argv) > 1:
-            if sys.argv[1] == "test":
+            if sys.argv[1] == "realtime":
+                # 实时热搜模式
+                return main_realtime()
+            elif sys.argv[1] == "test":
                 # 测试模式
                 print("运行测试模式...")
                 test_date = sys.argv[2] if len(sys.argv) > 2 else "2024-12-13"
+                
+                # 创建爬虫实例
+                scraper = WeiboHotScraper(
+                    output_dir="data",
+                    delay=2.0,
+                    max_retries=3,
+                )
                 scraper.test_parse(test_date)
                 return
             elif sys.argv[1] == "single" and len(sys.argv) > 2:
                 # 单日爬取模式
                 date = sys.argv[2]
                 print(f"爬取单日数据: {date}")
+                
+                # 创建爬虫实例
+                scraper = WeiboHotScraper(
+                    output_dir="data",
+                    delay=2.0,
+                    max_retries=3,
+                )
                 success = scraper.scrape_date(date)
                 if success:
                     print(f"成功爬取 {date} 的数据")
@@ -909,10 +997,18 @@ def main():
                 print("帮助信息:")
                 print("  test [date]    - 测试解析功能，可选日期参数")
                 print("  single <date>  - 爬取单日数据")
+                print("  realtime       - 获取实时热搜")
                 print("  help          - 显示此帮助信息")
                 return
 
         # 默认模式：完整爬取
+        # 创建爬虫实例
+        scraper = WeiboHotScraper(
+            output_dir="data",
+            delay=2.0,  # 适当延迟，避免被封IP
+            max_retries=3,
+        )
+        
         # 设置日期范围（根据用户要求）
         start_date = "2025-01-01"
         end_date = "2025-12-12"
@@ -994,9 +1090,9 @@ class RealtimeHotScraper:
         self.session = requests.Session()
         # 更完整的 User-Agent 列表（模拟真实浏览器）
         user_agents = [
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
         ]
         import random
         chosen_ua = random.choice(user_agents)
@@ -1004,20 +1100,49 @@ class RealtimeHotScraper:
         self.session.headers.update(
             {
                 "User-Agent": chosen_ua,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                "Accept-Encoding": "gzip, deflate, br",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7",
+                "Accept-Encoding": "gzip, deflate, br, zstd",
+                "Cache-Control": "max-age=0",
+                "Sec-Ch-Ua": '"Chromium";v="131", "Not_A Brand";v="24"',
+                "Sec-Ch-Ua-Mobile": "?0",
+                "Sec-Ch-Ua-Platform": '"Windows"',
+                "Sec-Fetch-Dest": "document",
+                "Sec-Fetch-Mode": "navigate",
+                "Sec-Fetch-Site": "none",
+                "Sec-Fetch-User": "?1",
+                "Upgrade-Insecure-Requests": "1",
                 "DNT": "1",
                 "Connection": "keep-alive",
-                "Upgrade-Insecure-Requests": "1",
-                "Referer": "https://weibo.com/",
             }
         )
         
-        # 添加cookie来模拟已访问用户（可选，但有助于绕过某些限制）
-        self.session.cookies.update({
-            "login_guide": "0",
-        })
+        # 初始化 session：先访问微博首页建立会话
+        self._init_session()
+
+    def _init_session(self):
+        """初始化会话：访问微博首页获取必要的 cookie"""
+        try:
+            self.logger.info("正在初始化会话...")
+            # 先访问微博首页
+            init_url = "https://weibo.com"
+            response = self.session.get(init_url, timeout=10, allow_redirects=True)
+            
+            if response.status_code == 200:
+                self.logger.info(f"会话初始化成功，获得 {len(self.session.cookies)} 个 cookie")
+                # 添加一些常用的 cookie（如果没有的话）
+                if 'SUB' not in self.session.cookies:
+                    self.session.cookies.update({
+                        'WEIBOCN_FROM': 'feed',
+                        'MLOGIN': '0',
+                    })
+            else:
+                self.logger.warning(f"会话初始化失败：状态码 {response.status_code}")
+            
+            # 短暂延迟
+            time.sleep(0.5)
+        except Exception as e:
+            self.logger.warning(f"会话初始化出错（继续尝试）: {e}")
 
     def fetch_realtime_page(self) -> Optional[str]:
         """
@@ -1049,34 +1174,68 @@ class RealtimeHotScraper:
                     self.logger.info(f"[策略 {url_idx}] 正在获取实时热搜页面 (尝试 {attempt + 1}/{self.max_retries})")
                     self.logger.debug(f"目标 URL: {url}")
                     
-                    # allow_redirects=True 确保跟随重定向链
+                    # 更新 session 头部以避免被识别为机器人
+                    self.session.headers.update({
+                        "Referer": "https://weibo.com/",
+                        "X-Requested-With": "XMLHttpRequest",
+                    })
+                    
+                    # 更新 Referer 为上一个 URL
+                    if url_idx > 1:
+                        self.session.headers.update({"Referer": urls_to_try[url_idx - 2]})
+                    
+                    # allow_redirects=False 先不跟随重定向，手动检测
                     response = self.session.get(
                         url, 
                         timeout=self.timeout, 
-                        allow_redirects=True,
+                        allow_redirects=True,  # 允许重定向但检查最终 URL
                         verify=True
                     )
                     response.raise_for_status()
 
-                    if response.status_code == 200 and len(response.text) > 5000:
-                        self.logger.info(f"[策略 {url_idx}] 成功获取页面 (最终 URL: {response.url}, 大小: {len(response.text)} bytes)")
+                    # 检查是否被重定向到访客验证页面
+                    if "passport.weibo.com/visitor" in response.url:
+                        self.logger.warning(f"[策略 {url_idx}] 被重定向到访客验证页面，尝试下一个策略")
+                        continue
+
+                    if response.status_code == 200:
+                        html_text = response.text
+                        self.logger.info(f"[策略 {url_idx}] 成功获取页面 (最终 URL: {response.url}, 大小: {len(html_text)} bytes)")
+                        
+                        # 检查页面大小和内容
+                        if len(html_text) < 5000:
+                            self.logger.warning(f"[策略 {url_idx}] 页面内容太短，可能无效")
+                            continue
+                        
+                        # 检查是否包含访客验证相关内容
+                        html_lower = html_text.lower()
+                        if "visitor" in html_lower and "passport" in html_lower:
+                            self.logger.warning(f"[策略 {url_idx}] 页面包含访客验证内容，跳过")
+                            continue
                         
                         # 检查页面中是否包含热搜相关内容
-                        html_text = response.text.lower()
-                        if (
-                            "realtimehot" in response.url.lower()
-                            or "summary" in response.url.lower()
-                            or "热搜" in html_text
-                            or "实时" in html_text
-                            or "weibo" in html_text
-                        ):
+                        has_hot_content = (
+                            "pl_top_realtimehot" in html_text  # 榜单容器 ID
+                            or "td-02" in html_text  # 热搜标题单元格
+                            or ("热搜" in html_text and "排行" in html_text)
+                            or "realtimehot" in response.url.lower()
+                        )
+                        
+                        if has_hot_content:
                             self.logger.info(f"[策略 {url_idx}] 页面包含热搜相关内容，返回")
-                            return response.text
+                            return html_text
                         else:
                             self.logger.warning(f"[策略 {url_idx}] 页面内容不包含热搜数据，尝试下一个策略")
                     else:
-                        self.logger.warning(f"[策略 {url_idx}] 页面响应不完整: {response.status_code}, 大小: {len(response.text)} bytes")
+                        self.logger.warning(f"[策略 {url_idx}] 页面响应状态异常: {response.status_code}")
 
+                except requests.exceptions.Timeout:
+                    self.logger.warning(f"[策略 {url_idx}] 请求超时 (尝试 {attempt + 1}/{self.max_retries})")
+                    if attempt < self.max_retries - 1:
+                        wait_time = 2 ** attempt
+                        self.logger.info(f"等待 {wait_time} 秒后重试...")
+                        time.sleep(wait_time)
+                        
                 except requests.exceptions.RequestException as e:
                     self.logger.error(f"[策略 {url_idx}] 获取页面失败: {e}")
                     if attempt < self.max_retries - 1:
@@ -1230,15 +1389,181 @@ class RealtimeHotScraper:
         # 这里可能需要进一步调整
         return "N/A"
 
-    def fetch_realtime_top50(self) -> List[Dict[str, Any]]:
+    def load_from_file(self, file_path: str = "output/realtime_hot.json") -> Optional[List[Dict[str, Any]]]:
         """
-        获取实时热搜 Top 50（使用 Playwright 浏览器自动化）
+        从文件加载实时热搜数据
+        
+        参数：
+            file_path: 数据文件路径
+        
+        返回：
+            热搜条目列表或 None
+        """
+        try:
+            if not os.path.exists(file_path):
+                self.logger.warning(f"数据文件不存在: {file_path}")
+                return None
+            
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # 检查数据是否有效
+            if 'data' not in data or not data['data']:
+                self.logger.warning("数据文件格式无效或为空")
+                return None
+            
+            # 检查数据时间（可选：如果太旧可以提示）
+            if 'timestamp' in data:
+                from datetime import datetime
+                timestamp = datetime.fromisoformat(data['timestamp'])
+                age_hours = (datetime.now() - timestamp).total_seconds() / 3600
+                
+                if age_hours > 24:
+                    self.logger.warning(f"数据已过期 {age_hours:.1f} 小时，建议更新")
+                else:
+                    self.logger.info(f"使用缓存数据（{age_hours:.1f} 小时前）")
+            
+            return data['data']
+        except Exception as e:
+            self.logger.error(f"读取数据文件失败: {e}")
+            return None
 
+    def save_to_file(self, data: List[Dict[str, Any]], file_path: str = "output/realtime_hot.json") -> bool:
+        """
+        保存实时热搜数据到文件
+        
+        参数：
+            data: 热搜条目列表
+            file_path: 保存路径
+        
+        返回：
+            保存成功返回 True
+        """
+        try:
+            # 创建输出目录
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+            
+            # 准备数据
+            save_data = {
+                "timestamp": datetime.now().isoformat(),
+                "count": len(data),
+                "data": data
+            }
+            
+            # 保存到文件
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(save_data, f, ensure_ascii=False, indent=2)
+            
+            self.logger.info(f"数据已保存到 {file_path}")
+            return True
+        except Exception as e:
+            self.logger.error(f"保存数据文件失败: {e}")
+            return False
+
+    def fetch_realtime_top50(self, use_cache: bool = True, cache_file: str = "output/realtime_hot.json") -> List[Dict[str, Any]]:
+        """
+        获取实时热搜 Top 50
+
+        优先级：
+        1. 如果 use_cache=True，先尝试从缓存文件读取
+        2. 尝试 HTTP 请求方法
+        3. 尝试 Playwright 方法（非 Streamlit 环境）
+        4. 如果都失败但有缓存，返回缓存数据（即使过期）
+        
+        参数：
+            use_cache: 是否使用缓存文件
+            cache_file: 缓存文件路径
+        
         返回：
             热搜条目列表（最多 50 项）
         """
-        # 优先使用 Playwright 方法（更可靠）
-        return self.fetch_realtime_top50_with_playwright()
+        # 策略 1: 尝试从缓存文件读取
+        cached_data = None
+        if use_cache:
+            cached_data = self.load_from_file(cache_file)
+            if cached_data:
+                self.logger.info(f"从缓存文件加载了 {len(cached_data)} 个热搜")
+                return cached_data[:50]
+        
+        # 策略 2: 尝试 HTTP 请求方法
+        html = self.fetch_realtime_page()
+        if html:
+            items = self.parse_realtime_page(html)[:50]
+            if items:
+                self.logger.info(f"HTTP 请求方法成功获取 {len(items)} 个热搜")
+                # 保存到缓存
+                self.save_to_file(items, cache_file)
+                return items
+            else:
+                self.logger.warning("HTTP 请求方法未能解析到热搜数据")
+        else:
+            self.logger.warning("HTTP 请求方法失败（可能遇到访客验证）")
+        
+        # 策略 3: 尝试 Playwright 方法（仅在非 Streamlit 环境）
+        import sys
+        if 'streamlit' not in sys.modules:
+            self.logger.info("尝试 Playwright 方法...")
+            try:
+                items = self.fetch_realtime_top50_with_playwright()
+                if items:
+                    self.logger.info(f"Playwright 方法成功获取 {len(items)} 个热搜")
+                    # 保存到缓存
+                    self.save_to_file(items, cache_file)
+                    return items
+            except NotImplementedError as e:
+                self.logger.warning(f"Playwright 在当前环境中不可用: {e}")
+            except Exception as e:
+                self.logger.error(f"Playwright 方法失败: {e}")
+        
+        # 策略 4: 如果都失败，返回缓存数据（即使过期）或空列表
+        if use_cache and cached_data is None:
+            # 再次尝试读取缓存（可能之前被跳过了）
+            cached_data = self.load_from_file(cache_file)
+            if cached_data:
+                self.logger.warning(f"所有获取方法都失败，使用缓存数据（可能已过期）")
+                return cached_data[:50]
+        
+        # 提供友好的错误信息
+        if 'streamlit' in sys.modules:
+            self.logger.error(
+                "无法获取实时热搜数据。\n\n"
+                "Streamlit 环境解决方案：\n"
+                "1. 在终端运行：python src/scrap.py realtime\n"
+                "2. 或运行：python -c \"from src.scrap import RealtimeHotScraper; "
+                "RealtimeHotScraper().fetch_and_save()\"\n"
+                "3. 然后刷新 Streamlit 页面"
+            )
+        else:
+            self.logger.error(
+                "无法获取实时热搜数据。\n"
+                "建议：\n"
+                "1. 确保已安装 Playwright: pip install playwright && python -m playwright install chromium\n"
+                "2. 运行 python src/scrap.py realtime 预先获取数据\n"
+                "3. 或手动登录微博后复制 cookie 到代码中"
+            )
+        return []
+
+    def fetch_and_save(self, output_file: str = "output/realtime_hot.json") -> bool:
+        """
+        获取实时热搜并保存到文件（独立脚本使用）
+        
+        参数：
+            output_file: 输出文件路径
+        
+        返回：
+            成功返回 True
+        """
+        self.logger.info("开始获取实时热搜数据...")
+        
+        # 不使用缓存，强制获取新数据
+        items = self.fetch_realtime_top50(use_cache=False, cache_file=output_file)
+        
+        if items:
+            self.logger.info(f"成功获取 {len(items)} 个热搜")
+            return True
+        else:
+            self.logger.error("获取实时热搜失败")
+            return False
 
     def fetch_realtime_top50_with_playwright(self) -> List[Dict[str, Any]]:
         """
@@ -1250,6 +1575,8 @@ class RealtimeHotScraper:
         3. 绕过访客验证系统
         4. 通过多次滚动加载更多热搜项
         5. 更接近真实用户行为
+
+        注意：在 Streamlit 或 Windows 异步环境中可能失败，此时应使用 HTTP 请求方法。
 
         返回：
             热搜条目列表（最多 50 项）
@@ -1269,6 +1596,12 @@ class RealtimeHotScraper:
 
         try:
             self.logger.info("正在使用 Playwright 加载页面...")
+            
+            # 在某些环境（如 Streamlit）中，需要特殊处理
+            import sys
+            if 'streamlit' in sys.modules:
+                self.logger.warning("检测到 Streamlit 环境，Playwright 可能无法使用")
+                raise NotImplementedError("Playwright 在 Streamlit 环境中不可用")
             
             with sync_playwright() as p:
                 # 启动 Chromium 浏览器
@@ -1320,6 +1653,10 @@ class RealtimeHotScraper:
                     browser.close()
                     self.logger.info("浏览器已关闭")
 
+        except NotImplementedError as e:
+            self.logger.error(f"NotImplementedError（在 Windows 异步环境中很常见）: {e}")
+            self.logger.warning("建议在 Streamlit 或异步环境中使用 HTTP 请求方法而不是 Playwright")
+            return []
         except ImportError:
             self.logger.error("Playwright 库未安装，无法使用此方法")
             return []
