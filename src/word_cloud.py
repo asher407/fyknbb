@@ -48,8 +48,19 @@ class KeywordExtractor:
             min_word_length: 最小词语长度（忽略长度小于此值的词）
         """
         self.min_word_length = min_word_length
-        # 自定义停用词（可选）
-        self.stopwords = {'的', '了', '和', '是', '在', '到', '一', '个', '为', '中'}
+        
+        # 扩展的停用词集合（包括"回应"和"什么"）
+        self.stopwords = {
+            '的', '了', '和', '是', '在', '到', '一', '个', '为', '中',
+            '回应', '什么', '了吗', '吗', '呢', '吧', '啊', '哦', '这', '那',
+            '有', '没有', '没', '很', '比', '更', '最', '就', '还', '也',
+            '被', '把', '向', '让', '给', '从', '以', '经', '于', '对'
+        }
+        
+        # 向 jieba 添加自定义词语（作为整体词）
+        self.custom_words = ['王楚钦']  # 需要保持整体的词语
+        for word in self.custom_words:
+            jieba.add_word(word, freq=500)  # freq 高度越高，分词时越可能被识别为整体
 
     def extract_keywords(self, text: str) -> List[str]:
         """
