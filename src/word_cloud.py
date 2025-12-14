@@ -13,10 +13,19 @@
     1. 读取预处理后的 JSON 数据文件，利用分词提取关键词
     2. 根据关键词出现的次数分月度、季度、年度生成词云图
     3. 热搜类型分析：统计不同类型标签的出现频次，生成对应的词云图
+    4. 查询结果分析：从data_query.py的查询结果JSON文件生成词云，分析特定筛选条件下的关键词和分类分布
 
 使用示例：
-    generator = WordCloudGenerator(output_base="output")
-    generator.process_data_dir("data_processed")
+    1. 处理整个数据目录：
+        generator = WordCloudGenerator(output_base="output")
+        generator.process_data_dir("data_processed")
+
+    2. 从查询结果生成词云：
+        generator = WordCloudGenerator(output_base="output")
+        generator.generate_from_query_result(
+            query_result_path="data/output/query_result.json",
+            output_prefix="my_analysis"
+        )
 """
 
 import json
@@ -24,7 +33,7 @@ import os
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Tuple
 
 import jieba
 import matplotlib
@@ -511,6 +520,113 @@ class WordCloudGenerator:
         fig.savefig(output_path, dpi=100, bbox_inches="tight", facecolor="white")
         plt.close(fig)
         print(f"✓ 已生成: {output_path}")
+
+    def generate_from_query_result(
+        self, query_result_path: str, output_prefix: str = "query_result"
+    ) -> None:
+        """
+        从查询结果JSON文件生成词云
+
+        参数：
+            query_result_path: 查询结果JSON文件路径（来自data_query.py的save_results方法）
+            output_prefix: 输出文件前缀，用于生成输出文件名
+
+        内部逻辑：
+            1. 读取查询结果JSON文件
+            2. 从结果中提取所有标题和分类
+            3. 生成关键词词云和分类词云
+            4. 保存到output文件夹
+        """
+        # 读取查询结果JSON
+        with open(query_result_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        # 提取结果列表
+        results = data.get("results", [])
+        if not results:
+            print(f"警告: 查询结果文件中没有数据: {query_result_path}")
+            return
+
+        # 处理查询结果数据
+        keywords_counter, types_counter = self._process_query_result_json(results)
+
+        # 生成时间戳用于文件名
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+        # 生成关键词词云
+        if keywords_counter:
+            keywords_filename = f"{output_prefix}_keywords_{timestamp}.png"
+            self._generate_wordcloud(
+                keywords_counter,
+                keywords_filename,
+                self.keywords_wc_dir,
+                title=f"查询结果词云 - {output_prefix}",
+            )
+
+            # 保存关键词统计
+            counts_filename = f"{output_prefix}_keywords_{timestamp}.json"
+            self._save_counts_json(
+                keywords_counter,
+                counts_filename,
+                self.keywords_counts_dir,
+            )
+
+        # 生成分类词云
+        if types_counter:
+            types_filename = f"{output_prefix}_types_{timestamp}.png"
+            self._generate_wordcloud(
+                types_counter,
+                types_filename,
+                self.types_wc_dir,
+                title=f"查询结果类型分布 - {output_prefix}",
+            )
+
+            # 保存分类统计
+            types_counts_filename = f"{output_prefix}_types_{timestamp}.json"
+            self._save_counts_json(
+                types_counter,
+                types_counts_filename,
+                self.types_counts_dir,
+            )
+
+        print(f"查询结果词云生成完成！共处理 {len(results)} 条数据")
+        if keywords_counter:
+            print(f"  - 关键词统计: {len(keywords_counter)} 个关键词")
+        if types_counter:
+            print(f"  - 分类统计: {len(types_counter)} 个分类")
+
+    def _process_query_result_json(
+        self, results: List[Dict[str, Any]]
+    ) -> Tuple[Counter, Counter]:
+        """
+        处理查询结果JSON数据，提取关键词和分类统计
+
+        参数：
+            results: 查询结果列表
+
+        返回：
+            (keywords_counter, types_counter): 关键词计数器和分类计数器
+        """
+        all_keywords = []
+        all_types = []
+
+        for item in results:
+            # 提取标题关键词
+            title = item.get("title", "")
+            if title:
+                keywords = self.extractor.extract_keywords(title)
+                all_keywords.extend(keywords)
+
+            # 提取分类
+            category = item.get("category", "")
+            if category:
+                all_types.append(category)
+
+        # 创建计数器
+        keywords_counter = Counter(all_keywords)
+        types_counter = Counter(all_types)
+
+        return keywords_counter, types_counter
 
 
 if __name__ == "__main__":
