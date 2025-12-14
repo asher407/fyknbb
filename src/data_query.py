@@ -156,6 +156,7 @@ class DataQuery:
         discussions_range: Optional[Tuple[float, float]] = None,
         originals_range: Optional[Tuple[float, float]] = None,
         title_keywords: Optional[List[str]] = None,
+        sort_by: Optional[str] = "heat_desc",
     ) -> List[Dict[str, Any]]:
         """
         执行多条件数据查询。
@@ -169,15 +170,23 @@ class DataQuery:
             discussions_range: 讨论量范围，元组格式 (最小讨论量, 最大讨论量)
             originals_range: 原创量范围，元组格式 (最小原创量, 最大原创量)
             title_keywords: 标题关键词列表，包含任一关键词的标题都会被选中
+            sort_by: 排序方式，可选值: "heat_desc" (默认, 热度降序), "heat_asc" (热度升序),
+                    "rank_desc" (排名降序), "rank_asc" (排名升序),
+                    "date_desc" (日期降序), "date_asc" (日期升序),
+                    "reads_desc" (阅读量降序), "reads_asc" (阅读量升序),
+                    "discussions_desc" (讨论量降序), "discussions_asc" (讨论量升序),
+                    "originals_desc" (原创量降序), "originals_asc" (原创量升序),
+                    "title_asc" (标题升序), "title_desc" (标题降序)
 
         返回：
-            符合所有条件的数据项列表
+            符合所有条件的数据项列表（按指定方式排序）
 
         内部逻辑：
             1. 如果提供了日期范围，先使用日期索引快速筛选
             2. 如果没有日期范围，从所有数据开始筛选
             3. 按顺序应用各个筛选条件
-            4. 返回最终结果
+            4. 按指定方式排序结果
+            5. 返回最终结果
         """
         # 初始数据集
         if date_range:
@@ -219,7 +228,10 @@ class DataQuery:
                 filtered_items, title_keywords
             )
 
-        return filtered_items
+        # 对结果进行排序
+        sorted_items = self._sort_results(filtered_items, sort_by)
+
+        return sorted_items
 
     def _filter_by_date_range(
         self, date_range: Tuple[str, str]
@@ -331,6 +343,77 @@ class DataQuery:
 
         return result
 
+    def _sort_results(
+        self, items: List[Dict[str, Any]], sort_by: str
+    ) -> List[Dict[str, Any]]:
+        """
+        对查询结果进行排序。
+
+        内部逻辑：
+            1. 根据sort_by参数确定排序字段和顺序
+            2. 提取排序字段的值，处理可能为None的情况
+            3. 按指定顺序进行排序
+
+        返回：
+            排序后的数据项列表
+        """
+        if not items:
+            return items
+
+        # 默认排序方式为热度降序
+        if sort_by is None:
+            sort_by = "heat_desc"
+
+        # 确定排序字段和顺序
+        sort_configs = {
+            "heat_desc": ("heat", True, False),  # (字段名, 逆序, 字符串类型)
+            "heat_asc": ("heat", False, False),
+            "rank_desc": ("rank", True, False),
+            "rank_asc": ("rank", False, False),
+            "date_desc": ("date", True, True),
+            "date_asc": ("date", False, True),
+            "reads_desc": ("reads", True, False),
+            "reads_asc": ("reads", False, False),
+            "discussions_desc": ("discussions", True, False),
+            "discussions_asc": ("discussions", False, False),
+            "originals_desc": ("originals", True, False),
+            "originals_asc": ("originals", False, False),
+            "title_desc": ("title", True, True),
+            "title_asc": ("title", False, True),
+        }
+
+        if sort_by not in sort_configs:
+            # 默认使用热度降序
+            sort_field, reverse, is_string = "heat", True, False
+        else:
+            sort_field, reverse, is_string = sort_configs[sort_by]
+
+        # 定义排序键函数
+        def sort_key(item):
+            value = item.get(sort_field)
+
+            # 处理None值
+            if value is None:
+                # 对于字符串类型，None放在最后；对于数值类型，None视为最小/最大值
+                if is_string:
+                    return "" if not reverse else "zzzzzzzzzz"
+                else:
+                    return float("-inf") if reverse else float("inf")
+
+            # 对于字符串类型，直接返回
+            if is_string:
+                return str(value).lower() if isinstance(value, str) else str(value)
+
+            # 对于数值类型，转换为浮点数
+            try:
+                return float(value)
+            except (ValueError, TypeError):
+                return float("-inf") if reverse else float("inf")
+
+        # 执行排序
+        sorted_items = sorted(items, key=sort_key, reverse=reverse)
+        return sorted_items
+
     def _filter_by_title_keywords(
         self, items: List[Dict[str, Any]], keywords: List[str]
     ) -> List[Dict[str, Any]]:
@@ -402,13 +485,13 @@ class DataQuery:
 
         参数：
             output_path: 输出文件路径
-            **query_kwargs: 传递给query()方法的查询参数
+            **query_kwargs: 传递给query()方法的查询参数，包括排序参数（sort_by）
 
         返回：
             查询结果的数据项列表
 
         内部逻辑：
-            1. 调用query()方法执行查询
+            1. 调用query()方法执行查询（支持排序功能）
             2. 调用save_results()保存结果
             3. 返回查询结果
         """
@@ -426,6 +509,8 @@ def main():
         2. 查询分类为"明星"且排名前10的热搜
         3. 查询热度大于1000的热搜
         4. 查询包含"新年"关键词的热搜
+        5. 排序功能演示（热度降序、热度升序、排名升序、日期降序、阅读量降序、标题升序）
+        6. 保存查询结果到文件
     """
     print("=== 数据查询模块测试 ===")
 
@@ -461,8 +546,95 @@ def main():
                 f"   示例: {results4[0].get('title')} (日期: {results4[0].get('date')})"
             )
 
-        # 保存一个查询结果到文件
-        print("\n5. 保存查询结果到文件:")
+        # 测试5: 排序功能演示
+        print("\n5. 排序功能演示:")
+
+        # 5.1 默认排序（热度降序）
+        print("\n5.1 默认排序（热度降序）:")
+        results5_1 = query.query(
+            date_range=("2025-01-01", "2025-01-05"),
+            categories=["明星"],
+            sort_by="heat_desc",
+        )
+        print(f"   找到 {len(results5_1)} 条数据")
+        if results5_1:
+            print("   前3条（按热度降序）:")
+            for i, item in enumerate(results5_1[:3], 1):
+                print(
+                    f"     {i}. {item['title']} (热度: {item['heat']:.1f}, 日期: {item['date']})"
+                )
+
+        # 5.2 热度升序排序
+        print("\n5.2 热度升序排序:")
+        results5_2 = query.query(
+            date_range=("2025-01-01", "2025-01-05"),
+            categories=["明星"],
+            sort_by="heat_asc",
+        )
+        print(f"   找到 {len(results5_2)} 条数据")
+        if results5_2:
+            print("   前3条（按热度升序）:")
+            for i, item in enumerate(results5_2[:3], 1):
+                print(
+                    f"     {i}. {item['title']} (热度: {item['heat']:.1f}, 日期: {item['date']})"
+                )
+
+        # 5.3 排名升序排序
+        print("\n5.3 排名升序排序:")
+        results5_3 = query.query(
+            date_range=("2025-01-01", "2025-01-03"), sort_by="rank_asc"
+        )
+        print(f"   找到 {len(results5_3)} 条数据")
+        if results5_3:
+            print("   前3条（按排名升序）:")
+            for i, item in enumerate(results5_3[:3], 1):
+                print(
+                    f"     {i}. #{item['rank']} {item['title']} (日期: {item['date']})"
+                )
+
+        # 5.4 日期降序排序
+        print("\n5.4 日期降序排序:")
+        results5_4 = query.query(
+            date_range=("2025-01-01", "2025-01-05"),
+            categories=["综艺"],
+            sort_by="date_desc",
+        )
+        print(f"   找到 {len(results5_4)} 条数据")
+        if results5_4:
+            print("   前3条（按日期降序）:")
+            for i, item in enumerate(results5_4[:3], 1):
+                print(
+                    f"     {i}. {item['date']} {item['title']} (热度: {item['heat']:.1f})"
+                )
+
+        # 5.5 阅读量降序排序
+        print("\n5.5 阅读量降序排序:")
+        results5_5 = query.query(
+            date_range=("2025-01-01", "2025-01-03"), sort_by="reads_desc"
+        )
+        print(f"   找到 {len(results5_5)} 条数据")
+        if results5_5:
+            print("   前3条（按阅读量降序）:")
+            for i, item in enumerate(results5_5[:3], 1):
+                print(
+                    f"     {i}. {item['title']} (阅读量: {item['reads']:,.0f}, 日期: {item['date']})"
+                )
+
+        # 5.6 标题升序排序
+        print("\n5.6 标题升序排序:")
+        results5_6 = query.query(
+            date_range=("2025-01-01", "2025-01-03"),
+            categories=["明星"],
+            sort_by="title_asc",
+        )
+        print(f"   找到 {len(results5_6)} 条数据")
+        if results5_6:
+            print("   前3条（按标题升序）:")
+            for i, item in enumerate(results5_6[:3], 1):
+                print(f"     {i}. {item['title']} (日期: {item['date']})")
+
+        # 测试6: 保存查询结果到文件（使用默认排序）
+        print("\n6. 保存查询结果到文件（使用默认排序）:")
         project_root = Path(__file__).parent.parent
         output_file = project_root / "data" / "output" / "query_result.json"
 
@@ -472,6 +644,7 @@ def main():
             categories=["明星", "综艺"],
             rank_range=(1, 20),
             heat_range=(500, None),
+            sort_by="heat_desc",  # 默认排序
         )
         print(f"   已保存到: {output_file}")
 
