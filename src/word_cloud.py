@@ -21,15 +21,16 @@
 
 import json
 import os
-from collections import defaultdict, Counter
+from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Any
+from typing import Any, Dict, List
 
 import jieba
-from wordcloud import WordCloud
 import matplotlib
-matplotlib.use('Agg')  # 无界面后端，避免显示问题
+from wordcloud import WordCloud
+
+matplotlib.use("Agg")  # 无界面后端，避免显示问题
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
 from matplotlib.font_manager import FontProperties
@@ -43,39 +44,137 @@ class KeywordExtractor:
     def __init__(self, min_word_length: int = 2):
         """
         初始化分词器
-        
+
         参数：
             min_word_length: 最小词语长度（忽略长度小于此值的词）
         """
         self.min_word_length = min_word_length
-        
+
         # 扩展的停用词集合（包括"回应"和"什么"）
         self.stopwords = {
-            '的', '了', '和', '是', '在', '到', '一', '个', '为', '中',
-            '回应', '什么', '了吗', '吗', '呢', '吧', '啊', '哦', '这', '那',
-            '有', '没有', '没', '很', '比', '更', '最', '就', '还', '也',
-            '被', '把', '向', '让', '给', '从', '以', '经', '于', '对'
+            "的",
+            "了",
+            "和",
+            "是",
+            "在",
+            "到",
+            "一",
+            "个",
+            "为",
+            "中",
+            "回应",
+            "什么",
+            "了吗",
+            "怎么",
+            "这么",
+            "为什么",
+            "不要",
+            "真的",
+            "是",
+            "不是",
+            "就是",
+            "可能",
+            "要求",
+            "还是",
+            "小时",
+            "疑似",
+            "吗",
+            "呢",
+            "吧",
+            "啊",
+            "哦",
+            "这",
+            "那",
+            "有",
+            "没有",
+            "没",
+            "很",
+            "比",
+            "更",
+            "最",
+            "就",
+            "还",
+            "也",
+            "被",
+            "把",
+            "向",
+            "让",
+            "给",
+            "从",
+            "以",
+            "经",
+            "于",
+            "对",
         }
-        
+
+        # 英文缩写过滤集合
+        self.abbreviations = {
+            "vs",
+            "vs.",
+            "etc",
+            "etc.",
+            "i.e",
+            "e.g",
+            "i.e.",
+            "e.g.",
+            "vs",
+            "v.s",
+            "v.s.",
+            "vs",
+            "v",
+            "s",
+            "etc",
+            "et",
+            "al",
+            "eg",
+            "ie",
+            "cf",
+            "cf.",
+            "ex",
+            "ex.",
+            "fig",
+            "fig.",
+            "no",
+            "no.",
+            "vol",
+            "vol.",
+            "pp",
+            "pp.",
+            "ch",
+            "ch.",
+            "sec",
+            "sec.",
+            "ref",
+            "ref.",
+            "eq",
+            "eq.",
+            "fig",
+            "fig.",
+        }
+
         # 向 jieba 添加自定义词语（作为整体词）
-        self.custom_words = ['王楚钦']  # 需要保持整体的词语
+        self.custom_words = ["王楚钦"]  # 需要保持整体的词语
         for word in self.custom_words:
             jieba.add_word(word, freq=500)  # freq 高度越高，分词时越可能被识别为整体
 
     def extract_keywords(self, text: str) -> List[str]:
         """
         从文本中提取关键词
-        
+
         参数：
             text: 待分词的文本
-            
+
         返回：
             关键词列表
         """
         words = jieba.cut(text)
         keywords = [
-            w for w in words
-            if len(w) >= self.min_word_length and w not in self.stopwords
+            w
+            for w in words
+            if len(w) >= self.min_word_length
+            and w not in self.stopwords
+            and not w.isdigit()  # 过滤纯数字
+            and w.lower() not in self.abbreviations  # 过滤英文缩写
         ]
         return keywords
 
@@ -88,7 +187,7 @@ class WordCloudGenerator:
     def __init__(self, output_base: str = "output"):
         """
         初始化词云生成器
-        
+
         参数：
             output_base: 输出根目录
         """
@@ -114,7 +213,7 @@ class WordCloudGenerator:
     def _find_chinese_font(self) -> str:
         """
         查找系统中可用的中文字体
-        
+
         返回：
             字体路径，若找不到则返回空字符串
         """
@@ -126,6 +225,7 @@ class WordCloudGenerator:
             "/System/Library/Fonts/Helvetica.ttc",
             "/Library/Fonts/SimHei.ttf",  # 微软黑体（如有安装）
             "/Library/Fonts/SimSun.ttf",  # 宋体
+            "/home/himkkk/.local/share/fonts/MapleMono-NF-CN-Bold.ttf",  # 这是fyk用的字体
         ]
 
         for font_path in font_paths:
@@ -135,6 +235,7 @@ class WordCloudGenerator:
         # 如果没有找到特定字体，尝试从 matplotlib 的字体列表中获取
         try:
             from matplotlib.font_manager import findSystemFonts
+
             fonts = findSystemFonts()
             for font in fonts:
                 if "SimHei" in font or "PingFang" in font or "Heiti" in font:
@@ -154,17 +255,17 @@ class WordCloudGenerator:
             rcParams["font.sans-serif"] = [
                 "PingFang SC",  # macOS 苹方
                 "SimHei",  # Windows 微软黑体
-                "SimSun",  # Windows 宋体  
+                "SimSun",  # Windows 宋体
                 "Helvetica Neue",  # macOS 备用
             ]
-        
+
         rcParams["axes.unicode_minus"] = False  # 解决负号显示问题
         rcParams["font.size"] = 12
 
     def process_data_dir(self, data_dir: str) -> None:
         """
         处理整个数据目录（按月份组织）
-        
+
         参数：
             data_dir: 数据根目录路径
         """
@@ -213,7 +314,9 @@ class WordCloudGenerator:
         self._generate_yearly_wordclouds(monthly_keywords, monthly_types)
 
     def _generate_monthly_wordclouds(
-        self, monthly_keywords: Dict[str, List[str]], monthly_types: Dict[str, List[str]]
+        self,
+        monthly_keywords: Dict[str, List[str]],
+        monthly_types: Dict[str, List[str]],
     ) -> None:
         """生成月度词云"""
         for month_key in sorted(monthly_keywords.keys()):
@@ -242,7 +345,9 @@ class WordCloudGenerator:
             )
 
     def _generate_quarterly_wordclouds(
-        self, monthly_keywords: Dict[str, List[str]], monthly_types: Dict[str, List[str]]
+        self,
+        monthly_keywords: Dict[str, List[str]],
+        monthly_types: Dict[str, List[str]],
     ) -> None:
         """生成季度词云"""
         # 按季度分组月份数据
@@ -265,7 +370,9 @@ class WordCloudGenerator:
             # 关键词统计
             keywords_counter = Counter(quarterly_keywords[quarter_key])
             self._save_counts_json(
-                keywords_counter, f"keywords_{quarter_key}.json", self.keywords_counts_dir
+                keywords_counter,
+                f"keywords_{quarter_key}.json",
+                self.keywords_counts_dir,
             )
             self._generate_wordcloud(
                 keywords_counter,
@@ -287,7 +394,9 @@ class WordCloudGenerator:
             )
 
     def _generate_yearly_wordclouds(
-        self, monthly_keywords: Dict[str, List[str]], monthly_types: Dict[str, List[str]]
+        self,
+        monthly_keywords: Dict[str, List[str]],
+        monthly_types: Dict[str, List[str]],
     ) -> None:
         """生成年度词云"""
         # 按年份分组
@@ -342,7 +451,7 @@ class WordCloudGenerator:
     ) -> None:
         """
         生成和保存词云图片
-        
+
         参数：
             word_freq: 词频 Counter 对象
             filename: 输出文件名
@@ -388,7 +497,7 @@ class WordCloudGenerator:
         fig, ax = plt.subplots(figsize=(12, 6))
         ax.imshow(wc, interpolation="bilinear")
         ax.axis("off")
-        
+
         if title:
             # 设置标题，使用专门的 FontProperties 确保中文正常显示
             if self.font_path:
