@@ -4,3 +4,6 @@ lxml>=4.9.0
 jieba>=0.42.1
 wordcloud>=1.9.0
 matplotlib>=3.8.0
+streamlit>=1.30.0
+pandas>=2.1.0
+playwright>=1.40.0

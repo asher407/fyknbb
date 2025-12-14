@@ -6,6 +6,7 @@
 
 类定义：
     WeiboHotScraper: 微博热搜爬虫主类
+    RealtimeHotScraper: 实时热搜爬虫类
 
 主要功能：
     1. 爬取指定日期范围的微博热搜数据
@@ -16,6 +17,8 @@
 使用示例：
     scraper = WeiboHotScraper(output_dir="data")
     scraper.scrape_range("2025-01-01", "2025-12-12")
+    - 实时爬虫页面运行命令：
+    python -m streamlit run src/gui/app.py
 """
 
 import json
@@ -944,5 +947,395 @@ def main():
         traceback.print_exc()
 
 
+class RealtimeHotScraper:
+    """
+    微博实时热搜爬虫
+
+    功能：
+        - 爬取微博实时热搜 Top 50
+        - 解析排名、标题、热度
+        - 支持缓存和错误处理
+
+    数据结构：
+        {
+            "rank": 3,
+            "title": "揭开日本伪装受害者的真面目"
+        }
+    """
+
+    def __init__(
+        self,
+        timeout: int = 10,
+        max_retries: int = 3,
+        delay: float = 1.0,
+    ):
+        """
+        初始化实时热搜爬虫
+
+        参数：
+            timeout: 请求超时时间（秒）
+            max_retries: 最大重试次数
+            delay: 请求间隔时间（秒）
+        """
+        # 默认使用榜单页（更稳定、无需登录）
+        self.base_url = "https://s.weibo.com/top/summary?cate=realtimehot"
+        self.timeout = timeout
+        self.max_retries = max_retries
+        self.delay = delay
+
+        # 配置日志
+        logging.basicConfig(
+            level=logging.INFO,
+            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        )
+        self.logger = logging.getLogger(__name__)
+
+        # 配置requests会话
+        self.session = requests.Session()
+        # 更完整的 User-Agent 列表（模拟真实浏览器）
+        user_agents = [
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        ]
+        import random
+        chosen_ua = random.choice(user_agents)
+        
+        self.session.headers.update(
+            {
+                "User-Agent": chosen_ua,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+                "Accept-Encoding": "gzip, deflate, br",
+                "DNT": "1",
+                "Connection": "keep-alive",
+                "Upgrade-Insecure-Requests": "1",
+                "Referer": "https://weibo.com/",
+            }
+        )
+        
+        # 添加cookie来模拟已访问用户（可选，但有助于绕过某些限制）
+        self.session.cookies.update({
+            "login_guide": "0",
+        })
+
+    def fetch_realtime_page(self) -> Optional[str]:
+        """
+        获取微博实时热搜页面 HTML
+
+        尝试多个策略：
+        1. 新的热搜专用页面（https://weibo.com/hot/search）
+        2. 直接访问微博首页（https://weibo.com/）
+        3. 搜索页面URL
+
+        返回：
+            HTML 字符串或 None（如果请求失败）
+        """
+        # 尝试的 URL 列表（按优先级）
+        urls_to_try = [
+            # 策略1：新的榜单页（实时热搜）：更稳定
+            "https://s.weibo.com/top/summary?cate=realtimehot",
+            # 策略2：热搜页面
+            "https://weibo.com/hot/search",
+            # 策略3：微博首页
+            "https://weibo.com/",
+            # 策略4：搜索首页
+            "https://weibo.com/search/index",
+        ]
+
+        for url_idx, url in enumerate(urls_to_try, 1):
+            for attempt in range(self.max_retries):
+                try:
+                    self.logger.info(f"[策略 {url_idx}] 正在获取实时热搜页面 (尝试 {attempt + 1}/{self.max_retries})")
+                    self.logger.debug(f"目标 URL: {url}")
+                    
+                    # allow_redirects=True 确保跟随重定向链
+                    response = self.session.get(
+                        url, 
+                        timeout=self.timeout, 
+                        allow_redirects=True,
+                        verify=True
+                    )
+                    response.raise_for_status()
+
+                    if response.status_code == 200 and len(response.text) > 5000:
+                        self.logger.info(f"[策略 {url_idx}] 成功获取页面 (最终 URL: {response.url}, 大小: {len(response.text)} bytes)")
+                        
+                        # 检查页面中是否包含热搜相关内容
+                        html_text = response.text.lower()
+                        if (
+                            "realtimehot" in response.url.lower()
+                            or "summary" in response.url.lower()
+                            or "热搜" in html_text
+                            or "实时" in html_text
+                            or "weibo" in html_text
+                        ):
+                            self.logger.info(f"[策略 {url_idx}] 页面包含热搜相关内容，返回")
+                            return response.text
+                        else:
+                            self.logger.warning(f"[策略 {url_idx}] 页面内容不包含热搜数据，尝试下一个策略")
+                    else:
+                        self.logger.warning(f"[策略 {url_idx}] 页面响应不完整: {response.status_code}, 大小: {len(response.text)} bytes")
+
+                except requests.exceptions.RequestException as e:
+                    self.logger.error(f"[策略 {url_idx}] 获取页面失败: {e}")
+                    if attempt < self.max_retries - 1:
+                        wait_time = 2 ** attempt
+                        self.logger.info(f"等待 {wait_time} 秒后重试...")
+                        time.sleep(wait_time)
+                    
+                except Exception as e:
+                    self.logger.error(f"[策略 {url_idx}] 获取页面时发生未知错误: {e}")
+                    break
+        
+        self.logger.error("所有策略都失败了，无法获取页面")
+        return None
+
+    def parse_realtime_page(self, html: str) -> List[Dict[str, Any]]:
+        """
+        解析实时热搜页面（https://weibo.com/hot/search）
+
+        支持多种热搜项结构，优先级：
+        1. ALink_none_1w6rm 链接（主要热搜）
+        2. 正则匹配的搜索链接（次要热搜）
+        3. 其他可能的容器
+
+        参数：
+            html: 页面 HTML 字符串
+
+        返回：
+            热搜条目列表，每项包含 rank、title
+        """
+        hot_items = []
+
+        try:
+            soup = BeautifulSoup(html, "html.parser")
+
+            # 调试：检查 HTML 结构
+            self.logger.debug(f"HTML 长度: {len(html)}")
+            
+            # 方案1：解析榜单表格（s.weibo.com/top/summary 页面结构）
+            table_container = soup.find(id=re.compile(r"pl_top_realtimehot")) or soup
+            rows = []
+            # 两种常见结构：tbody > tr 或者直接多个 tr
+            tbody = table_container.find("tbody")
+            if tbody:
+                rows = tbody.find_all("tr")
+            else:
+                rows = table_container.find_all("tr")
+
+            self.logger.info(f"方案1: 表格行数量 {len(rows)}")
+
+            rank_counter = 0
+            for tr in rows:
+                try:
+                    title_td = tr.find("td", class_=re.compile(r"td-02"))
+
+                    if not title_td:
+                        continue
+
+                    # 跳过表头或置顶（无有效排名）
+                    tr_class = (tr.get("class") or [])
+                    if any(cls for cls in tr_class if re.search(r"thead|top|ad|banner", cls)):
+                        continue
+
+                    a = title_td.find("a")
+                    if not a:
+                        continue
+
+                    title = a.get_text(strip=True).replace("#", "").strip()
+                    if not title:
+                        continue
+
+                    rank_counter += 1
+
+                    hot_items.append({"rank": rank_counter, "title": title})
+                except Exception as e:
+                    self.logger.debug(f"解析表格行失败: {e}")
+                    continue
+
+            # 方案2：如果上面不足，兜底解析其它可能结构（如备用链接）
+            if len(hot_items) < 20:
+                self.logger.info("主表格不足，尝试兜底解析候选链接…")
+                import re as _re
+                extra_links = soup.find_all("a", href=_re.compile(r"s\.weibo\.com/weibo"))
+                seen = {i["title"] for i in hot_items}
+                for lk in extra_links:
+                    try:
+                        t = lk.get_text(strip=True).replace("#", "").strip()
+                        if not t or t in seen:
+                            continue
+                        if len(t) < 2 or len(t) > 100:
+                            continue
+                        hot_items.append({"rank": len(hot_items) + 1, "title": t})
+                        seen.add(t)
+                        if len(hot_items) >= 50:
+                            break
+                    except Exception:
+                        continue
+
+            # 按排名排序（确保顺序与页面一致）
+            if hot_items:
+                hot_items.sort(key=lambda x: (isinstance(x["rank"], int), x["rank"]))
+
+            # 去重和清理（移除重复或低质量的项），并重新连续编号
+            cleaned_items = []
+            seen_titles = set()
+            for item in hot_items:
+                title = item["title"]
+
+                digit_count = sum(1 for c in title if c.isdigit())
+                if digit_count > len(title) / 3:
+                    continue
+
+                if title in seen_titles:
+                    continue
+
+                cleaned_items.append(item)
+                seen_titles.add(title)
+
+            # 重新按照出现顺序连续赋 rank，避免跳号
+            for idx, item in enumerate(cleaned_items, start=1):
+                item["rank"] = idx
+
+            hot_items = cleaned_items
+
+            self.logger.info(f"成功解析 {len(hot_items)} 个热搜条目")
+
+        except Exception as e:
+            self.logger.error(f"解析页面失败: {e}")
+
+        return hot_items
+
+        return hot_items
+
+    def _extract_heat(self, container) -> str:
+        """
+        从容器中提取热度信息
+
+        参数：
+            container: BeautifulSoup 的 div 容器对象
+
+        返回：
+            热度字符串（如 "沸"、"爆"、数字等）
+        """
+        # 尝试从不同位置查找热度标签
+        # 根据实际页面结构调整
+        heat_spans = container.find_all("span", class_=lambda x: x and "Heat" in x if x else False)
+
+        if heat_spans:
+            return heat_spans[0].get_text(strip=True)
+
+        # 如果没有找到，尝试查找包含热度的其他元素
+        # 这里可能需要进一步调整
+        return "N/A"
+
+    def fetch_realtime_top50(self) -> List[Dict[str, Any]]:
+        """
+        获取实时热搜 Top 50（使用 Playwright 浏览器自动化）
+
+        返回：
+            热搜条目列表（最多 50 项）
+        """
+        # 优先使用 Playwright 方法（更可靠）
+        return self.fetch_realtime_top50_with_playwright()
+
+    def fetch_realtime_top50_with_playwright(self) -> List[Dict[str, Any]]:
+        """
+        使用 Playwright 获取实时热搜 Top 50（备选方案）
+
+        相比于直接 HTTP 请求，这个方法：
+        1. 使用真实浏览器引擎（Chromium）
+        2. 执行 JavaScript 代码，加载动态内容
+        3. 绕过访客验证系统
+        4. 通过多次滚动加载更多热搜项
+        5. 更接近真实用户行为
+
+        返回：
+            热搜条目列表（最多 50 项）
+
+        依赖：
+            playwright>=1.40.0（需要先运行：python -m playwright install chromium）
+        """
+        try:
+            from playwright.sync_api import sync_playwright
+        except ImportError:
+            self.logger.error(
+                "Playwright 未安装。请运行: pip install playwright && python -m playwright install chromium"
+            )
+            return []
+
+        html_content = None
+
+        try:
+            self.logger.info("正在使用 Playwright 加载页面...")
+            
+            with sync_playwright() as p:
+                # 启动 Chromium 浏览器
+                browser = p.chromium.launch(headless=True)
+                self.logger.info("浏览器启动成功")
+
+                page = browser.new_page()
+                
+                # 设置浏览器标识，进一步模拟真实用户
+                page.set_extra_http_headers({
+                    "Accept-Language": "zh-CN,zh;q=0.9",
+                })
+
+                try:
+                    # 访问新的榜单页（无需登录，更稳定）
+                    self.logger.info(f"正在访问 {self.base_url} ...")
+                    try:
+                        page.goto(
+                            self.base_url,
+                            wait_until="domcontentloaded",
+                            timeout=60000
+                        )
+                        self.logger.info("页面加载完成")
+                    except Exception as e:
+                        self.logger.warning(f"页面加载超时，继续使用已加载内容: {e}")
+
+                    # 等待初始内容加载
+                    page.wait_for_timeout(1500)
+
+                    # 榜单页通常无需滚动即可获得 Top50
+                    # 为稳妥，轻微滚动两次触发可能的懒加载
+                    for _ in range(2):
+                        page.evaluate("window.scrollBy(0, window.innerHeight)")
+                        page.wait_for_timeout(400)
+
+                    # 获取最终的页面 HTML
+                    html_content = page.content()
+                    self.logger.info(f"页面内容获取成功，大小：{len(html_content)} bytes")
+
+                    # 保存调试 HTML（可选）
+                    try:
+                        with open("debug_realtime_page_playwright.html", "w", encoding="utf-8") as f:
+                            f.write(html_content)
+                        self.logger.debug("HTML 已保存到 debug_realtime_page_playwright.html")
+                    except Exception as e:
+                        self.logger.debug(f"保存调试 HTML 失败: {e}")
+
+                finally:
+                    browser.close()
+                    self.logger.info("浏览器已关闭")
+
+        except ImportError:
+            self.logger.error("Playwright 库未安装，无法使用此方法")
+            return []
+        except Exception as e:
+            self.logger.error(f"Playwright 获取页面失败: {e}")
+            return []
+
+        if not html_content:
+            self.logger.error("未获取到页面内容")
+            return []
+
+        # 解析获取到的 HTML
+        items = self.parse_realtime_page(html_content)
+        return items[:50]
+
+
 if __name__ == "__main__":
     main()
+
