@@ -8,6 +8,9 @@
     2. 数据标准化：将筛选后的数据重新进行rank排序，并修改count值
     3. 数据保存：将处理后的数据保存为新的JSON文件
 
+使用示例：
+    process_file("data/2025-01/2025-01-01.json", "data_processed/2025-01/2025-01-01.json")
+    process_dir("data/", "data_processed/")
 """
 
 import json
