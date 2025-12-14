@@ -6,6 +6,7 @@
 
 类定义：
     WeiboHotScraper: 微博热搜爬虫主类
+    RealtimeHotScraper: 实时热搜爬虫类
 
 主要功能：
     1. 爬取指定日期范围的微博热搜数据
