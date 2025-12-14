@@ -59,7 +59,7 @@ class DataClassifier:
         else:
             self.data_dir = Path(data_dir)
         self.category_map = {
-            0: "",  # 跳过/不分类
+            0: "其他",  # 跳过/不分类
             1: "明星",
             2: "综艺",
             3: "体育",
