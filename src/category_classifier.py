@@ -6,7 +6,21 @@
 提供交互式界面供用户进行分类。
 
 使用方式：
+    python3 category_classifier.py [--min_heat MIN_HEAT] [--data_dir DATA_DIR]
+
+参数说明：
+    --min_heat MIN_HEAT    最小热度阈值，只处理热度大于此值的数据项（默认: 100.0）
+    --data_dir DATA_DIR    数据目录路径（默认: data_processed）
+
+示例：
+    # 使用默认设置（热度 > 100）
     python3 category_classifier.py
+
+    # 只处理热度 > 500 的数据
+    python3 category_classifier.py --min_heat 500
+
+    # 指定数据目录
+    python3 category_classifier.py --data_dir my_data --min_heat 200
 """
 
 import json
@@ -44,12 +58,13 @@ else:
 class DataClassifier:
     """数据分类器类"""
 
-    def __init__(self, data_dir: str = None):
+    def __init__(self, data_dir: str = None, min_heat: float = 100.0):
         """
         初始化分类器
 
         参数:
             data_dir: 数据目录路径，如果为None则使用默认路径
+            min_heat: 最小热度阈值，只处理热度大于此值的数据项
         """
         if data_dir is None:
             # 默认路径：项目根目录下的data_processed文件夹
@@ -58,8 +73,11 @@ class DataClassifier:
             self.data_dir = project_root / "data_processed"
         else:
             self.data_dir = Path(data_dir)
+
+        self.min_heat = min_heat  # 最小热度阈值
+
         self.category_map = {
-            0: "",  # 跳过/不分类
+            0: "其他",  # 跳过/不分类
             1: "明星",
             2: "综艺",
             3: "体育",
@@ -259,6 +277,21 @@ class DataClassifier:
 
         for date_data in all_data:
             for item in date_data["data"]:
+                # 检查热度是否符合阈值要求
+                heat = item.get("heat", 0.0)
+                if isinstance(heat, (int, float)):
+                    if heat <= self.min_heat:
+                        continue  # 热度低于阈值，跳过此项
+                else:
+                    # 如果heat不是数字，尝试转换为浮点数
+                    try:
+                        heat_value = float(heat)
+                        if heat_value <= self.min_heat:
+                            continue
+                    except (ValueError, TypeError):
+                        # 无法转换为数字，跳过此项
+                        continue
+
                 # 检查category是否为空或只有空白字符
                 category = item.get("category", "")
                 if not category or category.strip() == "":
@@ -278,6 +311,7 @@ class DataClassifier:
         print("                  数据分类工具")
         print("=" * 60)
         print(f"当前处理: {self.date_range}")
+        print(f"热度阈值: > {self.min_heat}")
         print(f"未分类数据: {len(self.unclassified_items)}条")
         print(f"已处理: {self.stats['processed']}/{len(self.unclassified_items)}")
         print()
@@ -286,8 +320,6 @@ class DataClassifier:
         for key, value in self.category_map.items():
             if key == 9:
                 print(f"  {key}: 自定义分类 (输入分类名称)")
-            elif key == 0:
-                print(f"  {key}: '' (跳过/不分类)")
             else:
                 print(f"  {key}: '{value}'")
 
@@ -530,10 +562,6 @@ class DataClassifier:
                         else:
                             print("分类名称不能为空")
                             continue
-                    elif choice == 0:
-                        # 跳过/不分类
-                        item["category"] = ""
-                        self.stats["skipped"] += 1
                     else:
                         # 预设分类
                         item["category"] = self.category_map[choice]
@@ -673,6 +701,7 @@ class DataClassifier:
         print("    - 防抖动机制：快速连续按键会被忽略，长按不会重复输入")
         print("    - 输入后会显示'✓'确认，有短暂延迟防止误操作")
         print("    - 支持Windows、Linux/macOS和其他系统")
+        print("    - 只处理热度 > 100 的数据项（可通过 --min_heat 参数调整）")
         print("    - 输入9后，会提示输入完整的分类名称")
         print()
         input("按Enter键继续...")
@@ -680,6 +709,7 @@ class DataClassifier:
     def show_stats(self):
         """显示统计信息"""
         print("\n统计信息:")
+        print(f"  热度阈值: > {self.min_heat}")
         print(f"  总未分类项: {len(self.unclassified_items)}")
         print(f"  已处理: {self.stats['processed']}")
         print(f"  已更新: {self.stats['updated']}")
@@ -691,6 +721,7 @@ class DataClassifier:
     def run(self):
         """运行分类程序"""
         print("数据分类交互程序")
+        print(f"热度阈值: > {self.min_heat}")
         print("=" * 40)
 
         # 获取用户输入的日期范围
@@ -763,8 +794,26 @@ class DataClassifier:
 
 def main():
     """主函数"""
+    import argparse
+
+    parser = argparse.ArgumentParser(description="微博热搜数据分类器")
+    parser.add_argument(
+        "--min_heat",
+        type=float,
+        default=100.0,
+        help="最小热度阈值，只处理热度大于此值的数据项（默认: 100.0）",
+    )
+    parser.add_argument(
+        "--data_dir",
+        type=str,
+        default=None,
+        help="数据目录路径（默认: data_processed）",
+    )
+
+    args = parser.parse_args()
+
     try:
-        classifier = DataClassifier()
+        classifier = DataClassifier(data_dir=args.data_dir, min_heat=args.min_heat)
         classifier.run()
     except KeyboardInterrupt:
         print("\n\n程序被用户中断")
