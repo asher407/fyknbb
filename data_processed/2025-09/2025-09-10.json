@@ -1,0 +1,4486 @@
+{
+  "date": "2025-09-10",
+  "count": 448,
+  "data": [
+    {
+      "rank": 1,
+      "title": "苹果发布会",
+      "category": "科技",
+      "heat": 398.03,
+      "reads": 1361000.0,
+      "discussions": 1321.2,
+      "originals": 17.5,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 2,
+      "title": "李晨 鹿晗",
+      "category": "",
+      "heat": 280.66,
+      "reads": 4037.7,
+      "discussions": 1.1,
+      "originals": 0.37,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 3,
+      "title": "iPhone17系列价格",
+      "category": "互联网",
+      "heat": 269.15,
+      "reads": 12000.0,
+      "discussions": 5.3,
+      "originals": 0.69,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 4,
+      "title": "iPhone17",
+      "category": "",
+      "heat": 203.86,
+      "reads": 20000.0,
+      "discussions": 20.1,
+      "originals": 1.1,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 5,
+      "title": "煮方便面vs泡方便面",
+      "category": "情感",
+      "heat": 118.4,
+      "reads": 7816.6,
+      "discussions": 2.0,
+      "originals": 0.51,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 6,
+      "title": "微信更新",
+      "category": "互联网",
+      "heat": 116.61,
+      "reads": 20000.0,
+      "discussions": 6.2,
+      "originals": 1.4,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 7,
+      "title": "100斤女生滥用司美格鲁肽现酮症",
+      "category": "社会",
+      "heat": 116.26,
+      "reads": 3791.7,
+      "discussions": 0.74,
+      "originals": 0.15,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 8,
+      "title": "赵磊上婚综是为了正式介绍太太",
+      "category": "",
+      "heat": 113.26,
+      "reads": 2991.4,
+      "discussions": 2.1,
+      "originals": 0.53,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 9,
+      "title": "火箭军倒查9年揪出采购掮客",
+      "category": "社会",
+      "heat": 112.84,
+      "reads": 3218.3,
+      "discussions": 0.43,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 10,
+      "title": "陈伟霆张家人真的不会老",
+      "category": "",
+      "heat": 111.64,
+      "reads": 1321.7,
+      "discussions": 1.8,
+      "originals": 0.2,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 11,
+      "title": "美军地狱火导弹击中UFO后被弹开",
+      "category": "社会",
+      "heat": 111.16,
+      "reads": 2182.3,
+      "discussions": 0.26,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 12,
+      "title": "教师节",
+      "category": "教育",
+      "heat": 109.45,
+      "reads": 688000.0,
+      "discussions": 1036.4,
+      "originals": 110.5,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 13,
+      "title": "苹果发布会彩蛋有王嘉尔",
+      "category": "财经",
+      "heat": 108.6,
+      "reads": 1541.4,
+      "discussions": 0.52,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 14,
+      "title": "李在明 这算哪门子言论自由",
+      "category": "",
+      "heat": 108.26,
+      "reads": 1088.9,
+      "discussions": 0.32,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 15,
+      "title": "花中国的钱插刀中国绝不容忍",
+      "category": "",
+      "heat": 107.95,
+      "reads": 2897.6,
+      "discussions": 0.63,
+      "originals": 0.1,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 16,
+      "title": "在三尺讲台指引我人生起航",
+      "category": "社会",
+      "heat": 107.89,
+      "reads": 338.9,
+      "discussions": 0.2,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 17,
+      "title": "野狗骨头",
+      "category": "电视剧",
+      "heat": 107.6,
+      "reads": 18000.0,
+      "discussions": 39.4,
+      "originals": 0.95,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 18,
+      "title": "非洲女孩被AI识别出黑眼圈",
+      "category": "社会",
+      "heat": 107.26,
+      "reads": 872.3,
+      "discussions": 0.5,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 19,
+      "title": "九三阅兵观礼座被二次利用了",
+      "category": "社会",
+      "heat": 106.63,
+      "reads": 6251.6,
+      "discussions": 0.42,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 20,
+      "title": "最贵iPhone诞生",
+      "category": "科技",
+      "heat": 105.62,
+      "reads": 7077.9,
+      "discussions": 2.8,
+      "originals": 0.29,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 21,
+      "title": "卡塔尔首都多哈发生剧烈爆炸",
+      "category": "",
+      "heat": 103.93,
+      "reads": 9293.6,
+      "discussions": 2.5,
+      "originals": 0.34,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 22,
+      "title": "以色列攻击卡塔尔前一刻通知美方",
+      "category": "军事",
+      "heat": 101.11,
+      "reads": 1032.6,
+      "discussions": 0.19,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 23,
+      "title": "教师节快乐",
+      "category": "教育",
+      "heat": 100.8,
+      "reads": 423000.0,
+      "discussions": 679.6,
+      "originals": 36.4,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 24,
+      "title": "为啥歼10是争气机",
+      "category": "社会",
+      "heat": 94.9,
+      "reads": 2223.0,
+      "discussions": 0.52,
+      "originals": 0.1,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 25,
+      "title": "黄景瑜前妻 俩孩子一个被他打没了",
+      "category": "",
+      "heat": 89.67,
+      "reads": 13000.0,
+      "discussions": 2.8,
+      "originals": 0.9,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 26,
+      "title": "苹果的牙膏挤爆了",
+      "category": "",
+      "heat": 87.97,
+      "reads": 2026.0,
+      "discussions": 0.87,
+      "originals": 0.12,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 27,
+      "title": "黄岩岛",
+      "category": "",
+      "heat": 77.08,
+      "reads": 5425.4,
+      "discussions": 7.2,
+      "originals": 2.8,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 28,
+      "title": "iPhone17Pro 丑",
+      "category": "",
+      "heat": 71.13,
+      "reads": 18000.0,
+      "discussions": 8.3,
+      "originals": 1.8,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 29,
+      "title": "游本昌和妻子在养老院现状",
+      "category": "综艺",
+      "heat": 68.18,
+      "reads": 14000.0,
+      "discussions": 1.7,
+      "originals": 0.41,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 30,
+      "title": "砥砺奋进七十载天山南北谱华章",
+      "category": "社会",
+      "heat": 63.57,
+      "reads": 1187.5,
+      "discussions": 0.41,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 31,
+      "title": "张维伊换造型",
+      "category": "明星",
+      "heat": 60.36,
+      "reads": 2652.0,
+      "discussions": 0.81,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 32,
+      "title": "eSIM",
+      "category": "",
+      "heat": 58.49,
+      "reads": 645.1,
+      "discussions": 0.36,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 33,
+      "title": "iPhone17高刷",
+      "category": "",
+      "heat": 56.31,
+      "reads": 263.0,
+      "discussions": 0.14,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 34,
+      "title": "震耳欲聋",
+      "category": "电影",
+      "heat": 53.44,
+      "reads": 5813.5,
+      "discussions": 87.4,
+      "originals": 5.4,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 35,
+      "title": "卡塔尔",
+      "category": "",
+      "heat": 53.1,
+      "reads": 13000.0,
+      "discussions": 11.0,
+      "originals": 0.97,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 36,
+      "title": "花少7真的把马思纯养的很好",
+      "category": "",
+      "heat": 52.43,
+      "reads": 1245.2,
+      "discussions": 0.93,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 37,
+      "title": "B太助农卖葡萄被冷链车坑",
+      "category": "",
+      "heat": 52.23,
+      "reads": 336.0,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 38,
+      "title": "iPhone17Pro",
+      "category": "",
+      "heat": 51.88,
+      "reads": 947.3,
+      "discussions": 0.75,
+      "originals": 0.11,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 39,
+      "title": "宋雨琦特别感谢王安宇的出演",
+      "category": "明星",
+      "heat": 51.75,
+      "reads": 2801.6,
+      "discussions": 0.96,
+      "originals": 0.14,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 40,
+      "title": "1.61亿网民正遭私域直播围猎",
+      "category": "社会",
+      "heat": 51.33,
+      "reads": 1859.9,
+      "discussions": 0.25,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 41,
+      "title": "我国制造业规模连续15年全球第一",
+      "category": "社会",
+      "heat": 51.19,
+      "reads": 857.7,
+      "discussions": 0.19,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 42,
+      "title": "成人间的暧昧信息",
+      "category": "",
+      "heat": 50.67,
+      "reads": 250.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 43,
+      "title": "西贝回应被吐槽是预制菜",
+      "category": "社会",
+      "heat": 50.29,
+      "reads": 1170.2,
+      "discussions": 0.31,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 44,
+      "title": "特朗普称愿对中印大幅加征关税",
+      "category": "",
+      "heat": 50.1,
+      "reads": 1294.4,
+      "discussions": 0.15,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 45,
+      "title": "卡塔尔否认美国提前示警",
+      "category": "",
+      "heat": 49.83,
+      "reads": 927.1,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 46,
+      "title": "苹果官网下架iPhone16Pro系列",
+      "category": "科技",
+      "heat": 49.78,
+      "reads": 3136.3,
+      "discussions": 0.36,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 47,
+      "title": "当网警遇上教师节他们是别样的教师",
+      "category": "社会",
+      "heat": 46.91,
+      "reads": 907.3,
+      "discussions": 0.25,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 48,
+      "title": "男子高铁座位上旁若无人抽烟",
+      "category": "社会",
+      "heat": 46.17,
+      "reads": 1771.2,
+      "discussions": 0.68,
+      "originals": 0.11,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 49,
+      "title": "花2000万买房又花188万买家装包",
+      "category": "社会",
+      "heat": 46.14,
+      "reads": 2539.6,
+      "discussions": 0.31,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 50,
+      "title": "国防部提醒日本谨言慎行",
+      "category": "社会",
+      "heat": 45.89,
+      "reads": 1219.7,
+      "discussions": 0.21,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 51,
+      "title": "孟子义cos律政俏佳人",
+      "category": "",
+      "heat": 44.04,
+      "reads": 4812.2,
+      "discussions": 1.9,
+      "originals": 0.22,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 52,
+      "title": "新建黄岩岛国家级自然保护区",
+      "category": "社会",
+      "heat": 43.69,
+      "reads": 4666.8,
+      "discussions": 1.3,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 53,
+      "title": "玉兰花开君再来 杨紫成毅",
+      "category": "",
+      "heat": 42.36,
+      "reads": 1225.3,
+      "discussions": 1.9,
+      "originals": 0.42,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 54,
+      "title": "杨超越瓜子西施",
+      "category": "",
+      "heat": 41.26,
+      "reads": 442.7,
+      "discussions": 0.73,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 55,
+      "title": "韩国iPhoneAir没有捏合手势",
+      "category": "科技",
+      "heat": 41.2,
+      "reads": 1410.0,
+      "discussions": 0.51,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 56,
+      "title": "影视飓风Tim现场掰了iPhone",
+      "category": "",
+      "heat": 41.18,
+      "reads": 259.1,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 57,
+      "title": "AirPods Pro3",
+      "category": "",
+      "heat": 40.63,
+      "reads": 512.5,
+      "discussions": 0.33,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 58,
+      "title": "广西通报初一新生在校坠楼身亡",
+      "category": "社会",
+      "heat": 40.56,
+      "reads": 1212.3,
+      "discussions": 0.17,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 59,
+      "title": "不二之臣",
+      "category": "读书",
+      "heat": 40.46,
+      "reads": 13000.0,
+      "discussions": 11.7,
+      "originals": 1.7,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 60,
+      "title": "教师节祝福",
+      "category": "社会",
+      "heat": 40.28,
+      "reads": 18000.0,
+      "discussions": 12.5,
+      "originals": 1.2,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 61,
+      "title": "祝老师节日快乐",
+      "category": "社会",
+      "heat": 40.05,
+      "reads": 19000.0,
+      "discussions": 12.1,
+      "originals": 0.6,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 62,
+      "title": "张惠妹决定无限期停工",
+      "category": "明星",
+      "heat": 39.86,
+      "reads": 2487.4,
+      "discussions": 0.3,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 63,
+      "title": "吴雅婷回应王栎鑫患焦虑症",
+      "category": "明星",
+      "heat": 39.62,
+      "reads": 7423.7,
+      "discussions": 0.63,
+      "originals": 0.12,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 64,
+      "title": "日本民众喊话石平滚出日本",
+      "category": "",
+      "heat": 39.6,
+      "reads": 3761.1,
+      "discussions": 0.74,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 65,
+      "title": "郭焱谈孙颖莎发球被裁判提醒",
+      "category": "体育",
+      "heat": 39.4,
+      "reads": 1184.2,
+      "discussions": 1.2,
+      "originals": 0.12,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 66,
+      "title": "iPhone16需求不降反升",
+      "category": "情感",
+      "heat": 39.27,
+      "reads": 1990.1,
+      "discussions": 0.62,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 67,
+      "title": "iPhone16背刺最大一代",
+      "category": "情感",
+      "heat": 39.24,
+      "reads": 3370.8,
+      "discussions": 2.2,
+      "originals": 0.28,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 68,
+      "title": "盛世天下",
+      "category": "游戏",
+      "heat": 38.82,
+      "reads": 4822.4,
+      "discussions": 37.2,
+      "originals": 0.3,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 69,
+      "title": "史上最薄iPhone",
+      "category": "互联网",
+      "heat": 36.85,
+      "reads": 291.7,
+      "discussions": 0.24,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 70,
+      "title": "巩俐周迅赵丽颖倪妮祝贺辛芷蕾",
+      "category": "明星",
+      "heat": 36.2,
+      "reads": 2199.3,
+      "discussions": 0.66,
+      "originals": 0.12,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 71,
+      "title": "美国歌手车箱藏尸",
+      "category": "明星",
+      "heat": 35.99,
+      "reads": 2076.2,
+      "discussions": 0.19,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 72,
+      "title": "拉里埃里森成全球首富",
+      "category": "社会",
+      "heat": 35.65,
+      "reads": 473.8,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 73,
+      "title": "国防部回应日本加速军事扩张",
+      "category": "社会",
+      "heat": 34.45,
+      "reads": 994.8,
+      "discussions": 0.17,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 74,
+      "title": "三星嘲讽iPhone17系列",
+      "category": "社会",
+      "heat": 34.45,
+      "reads": 2349.9,
+      "discussions": 0.51,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 75,
+      "title": "汕头3.8级地震",
+      "category": "社会",
+      "heat": 34.04,
+      "reads": 1830.3,
+      "discussions": 0.18,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 76,
+      "title": "辛芷蕾收到女演员们集体祝福",
+      "category": "明星",
+      "heat": 33.34,
+      "reads": 656.9,
+      "discussions": 0.27,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 77,
+      "title": "古巴全国电力中断",
+      "category": "社会",
+      "heat": 33.13,
+      "reads": 695.1,
+      "discussions": 0.1,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 78,
+      "title": "黄岩岛国家级自然保护区",
+      "category": "社会",
+      "heat": 32.69,
+      "reads": 2624.1,
+      "discussions": 1.0,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 79,
+      "title": "中医说张小婉对男孩子的防备心重",
+      "category": "",
+      "heat": 32.46,
+      "reads": 1160.9,
+      "discussions": 0.68,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 80,
+      "title": "赴山海还是有李凯馨",
+      "category": "电视剧",
+      "heat": 32.36,
+      "reads": 1997.6,
+      "discussions": 0.5,
+      "originals": 0.12,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 81,
+      "title": "杨幂教师节感谢了一位特别的老师",
+      "category": "明星",
+      "heat": 32.21,
+      "reads": 2163.3,
+      "discussions": 0.33,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 82,
+      "title": "苹果市值一夜蒸发超3700亿",
+      "category": "财经",
+      "heat": 32.2,
+      "reads": 1593.3,
+      "discussions": 0.18,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 83,
+      "title": "辛芷蕾拿了影后刘冲再也没有发过花絮",
+      "category": "明星",
+      "heat": 32.16,
+      "reads": 7001.2,
+      "discussions": 0.6,
+      "originals": 0.11,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 84,
+      "title": "高德扫街榜",
+      "category": "互联网",
+      "heat": 31.3,
+      "reads": 7074.7,
+      "discussions": 4.0,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 85,
+      "title": "网红柴怼怼被警方带走调查",
+      "category": "社会",
+      "heat": 31.12,
+      "reads": 1567.2,
+      "discussions": 0.25,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 86,
+      "title": "喜人奇妙夜",
+      "category": "综艺",
+      "heat": 30.98,
+      "reads": 179000.0,
+      "discussions": 544.0,
+      "originals": 6.9,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 87,
+      "title": "大黄胡楚靓 远离low货",
+      "category": "",
+      "heat": 30.96,
+      "reads": 1547.6,
+      "discussions": 0.48,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 88,
+      "title": "祝绪丹手滑",
+      "category": "",
+      "heat": 30.72,
+      "reads": 16000.0,
+      "discussions": 4.9,
+      "originals": 1.4,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 89,
+      "title": "娜扎把杨幂编辑掉了",
+      "category": "明星",
+      "heat": 30.39,
+      "reads": 7381.2,
+      "discussions": 0.89,
+      "originals": 0.25,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 90,
+      "title": "那英老公回应",
+      "category": "明星",
+      "heat": 30.19,
+      "reads": 12000.0,
+      "discussions": 2.0,
+      "originals": 0.32,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 91,
+      "title": "李炮儿 网红终结者",
+      "category": "",
+      "heat": 30.13,
+      "reads": 705.2,
+      "discussions": 0.44,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 92,
+      "title": "黑龙江煤矿矿震2人获救送医",
+      "category": "",
+      "heat": 30.0,
+      "reads": 88.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 93,
+      "title": "未拴绳大狗撞倒女子致其当场死亡",
+      "category": "社会",
+      "heat": 29.54,
+      "reads": 3540.0,
+      "discussions": 0.5,
+      "originals": 0.1,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 94,
+      "title": "肖战一觉醒来被判了一千兆年",
+      "category": "明星",
+      "heat": 29.44,
+      "reads": 2518.5,
+      "discussions": 1.3,
+      "originals": 0.3,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 95,
+      "title": "郑州非必要不外出",
+      "category": "社会",
+      "heat": 29.29,
+      "reads": 1429.2,
+      "discussions": 0.24,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 96,
+      "title": "高德重磅发布扫街榜",
+      "category": "社会",
+      "heat": 29.12,
+      "reads": 2662.0,
+      "discussions": 0.77,
+      "originals": 0.11,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 97,
+      "title": "吴倩近态",
+      "category": "",
+      "heat": 29.11,
+      "reads": 1800.5,
+      "discussions": 0.56,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 98,
+      "title": "香奈儿 收集癖",
+      "category": "",
+      "heat": 29.05,
+      "reads": 749.5,
+      "discussions": 0.22,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 99,
+      "title": "受害者家属被催缴24万天价停尸费",
+      "category": "社会",
+      "heat": 29.01,
+      "reads": 736.4,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 100,
+      "title": "真夫妻牵手走红毯就是好嗑",
+      "category": "",
+      "heat": 27.63,
+      "reads": 656.2,
+      "discussions": 0.51,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 101,
+      "title": "鹿晗晒与邓超陈赫合照",
+      "category": "明星",
+      "heat": 27.42,
+      "reads": 1062.7,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 102,
+      "title": "董璇美我一大跳",
+      "category": "明星",
+      "heat": 27.27,
+      "reads": 1004.7,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 103,
+      "title": "不二之臣 男女主",
+      "category": "",
+      "heat": 27.21,
+      "reads": 137.2,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 104,
+      "title": "山东男子因楼上噪音捅死邻居被判死刑",
+      "category": "社会",
+      "heat": 27.21,
+      "reads": 1669.2,
+      "discussions": 0.36,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 105,
+      "title": "iPhone17颜色",
+      "category": "科技",
+      "heat": 27.07,
+      "reads": 281.2,
+      "discussions": 0.24,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 106,
+      "title": "董军同美国防部长视频通话",
+      "category": "社会",
+      "heat": 26.76,
+      "reads": 995.8,
+      "discussions": 0.11,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 107,
+      "title": "6旬大爷裸聊主播8天花光全部积蓄",
+      "category": "社会",
+      "heat": 26.66,
+      "reads": 5944.6,
+      "discussions": 0.94,
+      "originals": 0.2,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 108,
+      "title": "中国空军运20接30名烈士回家",
+      "category": "社会",
+      "heat": 26.65,
+      "reads": 605.2,
+      "discussions": 0.17,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 109,
+      "title": "为什么大家又重新使用毛巾",
+      "category": "健康",
+      "heat": 26.63,
+      "reads": 830.7,
+      "discussions": 0.66,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 110,
+      "title": "管乐疑似把粉丝送的礼物送给相亲对象",
+      "category": "明星",
+      "heat": 26.45,
+      "reads": 6856.6,
+      "discussions": 1.1,
+      "originals": 0.17,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 111,
+      "title": "淘宝是AG的万能神装",
+      "category": "游戏",
+      "heat": 26.41,
+      "reads": 178.0,
+      "discussions": 1.4,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 112,
+      "title": "豆沙馅真的塌房了",
+      "category": "搞笑",
+      "heat": 26.38,
+      "reads": 1469.4,
+      "discussions": 0.64,
+      "originals": 0.21,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 113,
+      "title": "朱一龙高情商送礼小课堂",
+      "category": "明星",
+      "heat": 26.14,
+      "reads": 320.4,
+      "discussions": 1.6,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 114,
+      "title": "洁柔回应消费者质疑厨房纸虚假宣传",
+      "category": "社会",
+      "heat": 26.05,
+      "reads": 140.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 115,
+      "title": "马丁 朱志鑫",
+      "category": "",
+      "heat": 26.04,
+      "reads": 824.3,
+      "discussions": 1.3,
+      "originals": 0.3,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 116,
+      "title": "传统点评榜单不该是餐饮指挥棒",
+      "category": "财经",
+      "heat": 26.0,
+      "reads": 778.7,
+      "discussions": 2.9,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 117,
+      "title": "上海老人房子被孙女砸成废墟",
+      "category": "",
+      "heat": 25.82,
+      "reads": 289.0,
+      "discussions": 0.05,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 118,
+      "title": "曝一念江南没有男演员愿意接",
+      "category": "电视剧",
+      "heat": 25.8,
+      "reads": 3516.0,
+      "discussions": 0.83,
+      "originals": 0.25,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 119,
+      "title": "黄子韬徐艺洋拍婚纱照了",
+      "category": "明星",
+      "heat": 25.74,
+      "reads": 4079.6,
+      "discussions": 0.59,
+      "originals": 0.22,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 120,
+      "title": "曝高学历小花是木头美人",
+      "category": "明星",
+      "heat": 25.71,
+      "reads": 5092.3,
+      "discussions": 1.0,
+      "originals": 0.31,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 121,
+      "title": "AirPods Pro3实时翻译",
+      "category": "",
+      "heat": 25.67,
+      "reads": 105.7,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 122,
+      "title": "辛芷蕾手机要爆炸了",
+      "category": "明星",
+      "heat": 25.62,
+      "reads": 5339.4,
+      "discussions": 0.79,
+      "originals": 0.14,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 123,
+      "title": "天才小熊猫总结苹果发布会",
+      "category": "",
+      "heat": 25.52,
+      "reads": 251.7,
+      "discussions": 0.07,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 124,
+      "title": "一念江南 王安宇",
+      "category": "",
+      "heat": 25.5,
+      "reads": 26.6,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 125,
+      "title": "原神月之一",
+      "category": "",
+      "heat": 25.47,
+      "reads": 4875.8,
+      "discussions": 5.6,
+      "originals": 0.88,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 126,
+      "title": "聚是七个蛋 散是鸡蛋羹",
+      "category": "",
+      "heat": 25.46,
+      "reads": 2505.5,
+      "discussions": 1.3,
+      "originals": 0.42,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 127,
+      "title": "洗澡三小时 客户被盘了一个半小时",
+      "category": "",
+      "heat": 25.42,
+      "reads": 1070.4,
+      "discussions": 0.13,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 128,
+      "title": "一念江南 陈都灵",
+      "category": "",
+      "heat": 25.4,
+      "reads": 111.8,
+      "discussions": 0.14,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 129,
+      "title": "海拔2600米的三文鱼到底有多干净",
+      "category": "社会",
+      "heat": 25.37,
+      "reads": 303.4,
+      "discussions": 0.45,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 130,
+      "title": "iPhone新机首次支持国补",
+      "category": "",
+      "heat": 25.36,
+      "reads": 7514.3,
+      "discussions": 4.9,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 131,
+      "title": "夫妻在合租房生娃被赶将重找住处",
+      "category": "社会",
+      "heat": 25.36,
+      "reads": 136.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 132,
+      "title": "刘浩存好明媚",
+      "category": "明星",
+      "heat": 25.27,
+      "reads": 1581.1,
+      "discussions": 0.79,
+      "originals": 0.14,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 133,
+      "title": "朝鲜民众庆祝国庆画面",
+      "category": "社会",
+      "heat": 25.26,
+      "reads": 709.4,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 134,
+      "title": "辛芷蕾助理小号",
+      "category": "明星",
+      "heat": 25.25,
+      "reads": 1493.7,
+      "discussions": 0.14,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 135,
+      "title": "祝绪丹 没有任何讨厌的人",
+      "category": "",
+      "heat": 25.24,
+      "reads": 814.2,
+      "discussions": 0.38,
+      "originals": 0.1,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 136,
+      "title": "檀健次震耳欲聋看片反馈",
+      "category": "电影",
+      "heat": 25.22,
+      "reads": 122.0,
+      "discussions": 0.91,
+      "originals": 0.15,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 137,
+      "title": "那英在英国陪女儿读书",
+      "category": "明星",
+      "heat": 25.19,
+      "reads": 3646.5,
+      "discussions": 0.28,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 138,
+      "title": "高德每天为线下店多带1000万消费者",
+      "category": "财经",
+      "heat": 25.06,
+      "reads": 720.8,
+      "discussions": 0.35,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 139,
+      "title": "人民网评斩断流量明星招摇过市推手",
+      "category": "明星",
+      "heat": 25.03,
+      "reads": 1775.9,
+      "discussions": 0.48,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 140,
+      "title": "王星越回应茶不离手",
+      "category": "明星",
+      "heat": 24.99,
+      "reads": 251.1,
+      "discussions": 1.6,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 141,
+      "title": "大一男生感染艾滋后发声",
+      "category": "社会",
+      "heat": 24.94,
+      "reads": 291.7,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 142,
+      "title": "宋雨琦这张脸早该演现偶了",
+      "category": "",
+      "heat": 24.78,
+      "reads": 66.5,
+      "discussions": 0.46,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 143,
+      "title": "高德扫街榜给传统美食榜挤水分",
+      "category": "社会",
+      "heat": 24.78,
+      "reads": 234.2,
+      "discussions": 0.23,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 144,
+      "title": "吴奇隆 我的祖籍是福建泉州",
+      "category": "",
+      "heat": 24.74,
+      "reads": 144.5,
+      "discussions": 0.49,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 145,
+      "title": "张艺兴张艺谋合照",
+      "category": "明星",
+      "heat": 24.73,
+      "reads": 121.3,
+      "discussions": 0.43,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 146,
+      "title": "钟楚曦 汪曲攸",
+      "category": "",
+      "heat": 24.66,
+      "reads": 345.6,
+      "discussions": 0.41,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 147,
+      "title": "邓文迪女儿受益默多克家族继承战",
+      "category": "明星",
+      "heat": 24.59,
+      "reads": 496.2,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 148,
+      "title": "闪光灯没闪过孙俪",
+      "category": "",
+      "heat": 24.29,
+      "reads": 109.4,
+      "discussions": 0.4,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 149,
+      "title": "尼泊尔",
+      "category": "旅游",
+      "heat": 24.29,
+      "reads": 17000.0,
+      "discussions": 10.7,
+      "originals": 1.3,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 150,
+      "title": "号称国际名牌的膏药贴成本仅2元",
+      "category": "社会",
+      "heat": 23.73,
+      "reads": 116.4,
+      "discussions": 0.59,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 151,
+      "title": "林更新还回内娱吗",
+      "category": "",
+      "heat": 23.47,
+      "reads": 2014.0,
+      "discussions": 1.0,
+      "originals": 0.17,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 152,
+      "title": "银河左岸音乐节阵容",
+      "category": "音乐",
+      "heat": 23.35,
+      "reads": 109.7,
+      "discussions": 0.19,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 153,
+      "title": "乡村教师抗癌500天化疗22次后病逝",
+      "category": "社会",
+      "heat": 23.35,
+      "reads": 223.4,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 154,
+      "title": "杨幂现身生万物研讨会",
+      "category": "明星",
+      "heat": 23.08,
+      "reads": 983.3,
+      "discussions": 0.46,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 155,
+      "title": "那个拒绝感动中国提名的德国人现状",
+      "category": "",
+      "heat": 22.93,
+      "reads": 778.5,
+      "discussions": 0.13,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 156,
+      "title": "智己底盘再破世界纪录",
+      "category": "汽车",
+      "heat": 22.74,
+      "reads": 851.3,
+      "discussions": 0.95,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 157,
+      "title": "原来牙神经长这样",
+      "category": "",
+      "heat": 22.71,
+      "reads": 451.8,
+      "discussions": 0.21,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 158,
+      "title": "自闭症学生遭劝退家长再发声",
+      "category": "社会",
+      "heat": 22.5,
+      "reads": 41.2,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 159,
+      "title": "梓渝重复练习动作认真调整细节",
+      "category": "明星",
+      "heat": 22.27,
+      "reads": 206.7,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 160,
+      "title": "当我冲着女儿的颜值生了二胎",
+      "category": "",
+      "heat": 22.1,
+      "reads": 477.6,
+      "discussions": 0.09,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 161,
+      "title": "幼虎疑遭打头呲水强迫与游客合影",
+      "category": "社会",
+      "heat": 22.07,
+      "reads": 141.8,
+      "discussions": 0.04,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 162,
+      "title": "内娱现役法拉利肖战",
+      "category": "",
+      "heat": 22.01,
+      "reads": 517.9,
+      "discussions": 2.3,
+      "originals": 0.44,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 163,
+      "title": "魏建军教师节监考",
+      "category": "汽车",
+      "heat": 22.0,
+      "reads": 1500.8,
+      "discussions": 0.82,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 164,
+      "title": "气血不足的人常有这8个坏习惯",
+      "category": "",
+      "heat": 21.86,
+      "reads": 1110.1,
+      "discussions": 0.17,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 165,
+      "title": "徐冬冬尹子维试婚纱",
+      "category": "",
+      "heat": 21.84,
+      "reads": 38.9,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 166,
+      "title": "一年四季都出片的阿勒泰",
+      "category": "社会",
+      "heat": 21.77,
+      "reads": 243.6,
+      "discussions": 0.19,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 167,
+      "title": "医生回应男生感染艾滋以为军训太累",
+      "category": "社会",
+      "heat": 21.62,
+      "reads": 2587.7,
+      "discussions": 0.2,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 168,
+      "title": "6省国补资金违规使用过亿",
+      "category": "",
+      "heat": 21.4,
+      "reads": 2335.3,
+      "discussions": 0.17,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 169,
+      "title": "新疆维吾尔自治区成立70周年",
+      "category": "社会",
+      "heat": 21.39,
+      "reads": 207.6,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 170,
+      "title": "偶遇杨洋在夏威夷吃川菜",
+      "category": "明星",
+      "heat": 21.3,
+      "reads": 686.9,
+      "discussions": 0.28,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 171,
+      "title": "钟楚曦被曝分手后首现身",
+      "category": "明星",
+      "heat": 21.22,
+      "reads": 1873.5,
+      "discussions": 0.16,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 172,
+      "title": "孙颖莎vs赫尔希",
+      "category": "体育",
+      "heat": 21.15,
+      "reads": 272.2,
+      "discussions": 0.22,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 173,
+      "title": "张静初的手",
+      "category": "",
+      "heat": 20.68,
+      "reads": 260.1,
+      "discussions": 0.4,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 174,
+      "title": "成毅新剧一胎三胞",
+      "category": "",
+      "heat": 20.64,
+      "reads": 289.5,
+      "discussions": 1.5,
+      "originals": 0.16,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 175,
+      "title": "12306回应男子高铁抽烟被民警带走",
+      "category": "社会",
+      "heat": 20.6,
+      "reads": 810.3,
+      "discussions": 0.1,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 176,
+      "title": "华莱士10元3堡吃过都说好",
+      "category": "社会",
+      "heat": 20.56,
+      "reads": 7362.7,
+      "discussions": 3.3,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 177,
+      "title": "别人扫楼王鹤棣官宣扫街",
+      "category": "明星",
+      "heat": 20.54,
+      "reads": 1287.9,
+      "discussions": 1.8,
+      "originals": 0.19,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 178,
+      "title": "六部门开展汽车行业网络乱象整治",
+      "category": "社会",
+      "heat": 20.54,
+      "reads": 651.9,
+      "discussions": 0.21,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 179,
+      "title": "刘念何聪睿就这样旁若无人",
+      "category": "",
+      "heat": 20.53,
+      "reads": 126.6,
+      "discussions": 0.6,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 180,
+      "title": "高德推出全球首个用脚投票美食榜",
+      "category": "社会",
+      "heat": 20.53,
+      "reads": 416.1,
+      "discussions": 0.33,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 181,
+      "title": "高德升级为阿里生活服务超级入口",
+      "category": "财经",
+      "heat": 20.52,
+      "reads": 961.8,
+      "discussions": 0.31,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 182,
+      "title": "巨型梁龙 人体蜈蚣",
+      "category": "",
+      "heat": 20.52,
+      "reads": 422.0,
+      "discussions": 0.32,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 183,
+      "title": "赵涛帮辛芷蕾争取到了影后奖",
+      "category": "",
+      "heat": 20.52,
+      "reads": 126.4,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 184,
+      "title": "高圆圆代言腾势N9",
+      "category": "明星",
+      "heat": 20.5,
+      "reads": 4032.6,
+      "discussions": 1.1,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 185,
+      "title": "张婧仪回复",
+      "category": "",
+      "heat": 20.37,
+      "reads": 550.6,
+      "discussions": 0.49,
+      "originals": 0.13,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 186,
+      "title": "宋亚轩累了知道躺贺峻霖怀里",
+      "category": "",
+      "heat": 20.35,
+      "reads": 183.9,
+      "discussions": 0.44,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 187,
+      "title": "我的手机要低人一等了",
+      "category": "",
+      "heat": 20.31,
+      "reads": 461.4,
+      "discussions": 0.15,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 188,
+      "title": "丝瓜汤为网络和谐付出太多了",
+      "category": "情感",
+      "heat": 20.26,
+      "reads": 37.7,
+      "discussions": 0.27,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 189,
+      "title": "宋佳佟丽娅演上再见爱人了",
+      "category": "",
+      "heat": 20.23,
+      "reads": 35.8,
+      "discussions": 0.37,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 190,
+      "title": "张杰杭州演唱会抢票",
+      "category": "社会",
+      "heat": 20.05,
+      "reads": 40.1,
+      "discussions": 0.2,
+      "originals": 0.1,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 191,
+      "title": "此沙顶级骨相",
+      "category": "明星",
+      "heat": 20.03,
+      "reads": 46.2,
+      "discussions": 0.43,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 192,
+      "title": "赴山海",
+      "category": "电视剧",
+      "heat": 19.99,
+      "reads": 173000.0,
+      "discussions": 4027.4,
+      "originals": 43.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 193,
+      "title": "谁家好人教师节送老师考题啊",
+      "category": "",
+      "heat": 19.97,
+      "reads": 254.5,
+      "discussions": 1.7,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 194,
+      "title": "以军空袭地点距中国使馆仅800米",
+      "category": "社会",
+      "heat": 19.96,
+      "reads": 233.8,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 195,
+      "title": "继奶茶后冰红茶成商战新赛道",
+      "category": "社会",
+      "heat": 19.8,
+      "reads": 832.2,
+      "discussions": 0.37,
+      "originals": 0.19,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 196,
+      "title": "巨石强森一身肌肉快瘦没了",
+      "category": "明星",
+      "heat": 19.71,
+      "reads": 800.4,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 197,
+      "title": "人民日报谈粉丝追星围堵高铁站",
+      "category": "社会",
+      "heat": 19.59,
+      "reads": 456.5,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 198,
+      "title": "黄金",
+      "category": "",
+      "heat": 19.57,
+      "reads": 1211000.0,
+      "discussions": 1294.7,
+      "originals": 27.4,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 199,
+      "title": "卫健委回复定位有误救护车开错路",
+      "category": "社会",
+      "heat": 19.51,
+      "reads": 75.2,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 200,
+      "title": "20岁女孩失恋1个月全身毛发脱落",
+      "category": "社会",
+      "heat": 19.39,
+      "reads": 1196.2,
+      "discussions": 0.18,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 201,
+      "title": "张晚意的人生快离不开龚俊了",
+      "category": "",
+      "heat": 19.39,
+      "reads": 320.9,
+      "discussions": 0.58,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 202,
+      "title": "荣耀高管称Magic8是真AI手机",
+      "category": "数码",
+      "heat": 19.34,
+      "reads": 426.9,
+      "discussions": 1.0,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 203,
+      "title": "智己LS6价格一出全体起立",
+      "category": "汽车",
+      "heat": 19.32,
+      "reads": 497.5,
+      "discussions": 0.49,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 204,
+      "title": "尔冬升与9岁女儿合照",
+      "category": "明星",
+      "heat": 19.27,
+      "reads": 1152.9,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 205,
+      "title": "田栩宁Metal杂志采访",
+      "category": "",
+      "heat": 19.26,
+      "reads": 66.9,
+      "discussions": 0.19,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 206,
+      "title": "曝男流量在采访间抽烟",
+      "category": "明星",
+      "heat": 19.11,
+      "reads": 1736.2,
+      "discussions": 0.31,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 207,
+      "title": "每天喝咖啡是续命还是促癌",
+      "category": "",
+      "heat": 19.04,
+      "reads": 1229.3,
+      "discussions": 0.2,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 208,
+      "title": "旅游才是断舍离的最佳时期",
+      "category": "",
+      "heat": 18.88,
+      "reads": 3.2,
+      "discussions": 0.05,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 209,
+      "title": "马思纯回应网友让她和张晚意拍戏",
+      "category": "明星",
+      "heat": 18.83,
+      "reads": 659.1,
+      "discussions": 0.17,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 210,
+      "title": "2000万的房子验出120个问题",
+      "category": "社会",
+      "heat": 18.59,
+      "reads": 246.1,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 211,
+      "title": "山东淄博警方破获厕所刻黄网案",
+      "category": "社会",
+      "heat": 18.49,
+      "reads": 739.1,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 212,
+      "title": "苹果连发7个燃",
+      "category": "科技",
+      "heat": 18.34,
+      "reads": 165.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 213,
+      "title": "iPhone17是否支持国补",
+      "category": "财经",
+      "heat": 18.33,
+      "reads": 289.9,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 214,
+      "title": "大学生一天旅游四个城市是什么体验",
+      "category": "情感",
+      "heat": 18.32,
+      "reads": 2097.2,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 215,
+      "title": "以为很不卫生实际巨养牙",
+      "category": "",
+      "heat": 18.3,
+      "reads": 250.7,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 216,
+      "title": "内娱选秀C位 从群嘲到用实力证明",
+      "category": "",
+      "heat": 18.17,
+      "reads": 293.1,
+      "discussions": 0.44,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 217,
+      "title": "智己LS6",
+      "category": "汽车",
+      "heat": 18.07,
+      "reads": 31000.0,
+      "discussions": 86.9,
+      "originals": 0.59,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 218,
+      "title": "纽约地铁乘客众目睽睽下刮脚",
+      "category": "",
+      "heat": 17.99,
+      "reads": 215.0,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 219,
+      "title": "pdf不行 得PDF才行",
+      "category": "",
+      "heat": 17.96,
+      "reads": 356.8,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 220,
+      "title": "少女遭体罚死前求助信被老师拦截",
+      "category": "社会",
+      "heat": 17.92,
+      "reads": 204.7,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 221,
+      "title": "民警回应柴怼怼被立案调查",
+      "category": "社会",
+      "heat": 17.9,
+      "reads": 60.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 222,
+      "title": "美国背刺韩国",
+      "category": "社会",
+      "heat": 17.88,
+      "reads": 843.7,
+      "discussions": 0.11,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 223,
+      "title": "iPhone17ProMax离谱手机壳",
+      "category": "互联网",
+      "heat": 17.82,
+      "reads": 2051.5,
+      "discussions": 0.3,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 224,
+      "title": "现在大学生开学竟然吃的这么好",
+      "category": "情感",
+      "heat": 17.81,
+      "reads": 1182.7,
+      "discussions": 0.06,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 225,
+      "title": "iPhone17和iPhone16充电速度对比",
+      "category": "科技",
+      "heat": 17.76,
+      "reads": 133.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 226,
+      "title": "取色器大爷 美术生老时候",
+      "category": "",
+      "heat": 17.74,
+      "reads": 1.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 227,
+      "title": "外卖已经让我对食物的价格失感了",
+      "category": "搞笑",
+      "heat": 17.69,
+      "reads": 236.0,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 228,
+      "title": "卢伟冰要买苹果手机",
+      "category": "财经",
+      "heat": 17.66,
+      "reads": 159.2,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 229,
+      "title": "鞠婧祎生图",
+      "category": "明星",
+      "heat": 17.57,
+      "reads": 2968.3,
+      "discussions": 2.7,
+      "originals": 0.37,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 230,
+      "title": "冯禧的情商",
+      "category": "明星",
+      "heat": 17.42,
+      "reads": 2697.8,
+      "discussions": 0.22,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 231,
+      "title": "胡宾果住酒店被偷拍",
+      "category": "明星",
+      "heat": 17.4,
+      "reads": 3316.0,
+      "discussions": 0.64,
+      "originals": 0.12,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 232,
+      "title": "高圆圆抱着女儿放学回家",
+      "category": "明星",
+      "heat": 17.39,
+      "reads": 760.0,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 233,
+      "title": "为什么接吻的时候闻不到对方口臭",
+      "category": "搞笑",
+      "heat": 17.28,
+      "reads": 5035.4,
+      "discussions": 0.25,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 234,
+      "title": "澳门2049在直播间破圈了",
+      "category": "旅游",
+      "heat": 17.26,
+      "reads": 167.2,
+      "discussions": 0.78,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 235,
+      "title": "这才是女生眼里的男友干净穿搭",
+      "category": "搞笑",
+      "heat": 17.15,
+      "reads": 106.8,
+      "discussions": 0.27,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 236,
+      "title": "坚持喝牛奶VS坚持喝豆浆",
+      "category": "",
+      "heat": 17.13,
+      "reads": 302.1,
+      "discussions": 0.22,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 237,
+      "title": "iPhone17 边拍演唱会边拍自己",
+      "category": "",
+      "heat": 17.11,
+      "reads": 104.9,
+      "discussions": 0.04,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 238,
+      "title": "感觉短国男主都没有躺过冰冷手术台",
+      "category": "",
+      "heat": 16.98,
+      "reads": 49.8,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 239,
+      "title": "黄景瑜前妻喊话许凯",
+      "category": "明星",
+      "heat": 16.94,
+      "reads": 18000.0,
+      "discussions": 2.7,
+      "originals": 0.86,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 240,
+      "title": "伊朗谴责以色列袭击哈马斯高官",
+      "category": "",
+      "heat": 16.94,
+      "reads": 59.9,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 241,
+      "title": "当自驾游只有我会开车时",
+      "category": "",
+      "heat": 16.87,
+      "reads": 9387.1,
+      "discussions": 0.13,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 242,
+      "title": "宋轶疑似取关白敬亭",
+      "category": "明星",
+      "heat": 16.85,
+      "reads": 8070.2,
+      "discussions": 1.7,
+      "originals": 0.48,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 243,
+      "title": "孙莉更新黄多多vlog",
+      "category": "",
+      "heat": 16.85,
+      "reads": 594.3,
+      "discussions": 0.12,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 244,
+      "title": "秘密世界 孟子义",
+      "category": "",
+      "heat": 16.83,
+      "reads": 48.9,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 245,
+      "title": "暹罗猫小豆泥去世",
+      "category": "",
+      "heat": 16.83,
+      "reads": 3542.7,
+      "discussions": 1.6,
+      "originals": 0.51,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 246,
+      "title": "卡塔尔首都多哈爆炸现场画面",
+      "category": "社会",
+      "heat": 16.79,
+      "reads": 489.5,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 247,
+      "title": "福建被继母生父虐死女孩体重仅40斤",
+      "category": "社会",
+      "heat": 16.71,
+      "reads": 123.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 248,
+      "title": "甲骨文",
+      "category": "历史",
+      "heat": 16.63,
+      "reads": 3965.4,
+      "discussions": 8.3,
+      "originals": 4.6,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 249,
+      "title": "徐若晗 减肥对身体不好",
+      "category": "",
+      "heat": 16.56,
+      "reads": 30.4,
+      "discussions": 0.25,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 250,
+      "title": "田栩宁星火繁花",
+      "category": "明星",
+      "heat": 16.42,
+      "reads": 266.2,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 251,
+      "title": "上一个综艺累成这样的还是杨洋",
+      "category": "",
+      "heat": 16.34,
+      "reads": 34.0,
+      "discussions": 0.38,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 252,
+      "title": "部分人买iPhone竟然因其保值",
+      "category": "",
+      "heat": 16.32,
+      "reads": 3.6,
+      "discussions": 0.04,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 253,
+      "title": "管乐回应粉丝",
+      "category": "明星",
+      "heat": 16.26,
+      "reads": 441.9,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 254,
+      "title": "李在明批反华集会纯属闹事",
+      "category": "",
+      "heat": 16.2,
+      "reads": 657.1,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 255,
+      "title": "田栩宁费加罗九月刊封面预告",
+      "category": "时尚",
+      "heat": 16.13,
+      "reads": 3758.5,
+      "discussions": 28.9,
+      "originals": 1.2,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 256,
+      "title": "倪妮谈和樊振东微博互关",
+      "category": "明星",
+      "heat": 16.07,
+      "reads": 362.3,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 257,
+      "title": "中国移动回应eSIM问题",
+      "category": "财经",
+      "heat": 16.04,
+      "reads": 258.0,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 258,
+      "title": "事发时那英正在伦敦陪伴女儿留学",
+      "category": "",
+      "heat": 16.0,
+      "reads": 2983.8,
+      "discussions": 0.67,
+      "originals": 0.19,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 259,
+      "title": "AirPodsPro3",
+      "category": "",
+      "heat": 15.95,
+      "reads": 725.3,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 260,
+      "title": "饿了么宣布取消超时扣款",
+      "category": "财经",
+      "heat": 15.93,
+      "reads": 1014.9,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 261,
+      "title": "十四五自然资源工作高质量发展成就",
+      "category": "社会",
+      "heat": 15.88,
+      "reads": 72.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 262,
+      "title": "特朗普说不是我让以色列袭击卡塔尔",
+      "category": "社会",
+      "heat": 15.87,
+      "reads": 646.6,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 263,
+      "title": "张维伊回应换发型称从头再来",
+      "category": "社会",
+      "heat": 15.8,
+      "reads": 566.0,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 264,
+      "title": "iPhone Air",
+      "category": "",
+      "heat": 15.68,
+      "reads": 388.2,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 265,
+      "title": "户晨风 安卓完",
+      "category": "",
+      "heat": 15.59,
+      "reads": 54.5,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 266,
+      "title": "火焰蓝队伍中有这样一群老师",
+      "category": "公益",
+      "heat": 15.58,
+      "reads": 27.5,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 267,
+      "title": "金价",
+      "category": "财经",
+      "heat": 15.56,
+      "reads": 279000.0,
+      "discussions": 196.2,
+      "originals": 15.4,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 268,
+      "title": "费启鸣演我看到iPhone17",
+      "category": "明星",
+      "heat": 15.54,
+      "reads": 5206.4,
+      "discussions": 0.47,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 269,
+      "title": "月经3天干净和7天干净都一样",
+      "category": "",
+      "heat": 15.51,
+      "reads": 108.1,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 270,
+      "title": "一念江南",
+      "category": "电视剧",
+      "heat": 15.5,
+      "reads": 20000.0,
+      "discussions": 114.9,
+      "originals": 3.6,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 271,
+      "title": "花30万娶的老婆一个月不到跑了",
+      "category": "社会",
+      "heat": 15.48,
+      "reads": 646.1,
+      "discussions": 0.09,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 272,
+      "title": "武艺为了付辛博快点结婚吧",
+      "category": "",
+      "heat": 15.46,
+      "reads": 39.4,
+      "discussions": 0.33,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 273,
+      "title": "归龙潮",
+      "category": "游戏",
+      "heat": 15.43,
+      "reads": 66000.0,
+      "discussions": 30.8,
+      "originals": 2.9,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 274,
+      "title": "孙颖莎回应晋级女单16强",
+      "category": "体育",
+      "heat": 15.43,
+      "reads": 40.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 275,
+      "title": "痛经趴床上鹦鹉抛下同类来扶我",
+      "category": "",
+      "heat": 15.43,
+      "reads": 10.3,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 276,
+      "title": "河北一女子骑车路上被狗撞倒身亡",
+      "category": "社会",
+      "heat": 15.42,
+      "reads": 109.4,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 277,
+      "title": "iPhone17 关闭摇一摇广告",
+      "category": "",
+      "heat": 15.4,
+      "reads": 156.1,
+      "discussions": 0.07,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 278,
+      "title": "挪德卡莱大开门",
+      "category": "游戏",
+      "heat": 15.22,
+      "reads": 142.3,
+      "discussions": 0.86,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 279,
+      "title": "向鹏止步澳门冠军赛首轮",
+      "category": "体育",
+      "heat": 15.22,
+      "reads": 236.4,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 280,
+      "title": "贵州文昌阁多只小猫被挖眼砍断四肢",
+      "category": "社会",
+      "heat": 15.2,
+      "reads": 442.4,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 281,
+      "title": "谁家剧还没播已经下线5个角色",
+      "category": "",
+      "heat": 15.16,
+      "reads": 148.5,
+      "discussions": 0.59,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 282,
+      "title": "张子枫宋佳彭昱畅表情都是戏",
+      "category": "",
+      "heat": 15.1,
+      "reads": 60.6,
+      "discussions": 0.39,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 283,
+      "title": "女子花1300吃日料剩了10片刺身被索赔",
+      "category": "财经",
+      "heat": 14.95,
+      "reads": 345.0,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 284,
+      "title": "周扬青自曝妈妈不想让她恋爱",
+      "category": "明星",
+      "heat": 14.7,
+      "reads": 1061.7,
+      "discussions": 0.21,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 285,
+      "title": "iPhone17Pro的设计会影响购买吗",
+      "category": "互联网",
+      "heat": 14.65,
+      "reads": 261.1,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 286,
+      "title": "多名滥用减重处方药者出现副作用",
+      "category": "社会",
+      "heat": 14.6,
+      "reads": 770.2,
+      "discussions": 0.17,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 287,
+      "title": "年内4成个股跑输大盘",
+      "category": "社会",
+      "heat": 14.53,
+      "reads": 145.6,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 288,
+      "title": "许荔莎现身配合警方调查",
+      "category": "明星",
+      "heat": 14.47,
+      "reads": 868.5,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 289,
+      "title": "分手后被前女友告强奸男方家属发声",
+      "category": "社会",
+      "heat": 14.44,
+      "reads": 1933.2,
+      "discussions": 0.98,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 290,
+      "title": "北京冰雹",
+      "category": "社会",
+      "heat": 14.44,
+      "reads": 93000.0,
+      "discussions": 23.1,
+      "originals": 4.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 291,
+      "title": "沙特称部署一切能力支持卡塔尔",
+      "category": "",
+      "heat": 14.36,
+      "reads": 243.8,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 292,
+      "title": "wps 教师节",
+      "category": "",
+      "heat": 14.35,
+      "reads": 2.7,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 293,
+      "title": "曝布兰妮家里都是狗大便",
+      "category": "明星",
+      "heat": 14.35,
+      "reads": 3463.9,
+      "discussions": 0.3,
+      "originals": 0.08,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 294,
+      "title": "iPhone17系列选购指南",
+      "category": "",
+      "heat": 14.29,
+      "reads": 5154.7,
+      "discussions": 2.9,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 295,
+      "title": "T1战胜DK",
+      "category": "游戏",
+      "heat": 14.28,
+      "reads": 22000.0,
+      "discussions": 3.9,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 296,
+      "title": "杨迪自曝参加过最离奇的综艺",
+      "category": "",
+      "heat": 14.28,
+      "reads": 97.6,
+      "discussions": 0.33,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 297,
+      "title": "黄圣依上一次哭是不久前",
+      "category": "",
+      "heat": 14.27,
+      "reads": 35.3,
+      "discussions": 0.44,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 298,
+      "title": "钟楚曦绿裙",
+      "category": "明星",
+      "heat": 14.25,
+      "reads": 112.0,
+      "discussions": 0.1,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 299,
+      "title": "TES战胜WBG",
+      "category": "游戏",
+      "heat": 14.2,
+      "reads": 19000.0,
+      "discussions": 6.7,
+      "originals": 0.13,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 300,
+      "title": "尼泊尔将由谁来接管",
+      "category": "",
+      "heat": 14.07,
+      "reads": 9.8,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 301,
+      "title": "旧款AppleWatch也将支持高血压警报",
+      "category": "社会",
+      "heat": 14.06,
+      "reads": 71.9,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 302,
+      "title": "首个通过教师资格证考试的AI老师",
+      "category": "社会",
+      "heat": 14.03,
+      "reads": 968.5,
+      "discussions": 0.47,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 303,
+      "title": "张桂梅的愿望泪目了",
+      "category": "社会",
+      "heat": 14.02,
+      "reads": 531.5,
+      "discussions": 0.19,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 304,
+      "title": "黄景瑜前妻曾被要求去医院看病",
+      "category": "明星",
+      "heat": 14.01,
+      "reads": 962.3,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 305,
+      "title": "明月录王楚然",
+      "category": "明星",
+      "heat": 14.0,
+      "reads": 182.3,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 306,
+      "title": "祁同伟饰演者带服刑人员子女看话剧",
+      "category": "",
+      "heat": 13.91,
+      "reads": 206.0,
+      "discussions": 0.3,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 307,
+      "title": "各科老师经典语录",
+      "category": "社会",
+      "heat": 13.91,
+      "reads": 47.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 308,
+      "title": "毛新宇携妻女到毛主席纪念堂祭奠",
+      "category": "社会",
+      "heat": 13.89,
+      "reads": 682.1,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 309,
+      "title": "酒店穿拖鞋用餐遭双标对待",
+      "category": "",
+      "heat": 13.88,
+      "reads": 13.8,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 310,
+      "title": "上海机场 水果楼层",
+      "category": "",
+      "heat": 13.85,
+      "reads": 111.2,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 311,
+      "title": "九尾人到了摄影师不见了",
+      "category": "",
+      "heat": 13.81,
+      "reads": 4.6,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 312,
+      "title": "Apple Watch S11",
+      "category": "",
+      "heat": 13.8,
+      "reads": 198.9,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 313,
+      "title": "星巴克员工曝卖不出月饼垫钱自购",
+      "category": "社会",
+      "heat": 13.8,
+      "reads": 548.3,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 314,
+      "title": "卡塔尔空军战斗力",
+      "category": "",
+      "heat": 13.76,
+      "reads": 6.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 315,
+      "title": "一家六口坐小火车脱轨飞出",
+      "category": "",
+      "heat": 13.76,
+      "reads": 149.2,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 316,
+      "title": "防窥膜 伤眼",
+      "category": "",
+      "heat": 13.74,
+      "reads": 22.9,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 317,
+      "title": "这场马拉松把非遗跑活了",
+      "category": "旅游",
+      "heat": 13.51,
+      "reads": 122.3,
+      "discussions": 1.1,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 318,
+      "title": "福建不明飞行物",
+      "category": "",
+      "heat": 13.41,
+      "reads": 464.7,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 319,
+      "title": "阿里发布高德扫街榜",
+      "category": "互联网",
+      "heat": 13.32,
+      "reads": 1802.5,
+      "discussions": 0.54,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 320,
+      "title": "国乒男单已2人止步澳门赛首轮",
+      "category": "体育",
+      "heat": 13.3,
+      "reads": 396.7,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 321,
+      "title": "A股成交跌破2万亿",
+      "category": "财经",
+      "heat": 13.25,
+      "reads": 203.5,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 322,
+      "title": "戚薇湿发变装听取妈声一片",
+      "category": "",
+      "heat": 13.25,
+      "reads": 49.2,
+      "discussions": 0.4,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 323,
+      "title": "男子疑因彩礼谈崩分手后被告强奸",
+      "category": "社会",
+      "heat": 13.23,
+      "reads": 3708.1,
+      "discussions": 1.1,
+      "originals": 0.12,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 324,
+      "title": "买iPhone17还是等国产旗舰",
+      "category": "数码",
+      "heat": 13.13,
+      "reads": 256.2,
+      "discussions": 0.34,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 325,
+      "title": "许玮甯孕期胖了12公斤",
+      "category": "明星",
+      "heat": 13.02,
+      "reads": 673.1,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 326,
+      "title": "孙颖莎3比1赫尔希",
+      "category": "体育",
+      "heat": 13.01,
+      "reads": 36.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 327,
+      "title": "卢伟冰大赞iPhone17系列",
+      "category": "互联网",
+      "heat": 13.0,
+      "reads": 659.2,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 328,
+      "title": "科技春晚",
+      "category": "财经",
+      "heat": 12.98,
+      "reads": 1855.7,
+      "discussions": 1.0,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 329,
+      "title": "iPhone17降价",
+      "category": "互联网",
+      "heat": 12.97,
+      "reads": 238.4,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 330,
+      "title": "iPhoneAir充电口未居中",
+      "category": "互联网",
+      "heat": 12.88,
+      "reads": 597.8,
+      "discussions": 0.05,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 331,
+      "title": "特朗普被爆向欧盟提惊人要求",
+      "category": "",
+      "heat": 12.68,
+      "reads": 415.1,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 332,
+      "title": "戚薇美背",
+      "category": "明星",
+      "heat": 12.65,
+      "reads": 72.6,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 333,
+      "title": "王家卫转发了此沙",
+      "category": "",
+      "heat": 12.63,
+      "reads": 74.7,
+      "discussions": 0.42,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 334,
+      "title": "陈哲远洗面奶没洗干净就出门了",
+      "category": "",
+      "heat": 12.59,
+      "reads": 233.2,
+      "discussions": 0.67,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 335,
+      "title": "三大运营商eSIM手机业务最新进展",
+      "category": "社会",
+      "heat": 12.57,
+      "reads": 193.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 336,
+      "title": "苹果韩国官网 没有手",
+      "category": "",
+      "heat": 12.55,
+      "reads": 0.02,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 337,
+      "title": "太胖无法变成液态回家的猫",
+      "category": "",
+      "heat": 12.51,
+      "reads": 1.1,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 338,
+      "title": "黄子弘凡直播",
+      "category": "音乐",
+      "heat": 12.47,
+      "reads": 18000.0,
+      "discussions": 21.2,
+      "originals": 1.9,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 339,
+      "title": "王皓又在抠手",
+      "category": "体育",
+      "heat": 12.46,
+      "reads": 81.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 340,
+      "title": "辛芷蕾 中女都不容易",
+      "category": "",
+      "heat": 12.45,
+      "reads": 118.3,
+      "discussions": 0.46,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 341,
+      "title": "iPhone17pro没有黑白色",
+      "category": "科技",
+      "heat": 12.42,
+      "reads": 250.1,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 342,
+      "title": "27岁小伙相亲20多次患惊恐症",
+      "category": "社会",
+      "heat": 12.35,
+      "reads": 527.7,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 343,
+      "title": "潘展乐拿东风导弹照片在武侯祠拍照",
+      "category": "体育",
+      "heat": 12.32,
+      "reads": 627.5,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 344,
+      "title": "联通回应eSIM版iPhone",
+      "category": "财经",
+      "heat": 12.28,
+      "reads": 721.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 345,
+      "title": "辛芷蕾国民度",
+      "category": "明星",
+      "heat": 12.25,
+      "reads": 58.5,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 346,
+      "title": "男子鼻痛18年疑骨瘤开刀取出3cm树枝",
+      "category": "社会",
+      "heat": 12.25,
+      "reads": 1976.4,
+      "discussions": 0.16,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 347,
+      "title": "许嵩 冯禧",
+      "category": "",
+      "heat": 12.22,
+      "reads": 20000.0,
+      "discussions": 5.0,
+      "originals": 1.4,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 348,
+      "title": "势界 田栩宁",
+      "category": "",
+      "heat": 12.12,
+      "reads": 112.0,
+      "discussions": 0.07,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 349,
+      "title": "清融新发色",
+      "category": "",
+      "heat": 12.01,
+      "reads": 21.0,
+      "discussions": 0.04,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 350,
+      "title": "向鹏2比3弗朗西斯卡",
+      "category": "体育",
+      "heat": 12.01,
+      "reads": 167.5,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 351,
+      "title": "现在的大学一个班好几个大主播",
+      "category": "搞笑",
+      "heat": 11.98,
+      "reads": 118.8,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 352,
+      "title": "iPhone17Pro芯片跑分出炉",
+      "category": "财经",
+      "heat": 11.97,
+      "reads": 100.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 353,
+      "title": "孙颖莎擦手机像擦球拍",
+      "category": "体育",
+      "heat": 11.95,
+      "reads": 80.8,
+      "discussions": 0.26,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 354,
+      "title": "这个设计失误坑了全球用户",
+      "category": "情感",
+      "heat": 11.94,
+      "reads": 13.2,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 355,
+      "title": "摇头晃脑孙颖莎",
+      "category": "",
+      "heat": 11.92,
+      "reads": 6.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 356,
+      "title": "影视飓风上手掰了下iPhone17",
+      "category": "科技",
+      "heat": 11.92,
+      "reads": 3483.9,
+      "discussions": 0.25,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 357,
+      "title": "年轻人的消费逻辑变了",
+      "category": "财经",
+      "heat": 11.91,
+      "reads": 263.3,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 358,
+      "title": "焦俊艳辟谣给papi酱发了8年红包",
+      "category": "明星",
+      "heat": 11.88,
+      "reads": 426.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 359,
+      "title": "纽约中央公园偶遇曾黎晨跑",
+      "category": "",
+      "heat": 11.76,
+      "reads": 51.8,
+      "discussions": 0.48,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 360,
+      "title": "别人赴山海周深赴情海",
+      "category": "",
+      "heat": 11.74,
+      "reads": 60.4,
+      "discussions": 0.58,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 361,
+      "title": "做美甲和不做美甲的都沉默了",
+      "category": "搞笑",
+      "heat": 11.64,
+      "reads": 2428.1,
+      "discussions": 0.78,
+      "originals": 0.13,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 362,
+      "title": "敖子逸战至巅峰第一砖塑选手",
+      "category": "",
+      "heat": 11.59,
+      "reads": 44.6,
+      "discussions": 0.38,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 363,
+      "title": "T1对战DK",
+      "category": "游戏",
+      "heat": 11.59,
+      "reads": 25000.0,
+      "discussions": 3.5,
+      "originals": 0.11,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 364,
+      "title": "何同学称17Pro新配色不好形容",
+      "category": "互联网",
+      "heat": 11.57,
+      "reads": 320.8,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 365,
+      "title": "郑州及周边成暴雨大暴雨核心区",
+      "category": "公益",
+      "heat": 11.49,
+      "reads": 475.2,
+      "discussions": 0.06,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 366,
+      "title": "苹果iOS26新增图标变色功能",
+      "category": "社会",
+      "heat": 11.48,
+      "reads": 142.6,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 367,
+      "title": "一天三顿饭少吃哪顿最伤身",
+      "category": "",
+      "heat": 11.43,
+      "reads": 2203.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 368,
+      "title": "中国叠叠乐养殖模式被联合国推广",
+      "category": "社会",
+      "heat": 11.43,
+      "reads": 196.1,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 369,
+      "title": "施华蔻处女发质翻译陷辱女争议",
+      "category": "社会",
+      "heat": 11.33,
+      "reads": 396.1,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 370,
+      "title": "高叶这真的不是逆龄吗",
+      "category": "明星",
+      "heat": 11.22,
+      "reads": 64.1,
+      "discussions": 0.57,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 371,
+      "title": "爱马仕橙",
+      "category": "",
+      "heat": 11.19,
+      "reads": 81.5,
+      "discussions": 0.62,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 372,
+      "title": "韩国感觉后脑勺被打了一闷棍",
+      "category": "",
+      "heat": 11.06,
+      "reads": 463.9,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 373,
+      "title": "孙颖莎赫尔希精彩对决",
+      "category": "",
+      "heat": 10.95,
+      "reads": 3.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 374,
+      "title": "千惠妈妈比三宝更需要万千惠",
+      "category": "",
+      "heat": 10.94,
+      "reads": 29.0,
+      "discussions": 0.29,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 375,
+      "title": "王自如说iPhoneAir惊艳",
+      "category": "财经",
+      "heat": 10.83,
+      "reads": 453.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 376,
+      "title": "宋亚轩的副业不会是贴膜吧",
+      "category": "",
+      "heat": 10.82,
+      "reads": 37.3,
+      "discussions": 0.37,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 377,
+      "title": "厄瓜多尔1比0阿根廷",
+      "category": "",
+      "heat": 10.79,
+      "reads": 125.9,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 378,
+      "title": "李昀锐古力娜扎同框",
+      "category": "明星",
+      "heat": 10.78,
+      "reads": 645.7,
+      "discussions": 0.44,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 379,
+      "title": "教师节 硕博生的学术大拜年",
+      "category": "",
+      "heat": 10.75,
+      "reads": 108.5,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 380,
+      "title": "退出软件时显示残忍离开到底谁发明的",
+      "category": "",
+      "heat": 10.75,
+      "reads": 4.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 381,
+      "title": "何瑞贤橘发",
+      "category": "",
+      "heat": 10.74,
+      "reads": 28.0,
+      "discussions": 0.33,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 382,
+      "title": "不二之臣官宣预热",
+      "category": "电视剧",
+      "heat": 10.74,
+      "reads": 1011.4,
+      "discussions": 0.11,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 383,
+      "title": "威慑中国是绝对行不通的",
+      "category": "社会",
+      "heat": 10.68,
+      "reads": 259.2,
+      "discussions": 0.04,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 384,
+      "title": "终于256G起步",
+      "category": "",
+      "heat": 10.64,
+      "reads": 33.0,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 385,
+      "title": "罗永浩吐槽西贝预制菜",
+      "category": "社会",
+      "heat": 10.6,
+      "reads": 73.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 386,
+      "title": "iPhone17全系单平台预约人数超200万",
+      "category": "科技",
+      "heat": 10.51,
+      "reads": 401.0,
+      "discussions": 0.16,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 387,
+      "title": "2分钟的预告成毅打了60秒",
+      "category": "",
+      "heat": 10.4,
+      "reads": 36.5,
+      "discussions": 0.53,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 388,
+      "title": "以色列目标人物没死但目标达到了",
+      "category": "",
+      "heat": 10.39,
+      "reads": 125.2,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 389,
+      "title": "高朋获刑12年",
+      "category": "社会",
+      "heat": 10.33,
+      "reads": 441.0,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 390,
+      "title": "何老师到底喜欢谁",
+      "category": "明星",
+      "heat": 10.31,
+      "reads": 1427.1,
+      "discussions": 0.27,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 391,
+      "title": "谁家cp都BE了还有售后啊",
+      "category": "",
+      "heat": 10.26,
+      "reads": 173.3,
+      "discussions": 0.68,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 392,
+      "title": "蒋奇明太适合复古感了",
+      "category": "",
+      "heat": 10.22,
+      "reads": 30.6,
+      "discussions": 0.38,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 393,
+      "title": "小学校长守校门口拦截教师节礼物",
+      "category": "社会",
+      "heat": 10.14,
+      "reads": 148.7,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 394,
+      "title": "谢欣颖王柏杰分手",
+      "category": "明星",
+      "heat": 10.11,
+      "reads": 265.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 395,
+      "title": "十几万斤鱼死亡白花花铺满鱼塘",
+      "category": "社会",
+      "heat": 10.11,
+      "reads": 65.5,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 396,
+      "title": "多地发生共享单车行驶中车轮抱死",
+      "category": "社会",
+      "heat": 10.11,
+      "reads": 56.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 397,
+      "title": "过度提醒 提前责备",
+      "category": "",
+      "heat": 10.1,
+      "reads": 24.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 398,
+      "title": "马龙贵气",
+      "category": "",
+      "heat": 10.01,
+      "reads": 16.2,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 399,
+      "title": "毛不易李雪琴一张嘴没一个弱的",
+      "category": "",
+      "heat": 9.79,
+      "reads": 63.3,
+      "discussions": 0.37,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 400,
+      "title": "iPhone17Pro星宇橙色",
+      "category": "财经",
+      "heat": 9.65,
+      "reads": 159.5,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 401,
+      "title": "韩庚一开口我全想起来了",
+      "category": "",
+      "heat": 9.63,
+      "reads": 30.8,
+      "discussions": 0.41,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 402,
+      "title": "2TB内存",
+      "category": "",
+      "heat": 9.36,
+      "reads": 11.1,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 403,
+      "title": "大青虫 西餐",
+      "category": "",
+      "heat": 9.27,
+      "reads": 6.6,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 404,
+      "title": "小学校长回应拦截教师节礼物",
+      "category": "社会",
+      "heat": 9.07,
+      "reads": 219.2,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 405,
+      "title": "果郡王甄嬛好难得的同框啊",
+      "category": "情感",
+      "heat": 8.94,
+      "reads": 1522.9,
+      "discussions": 0.04,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 406,
+      "title": "娃哈哈瓶盖被当公章盖在实习证明上",
+      "category": "社会",
+      "heat": 8.81,
+      "reads": 4959.3,
+      "discussions": 0.7,
+      "originals": 0.2,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 407,
+      "title": "短剧圈就是个巨大的明星脸",
+      "category": "",
+      "heat": 8.78,
+      "reads": 664.1,
+      "discussions": 0.13,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 408,
+      "title": "梓渝60秒广告报价60万",
+      "category": "明星",
+      "heat": 8.78,
+      "reads": 4723.0,
+      "discussions": 6.5,
+      "originals": 1.6,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 409,
+      "title": "胡宾果被偷拍者威胁",
+      "category": "明星",
+      "heat": 8.77,
+      "reads": 722.5,
+      "discussions": 0.17,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 410,
+      "title": "辛芷蕾 显化",
+      "category": "",
+      "heat": 8.77,
+      "reads": 2167.9,
+      "discussions": 0.99,
+      "originals": 0.23,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 411,
+      "title": "张婧仪侧颜",
+      "category": "明星",
+      "heat": 8.38,
+      "reads": 12.5,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 412,
+      "title": "iPhone Air 联通eSIM",
+      "category": "",
+      "heat": 8.35,
+      "reads": 22.9,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 413,
+      "title": "以军承认对多哈袭击事件负责",
+      "category": "",
+      "heat": 8.17,
+      "reads": 939.8,
+      "discussions": 0.18,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 414,
+      "title": "微博给鞠婧祎做了痛楼",
+      "category": "明星",
+      "heat": 8.17,
+      "reads": 333.9,
+      "discussions": 0.2,
+      "originals": 0.05,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 415,
+      "title": "iPhone17基础款性价比",
+      "category": "财经",
+      "heat": 8.13,
+      "reads": 36.9,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 416,
+      "title": "电影特效卷到刺小2这种程度了",
+      "category": "",
+      "heat": 8.08,
+      "reads": 29.5,
+      "discussions": 0.55,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 417,
+      "title": "以色列袭击卡塔尔的哈马斯高层",
+      "category": "",
+      "heat": 8.02,
+      "reads": 1246.3,
+      "discussions": 0.38,
+      "originals": 0.04,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 418,
+      "title": "王楚钦vs松岛辉空",
+      "category": "体育",
+      "heat": 7.94,
+      "reads": 2934.2,
+      "discussions": 2.2,
+      "originals": 0.25,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 419,
+      "title": "Apple Watch系列",
+      "category": "",
+      "heat": 7.86,
+      "reads": 5.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 420,
+      "title": "以军袭击卡塔尔声明",
+      "category": "",
+      "heat": 7.85,
+      "reads": 57.6,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 421,
+      "title": "美为以色列在多哈发动袭击开绿灯",
+      "category": "",
+      "heat": 7.83,
+      "reads": 1131.2,
+      "discussions": 0.31,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 422,
+      "title": "宋雨琦还痛吗MV",
+      "category": "",
+      "heat": 7.79,
+      "reads": 1337.9,
+      "discussions": 0.55,
+      "originals": 0.1,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 423,
+      "title": "肖战同款焖猪蹄订单量翻番",
+      "category": "社会",
+      "heat": 7.75,
+      "reads": 1580.9,
+      "discussions": 1.6,
+      "originals": 0.28,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 424,
+      "title": "汶川地震被救男孩九三阅兵圆梦了",
+      "category": "社会",
+      "heat": 7.69,
+      "reads": 292.6,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 425,
+      "title": "单依纯 栩栩华生CEO",
+      "category": "",
+      "heat": 7.63,
+      "reads": 324.7,
+      "discussions": 0.2,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 426,
+      "title": "梓渝真求到佛了",
+      "category": "游戏",
+      "heat": 7.62,
+      "reads": 1152.6,
+      "discussions": 2.7,
+      "originals": 0.13,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 427,
+      "title": "iPhone17Pro电池史上最大",
+      "category": "数码",
+      "heat": 7.62,
+      "reads": 297.5,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 428,
+      "title": "太恐怖了不敢亲嘴了",
+      "category": "",
+      "heat": 7.51,
+      "reads": 5874.9,
+      "discussions": 1.2,
+      "originals": 0.26,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 429,
+      "title": "一诺微博粉丝破500万",
+      "category": "",
+      "heat": 7.11,
+      "reads": 248.6,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 430,
+      "title": "婢女开播",
+      "category": "",
+      "heat": 7.08,
+      "reads": 330.9,
+      "discussions": 0.31,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 431,
+      "title": "TF家族冒泡",
+      "category": "",
+      "heat": 7.0,
+      "reads": 145.0,
+      "discussions": 1.0,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 432,
+      "title": "谷围南亭动画双端预约破150万",
+      "category": "",
+      "heat": 6.99,
+      "reads": 4.7,
+      "discussions": 0.04,
+      "originals": 0.02,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 433,
+      "title": "凌晨两点客人吃饭老板睡觉",
+      "category": "",
+      "heat": 6.85,
+      "reads": 29.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 434,
+      "title": "教师节朋友圈文案和配图",
+      "category": "社会",
+      "heat": 6.85,
+      "reads": 205.5,
+      "discussions": 0.4,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 435,
+      "title": "一说拍照杨洋洗了把脸就来了",
+      "category": "",
+      "heat": 6.83,
+      "reads": 328.1,
+      "discussions": 0.76,
+      "originals": 0.09,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 436,
+      "title": "CEO出轨女同事其丈夫发声",
+      "category": "社会",
+      "heat": 6.82,
+      "reads": 3565.8,
+      "discussions": 0.12,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 437,
+      "title": "AirPods Pro3没涨价",
+      "category": "",
+      "heat": 5.68,
+      "reads": 13.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 438,
+      "title": "iPhone17Pro散热",
+      "category": "财经",
+      "heat": 5.18,
+      "reads": 96.1,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 439,
+      "title": "老师谢谢你",
+      "category": "社会",
+      "heat": 4.73,
+      "reads": 126000.0,
+      "discussions": 1400.4,
+      "originals": 2.4,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 440,
+      "title": "iPhone17手机壳",
+      "category": "",
+      "heat": 4.72,
+      "reads": 8.5,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 441,
+      "title": "AirPods Pro3 测心率",
+      "category": "",
+      "heat": 4.6,
+      "reads": 3.6,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 442,
+      "title": "美国宣布制裁东南亚诈骗集团",
+      "category": "社会",
+      "heat": 4.44,
+      "reads": 2417.2,
+      "discussions": 0.45,
+      "originals": 0.07,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 443,
+      "title": "印度人想456元包场成都餐厅",
+      "category": "",
+      "heat": 4.27,
+      "reads": 835.9,
+      "discussions": 0.12,
+      "originals": 0.03,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 444,
+      "title": "iPhone17Pro三摄4800万",
+      "category": "互联网",
+      "heat": 3.99,
+      "reads": 29.0,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 445,
+      "title": "苹果手表支持高血压监测",
+      "category": "",
+      "heat": 3.76,
+      "reads": 153.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 446,
+      "title": "疑似iPhone17Air国行包装盒",
+      "category": "财经",
+      "heat": 3.47,
+      "reads": 1276.1,
+      "discussions": 0.17,
+      "originals": 0.01,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 447,
+      "title": "iPhone Air追星人必备",
+      "category": "",
+      "heat": 2.26,
+      "reads": 3.7,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2025-09-10"
+    },
+    {
+      "rank": 448,
+      "title": "雷暴哮喘",
+      "category": "健康",
+      "heat": 2.08,
+      "reads": 2052.5,
+      "discussions": 0.92,
+      "originals": 0.06,
+      "date": "2025-09-10"
+    }
+  ]
+}
