@@ -69,11 +69,11 @@ def page_realtime_hot():
         # 使用HTML表格实现右对齐
         html_table = "<table style='width:100%; border-collapse: collapse;'>"
         html_table += "<thead><tr><th style='text-align:left; padding:8px; border-bottom:2px solid #ddd;'>rank</th>"
-        html_table += "<th style='text-align:right; padding:8px; border-bottom:2px solid #ddd;'>title</th></tr></thead><tbody>"
+        html_table += "<th style='text-align:left; padding:8px; border-bottom:2px solid #ddd;'>title</th></tr></thead><tbody>"
         
         for _, row in df[display_cols].iterrows():
             html_table += f"<tr><td style='text-align:left; padding:8px; border-bottom:1px solid #eee;'>{row['rank']}</td>"
-            html_table += f"<td style='text-align:right; padding:8px; border-bottom:1px solid #eee;'>{row['title']}</td></tr>"
+            html_table += f"<td style='text-align:left; padding:8px; border-bottom:1px solid #eee;'>{row['title']}</td></tr>"
         
         html_table += "</tbody></table>"
         st.markdown(html_table, unsafe_allow_html=True)
