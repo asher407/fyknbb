@@ -78,16 +78,18 @@ class DataClassifier:
 
         self.category_map = {
             0: "其他",  # 跳过/不分类
-            1: "明星",
-            2: "综艺",
-            3: "体育",
-            4: "科技",
-            5: "娱乐",
-            6: "社会",
-            7: "财经",
-            8: "游戏",
-            9: None,  # 自定义分类
+            1: "文娱（明星）",
+            2: "影视、综艺",
+            3: "品牌（广告）",
+            4: "生活",
+            5: "科技",
+            6: "时事",
+            7: "体育",
+            8: "知识",
+            9: "游戏",  # 自定义分类
         }
+
+        self.category_values = list(self.category_map.values())
 
         # 分类统计数据
         self.stats = {"total": 0, "processed": 0, "skipped": 0, "updated": 0}
@@ -292,9 +294,14 @@ class DataClassifier:
                         # 无法转换为数字，跳过此项
                         continue
 
-                # 检查category是否为空或只有空白字符
+                    # 检查category是否为空或只有空白字符
                 category = item.get("category", "")
-                if not category or category.strip() == "":
+                print(f"{1}", category)
+                if (
+                    not category
+                    or category not in self.category_values
+                    or category == ""
+                ):
                     # 添加源文件信息
                     item_copy = item.copy()
                     item_copy["source_file"] = date_data["file_path"]
@@ -318,10 +325,7 @@ class DataClassifier:
 
         print("分类映射:")
         for key, value in self.category_map.items():
-            if key == 9:
-                print(f"  {key}: 自定义分类 (输入分类名称)")
-            else:
-                print(f"  {key}: '{value}'")
+            print(f"  {key}: '{value}'")
 
         print()
         print("命令:")
@@ -352,19 +356,19 @@ class DataClassifier:
         print()
         print("请按分类数字 (0-9) 或命令键 (q/h/s/t/k):")
 
-    def get_custom_category(self) -> str:
-        """
-        获取自定义分类名称
+    # def get_custom_category(self) -> str:
+    #     """
+    #     获取自定义分类名称
 
-        返回:
-            分类名称
-        """
-        print("请输入自定义分类名称 (例如: '影视', '音乐', '美食'):")
-        while True:
-            custom_input = input("> ").strip()
-            if custom_input:
-                return custom_input
-            print("分类名称不能为空，请重新输入:")
+    #     返回:
+    #         分类名称
+    #     """
+    #     print("请输入自定义分类名称 (例如: '影视', '音乐', '美食'):")
+    #     while True:
+    #         custom_input = input("> ").strip()
+    #         if custom_input:
+    #             return custom_input
+    #         print("分类名称不能为空，请重新输入:")
 
     def getch(self) -> str:
         """
@@ -552,19 +556,19 @@ class DataClassifier:
                 choice = int(user_input)
 
                 if choice in self.category_map:
-                    if choice == 9:
-                        # 自定义分类 - 需要额外输入
-                        print("\n自定义分类，请输入分类名称: ", end="", flush=True)
-                        # 对于自定义分类，需要读取完整输入
-                        custom_input = input().strip()
-                        if custom_input:
-                            item["category"] = custom_input
-                        else:
-                            print("分类名称不能为空")
-                            continue
-                    else:
-                        # 预设分类
-                        item["category"] = self.category_map[choice]
+                    # if choice == 9:
+                    #     # 自定义分类 - 需要额外输入
+                    #     print("\n自定义分类，请输入分类名称: ", end="", flush=True)
+                    #     # 对于自定义分类，需要读取完整输入
+                    #     custom_input = input().strip()
+                    #     if custom_input:
+                    #         item["category"] = custom_input
+                    #     else:
+                    #         print("分类名称不能为空")
+                    #         continue
+                    # else:
+                    # 预设分类
+                    item["category"] = self.category_map[choice]
 
                     # 更新文件
                     if self.update_file(item, file_path):
@@ -753,6 +757,7 @@ class DataClassifier:
 
         # 找出未分类的数据
         self.unclassified_items = self.find_unclassified_items(all_data)
+        # self.unclassified_items = all_data
 
         if not self.unclassified_items:
             print(f"恭喜！在 {self.date_range} 中没有未分类的数据。")
