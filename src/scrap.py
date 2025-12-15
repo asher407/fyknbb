@@ -1149,105 +1149,104 @@ class RealtimeHotScraper:
         获取微博实时热搜页面 HTML
 
         尝试多个策略：
-        1. 新的热搜专用页面（https://weibo.com/hot/search）
-        2. 直接访问微博首页（https://weibo.com/）
-        3. 搜索页面URL
+        1. 使用Cookie和高级头部访问榜单页
+        2. 尝试热搜页面
+        3. 直接访问微博首页
 
         返回：
             HTML 字符串或 None（如果请求失败）
         """
         # 尝试的 URL 列表（按优先级）
         urls_to_try = [
-            # 策略1：新的榜单页（实时热搜）：更稳定
-            "https://s.weibo.com/top/summary?cate=realtimehot",
+            # 策略1：带完整Header的榜单页
+            ("https://s.weibo.com/top/summary?cate=realtimehot", "complete_headers"),
             # 策略2：热搜页面
-            "https://weibo.com/hot/search",
+            ("https://weibo.com/hot/search", "standard"),
             # 策略3：微博首页
-            "https://weibo.com/",
-            # 策略4：搜索首页
-            "https://weibo.com/search/index",
+            ("https://weibo.com/", "standard"),
         ]
 
-        for url_idx, url in enumerate(urls_to_try, 1):
+        for url_idx, (url, header_type) in enumerate(urls_to_try, 1):
             for attempt in range(self.max_retries):
                 try:
                     self.logger.info(f"[策略 {url_idx}] 正在获取实时热搜页面 (尝试 {attempt + 1}/{self.max_retries})")
                     self.logger.debug(f"目标 URL: {url}")
                     
-                    # 更新 session 头部以避免被识别为机器人
-                    self.session.headers.update({
-                        "Referer": "https://weibo.com/",
-                        "X-Requested-With": "XMLHttpRequest",
-                    })
+                    # 根据策略类型设置不同的头部
+                    if header_type == "complete_headers":
+                        # 完整的浏览器头部，模拟真实用户
+                        headers = {
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Sec-Fetch-User": "?1",
+                            "Upgrade-Insecure-Requests": "1",
+                            "Cache-Control": "max-age=0",
+                        }
+                        self.session.headers.update(headers)
                     
-                    # 更新 Referer 为上一个 URL
-                    if url_idx > 1:
-                        self.session.headers.update({"Referer": urls_to_try[url_idx - 2]})
-                    
-                    # allow_redirects=False 先不跟随重定向，手动检测
                     response = self.session.get(
                         url, 
                         timeout=self.timeout, 
-                        allow_redirects=True,  # 允许重定向但检查最终 URL
+                        allow_redirects=True,
                         verify=True
                     )
                     response.raise_for_status()
 
                     # 检查是否被重定向到访客验证页面
                     if "passport.weibo.com/visitor" in response.url:
-                        self.logger.warning(f"[策略 {url_idx}] 被重定向到访客验证页面，尝试下一个策略")
+                        self.logger.warning(f"[策略 {url_idx}] 被重定向到访客验证页面，需要Playwright")
                         continue
 
                     if response.status_code == 200:
                         html_text = response.text
                         self.logger.info(f"[策略 {url_idx}] 成功获取页面 (最终 URL: {response.url}, 大小: {len(html_text)} bytes)")
                         
-                        # 检查页面大小和内容
+                        # 检查页面大小
                         if len(html_text) < 5000:
                             self.logger.warning(f"[策略 {url_idx}] 页面内容太短，可能无效")
                             continue
                         
-                        # 检查是否包含访客验证相关内容
+                        # 检查是否包含访客验证
                         html_lower = html_text.lower()
                         if "visitor" in html_lower and "passport" in html_lower:
-                            self.logger.warning(f"[策略 {url_idx}] 页面包含访客验证内容，跳过")
+                            self.logger.warning(f"[策略 {url_idx}] 页面包含访客验证内容")
                             continue
                         
-                        # 检查页面中是否包含热搜相关内容
+                        # 检查热搜相关内容
                         has_hot_content = (
-                            "pl_top_realtimehot" in html_text  # 榜单容器 ID
-                            or "td-02" in html_text  # 热搜标题单元格
+                            "pl_top_realtimehot" in html_text
+                            or "td-02" in html_text
                             or ("热搜" in html_text and "排行" in html_text)
-                            or "realtimehot" in response.url.lower()
                         )
                         
                         if has_hot_content:
-                            self.logger.info(f"[策略 {url_idx}] 页面包含热搜相关内容，返回")
+                            self.logger.info(f"[策略 {url_idx}] 页面包含热搜内容，返回")
                             return html_text
                         else:
-                            self.logger.warning(f"[策略 {url_idx}] 页面内容不包含热搜数据，尝试下一个策略")
+                            self.logger.warning(f"[策略 {url_idx}] 页面无热搜内容")
                     else:
-                        self.logger.warning(f"[策略 {url_idx}] 页面响应状态异常: {response.status_code}")
+                        self.logger.warning(f"[策略 {url_idx}] 状态码异常: {response.status_code}")
 
                 except requests.exceptions.Timeout:
-                    self.logger.warning(f"[策略 {url_idx}] 请求超时 (尝试 {attempt + 1}/{self.max_retries})")
+                    self.logger.warning(f"[策略 {url_idx}] 超时 (尝试 {attempt + 1}/{self.max_retries})")
                     if attempt < self.max_retries - 1:
-                        wait_time = 2 ** attempt
-                        self.logger.info(f"等待 {wait_time} 秒后重试...")
-                        time.sleep(wait_time)
+                        time.sleep(2 ** attempt)
                         
                 except requests.exceptions.RequestException as e:
-                    self.logger.error(f"[策略 {url_idx}] 获取页面失败: {e}")
+                    self.logger.error(f"[策略 {url_idx}] 请求失败: {e}")
                     if attempt < self.max_retries - 1:
-                        wait_time = 2 ** attempt
-                        self.logger.info(f"等待 {wait_time} 秒后重试...")
-                        time.sleep(wait_time)
+                        time.sleep(2 ** attempt)
                     
                 except Exception as e:
-                    self.logger.error(f"[策略 {url_idx}] 获取页面时发生未知错误: {e}")
+                    self.logger.error(f"[策略 {url_idx}] 未知错误: {e}")
                     break
         
-        self.logger.error("所有策略都失败了，无法获取页面")
+        self.logger.error("所有HTTP策略都失败，必须使用Playwright")
         return None
 
     def parse_realtime_page(self, html: str) -> List[Dict[str, Any]]:
@@ -1465,9 +1464,9 @@ class RealtimeHotScraper:
         获取实时热搜 Top 50
 
         优先级：
-        1. 如果 use_cache=True，先尝试从缓存文件读取
-        2. 尝试 HTTP 请求方法
-        3. 尝试 Playwright 方法（非 Streamlit 环境）
+        1. 如果 use_cache=True，先尝试从缓存文件读取（如果还有效）
+        2. 尝试 Playwright 方法（首选，能绕过访客验证）
+        3. 尝试 HTTP 请求方法（备用）
         4. 如果都失败但有缓存，返回缓存数据（即使过期）
         
         参数：
@@ -1477,15 +1476,40 @@ class RealtimeHotScraper:
         返回：
             热搜条目列表（最多 50 项）
         """
-        # 策略 1: 尝试从缓存文件读取
+        # 策略 1: 尝试从缓存文件读取（但要检查有效性）
         cached_data = None
         if use_cache:
             cached_data = self.load_from_file(cache_file)
             if cached_data:
-                self.logger.info(f"从缓存文件加载了 {len(cached_data)} 个热搜")
-                return cached_data[:50]
+                # 检查缓存是否有效（少于1小时）
+                try:
+                    import json
+                    with open(cache_file, 'r', encoding='utf-8') as f:
+                        cache_meta = json.load(f)
+                    if 'timestamp' in cache_meta:
+                        from datetime import datetime
+                        timestamp = datetime.fromisoformat(cache_meta['timestamp'])
+                        age_hours = (datetime.now() - timestamp).total_seconds() / 3600
+                        if age_hours < 1:  # 少于1小时的缓存
+                            self.logger.info(f"从缓存文件加载了 {len(cached_data)} 个热搜（{age_hours:.1f}小时前）")
+                            return cached_data[:50]
+                except Exception:
+                    pass
         
-        # 策略 2: 尝试 HTTP 请求方法
+        # 策略 2: 优先尝试 Playwright 方法（能绕过访客验证）
+        self.logger.info("尝试 Playwright 方法...")
+        try:
+            items = self.fetch_realtime_top50_with_playwright()
+            if items:
+                self.logger.info(f"Playwright 方法成功获取 {len(items)} 个热搜")
+                # 保存到缓存
+                self.save_to_file(items, cache_file)
+                return items
+        except Exception as e:
+            self.logger.warning(f"Playwright 方法失败: {e}")
+        
+        # 策略 3: 尝试 HTTP 请求方法（备用）
+        self.logger.info("尝试 HTTP 请求方法...")
         html = self.fetch_realtime_page()
         if html:
             items = self.parse_realtime_page(html)[:50]
@@ -1499,48 +1523,13 @@ class RealtimeHotScraper:
         else:
             self.logger.warning("HTTP 请求方法失败（可能遇到访客验证）")
         
-        # 策略 3: 尝试 Playwright 方法（仅在非 Streamlit 环境）
-        import sys
-        if 'streamlit' not in sys.modules:
-            self.logger.info("尝试 Playwright 方法...")
-            try:
-                items = self.fetch_realtime_top50_with_playwright()
-                if items:
-                    self.logger.info(f"Playwright 方法成功获取 {len(items)} 个热搜")
-                    # 保存到缓存
-                    self.save_to_file(items, cache_file)
-                    return items
-            except NotImplementedError as e:
-                self.logger.warning(f"Playwright 在当前环境中不可用: {e}")
-            except Exception as e:
-                self.logger.error(f"Playwright 方法失败: {e}")
-        
         # 策略 4: 如果都失败，返回缓存数据（即使过期）或空列表
-        if use_cache and cached_data is None:
-            # 再次尝试读取缓存（可能之前被跳过了）
-            cached_data = self.load_from_file(cache_file)
-            if cached_data:
-                self.logger.warning(f"所有获取方法都失败，使用缓存数据（可能已过期）")
-                return cached_data[:50]
+        if cached_data:
+            self.logger.warning(f"所有获取方法都失败，使用缓存数据（可能已过期）")
+            return cached_data[:50]
         
-        # 提供友好的错误信息
-        if 'streamlit' in sys.modules:
-            self.logger.error(
-                "无法获取实时热搜数据。\n\n"
-                "Streamlit 环境解决方案：\n"
-                "1. 在终端运行：python src/scrap.py realtime\n"
-                "2. 或运行：python -c \"from src.scrap import RealtimeHotScraper; "
-                "RealtimeHotScraper().fetch_and_save()\"\n"
-                "3. 然后刷新 Streamlit 页面"
-            )
-        else:
-            self.logger.error(
-                "无法获取实时热搜数据。\n"
-                "建议：\n"
-                "1. 确保已安装 Playwright: pip install playwright && python -m playwright install chromium\n"
-                "2. 运行 python src/scrap.py realtime 预先获取数据\n"
-                "3. 或手动登录微博后复制 cookie 到代码中"
-            )
+        # 都失败了
+        self.logger.error("无法获取实时热搜数据（所有方法都失败）")
         return []
 
     def fetch_and_save(self, output_file: str = "output/realtime_hot.json") -> bool:
@@ -1576,7 +1565,7 @@ class RealtimeHotScraper:
         4. 通过多次滚动加载更多热搜项
         5. 更接近真实用户行为
 
-        注意：在 Streamlit 或 Windows 异步环境中可能失败，此时应使用 HTTP 请求方法。
+        注意：在 Windows 上的 Streamlit 环境中，使用子进程来避免 asyncio 冲突
 
         返回：
             热搜条目列表（最多 50 项）
@@ -1584,12 +1573,81 @@ class RealtimeHotScraper:
         依赖：
             playwright>=1.40.0（需要先运行：python -m playwright install chromium）
         """
+        import sys
+        is_streamlit = 'streamlit' in sys.modules
+        
+        if is_streamlit:
+            # 在 Streamlit 环境中使用子进程运行 Playwright
+            self.logger.info("在 Streamlit 环境中运行 Playwright（子进程模式）")
+            import subprocess
+            import json
+            import tempfile
+            import os
+            
+            try:
+                # 创建临时文件存储结果
+                with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.json', encoding='utf-8') as tmp:
+                    tmp_file = tmp.name
+                
+                # Python 代码字符串：在子进程中运行 Playwright
+                script = f"""
+import sys
+sys.path.insert(0, {repr(os.getcwd())})
+from src.scrap import RealtimeHotScraper
+import json
+
+scraper = RealtimeHotScraper()
+items = scraper._run_playwright_browser()
+
+with open({repr(tmp_file)}, 'w', encoding='utf-8') as f:
+    json.dump(items, f, ensure_ascii=False)
+"""
+                
+                # 运行子进程（使用 stderr=DEVNULL 忽略编码错误）
+                result = subprocess.run(
+                    [sys.executable, '-c', script],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    timeout=120,
+                )
+                
+                if result.returncode == 0:
+                    # 读取结果
+                    try:
+                        with open(tmp_file, 'r', encoding='utf-8') as f:
+                            items = json.load(f)
+                        self.logger.info(f"子进程成功返回 {len(items)} 个热搜")
+                        return items
+                    finally:
+                        # 清理临时文件
+                        try:
+                            os.remove(tmp_file)
+                        except:
+                            pass
+                else:
+                    self.logger.error(f"子进程执行失败")
+                    return []
+                    
+            except subprocess.TimeoutExpired:
+                self.logger.error("子进程超时")
+                return []
+            except Exception as e:
+                self.logger.error(f"子进程执行出错: {e}")
+                return []
+        else:
+            # 非 Streamlit 环境，直接运行
+            return self._run_playwright_browser()
+    
+    def _run_playwright_browser(self) -> List[Dict[str, Any]]:
+        """
+        真实的 Playwright 浏览器运行逻辑
+        
+        返回：
+            热搜条目列表
+        """
         try:
             from playwright.sync_api import sync_playwright
         except ImportError:
-            self.logger.error(
-                "Playwright 未安装。请运行: pip install playwright && python -m playwright install chromium"
-            )
             return []
 
         html_content = None
@@ -1597,15 +1655,10 @@ class RealtimeHotScraper:
         try:
             self.logger.info("正在使用 Playwright 加载页面...")
             
-            # 在某些环境（如 Streamlit）中，需要特殊处理
-            import sys
-            if 'streamlit' in sys.modules:
-                self.logger.warning("检测到 Streamlit 环境，Playwright 可能无法使用")
-                raise NotImplementedError("Playwright 在 Streamlit 环境中不可用")
-            
             with sync_playwright() as p:
                 # 启动 Chromium 浏览器
-                browser = p.chromium.launch(headless=True)
+                self.logger.debug("启动 Chromium 浏览器")
+                browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-setuid-sandbox'])
                 self.logger.info("浏览器启动成功")
 
                 page = browser.new_page()
@@ -1633,7 +1686,7 @@ class RealtimeHotScraper:
 
                     # 榜单页通常无需滚动即可获得 Top50
                     # 为稳妥，轻微滚动两次触发可能的懒加载
-                    for _ in range(2):
+                    for i in range(2):
                         page.evaluate("window.scrollBy(0, window.innerHeight)")
                         page.wait_for_timeout(400)
 
@@ -1653,12 +1706,8 @@ class RealtimeHotScraper:
                     browser.close()
                     self.logger.info("浏览器已关闭")
 
-        except NotImplementedError as e:
-            self.logger.error(f"NotImplementedError（在 Windows 异步环境中很常见）: {e}")
-            self.logger.warning("建议在 Streamlit 或异步环境中使用 HTTP 请求方法而不是 Playwright")
-            return []
         except ImportError:
-            self.logger.error("Playwright 库未安装，无法使用此方法")
+            self.logger.error("Playwright 库未安装")
             return []
         except Exception as e:
             self.logger.error(f"Playwright 获取页面失败: {e}")

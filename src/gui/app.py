@@ -1,4 +1,6 @@
 from typing import Any, Dict, List
+import threading
+import time
 
 import pandas as pd
 import streamlit as st
@@ -27,12 +29,26 @@ def register_page(name: str):
 
 
 # -------- 实时热搜页面 -------- #
+@st.cache_resource
+def get_realtime_scraper(timeout: int = 30, max_retries: int = 3, delay: float = 1.0):
+    """缓存爬虫实例"""
+    return RealtimeHotScraper(timeout=timeout, max_retries=max_retries, delay=delay)
+
+
+@st.cache_data(ttl=300)  # 缓存5分钟
+def fetch_realtime_data(timeout: int = 30, max_retries: int = 3, delay: float = 1.0, force_refresh: bool = False):
+    """获取实时热搜数据，缓存5分钟"""
+    scraper = get_realtime_scraper(timeout, max_retries, delay)
+    # 如果强制刷新，不使用缓存
+    return scraper.fetch_realtime_top50(use_cache=not force_refresh)
+
+
 @register_page("实时热搜 Top50")
 def page_realtime_hot():
     st.title("微博实时热搜 Top50")
 
-    # 参数设置
-    col_a, col_b, col_c = st.columns(3)
+    # 参数设置（使用 columns 排列）
+    col_a, col_b, col_c, col_d = st.columns(4)
     with col_a:
         timeout = st.number_input("请求超时(s)", min_value=5, max_value=120, value=30)
     with col_b:
@@ -43,51 +59,97 @@ def page_realtime_hot():
         delay = st.number_input(
             "重试间隔(s)", min_value=0.0, max_value=10.0, value=1.0, step=0.5
         )
+    with col_d:
+        refresh_btn = st.button("🔄 刷新数据", help="强制刷新热搜数据（忽略缓存）")
 
-    run = st.button("获取 Top50")
-
-    if run:
-        with st.spinner("正在获取数据…"):
-            scraper = RealtimeHotScraper(
-                timeout=timeout, max_retries=max_retries, delay=delay
-            )
-            items: List[Dict[str, Any]] = scraper.fetch_realtime_top50()
-
-        if not items:
-            st.error("未获取到数据。请稍后重试或检查网络。")
-            st.info(
-                "你也可以在工作目录查看 debug_realtime_page_playwright.html 以检查页面结构。"
-            )
-            return
-
-        st.success(f"成功获取 {len(items)} 条")
-
-        # 展示表格
-        df = pd.DataFrame(items)
-        display_cols = ["rank", "title"]
+    # 自动获取数据或在用户点击刷新时重新获取
+    if refresh_btn:
+        # 清空缓存并重新获取
+        st.cache_data.clear()
+        items: List[Dict[str, Any]] = fetch_realtime_data(timeout, max_retries, delay, force_refresh=True)
+    else:
+        # 首次加载或显示缓存数据
+        placeholder = st.empty()
         
-        # 使用HTML表格实现右对齐
-        html_table = "<table style='width:100%; border-collapse: collapse;'>"
-        html_table += "<thead><tr><th style='text-align:left; padding:8px; border-bottom:2px solid #ddd;'>rank</th>"
-        html_table += "<th style='text-align:left; padding:8px; border-bottom:2px solid #ddd;'>title</th></tr></thead><tbody>"
+        # 显示加载提示
+        with placeholder.container():
+            st.info("⏳ 正在获取实时热搜数据，请稍候…")
         
-        for _, row in df[display_cols].iterrows():
-            html_table += f"<tr><td style='text-align:left; padding:8px; border-bottom:1px solid #eee;'>{row['rank']}</td>"
-            html_table += f"<td style='text-align:left; padding:8px; border-bottom:1px solid #eee;'>{row['title']}</td></tr>"
-        
-        html_table += "</tbody></table>"
-        st.markdown(html_table, unsafe_allow_html=True)
+        # 后台获取数据
+        items = fetch_realtime_data(timeout, max_retries, delay, force_refresh=False)
+        placeholder.empty()
 
+    if not items:
+        st.error("❌ 未获取到数据。请尝试以下操作：")
+        st.markdown("""
+        1. 检查网络连接
+        2. 稍后重试
+        3. 在终端运行：`python -m playwright install chromium`
+        4. 或在命令行运行：`python src/scrap.py realtime` 预先获取数据缓存
+        """)
+        st.info(
+            "📝 你也可以在工作目录查看 debug_realtime_page_playwright.html 以检查页面结构。"
+        )
+        return
+
+    # 获取时间戳
+    from datetime import datetime
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    st.success(f"✅ 成功获取 {len(items)} 条热搜 (更新时间: {current_time})")
+
+    # 展示表格
+    df = pd.DataFrame(items)
+    display_cols = ["rank", "title"]
+    
+    # 使用HTML表格实现美化
+    html_table = "<table style='width:100%; border-collapse: collapse;'>"
+    html_table += "<thead><tr style='background-color: #f0f0f0;'>"
+    html_table += "<th style='text-align:center; padding:10px; border-bottom:2px solid #ddd; font-weight:bold;'>排名</th>"
+    html_table += "<th style='text-align:left; padding:10px; border-bottom:2px solid #ddd; font-weight:bold;'>热搜标题</th>"
+    html_table += "</tr></thead><tbody>"
+    
+    for idx, (_, row) in enumerate(df[display_cols].iterrows()):
+        # 交替行颜色
+        bg_color = "#fafafa" if idx % 2 == 0 else "white"
+        html_table += f"<tr style='background-color: {bg_color};'>"
+        html_table += f"<td style='text-align:center; padding:8px; border-bottom:1px solid #eee; font-weight:bold;'>{row['rank']}</td>"
+        html_table += f"<td style='text-align:left; padding:8px; border-bottom:1px solid #eee;'>{row['title']}</td>"
+        html_table += "</tr>"
+    
+    html_table += "</tbody></table>"
+    st.markdown(html_table, unsafe_allow_html=True)
+
+    # 分列显示下载和其他选项
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
         # 下载 JSON
         import json
-
         json_bytes = json.dumps(items, ensure_ascii=False, indent=2).encode("utf-8")
         st.download_button(
-            label="下载为 JSON",
+            label="📥 下载为 JSON",
             data=json_bytes,
             file_name="weibo_realtime_top50.json",
             mime="application/json",
         )
+    
+    with col2:
+        # 下载为 CSV
+        csv_bytes = df[display_cols].to_csv(index=False, encoding='utf-8-sig').encode('utf-8')
+        st.download_button(
+            label="📥 下载为 CSV",
+            data=csv_bytes,
+            file_name="weibo_realtime_top50.csv",
+            mime="text/csv",
+        )
+    
+    with col3:
+        # 显示统计信息
+        if st.button("📊 显示统计", help="显示更多统计信息"):
+            st.subheader("数据统计")
+            st.write(f"**总条数**: {len(items)}")
+            st.write(f"**排名范围**: {df['rank'].min()} - {df['rank'].max()}")
 
 
 # -------- 其他页面占位（便于扩展） -------- #
