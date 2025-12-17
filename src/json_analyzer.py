@@ -18,11 +18,13 @@ JSON 数据分析模块
 import argparse
 import json
 import os
+import platform
 import sys
 import warnings
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import matplotlib
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 import numpy as np
@@ -31,145 +33,52 @@ import pandas as pd
 # 过滤警告
 warnings.filterwarnings("ignore")
 
+# 全局字体属性，后续直接使用
+GLOBAL_FONT_PROP = None
 
-def setup_font(font_name: str = "DejaVu Sans") -> bool:
-    """
-    设置中文字体，优先使用指定字体
 
-    Args:
-        font_name: 字体名称，默认为 "DejaVu Sans"
-
-    Returns:
-        bool: 字体设置是否成功
-    """
+def setup_font(font_name: str = "") -> bool:
+    """直接加载字体文件，确保中文显示。"""
+    global GLOBAL_FONT_PROP
+    
     try:
-        # 1. 首先尝试通过 fontconfig 查找字体文件
-        import os
-        import subprocess
-
-        # 尝试使用 fc-list 查找字体文件
-        try:
-            result = subprocess.run(
-                ["fc-list", ":", "family", "style"],
-                capture_output=True,
-                text=True,
-                check=True,
-            )
-
-            # 搜索包含目标字体名称的行
-            font_files = []
-            for line in result.stdout.split("\n"):
-                if font_name.lower() in line.lower():
-                    # 提取字体文件路径
-                    parts = line.split(":")
-                    if len(parts) > 0:
-                        font_path = parts[0].strip()
-                        if os.path.exists(font_path):
-                            font_files.append(font_path)
-
-            if font_files:
-                # 使用找到的第一个字体文件
-                font_path = font_files[0]
-                fm.fontManager.addfont(font_path)
-                font_prop = fm.FontProperties(fname=font_path)
-                plt.rcParams["font.sans-serif"] = [font_prop.get_name()]
-                plt.rcParams["axes.unicode_minus"] = False
-                print(f"成功设置字体 (通过fc-list): {font_prop.get_name()}")
-                return True
-        except (subprocess.CalledProcessError, FileNotFoundError):
-            pass  # fc-list 不可用，继续其他方法
-
-        # 2. 尝试常见的用户字体目录
-        user_font_dirs = [
-            os.path.expanduser("~/.local/share/fonts"),
-            os.path.expanduser("~/.fonts"),
-            "/usr/local/share/fonts",
-            "/usr/share/fonts",
-        ]
-
-        # 搜索字体文件
-        import glob
-
-        for font_dir in user_font_dirs:
-            if os.path.exists(font_dir):
-                # 搜索包含字体名称的文件
-                for pattern in ["*Maple*", "*mono*", "*NF*", "*CN*"]:
-                    for font_file in glob.glob(
-                        os.path.join(font_dir, "**", f"*{pattern}*.ttf"), recursive=True
-                    ):
-                        if os.path.isfile(font_file):
-                            try:
-                                fm.fontManager.addfont(font_file)
-                                font_prop = fm.FontProperties(fname=font_file)
-                                font_family = font_prop.get_name()
-                                if font_name.lower() in font_family.lower():
-                                    plt.rcParams["font.sans-serif"] = [font_family]
-                                    plt.rcParams["axes.unicode_minus"] = False
-                                    print(f"成功设置字体 (通过文件搜索): {font_family}")
-                                    return True
-                            except:
-                                continue
-
-        # 3. 回退到 matplotlib 的字体查找
-        available_fonts = [f.name for f in fm.fontManager.ttflist]
-
-        # 尝试查找包含指定名称的字体
-        font_found = False
-        target_font = None
-
-        for font in fm.fontManager.ttflist:
-            # 更灵活的匹配：检查字体名称是否包含关键词
-            font_lower = font.name.lower()
-            search_terms = [term.lower() for term in font_name.split()] + [
-                font_name.lower()
-            ]
-            for term in search_terms:
-                if term in font_lower:
-                    target_font = font.fname
-                    font_found = True
-                    break
-            if font_found:
-                break
-
-        if font_found and target_font:
-            # 添加字体到matplotlib
-            fm.fontManager.addfont(target_font)
-            font_prop = fm.FontProperties(fname=target_font)
-            plt.rcParams["font.sans-serif"] = [font_prop.get_name()]
-            plt.rcParams["axes.unicode_minus"] = False
-            print(f"成功设置字体: {font_prop.get_name()}")
+        font_path = None
+        
+        # Windows: 直接使用微软雅黑
+        if platform.system() == "Windows":
+            font_path = r"C:\Windows\Fonts\msyh.ttc"
+            if not os.path.exists(font_path):
+                font_path = r"C:\Windows\Fonts\simhei.ttf"
+        # macOS: 苹方
+        elif platform.system() == "Darwin":
+            font_path = "/System/Library/Fonts/PingFang.ttc"
+            if not os.path.exists(font_path):
+                font_path = "/System/Library/Fonts/STHeiti Light.ttc"
+        # Linux: Noto Sans CJK
+        else:
+            font_path = "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc"
+            if not os.path.exists(font_path):
+                font_path = "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"
+        
+        if font_path and os.path.exists(font_path):
+            # 直接通过文件路径创建FontProperties
+            GLOBAL_FONT_PROP = fm.FontProperties(fname=font_path)
+            # 设置matplotlib全局字体
+            matplotlib.rcParams["font.sans-serif"] = [GLOBAL_FONT_PROP.get_name()]
+            matplotlib.rcParams["axes.unicode_minus"] = False
+            print(f"✓ 已加载字体: {GLOBAL_FONT_PROP.get_name()} from {font_path}")
             return True
         else:
-            # 如果没有找到指定字体，使用系统默认中文字体
-            print(f"未找到字体 '{font_name}'，使用系统默认中文字体")
-
-            # 尝试常见的中文字体
-            chinese_fonts = [
-                "SimHei",
-                "Microsoft YaHei",
-                "DejaVu Sans",
-                "Arial Unicode MS",
-                "WenQuanYi Micro Hei",
-                "Noto Sans CJK SC",
-            ]
-            for font in chinese_fonts:
-                if font in available_fonts:
-                    plt.rcParams["font.sans-serif"] = [font]
-                    plt.rcParams["axes.unicode_minus"] = False
-                    print(f"使用备选字体: {font}")
-                    return True
-
-            # 如果都没有，使用第一个可用字体
-            if available_fonts:
-                plt.rcParams["font.sans-serif"] = [available_fonts[0]]
-                plt.rcParams["axes.unicode_minus"] = False
-                print(f"使用可用字体: {available_fonts[0]}")
-                return True
-
+            print(f"⚠ 字体文件不存在: {font_path}")
+            # 兜底：使用系统可用字体
+            matplotlib.rcParams["axes.unicode_minus"] = False
             return False
+            
     except Exception as e:
-        print(f"字体设置失败: {e}")
+        print(f"✗ 字体加载异常: {e}")
+        matplotlib.rcParams["axes.unicode_minus"] = False
         return False
+
 
 
 def load_json_data(file_path: str) -> Dict[str, Any]:
@@ -314,9 +223,9 @@ def generate_charts(
         )
 
         # 添加标题和标签
-        plt.title(f"{date_str} 热度排名前20的热搜", fontsize=16, fontweight="bold")
-        plt.xlabel("热度值", fontsize=12)
-        plt.yticks(range(len(top_20)), top_20["title"], fontsize=10)
+        plt.title(f"{date_str} 热度排名前20的热搜", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+        plt.xlabel("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
+        plt.yticks(range(len(top_20)), top_20["title"], fontsize=10, fontproperties=GLOBAL_FONT_PROP)
 
         # 在条形图上添加数值标签
         for i, (bar, heat) in enumerate(zip(bars, top_20["heat"])):
@@ -346,9 +255,9 @@ def generate_charts(
             df["heat"], bins=30, color="lightcoral", alpha=0.7, edgecolor="black"
         )
 
-        plt.title(f"{date_str} 热搜热度分布直方图", fontsize=16, fontweight="bold")
-        plt.xlabel("热度值", fontsize=12)
-        plt.ylabel("频数", fontsize=12)
+        plt.title(f"{date_str} 热搜热度分布直方图", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+        plt.xlabel("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
+        plt.ylabel("频数", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
 
         # 添加均值线
         mean_heat = df["heat"].mean()
@@ -370,7 +279,7 @@ def generate_charts(
             label=f"中位数: {median_heat:.2f}",
         )
 
-        plt.legend()
+        plt.legend(prop=GLOBAL_FONT_PROP)
         plt.grid(True, alpha=0.3)
         plt.tight_layout()
         plt.savefig(
@@ -395,15 +304,15 @@ def generate_charts(
         )
 
         plt.title(
-            f"{date_str} 阅读量与讨论量关系散点图", fontsize=16, fontweight="bold"
+            f"{date_str} 阅读量与讨论量关系散点图", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP
         )
-        plt.xlabel("阅读量（万）", fontsize=12)
-        plt.ylabel("讨论量（万）", fontsize=12)
+        plt.xlabel("阅读量（万）", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
+        plt.ylabel("讨论量（万）", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
 
         # 添加颜色条表示热度
         if "heat" in df.columns:
             cbar = plt.colorbar(scatter)
-            cbar.set_label("热度值", fontsize=12)
+            cbar.set_label("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
 
         # 添加趋势线
         if len(df) > 1:
@@ -411,7 +320,7 @@ def generate_charts(
             p = np.poly1d(z)
             plt.plot(df["reads"], p(df["reads"]), "r--", alpha=0.8, label="趋势线")
 
-        plt.legend()
+        plt.legend(prop=GLOBAL_FONT_PROP)
         plt.grid(True, alpha=0.3)
         plt.tight_layout()
         plt.savefig(
@@ -449,10 +358,10 @@ def generate_charts(
                 autopct="%1.1f%%",
                 startangle=90,
                 colors=colors,
-                textprops={"fontsize": 10},
+                textprops={"fontsize": 10, "fontproperties": GLOBAL_FONT_PROP},
             )
 
-            plt.title(f"{date_str} 热搜类别分布", fontsize=16, fontweight="bold")
+            plt.title(f"{date_str} 热搜类别分布", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
             plt.axis("equal")  # 确保饼图是圆形
 
             plt.tight_layout()
@@ -474,9 +383,9 @@ def generate_charts(
             color="skyblue",
             alpha=0.7,
         )
-        axes[0, 0].set_title("排名分布", fontsize=14)
-        axes[0, 0].set_xlabel("排名")
-        axes[0, 0].set_ylabel("热度" if "heat" in df.columns else "数量")
+        axes[0, 0].set_title("排名分布", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 0].set_xlabel("排名", fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 0].set_ylabel("热度" if "heat" in df.columns else "数量", fontproperties=GLOBAL_FONT_PROP)
         axes[0, 0].invert_xaxis()  # 排名1在左边
         axes[0, 0].grid(True, alpha=0.3)
 
@@ -486,9 +395,9 @@ def generate_charts(
         axes[0, 1].bar(
             originals_data.index, originals_data.values, color="lightgreen", alpha=0.7
         )
-        axes[0, 1].set_title("原创数量分布", fontsize=14)
-        axes[0, 1].set_xlabel("原创数量")
-        axes[0, 1].set_ylabel("频数")
+        axes[0, 1].set_title("原创数量分布", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 1].set_xlabel("原创数量", fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 1].set_ylabel("频数", fontproperties=GLOBAL_FONT_PROP)
         axes[0, 1].grid(True, alpha=0.3)
 
     # 5.3 热度箱线图
@@ -499,8 +408,8 @@ def generate_charts(
             patch_artist=True,
             boxprops=dict(facecolor="lightcoral"),
         )
-        axes[1, 0].set_title("热度箱线图", fontsize=14)
-        axes[1, 0].set_ylabel("热度值")
+        axes[1, 0].set_title("热度箱线图", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[1, 0].set_ylabel("热度值", fontproperties=GLOBAL_FONT_PROP)
         axes[1, 0].grid(True, alpha=0.3)
 
     # 5.4 阅读量箱线图
