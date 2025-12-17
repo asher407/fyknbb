@@ -1,12 +1,32 @@
 import threading
 import time
-from typing import Any, Dict, List
+import json
+from pathlib import Path
+import sys
 
 import pandas as pd
 import streamlit as st
+import numpy as np
 
-# 导入已有爬虫
-from src.scrap import RealtimeHotScraper
+# 兼容在不同工作目录下运行 Streamlit：确保项目根目录加入 sys.path
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+# 导入已有爬虫（兼容不同工作目录）
+try:
+    from src.scrap import RealtimeHotScraper
+except ModuleNotFoundError:
+    ALT_SRC = PROJECT_ROOT / "src"
+    if str(ALT_SRC) not in sys.path:
+        sys.path.insert(0, str(ALT_SRC))
+    from scrap import RealtimeHotScraper
+
+# 导入json_analyzer模块
+try:
+    from src.json_analyzer import load_json_data, basic_analysis, setup_font, analyze_json
+except ModuleNotFoundError:
+    from json_analyzer import load_json_data, basic_analysis, setup_font, analyze_json
 
 # 设置页面布局为宽屏模式
 st.set_page_config(
@@ -133,8 +153,6 @@ def page_realtime_hot():
 
     with col1:
         # 下载 JSON
-        import json
-
         json_bytes = json.dumps(items, ensure_ascii=False, indent=2).encode("utf-8")
         st.download_button(
             label="📥 下载为 JSON",
@@ -163,7 +181,276 @@ def page_realtime_hot():
             st.write(f"**排名范围**: {df['rank'].min()} - {df['rank'].max()}")
 
 
-# -------- 其他页面占位（便于扩展） -------- #
+# -------- 单日数据分析页面 -------- #
+@register_page("单日分析 📈")
+def page_daily_analysis():
+    st.title("📈 单日热搜数据分析")
+    
+    # 选择日期
+    data_processed_dir = Path("data_processed")
+    
+    if not data_processed_dir.exists():
+        st.error("data_processed 目录不存在")
+        return
+    
+    # 获取所有可用的日期
+    available_dates = []
+    for year_folder in sorted(data_processed_dir.glob("202*")):
+        for json_file in sorted(year_folder.glob("*.json")):
+            date_str = json_file.stem
+            available_dates.append((date_str, str(json_file)))
+    
+    if not available_dates:
+        st.error("没有可用的数据文件")
+        return
+    
+    # 选择日期
+    col1, col2, col3 = st.columns([2, 1, 1])
+    with col1:
+        selected_date, json_path = st.selectbox(
+            "选择分析日期",
+            options=available_dates,
+            format_func=lambda x: x[0]
+        )
+    
+    with col2:
+        analysis_button = st.button("🔄 生成分析", help="调用 json_analyzer 生成完整分析图表")
+    
+    with col3:
+        if st.button("🔃 刷新", help="刷新页面"):
+            st.rerun()
+    
+    # 当点击生成分析按钮时
+    if analysis_button:
+        with st.spinner("正在生成分析..."):
+            try:
+                import io
+                from contextlib import redirect_stdout
+                
+                # 捕获 analyze_json 的输出
+                f = io.StringIO()
+                with redirect_stdout(f):
+                    analyze_json(json_path)
+                
+                output_log = f.getvalue()
+                st.success("✅ 分析完成！")
+                
+                # 显示输出日志
+                with st.expander("📋 分析日志"):
+                    st.code(output_log, language="text")
+                
+            except Exception as e:
+                st.error(f"分析失败: {str(e)}")
+                import traceback
+                st.error(traceback.format_exc())
+                return
+    
+    # 显示生成的分析结果
+    from datetime import datetime
+    
+    # 构造输出目录路径
+    date_obj = datetime.strptime(selected_date, "%Y-%m-%d")
+    output_dir = Path("output") / selected_date
+    
+    if not output_dir.exists():
+        st.info("👉 请先点击 '🔄 生成分析' 按钮来生成分析结果")
+        return
+    
+    # 查找所有生成的 PNG 图表
+    chart_files = sorted(output_dir.glob("*.png"))
+    
+    if not chart_files:
+        st.warning("没有生成的图表")
+        return
+    
+    # 创建选项卡显示各个图表
+    st.markdown("### 📊 分析图表")
+    
+    # 为每个图表创建选项卡
+    if len(chart_files) > 0:
+        tabs = st.tabs([f.stem.replace(f"{selected_date}_", "").replace("_", " ") for f in chart_files])
+        
+        for tab, chart_file in zip(tabs, chart_files):
+            with tab:
+                # 直接使用文件路径显示图片，避免字节流解码问题
+                st.image(str(chart_file), use_column_width=True, caption=chart_file.name)
+
+                # 提供下载按钮（读取字节供下载）
+                try:
+                    with open(chart_file, "rb") as f:
+                        image_data = f.read()
+                    st.download_button(
+                        f"📥 下载 {chart_file.name}",
+                        data=image_data,
+                        file_name=chart_file.name,
+                        mime="image/png"
+                    )
+                except Exception as e:
+                    st.warning(f"无法提供下载：{e}")
+    
+    # 显示分析报告
+    report_file = output_dir / "analysis_report.txt"
+    if report_file.exists():
+        st.markdown("### 📄 分析报告")
+        with open(report_file, "r", encoding="utf-8") as f:
+            report_content = f.read()
+        
+        with st.expander("展开查看完整报告"):
+            st.text(report_content)
+        
+        # 提供报告下载
+        st.download_button(
+            "📥 下载分析报告",
+            data=report_content.encode("utf-8"),
+            file_name=f"{selected_date}_analysis_report.txt",
+            mime="text/plain"
+        )
+
+
+# -------- 关键词共现网络页面 -------- #
+@register_page("关键词网络 🌐")
+def page_keyword_network():
+    st.title("🌐 关键词共现网络分析")
+    
+    network_data_dir = Path("output/word_networks/data")
+    
+    if not network_data_dir.exists():
+        st.error("网络数据目录不存在，请先运行 word_network.py")
+        return
+    
+    # 获取可用的网络数据
+    available_networks = []
+    for json_file in sorted(network_data_dir.glob("nodes_*.json")):
+        year = json_file.stem.replace("nodes_", "")
+        available_networks.append(year)
+    
+    if not available_networks:
+        st.error("没有可用的网络数据")
+        return
+    
+    col1, col2 = st.columns([2, 1])
+    
+    with col1:
+        selected_year = st.selectbox(
+            "选择年份",
+            options=available_networks,
+            format_func=lambda x: f"{x} 年"
+        )
+    
+    with col2:
+        if st.button("🔄 刷新", help="重新加载数据"):
+            st.rerun()
+    
+    # 加载节点和边数据
+    try:
+        with open(network_data_dir / f"nodes_{selected_year}.json", 'r', encoding='utf-8') as f:
+            nodes_data = json.load(f)
+        
+        with open(network_data_dir / f"edges_{selected_year}.json", 'r', encoding='utf-8') as f:
+            edges_data = json.load(f)
+    except Exception as e:
+        st.error(f"加载失败: {e}")
+        return
+    
+    # ========== TAB 视图 ==========
+    tab1, tab2, tab3 = st.tabs(["🖼️ 网络图", "📊 统计", "📋 数据表"])
+    
+    with tab1:
+        st.subheader("关键词共现网络可视化")
+        
+        # 显示网络图
+        network_img_path = Path("output/word_networks/figures") / f"keyword_network_{selected_year}.png"
+        if network_img_path.exists():
+            st.image(str(network_img_path), use_column_width=True)
+            
+            with open(network_img_path, 'rb') as f:
+                st.download_button("📥 下载网络图", f.read(), f"keyword_network_{selected_year}.png", "image/png")
+        else:
+            st.warning("网络图文件不存在")
+    
+    with tab2:
+        st.subheader("网络统计")
+        
+        nodes_count = len(nodes_data)
+        edges_count = len(edges_data)
+        
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            st.metric("节点数（关键词）", nodes_count)
+        
+        with col2:
+            st.metric("边数（共现关系）", edges_count)
+        
+        with col3:
+            if edges_count > 0:
+                avg_cooccur = np.mean([e['weight'] for e in edges_data])
+                st.metric("平均共现度", f"{avg_cooccur:.2f}")
+            else:
+                st.metric("平均共现度", "0")
+        
+        with col4:
+            if nodes_count > 0:
+                avg_freq = np.mean([n['frequency'] for n in nodes_data])
+                st.metric("平均关键词频次", f"{avg_freq:.2f}")
+            else:
+                st.metric("平均关键词频次", "0")
+        
+        # 频次TOP 10
+        import plotly.express as px
+        top_nodes = sorted(nodes_data, key=lambda x: x['frequency'], reverse=True)[:10]
+        
+        fig = px.bar(
+            x=[n['frequency'] for n in top_nodes],
+            y=[n['keyword'] for n in top_nodes],
+            orientation='h',
+            title="关键词频次 Top 10",
+            color=[n['frequency'] for n in top_nodes],
+            color_continuous_scale="Viridis"
+        )
+        fig.update_yaxes(automargin=True)
+        st.plotly_chart(fig, use_container_width=True)
+        
+        # 共现度最高的关系
+        top_edges = sorted(edges_data, key=lambda x: x['weight'], reverse=True)[:10]
+        
+        edge_labels = [f"{e['source']} - {e['target']}" for e in top_edges]
+        edge_weights = [e['weight'] for e in top_edges]
+        
+        fig = px.bar(
+            x=edge_weights,
+            y=edge_labels,
+            orientation='h',
+            title="共现关系 Top 10",
+            color=edge_weights,
+            color_continuous_scale="Reds"
+        )
+        fig.update_yaxes(automargin=True)
+        st.plotly_chart(fig, use_container_width=True)
+    
+    with tab3:
+        st.subheader("节点和边数据")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("#### 关键词节点")
+            nodes_df = pd.DataFrame(nodes_data).sort_values('frequency', ascending=False)
+            st.dataframe(nodes_df, use_container_width=True, height=400)
+            
+            csv = nodes_df.to_csv(index=False, encoding='utf-8-sig').encode('utf-8')
+            st.download_button("📥 下载节点数据", csv, f"nodes_{selected_year}.csv", "text/csv")
+        
+        with col2:
+            st.markdown("#### 共现关系")
+            edges_df = pd.DataFrame(edges_data).sort_values('weight', ascending=False)
+            st.dataframe(edges_df, use_container_width=True, height=400)
+            
+            csv = edges_df.to_csv(index=False, encoding='utf-8-sig').encode('utf-8')
+            st.download_button("📥 下载边数据", csv, f"edges_{selected_year}.csv", "text/csv")
+
+
+# -------- 历史数据可视化页面 -------- #
 @register_page("历史数据可视化")
 def page_history_visualization():
     st.title("历史数据可视化")
@@ -495,7 +782,21 @@ def main():
         - 支持缓存加速
         - 可下载 JSON 数据
         """)
-
+    
+    with st.sidebar.expander("单日分析", expanded=False):
+        st.markdown("""
+        - 选择日期分析单日数据
+        - 调用 json_analyzer 模块
+        - 支持数据导出
+        """)
+    
+    with st.sidebar.expander("关键词网络", expanded=False):
+        st.markdown("""
+        - 查看关键词共现网络
+        - 节点和边的统计数据
+        - 导出数据为 CSV
+        """)
+    
     with st.sidebar.expander("历史数据可视化", expanded=False):
         st.markdown("""
         - 查看历史词云图
@@ -518,7 +819,8 @@ def main():
     # 统计数据
     data_dir = Path("data")
     output_dir = Path("output/word_clouds")
-
+    network_dir = Path("output/word_networks")
+    
     if data_dir.exists():
         json_files = list(data_dir.glob("**/*.json"))
         st.sidebar.success(f"✓ 已存储 {len(json_files)} 个数据文件")
@@ -530,7 +832,13 @@ def main():
         st.sidebar.success(f"✓ 已生成 {len(img_files)} 张词云图")
     else:
         st.sidebar.warning("⚠ 词云图目录不存在")
-
+    
+    if network_dir.exists():
+        network_files = list(network_dir.glob("**/*.json"))
+        st.sidebar.success(f"✓ 已生成 {len(network_files) // 2} 个网络图")
+    else:
+        st.sidebar.warning("⚠ 网络图目录不存在")
+    
     PAGES[page_name]()
 
 

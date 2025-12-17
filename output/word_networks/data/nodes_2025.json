@@ -1,0 +1,406 @@
+[
+  {
+    "keyword": "中国",
+    "frequency": 3178
+  },
+  {
+    "keyword": "男子",
+    "frequency": 2115
+  },
+  {
+    "keyword": "女子",
+    "frequency": 2067
+  },
+  {
+    "keyword": "王楚钦",
+    "frequency": 1752
+  },
+  {
+    "keyword": "美国",
+    "frequency": 1503
+  },
+  {
+    "keyword": "孙颖莎",
+    "frequency": 1429
+  },
+  {
+    "keyword": "直播",
+    "frequency": 1329
+  },
+  {
+    "keyword": "日本",
+    "frequency": 1299
+  },
+  {
+    "keyword": "特朗普",
+    "frequency": 1244
+  },
+  {
+    "keyword": "自己",
+    "frequency": 1178
+  },
+  {
+    "keyword": "演唱会",
+    "frequency": 1163
+  },
+  {
+    "keyword": "哪吒",
+    "frequency": 1102
+  },
+  {
+    "keyword": "一个",
+    "frequency": 894
+  },
+  {
+    "keyword": "肖战",
+    "frequency": 829
+  },
+  {
+    "keyword": "女儿",
+    "frequency": 826
+  },
+  {
+    "keyword": "樊振东",
+    "frequency": 821
+  },
+  {
+    "keyword": "韩国",
+    "frequency": 748
+  },
+  {
+    "keyword": "热巴",
+    "frequency": 733
+  },
+  {
+    "keyword": "发声",
+    "frequency": 715
+  },
+  {
+    "keyword": "妈妈",
+    "frequency": 681
+  },
+  {
+    "keyword": "时代",
+    "frequency": 659
+  },
+  {
+    "keyword": "发现",
+    "frequency": 635
+  },
+  {
+    "keyword": "女生",
+    "frequency": 635
+  },
+  {
+    "keyword": "通报",
+    "frequency": 631
+  },
+  {
+    "keyword": "孩子",
+    "frequency": 629
+  },
+  {
+    "keyword": "少年",
+    "frequency": 627
+  },
+  {
+    "keyword": "女孩",
+    "frequency": 627
+  },
+  {
+    "keyword": "建议",
+    "frequency": 626
+  },
+  {
+    "keyword": "上海",
+    "frequency": 622
+  },
+  {
+    "keyword": "去世",
+    "frequency": 610
+  },
+  {
+    "keyword": "北京",
+    "frequency": 609
+  },
+  {
+    "keyword": "迪丽",
+    "frequency": 601
+  },
+  {
+    "keyword": "儿子",
+    "frequency": 571
+  },
+  {
+    "keyword": "地震",
+    "frequency": 561
+  },
+  {
+    "keyword": "原来",
+    "frequency": 559
+  },
+  {
+    "keyword": "小米",
+    "frequency": 545
+  },
+  {
+    "keyword": "手机",
+    "frequency": 536
+  },
+  {
+    "keyword": "网友",
+    "frequency": 532
+  },
+  {
+    "keyword": "官宣",
+    "frequency": 528
+  },
+  {
+    "keyword": "老人",
+    "frequency": 526
+  },
+  {
+    "keyword": "孟子",
+    "frequency": 523
+  },
+  {
+    "keyword": "白鹿",
+    "frequency": 521
+  },
+  {
+    "keyword": "视频",
+    "frequency": 520
+  },
+  {
+    "keyword": "千玺",
+    "frequency": 515
+  },
+  {
+    "keyword": "公司",
+    "frequency": 509
+  },
+  {
+    "keyword": "新剧",
+    "frequency": 508
+  },
+  {
+    "keyword": "歌手",
+    "frequency": 499
+  },
+  {
+    "keyword": "印度",
+    "frequency": 498
+  },
+  {
+    "keyword": "刘宇宁",
+    "frequency": 492
+  },
+  {
+    "keyword": "关税",
+    "frequency": 492
+  },
+  {
+    "keyword": "事件",
+    "frequency": 482
+  },
+  {
+    "keyword": "AI",
+    "frequency": 475
+  },
+  {
+    "keyword": "警方",
+    "frequency": 468
+  },
+  {
+    "keyword": "身亡",
+    "frequency": 463
+  },
+  {
+    "keyword": "结婚",
+    "frequency": 454
+  },
+  {
+    "keyword": "出现",
+    "frequency": 453
+  },
+  {
+    "keyword": "世界",
+    "frequency": 446
+  },
+  {
+    "keyword": "粉丝",
+    "frequency": 446
+  },
+  {
+    "keyword": "鹿晗",
+    "frequency": 445
+  },
+  {
+    "keyword": "杨幂",
+    "frequency": 441
+  },
+  {
+    "keyword": "这样",
+    "frequency": 440
+  },
+  {
+    "keyword": "官方",
+    "frequency": 438
+  },
+  {
+    "keyword": "道歉",
+    "frequency": 436
+  },
+  {
+    "keyword": "黄金",
+    "frequency": 435
+  },
+  {
+    "keyword": "现场",
+    "frequency": 432
+  },
+  {
+    "keyword": "阅兵",
+    "frequency": 432
+  },
+  {
+    "keyword": "第一",
+    "frequency": 431
+  },
+  {
+    "keyword": "电影",
+    "frequency": 430
+  },
+  {
+    "keyword": "学生",
+    "frequency": 430
+  },
+  {
+    "keyword": "开始",
+    "frequency": 427
+  },
+  {
+    "keyword": "伊朗",
+    "frequency": 427
+  },
+  {
+    "keyword": "发文",
+    "frequency": 426
+  },
+  {
+    "keyword": "游客",
+    "frequency": 423
+  },
+  {
+    "keyword": "造型",
+    "frequency": 420
+  },
+  {
+    "keyword": "偶遇",
+    "frequency": 418
+  },
+  {
+    "keyword": "高考",
+    "frequency": 416
+  },
+  {
+    "keyword": "票房",
+    "frequency": 412
+  },
+  {
+    "keyword": "外卖",
+    "frequency": 410
+  },
+  {
+    "keyword": "曝光",
+    "frequency": 409
+  },
+  {
+    "keyword": "香港",
+    "frequency": 408
+  },
+  {
+    "keyword": "一天",
+    "frequency": 402
+  },
+  {
+    "keyword": "妻子",
+    "frequency": 402
+  },
+  {
+    "keyword": "王曼昱",
+    "frequency": 401
+  },
+  {
+    "keyword": "中方",
+    "frequency": 400
+  },
+  {
+    "keyword": "全球",
+    "frequency": 400
+  },
+  {
+    "keyword": "演员",
+    "frequency": 399
+  },
+  {
+    "keyword": "工作",
+    "frequency": 397
+  },
+  {
+    "keyword": "父亲",
+    "frequency": 386
+  },
+  {
+    "keyword": "虞书欣",
+    "frequency": 385
+  },
+  {
+    "keyword": "为何",
+    "frequency": 379
+  },
+  {
+    "keyword": "冠军",
+    "frequency": 373
+  },
+  {
+    "keyword": "如何",
+    "frequency": 373
+  },
+  {
+    "keyword": "周深",
+    "frequency": 370
+  },
+  {
+    "keyword": "赵丽颖",
+    "frequency": 367
+  },
+  {
+    "keyword": "合照",
+    "frequency": 364
+  },
+  {
+    "keyword": "知道",
+    "frequency": 364
+  },
+  {
+    "keyword": "可以",
+    "frequency": 362
+  },
+  {
+    "keyword": "我们",
+    "frequency": 355
+  },
+  {
+    "keyword": "死亡",
+    "frequency": 354
+  },
+  {
+    "keyword": "战胜",
+    "frequency": 353
+  },
+  {
+    "keyword": "医生",
+    "frequency": 347
+  }
+]
