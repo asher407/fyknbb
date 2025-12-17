@@ -1,0 +1,158 @@
+{
+  "config_version": "1.0",
+  "description": "关键词关系网络可视化配置文件",
+  "last_updated": "2025-01-01",
+
+  "input_settings": {
+    "description": "输入设置",
+    "input_path": "data_processed/",
+    "recursive": true,
+    "file_pattern": "*.json",
+    "exclude_patterns": ["*.bak", "backup/*"]
+  },
+
+  "output_settings": {
+    "description": "输出设置",
+    "output_dir": "output/keyword_networks",
+    "create_subdirectories": true,
+    "preserve_structure": true,
+    "overwrite_existing": false
+  },
+
+  "processing_settings": {
+    "description": "处理参数设置",
+    "min_word_length": 2,
+    "min_cooccurrence": 1,
+    "max_keywords_per_item": 10,
+    "include_categories": ["all"],
+    "exclude_categories": [],
+    "heat_threshold": 0.0
+  },
+
+  "keyword_extraction": {
+    "description": "关键词提取设置",
+    "use_custom_dict": true,
+    "custom_words": [
+      "王楚钦",
+      "赵露思",
+      "肖战",
+      "王一博",
+      "易烊千玺",
+      "迪丽热巴",
+      "杨幂",
+      "刘亦菲",
+      "胡歌",
+      "周杰伦"
+    ],
+    "stopwords": [
+      "的",
+      "了",
+      "和",
+      "是",
+      "在",
+      "到",
+      "一",
+      "个",
+      "为",
+      "中",
+      "回应",
+      "什么"
+    ],
+    "filter_numbers": true,
+    "filter_english_abbr": true,
+    "filter_single_char": true
+  },
+
+  "network_settings": {
+    "description": "网络构建设置",
+    "edge_weight_threshold": 1,
+    "node_frequency_threshold": 1,
+    "normalize_edge_weights": true,
+    "include_self_loops": false,
+    "undirected_network": true
+  },
+
+  "visualization_settings": {
+    "description": "可视化设置",
+    "html_output": {
+      "enabled": true,
+      "width": "100%",
+      "height": "800px",
+      "layout": "force_atlas_2based",
+      "interactive": true,
+      "show_edge_labels": true,
+      "show_node_labels": true
+    },
+    "static_output": {
+      "enabled": true,
+      "format": "png",
+      "dpi": 300,
+      "figsize": [12, 10],
+      "node_size_scale": 50,
+      "font_family": "DejaVu Serif"
+    },
+    "node_colors": {
+      "by_degree": true,
+      "colormap": "viridis",
+      "fixed_color": "#97C2FC",
+      "border_color": "#2B7CE9"
+    },
+    "edge_colors": {
+      "by_weight": true,
+      "colormap": "gray",
+      "fixed_color": "#848484"
+    }
+  },
+
+  "analysis_settings": {
+    "description": "分析设置",
+    "calculate_centrality": true,
+    "calculate_betweenness": true,
+    "calculate_closeness": true,
+    "calculate_pagerank": true,
+    "detect_communities": true,
+    "community_algorithm": "louvain",
+    "top_n_results": 10,
+    "save_metrics": true,
+    "save_graphml": false
+  },
+
+  "batch_processing": {
+    "description": "批量处理设置",
+    "parallel_processing": false,
+    "max_workers": 4,
+    "chunk_size": 10,
+    "generate_summary": true,
+    "log_level": "INFO"
+  },
+
+  "examples": {
+    "description": "配置示例",
+    "single_file_example": {
+      "input_path": "data_processed/2025-01/2025-01-01.json",
+      "output_dir": "output/single_day",
+      "min_cooccurrence": 2
+    },
+    "monthly_analysis_example": {
+      "input_path": "data_processed/2025-01",
+      "output_dir": "output/monthly_2025_01",
+      "min_cooccurrence": 1,
+      "generate_summary": true
+    },
+    "high_threshold_example": {
+      "input_path": "data_processed/",
+      "output_dir": "output/high_threshold",
+      "min_word_length": 3,
+      "min_cooccurrence": 3,
+      "heat_threshold": 500.0
+    }
+  },
+
+  "notes": [
+    "1. 修改配置后，使用命令：python demo_network.py --config config_network.json",
+    "2. input_path 可以是文件或目录路径",
+    "3. 如果 recursive 为 true，会递归处理子目录",
+    "4. min_cooccurrence 越高，网络越稀疏",
+    "5. heat_threshold 可以过滤低热度话题"
+  ]
+}
