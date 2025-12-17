@@ -37,8 +37,26 @@ warnings.filterwarnings("ignore")
 GLOBAL_FONT_PROP = None
 
 
+def sanitize_for_matplotlib(text: str) -> str:
+    """移除 Matplotlib 通常无法正常显示的字符（如彩色 Emoji/非常用符号）。
+
+    规则：过滤掉超出 BMP 平面的字符 (ord > 0xFFFF)。
+    说明：绝大多数常用中英文都在 BMP 内，Emoji 等位于补充平面会被去除，避免显示为方块。
+    """
+    if not isinstance(text, str):
+        return text
+    try:
+        return "".join(ch for ch in text if ord(ch) <= 0xFFFF)
+    except Exception:
+        return text
+
+
 def setup_font(font_name: str = "") -> bool:
-    """直接加载字体文件，确保中文显示。"""
+    """统一设置 Matplotlib 字体，确保所有中文一致显示。
+
+    优先从系统路径加载常用 CJK 字体；加载后将字体注册到 Matplotlib，
+    并同时设置 rcParams 的 font.family 与 font.sans-serif，统一全局默认。
+    """
     global GLOBAL_FONT_PROP
     
     try:
@@ -61,12 +79,21 @@ def setup_font(font_name: str = "") -> bool:
                 font_path = "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"
         
         if font_path and os.path.exists(font_path):
-            # 直接通过文件路径创建FontProperties
+            # 注册字体，获取标准字体名称
+            try:
+                fm.fontManager.addfont(font_path)
+            except Exception:
+                # 某些环境 addfont 可能已注册，忽略
+                pass
+
             GLOBAL_FONT_PROP = fm.FontProperties(fname=font_path)
-            # 设置matplotlib全局字体
-            matplotlib.rcParams["font.sans-serif"] = [GLOBAL_FONT_PROP.get_name()]
+            font_name_resolved = GLOBAL_FONT_PROP.get_name()
+
+            # 统一全局字体（family 与 sans-serif 一致指定）
+            matplotlib.rcParams["font.family"] = font_name_resolved
+            matplotlib.rcParams["font.sans-serif"] = [font_name_resolved]
             matplotlib.rcParams["axes.unicode_minus"] = False
-            print(f"✓ 已加载字体: {GLOBAL_FONT_PROP.get_name()} from {font_path}")
+            print(f"✓ 已加载字体: {font_name_resolved} from {font_path}")
             return True
         else:
             print(f"⚠ 字体文件不存在: {font_path}")
@@ -223,9 +250,11 @@ def generate_charts(
         )
 
         # 添加标题和标签
-        plt.title(f"{date_str} 热度排名前20的热搜", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+        plt.title(sanitize_for_matplotlib(f"{date_str} 热度排名前20的热搜"), fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
         plt.xlabel("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
-        plt.yticks(range(len(top_20)), top_20["title"], fontsize=10, fontproperties=GLOBAL_FONT_PROP)
+        # 去除标题中的不可显示字符（emoji 等）
+        _yticks = [sanitize_for_matplotlib(str(t)) for t in top_20["title"]]
+        plt.yticks(range(len(top_20)), _yticks, fontsize=10, fontproperties=GLOBAL_FONT_PROP)
 
         # 在条形图上添加数值标签
         for i, (bar, heat) in enumerate(zip(bars, top_20["heat"])):
@@ -236,6 +265,7 @@ def generate_charts(
                 f"{heat:.1f}",
                 va="center",
                 fontsize=9,
+                fontproperties=GLOBAL_FONT_PROP,
             )
 
         plt.tight_layout()
@@ -255,7 +285,7 @@ def generate_charts(
             df["heat"], bins=30, color="lightcoral", alpha=0.7, edgecolor="black"
         )
 
-        plt.title(f"{date_str} 热搜热度分布直方图", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+        plt.title(sanitize_for_matplotlib(f"{date_str} 热搜热度分布直方图"), fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
         plt.xlabel("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
         plt.ylabel("频数", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
 
@@ -312,13 +342,13 @@ def generate_charts(
         # 添加颜色条表示热度
         if "heat" in df.columns:
             cbar = plt.colorbar(scatter)
-            cbar.set_label("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
+            cbar.set_label(sanitize_for_matplotlib("热度值"), fontsize=12, fontproperties=GLOBAL_FONT_PROP)
 
         # 添加趋势线
         if len(df) > 1:
             z = np.polyfit(df["reads"], df["discussions"], 1)
             p = np.poly1d(z)
-            plt.plot(df["reads"], p(df["reads"]), "r--", alpha=0.8, label="趋势线")
+            plt.plot(df["reads"], p(df["reads"]), "r--", alpha=0.8, label=sanitize_for_matplotlib("趋势线"))
 
         plt.legend(prop=GLOBAL_FONT_PROP)
         plt.grid(True, alpha=0.3)
@@ -352,16 +382,17 @@ def generate_charts(
 
             # 创建饼图
             colors = plt.cm.Set3(np.linspace(0, 1, len(category_counts)))
+            labels_clean = [sanitize_for_matplotlib(str(x)) for x in category_counts.index]
             wedges, texts, autotexts = plt.pie(
                 category_counts.values,
-                labels=category_counts.index,
+                labels=labels_clean,
                 autopct="%1.1f%%",
                 startangle=90,
                 colors=colors,
                 textprops={"fontsize": 10, "fontproperties": GLOBAL_FONT_PROP},
             )
 
-            plt.title(f"{date_str} 热搜类别分布", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+            plt.title(sanitize_for_matplotlib(f"{date_str}"), fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
             plt.axis("equal")  # 确保饼图是圆形
 
             plt.tight_layout()
@@ -383,9 +414,9 @@ def generate_charts(
             color="skyblue",
             alpha=0.7,
         )
-        axes[0, 0].set_title("排名分布", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
-        axes[0, 0].set_xlabel("排名", fontproperties=GLOBAL_FONT_PROP)
-        axes[0, 0].set_ylabel("热度" if "heat" in df.columns else "数量", fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 0].set_title(sanitize_for_matplotlib("排名分布"), fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 0].set_xlabel(sanitize_for_matplotlib("排名"), fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 0].set_ylabel(sanitize_for_matplotlib("热度" if "heat" in df.columns else "数量"), fontproperties=GLOBAL_FONT_PROP)
         axes[0, 0].invert_xaxis()  # 排名1在左边
         axes[0, 0].grid(True, alpha=0.3)
 
@@ -395,9 +426,9 @@ def generate_charts(
         axes[0, 1].bar(
             originals_data.index, originals_data.values, color="lightgreen", alpha=0.7
         )
-        axes[0, 1].set_title("原创数量分布", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
-        axes[0, 1].set_xlabel("原创数量", fontproperties=GLOBAL_FONT_PROP)
-        axes[0, 1].set_ylabel("频数", fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 1].set_title(sanitize_for_matplotlib("原创数量分布"), fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 1].set_xlabel(sanitize_for_matplotlib("原创数量"), fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 1].set_ylabel(sanitize_for_matplotlib("频数"), fontproperties=GLOBAL_FONT_PROP)
         axes[0, 1].grid(True, alpha=0.3)
 
     # 5.3 热度箱线图
@@ -408,20 +439,73 @@ def generate_charts(
             patch_artist=True,
             boxprops=dict(facecolor="lightcoral"),
         )
-        axes[1, 0].set_title("热度箱线图", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
-        axes[1, 0].set_ylabel("热度值", fontproperties=GLOBAL_FONT_PROP)
+        axes[1, 0].set_title(sanitize_for_matplotlib("热度箱线图"), fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[1, 0].set_ylabel(sanitize_for_matplotlib("热度值"), fontproperties=GLOBAL_FONT_PROP)
         axes[1, 0].grid(True, alpha=0.3)
 
-    # 5.4 阅读量箱线图
+    # 5.4 阅读量箱线图（增强版：统一字体、自动缩放、统计注记）
     if "reads" in df.columns:
-        axes[1, 1].boxplot(
-            df["reads"], vert=True, patch_artist=True, boxprops=dict(facecolor="gold")
-        )
-        axes[1, 1].set_title("阅读量箱线图", fontsize=14)
-        axes[1, 1].set_ylabel("阅读量（万）")
-        axes[1, 1].grid(True, alpha=0.3)
+        reads = pd.to_numeric(df["reads"], errors="coerce").dropna()
+        if len(reads) > 0:
+            axes[1, 1].boxplot(
+                reads,
+                vert=True,
+                patch_artist=True,
+                notch=False,
+                showmeans=True,
+                meanline=True,
+                boxprops=dict(facecolor="gold", alpha=0.65, linewidth=1),
+                medianprops=dict(color="royalblue", linewidth=1.5),
+                meanprops=dict(color="red", linewidth=1.2),
+                whiskerprops=dict(color="gray"),
+                capprops=dict(color="gray"),
+                flierprops=dict(marker="o", markerfacecolor="gray", markersize=3, alpha=0.5),
+            )
+            axes[1, 1].set_title(sanitize_for_matplotlib("阅读量箱线图"), fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+            axes[1, 1].set_ylabel(sanitize_for_matplotlib("阅读量（万）"), fontproperties=GLOBAL_FONT_PROP)
 
-    plt.suptitle(f"{date_str} 综合统计分析", fontsize=18, fontweight="bold")
+            # 自动缩放（避免极端离群点压缩盒体）
+            try:
+                p01 = np.nanpercentile(reads, 1)
+                p99 = np.nanpercentile(reads, 99)
+                if np.isfinite(p99) and reads.max() > p99 * 1.1:
+                    axes[1, 1].set_ylim(bottom=min(0, p01), top=p99)
+                    txt = "提示：已按P99截断显示"
+                    axes[1, 1].text(
+                        1.02, 0.02, sanitize_for_matplotlib(txt),
+                        transform=axes[1, 1].transAxes,
+                        ha="left", va="bottom",
+                        fontsize=9, fontproperties=GLOBAL_FONT_PROP, color="gray"
+                    )
+            except Exception:
+                pass
+
+            # 统计注记
+            mean_v = float(np.nanmean(reads))
+            median_v = float(np.nanmedian(reads))
+            min_v = float(np.nanmin(reads))
+            max_v = float(np.nanmax(reads))
+            stats_text = f"均值: {mean_v:.2f} 万\n中位数: {median_v:.2f} 万\n最小: {min_v:.2f} 万\n最大: {max_v:.2f} 万"
+            axes[1, 1].text(
+                0.98, 0.98, sanitize_for_matplotlib(stats_text),
+                transform=axes[1, 1].transAxes,
+                ha="right", va="top",
+                fontsize=9, fontproperties=GLOBAL_FONT_PROP,
+                bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="lightgray", alpha=0.7)
+            )
+
+            axes[1, 1].grid(True, alpha=0.3)
+        else:
+            axes[1, 1].text(
+                0.5, 0.5, sanitize_for_matplotlib("无有效阅读量数据"),
+                transform=axes[1, 1].transAxes, ha="center", va="center",
+                fontsize=12, fontproperties=GLOBAL_FONT_PROP, color="gray"
+            )
+            axes[1, 1].set_title(sanitize_for_matplotlib("阅读量箱线图"), fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+            axes[1, 1].set_ylabel(sanitize_for_matplotlib("阅读量（万）"), fontproperties=GLOBAL_FONT_PROP)
+            axes[1, 1].grid(True, alpha=0.3)
+
+    plt.suptitle(sanitize_for_matplotlib(f"{date_str}"), fontsize=18, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
     plt.tight_layout()
     plt.savefig(
         os.path.join(output_dir, f"{date_str}_comprehensive_analysis.png"),
