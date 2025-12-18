@@ -2,11 +2,9 @@ import json
 import sys
 import threading
 import time
-from pathlib import Path
-import sys
-from typing import List, Dict, Any
 from datetime import datetime
-
+from pathlib import Path
+from typing import Any, Dict, List
 
 import numpy as np
 import pandas as pd
@@ -1147,85 +1145,86 @@ def page_random_hot_today():
     st.title("去年今日")
     st.markdown("""
     从历史数据中随机找出与今天日期相同或相近（年份不同）且热度较高的热搜。
-    
+
     **筛选条件：**
     - 📆 日期：与今天相同的月日（跨越不同年份）
     - 🔥 热度：大于 1 的条目
     """)
-    
+
     # 导入模块
     try:
         from src.random_hot_today import RandomHotToday
     except ImportError:
         from random_hot_today import RandomHotToday
-    
+
     # 创建两列布局
     col1, col2 = st.columns([3, 1])
-    
+
     with col2:
         if st.button("🎲 换一条", type="primary", use_container_width=True):
             st.session_state.random_hot_today_cache = None
-    
+
     with col1:
         st.markdown("### 查找数据")
-    
+
     # 缓存数据以避免重复查询
     if "random_hot_today_cache" not in st.session_state:
         st.session_state.random_hot_today_cache = None
-    
+
     # 执行查询
     with st.spinner("正在从历史数据中查找..."):
         try:
             random_today = RandomHotToday()
-            
+
             # 加载并筛选数据
             matching_items = random_today.load_and_filter_data()
-            
+
             if not matching_items:
                 st.warning("❌ 未找到符合条件的数据")
                 st.info("💡 请确保已加载足够的历史数据")
                 return
-            
+
             # 随机选择一条
             selected_item = random_today.select_random_item(matching_items)
-            
+
             if selected_item:
                 st.session_state.random_hot_today_cache = selected_item
             else:
                 st.error("未能选择数据")
                 return
-        
+
         except Exception as e:
             st.error(f"❌ 加载数据失败: {str(e)}")
             import traceback
+
             with st.expander("查看错误详情"):
                 st.code(traceback.format_exc())
             return
-    
+
     # 显示选中的数据
     item = st.session_state.random_hot_today_cache
     if item:
         # 获取数据
-        title = item.get('title', 'N/A')
-        rank = item.get('rank', 'N/A')
-        date = item.get('date', 'N/A')
-        heat = item.get('heat', 0)
-        category = item.get('category', '')
-        reads = item.get('reads', 0)
-        discussions = item.get('discussions', 0)
-        originals = item.get('originals', 0)
-        
+        title = item.get("title", "N/A")
+        rank = item.get("rank", "N/A")
+        date = item.get("date", "N/A")
+        heat = item.get("heat", 0)
+        category = item.get("category", "")
+        reads = item.get("reads", 0)
+        discussions = item.get("discussions", 0)
+        originals = item.get("originals", 0)
+
         # 创建卡片展示
         st.markdown("---")
         st.markdown("### 🏆 选中的热搜")
-        
+
         # 主标题区域
         col1, col2 = st.columns([4, 1])
         with col1:
             st.markdown(f"#### {title}")
         with col2:
             st.metric("热度", f"{heat:.2f}")
-        
+
         # 详细信息表格
         info_data = {
             "📅 日期": str(date),
@@ -1235,7 +1234,7 @@ def page_random_hot_today():
             "💬 讨论量": f"{discussions:.0f}" if discussions else "N/A",
             "✍️  原创量": f"{originals:.0f}" if originals else "N/A",
         }
-        
+
         # 两列显示
         col1, col2 = st.columns(2)
         with col1:
@@ -1244,12 +1243,12 @@ def page_random_hot_today():
         with col2:
             for key in list(info_data.keys())[3:]:
                 st.markdown(f"**{key}** {info_data[key]}")
-        
+
         st.markdown("---")
-        
+
         # 统计信息
         st.markdown("### 📊 数据统计")
-        
+
         # 四个指标卡
         metric_cols = st.columns(4)
         with metric_cols[0]:
@@ -1257,51 +1256,54 @@ def page_random_hot_today():
         with metric_cols[1]:
             st.metric("热度值", f"{heat:.1f}", delta="相对参考")
         with metric_cols[2]:
-            st.metric("阅读量", f"{reads/1000:.1f}K" if reads >= 1000 else f"{reads:.0f}")
+            st.metric(
+                "阅读量", f"{reads / 1000:.1f}K" if reads >= 1000 else f"{reads:.0f}"
+            )
         with metric_cols[3]:
             st.metric("讨论热度", f"{discussions:.1f}")
-        
+
         # 导出选项
         st.markdown("### 💾 导出数据")
-        
+
         col1, col2, col3 = st.columns(3)
-        
+
         with col1:
             # JSON 导出
             json_str = json.dumps(item, ensure_ascii=False, indent=2)
             st.download_button(
                 label="📥 JSON 格式",
-                data=json_str.encode('utf-8'),
+                data=json_str.encode("utf-8"),
                 file_name=f"hot_today_{date}.json",
-                mime="application/json"
+                mime="application/json",
             )
-        
+
         with col2:
             # CSV 导出
             import csv
             import io
+
             csv_buffer = io.StringIO()
             writer = csv.DictWriter(csv_buffer, fieldnames=item.keys())
             writer.writeheader()
             writer.writerow(item)
             csv_data = csv_buffer.getvalue()
-            
+
             st.download_button(
                 label="📥 CSV 格式",
-                data=csv_data.encode('utf-8'),
+                data=csv_data.encode("utf-8"),
                 file_name=f"hot_today_{date}.csv",
-                mime="text/csv"
+                mime="text/csv",
             )
-        
+
         with col3:
             # 文本导出
-            current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             text_output = f"""去年今日 - {date}
-{'='*50}
+{"=" * 50}
 
 标题: {title}
 排名: #{rank}
-分类: {category if category else '未分类'}
+分类: {category if category else "未分类"}
 
 热度数据:
 - 热度值: {heat:.2f}
@@ -1313,29 +1315,32 @@ def page_random_hot_today():
 """
             st.download_button(
                 label="📥 文本格式",
-                data=text_output.encode('utf-8'),
+                data=text_output.encode("utf-8"),
                 file_name=f"hot_today_{date}.txt",
-                mime="text/plain"
+                mime="text/plain",
             )
-        
+
         # 相关信息
         st.markdown("---")
         st.markdown("### ℹ️  说明")
         st.info("""
         💡 **如何使用这个页面：**
-        
+
         1. **查看内容**：页面会从历史数据中随机选择一条与今天日期相同/相近的热搜
         2. **刷新数据**：点击"换一条"按钮重新抽取一条
         3. **导出数据**：支持 JSON、CSV 和 TXT 格式导出
         4. **数据来源**：来自历史热搜数据，可能来自去年或更早的相同日期
+        """)
+
+
 # -------- 高级数据查询页面 -------- #
 @register_page("高级数据查询")
 def page_advanced_query():
     st.title("高级数据查询系统")
     st.markdown("""
-    本工具提供多条件数据查询功能，支持日期范围、分类筛选、热度范围、排序等多种条件。
-    查询结果将自动保存为JSON文件，并进行数据分析生成可视化图表。
-    """)
+        本工具提供多条件数据查询功能，支持日期范围、分类筛选、热度范围、排序等多种条件。
+        查询结果将自动保存为JSON文件，并进行数据分析生成可视化图表。
+        """)
 
     # 创建查询器实例
     query = get_data_query()
@@ -1704,7 +1709,7 @@ def main():
         - 批量导出工具
         - 自定义分析
         """)
-    
+
     with st.sidebar.expander("去年今日", expanded=False):
         st.markdown("""
         - 从历史数据随机查找
