@@ -28,10 +28,8 @@ import argparse
 import json
 import os
 import platform
-import sys
 import warnings
 from datetime import datetime
-from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import matplotlib
@@ -39,6 +37,16 @@ import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+
+# 导入情感分析模块
+try:
+    from src.sentiment_analyzer import SentimentAnalyzer
+
+    SENTIMENT_AVAILABLE = True
+except ImportError:
+    print("警告: sentiment_analyzer 模块未找到，情感分析功能将不可用")
+    SENTIMENT_AVAILABLE = False
+    SentimentAnalyzer = None
 
 # 过滤警告
 warnings.filterwarnings("ignore")
@@ -69,10 +77,10 @@ def setup_font(font_name: str = "") -> bool:
     并同时设置 rcParams 的 font.family 与 font.sans-serif，统一全局默认。
     """
     global GLOBAL_FONT_PROP
-    
+
     try:
         font_path = None
-        
+
         # Windows: 直接使用微软雅黑
         if platform.system() == "Windows":
             font_path = r"C:\Windows\Fonts\msyh.ttc"
@@ -88,7 +96,7 @@ def setup_font(font_name: str = "") -> bool:
             font_path = "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc"
             if not os.path.exists(font_path):
                 font_path = "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"
-        
+
         if font_path and os.path.exists(font_path):
             # 注册字体，获取标准字体名称
             try:
@@ -111,12 +119,11 @@ def setup_font(font_name: str = "") -> bool:
             # 兜底：使用系统可用字体
             matplotlib.rcParams["axes.unicode_minus"] = False
             return False
-            
+
     except Exception as e:
         print(f"✗ 字体加载异常: {e}")
         matplotlib.rcParams["axes.unicode_minus"] = False
         return False
-
 
 
 def load_json_data(file_path: str) -> Dict[str, Any]:
@@ -227,6 +234,34 @@ def analyze_data(
         if not analysis_result:
             print("分析结果为空，可能数据格式不正确")
             return {}
+
+        # 4. 情感分析（如果可用）
+        sentiment_result = None
+        if SENTIMENT_AVAILABLE and normalized_data and "data" in normalized_data:
+            try:
+                print("开始情感分析...")
+                analyzer = (
+                    SentimentAnalyzer() if SentimentAnalyzer is not None else None
+                )
+                if analyzer is not None:
+                    sentiment_result = analyzer.api_analyze(normalized_data)
+                else:
+                    sentiment_result = None
+                    print("SentimentAnalyzer 不可用")
+                # 将情感分析结果添加到分析结果中
+                if sentiment_result and "metadata" in sentiment_result:
+                    analysis_result["sentiment_analysis"] = sentiment_result["metadata"]
+                    print(
+                        f"情感分析完成: 正面 {sentiment_result['metadata']['sentiment_distribution']['positive']}, "
+                        f"负面 {sentiment_result['metadata']['sentiment_distribution']['negative']}, "
+                        f"中性 {sentiment_result['metadata']['sentiment_distribution']['neutral']}"
+                    )
+            except Exception as e:
+                print(f"情感分析出错: {e}")
+                sentiment_result = None
+        else:
+            if not SENTIMENT_AVAILABLE:
+                print("情感分析不可用，跳过此步骤")
 
         # 4. 创建输出目录
         date_str = normalized_data.get("date", "unknown_date")
@@ -368,9 +403,15 @@ def basic_analysis(data: Dict[str, Any]) -> Dict[str, Any]:
         "total_items": count,
         "actual_items": len(items),
         "heat_stats": {
-            "mean": float(df["heat"].mean()) if "heat" in df.columns else 0.0,
-            "median": float(df["heat"].median()) if "heat" in df.columns else 0.0,
-            "max": float(df["heat"].max()) if "heat" in df.columns else 0.0,
+            "mean": float(df["heat"].mean())
+            if "heat" in df.columns and not df["heat"].empty
+            else 0.0,
+            "median": float(df["heat"].median())
+            if "heat" in df.columns and not df["heat"].empty
+            else 0.0,
+            "max": float(df["heat"].max())
+            if "heat" in df.columns and not df["heat"].empty
+            else 0.0,
             "min": float(df["heat"].min()) if "heat" in df.columns else 0.0,
             "std": float(df["heat"].std()) if "heat" in df.columns else 0.0,
         },
@@ -469,9 +510,19 @@ def generate_charts(
         )
 
         # 添加标题和标签
-        plt.title(f"{date_str} 热度排名前20的热搜", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+        plt.title(
+            f"{date_str} 热度排名前20的热搜",
+            fontsize=16,
+            fontweight="bold",
+            fontproperties=GLOBAL_FONT_PROP,
+        )
         plt.xlabel("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
-        plt.yticks(range(len(top_20)), top_20["title"], fontsize=10, fontproperties=GLOBAL_FONT_PROP)
+        plt.yticks(
+            range(len(top_20)),
+            top_20["title"],
+            fontsize=10,
+            fontproperties=GLOBAL_FONT_PROP,
+        )
 
         # 在条形图上添加数值标签
         for i, (bar, heat) in enumerate(zip(bars, top_20["heat"])):
@@ -527,7 +578,12 @@ def generate_charts(
             heat_data, bins=bins, color="lightcoral", alpha=0.7, edgecolor="black"
         )
 
-        plt.title(sanitize_for_matplotlib(f"{date_str} 热搜热度分布直方图"), fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+        plt.title(
+            sanitize_for_matplotlib(f"{date_str} 热搜热度分布直方图"),
+            fontsize=16,
+            fontweight="bold",
+            fontproperties=GLOBAL_FONT_PROP,
+        )
         plt.xlabel("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
         plt.ylabel("频数", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
 
@@ -604,7 +660,10 @@ def generate_charts(
         )
 
         plt.title(
-            f"{date_str} 阅读量与讨论量关系散点图", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP
+            f"{date_str} 阅读量与讨论量关系散点图",
+            fontsize=16,
+            fontweight="bold",
+            fontproperties=GLOBAL_FONT_PROP,
         )
         plt.xlabel("阅读量（万）", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
         plt.ylabel("讨论量（万）", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
@@ -612,13 +671,23 @@ def generate_charts(
         # 添加颜色条表示热度
         if "heat" in df.columns:
             cbar = plt.colorbar(scatter)
-            cbar.set_label(sanitize_for_matplotlib("热度值"), fontsize=12, fontproperties=GLOBAL_FONT_PROP)
+            cbar.set_label(
+                sanitize_for_matplotlib("热度值"),
+                fontsize=12,
+                fontproperties=GLOBAL_FONT_PROP,
+            )
 
         # 添加趋势线
         if len(df) > 1:
             z = np.polyfit(df["reads"], df["discussions"], 1)
             p = np.poly1d(z)
-            plt.plot(df["reads"], p(df["reads"]), "r--", alpha=0.8, label=sanitize_for_matplotlib("趋势线"))
+            plt.plot(
+                df["reads"],
+                p(df["reads"]),
+                "r--",
+                alpha=0.8,
+                label=sanitize_for_matplotlib("趋势线"),
+            )
 
         plt.legend(prop=GLOBAL_FONT_PROP)
         plt.grid(True, alpha=0.3)
@@ -653,7 +722,7 @@ def generate_charts(
                 category_counts = new_counts
 
             # 创建饼图
-            colors = plt.cm.Set3(np.linspace(0, 1, len(category_counts)))
+            colors = plt.cm.tab20c(np.linspace(0, 1, len(category_counts)))
             wedges, texts, autotexts = plt.pie(
                 category_counts.values,
                 labels=category_counts.index,
@@ -663,7 +732,12 @@ def generate_charts(
                 textprops={"fontsize": 10, "fontproperties": GLOBAL_FONT_PROP},
             )
 
-            plt.title(sanitize_for_matplotlib(f"{date_str}"), fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+            plt.title(
+                sanitize_for_matplotlib(f"{date_str}"),
+                fontsize=16,
+                fontweight="bold",
+                fontproperties=GLOBAL_FONT_PROP,
+            )
             plt.axis("equal")  # 确保饼图是圆形
 
             plt.tight_layout()
@@ -674,7 +748,64 @@ def generate_charts(
             )
             plt.close()
 
-    # 5. 综合统计信息图表
+    # 5. 情感分析饼图（如果有情感分析结果）
+    if (
+        "sentiment_analysis" in analysis_result
+        and "sentiment_distribution" in analysis_result["sentiment_analysis"]
+    ):
+        plt.figure(figsize=(10, 8))
+
+        sentiment_dist = analysis_result["sentiment_analysis"]["sentiment_distribution"]
+        labels = ["正面", "负面", "中性"]
+        sizes = [
+            sentiment_dist.get("positive", 0),
+            sentiment_dist.get("negative", 0),
+            sentiment_dist.get("neutral", 0),
+        ]
+        colors = ["#4CAF50", "#F44336", "#2196F3"]  # 绿色，红色，蓝色
+
+        # 创建饼图
+        wedges, texts, autotexts = plt.pie(
+            sizes,
+            labels=labels,
+            autopct="%1.1f%%",
+            startangle=90,
+            colors=colors,
+            textprops={"fontsize": 12, "fontproperties": GLOBAL_FONT_PROP},
+            explode=(0.05, 0.05, 0.05),  # 稍微分离
+        )
+
+        # 设置标题
+        plt.title(
+            sanitize_for_matplotlib(f"{date_str} 热搜情感分析分布"),
+            fontsize=16,
+            fontweight="bold",
+            fontproperties=GLOBAL_FONT_PROP,
+        )
+        plt.axis("equal")  # 确保饼图是圆形
+
+        # 添加图例
+        plt.legend(
+            wedges,
+            [
+                f"{labels[i]}: {sizes[i]}条 ({sizes[i] / sum(sizes) * 100:.1f}%)"
+                for i in range(len(labels))
+            ],
+            title="情感分布",
+            loc="center left",
+            bbox_to_anchor=(1, 0, 0.5, 1),
+            prop=GLOBAL_FONT_PROP,
+        )
+
+        plt.tight_layout()
+        plt.savefig(
+            os.path.join(output_dir, f"{date_str}_sentiment_distribution.png"),
+            dpi=300,
+            bbox_inches="tight",
+        )
+        plt.close()
+
+    # 6. 综合统计信息图表
     fig, axes = plt.subplots(2, 2, figsize=(15, 12))
 
     # 5.1 排名分布
@@ -688,9 +819,18 @@ def generate_charts(
             color="skyblue",
             alpha=0.7,
         )
-        axes[0, 0].set_title(sanitize_for_matplotlib("排名分布"), fontsize=14, fontproperties=GLOBAL_FONT_PROP)
-        axes[0, 0].set_xlabel(sanitize_for_matplotlib("排名"), fontproperties=GLOBAL_FONT_PROP)
-        axes[0, 0].set_ylabel(sanitize_for_matplotlib("热度" if "heat" in df.columns else "数量"), fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 0].set_title(
+            sanitize_for_matplotlib("排名分布"),
+            fontsize=14,
+            fontproperties=GLOBAL_FONT_PROP,
+        )
+        axes[0, 0].set_xlabel(
+            sanitize_for_matplotlib("排名"), fontproperties=GLOBAL_FONT_PROP
+        )
+        axes[0, 0].set_ylabel(
+            sanitize_for_matplotlib("热度" if "heat" in df.columns else "数量"),
+            fontproperties=GLOBAL_FONT_PROP,
+        )
         axes[0, 0].invert_xaxis()  # 排名1在左边
 
         # 调整坐标轴范围
@@ -714,7 +854,9 @@ def generate_charts(
             color="lightgreen",
             alpha=0.7,
         )
-        axes[0, 1].set_title("原创数量分布", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 1].set_title(
+            "原创数量分布", fontsize=14, fontproperties=GLOBAL_FONT_PROP
+        )
         axes[0, 1].set_xlabel("原创数量", fontproperties=GLOBAL_FONT_PROP)
         axes[0, 1].set_ylabel("频数", fontproperties=GLOBAL_FONT_PROP)
         axes[0, 1].grid(True, alpha=0.3)
@@ -738,11 +880,18 @@ def generate_charts(
         axes[1, 1].boxplot(
             df["reads"], vert=True, patch_artist=True, boxprops=dict(facecolor="gold")
         )
-        axes[1, 1].set_title("阅读量箱线图", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[1, 1].set_title(
+            "阅读量箱线图", fontsize=14, fontproperties=GLOBAL_FONT_PROP
+        )
         axes[1, 1].set_ylabel("阅读量（万）", fontproperties=GLOBAL_FONT_PROP)
         axes[1, 1].grid(True, alpha=0.3)
 
-    plt.suptitle(sanitize_for_matplotlib(f"{date_str}"), fontsize=18, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+    plt.suptitle(
+        sanitize_for_matplotlib(f"{date_str}"),
+        fontsize=18,
+        fontweight="bold",
+        fontproperties=GLOBAL_FONT_PROP,
+    )
     plt.tight_layout()
     plt.savefig(
         os.path.join(output_dir, f"{date_str}_comprehensive_analysis.png"),
@@ -808,6 +957,28 @@ def save_analysis_report(analysis_result: Dict[str, Any], output_dir: str):
                 if category:  # 跳过空类别
                     f.write(f"  {category}: {count} 条\n")
             f.write("\n")
+
+        # 情感分析结果
+        sentiment_analysis = analysis_result.get("sentiment_analysis", {})
+        if sentiment_analysis and "sentiment_distribution" in sentiment_analysis:
+            sentiment_dist = sentiment_analysis["sentiment_distribution"]
+            total = (
+                sentiment_dist.get("positive", 0)
+                + sentiment_dist.get("negative", 0)
+                + sentiment_dist.get("neutral", 0)
+            )
+            if total > 0:
+                f.write("情感分析结果:\n")
+                f.write(
+                    f"  正面情感: {sentiment_dist.get('positive', 0)} 条 ({sentiment_dist.get('positive', 0) / total * 100:.1f}%)\n"
+                )
+                f.write(
+                    f"  负面情感: {sentiment_dist.get('negative', 0)} 条 ({sentiment_dist.get('negative', 0) / total * 100:.1f}%)\n"
+                )
+                f.write(
+                    f"  中性情感: {sentiment_dist.get('neutral', 0)} 条 ({sentiment_dist.get('neutral', 0) / total * 100:.1f}%)\n"
+                )
+                f.write(f"  总计: {total} 条\n\n")
 
         # 热度最高标题
         top_titles = analysis_result.get("top_titles", [])
