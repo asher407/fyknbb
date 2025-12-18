@@ -1010,8 +1010,8 @@ def main():
         )
         
         # 设置日期范围（根据用户要求）
-        start_date = "2025-01-01"
-        end_date = "2025-12-12"
+        start_date = "2024-05-20"
+        end_date = "2024-12-31"
 
         print(f"开始爬取 {start_date} 到 {end_date} 的数据...")
         print("数据将保存到 data/ 目录下，按月份组织")

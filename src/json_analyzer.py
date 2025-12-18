@@ -606,8 +606,8 @@ def generate_charts(
         plt.title(
             f"{date_str} 阅读量与讨论量关系散点图", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP
         )
-        plt.xlabel("阅读量（万）", fontsize=12)
-        plt.ylabel("讨论量（万）", fontsize=12)
+        plt.xlabel("阅读量（万）", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
+        plt.ylabel("讨论量（万）", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
 
         # 添加颜色条表示热度
         if "heat" in df.columns:
@@ -714,9 +714,9 @@ def generate_charts(
             color="lightgreen",
             alpha=0.7,
         )
-        axes[0, 1].set_title("原创数量分布", fontsize=14)
-        axes[0, 1].set_xlabel("原创数量")
-        axes[0, 1].set_ylabel("频数")
+        axes[0, 1].set_title("原创数量分布", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 1].set_xlabel("原创数量", fontproperties=GLOBAL_FONT_PROP)
+        axes[0, 1].set_ylabel("频数", fontproperties=GLOBAL_FONT_PROP)
         axes[0, 1].grid(True, alpha=0.3)
 
     # 5.3 热度箱线图
@@ -729,8 +729,8 @@ def generate_charts(
             boxprops=dict(facecolor="lightcoral"),
             showfliers=True,  # 显示离群点
         )
-        axes[1, 0].set_title("热度箱线图", fontsize=14)
-        axes[1, 0].set_ylabel("热度值")
+        axes[1, 0].set_title("热度箱线图", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[1, 0].set_ylabel("热度值", fontproperties=GLOBAL_FONT_PROP)
         axes[1, 0].grid(True, alpha=0.3)
 
     # 5.4 阅读量箱线图（增强版：统一字体、自动缩放、统计注记）
@@ -738,8 +738,8 @@ def generate_charts(
         axes[1, 1].boxplot(
             df["reads"], vert=True, patch_artist=True, boxprops=dict(facecolor="gold")
         )
-        axes[1, 1].set_title("阅读量箱线图", fontsize=14)
-        axes[1, 1].set_ylabel("阅读量（万）")
+        axes[1, 1].set_title("阅读量箱线图", fontsize=14, fontproperties=GLOBAL_FONT_PROP)
+        axes[1, 1].set_ylabel("阅读量（万）", fontproperties=GLOBAL_FONT_PROP)
         axes[1, 1].grid(True, alpha=0.3)
 
     plt.suptitle(sanitize_for_matplotlib(f"{date_str}"), fontsize=18, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
