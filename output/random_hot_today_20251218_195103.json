@@ -1,0 +1,18 @@
+{
+  "selected_at": "2025-12-18 19:51:03",
+  "today_date": "2025-12-18",
+  "selection_criteria": {
+    "date_filter": "within 1 day of today (ignoring year)",
+    "heat_filter": "> 1"
+  },
+  "item": {
+    "rank": 240,
+    "title": "IG16分钟推平RNG",
+    "category": "游戏",
+    "heat": 25.11,
+    "reads": 939.2,
+    "discussions": 0.08,
+    "originals": 0.01,
+    "date": "2024-12-18"
+  }
+}
