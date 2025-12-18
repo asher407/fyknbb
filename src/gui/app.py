@@ -1,16 +1,18 @@
+import json
+import sys
 import threading
 import time
-import json
 from pathlib import Path
 import sys
 from typing import List, Dict, Any
 from datetime import datetime
 
-import pandas as pd
-import streamlit as st
+
 import numpy as np
+import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import streamlit as st
 
 # 兼容在不同工作目录下运行 Streamlit：确保项目根目录加入 sys.path
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -28,9 +30,27 @@ except ModuleNotFoundError:
 
 # 导入json_analyzer模块
 try:
-    from src.json_analyzer import load_json_data, basic_analysis, setup_font, analyze_json
+    from src.json_analyzer import (
+        analyze_data,
+        analyze_json,
+        basic_analysis,
+        load_json_data,
+        setup_font,
+    )
 except ModuleNotFoundError:
-    from json_analyzer import load_json_data, basic_analysis, setup_font, analyze_json
+    from json_analyzer import (
+        analyze_data,
+        analyze_json,
+        basic_analysis,
+        load_json_data,
+        setup_font,
+    )
+
+# 导入DataQuery模块
+try:
+    from src.data_query import DataQuery
+except ModuleNotFoundError:
+    from data_query import DataQuery
 
 # 设置页面布局为宽屏模式
 st.set_page_config(
@@ -57,6 +77,12 @@ def register_page(name: str):
 def get_realtime_scraper(timeout: int = 30, max_retries: int = 3, delay: float = 1.0):
     """缓存爬虫实例"""
     return RealtimeHotScraper(timeout=timeout, max_retries=max_retries, delay=delay)
+
+
+@st.cache_resource
+def get_data_query():
+    """缓存DataQuery实例"""
+    return DataQuery()
 
 
 @st.cache_data(ttl=300)  # 缓存5分钟
@@ -189,95 +215,103 @@ def page_realtime_hot():
 @register_page("单日热搜分析 ")
 def page_daily_analysis():
     st.title("单日热搜数据分析")
-    
+
     # 选择日期
     data_processed_dir = Path("data_processed")
-    
+
     if not data_processed_dir.exists():
         st.error("data_processed 目录不存在")
         return
-    
+
     # 获取所有可用的日期
     available_dates = []
     for year_folder in sorted(data_processed_dir.glob("202*")):
         for json_file in sorted(year_folder.glob("*.json")):
             date_str = json_file.stem
             available_dates.append((date_str, str(json_file)))
-    
+
     if not available_dates:
         st.error("没有可用的数据文件")
         return
-    
+
     # 选择日期
     col1, col2, col3 = st.columns([2, 1, 1])
     with col1:
         selected_date, json_path = st.selectbox(
-            "选择分析日期",
-            options=available_dates,
-            format_func=lambda x: x[0]
+            "选择分析日期", options=available_dates, format_func=lambda x: x[0]
         )
-    
+
     with col2:
-        analysis_button = st.button("🔄 生成分析", help="调用 json_analyzer 生成完整分析图表")
-    
+        analysis_button = st.button(
+            "🔄 生成分析", help="调用 json_analyzer 生成完整分析图表"
+        )
+
     with col3:
         if st.button("🔃 刷新", help="刷新页面"):
             st.rerun()
-    
+
     # 当点击生成分析按钮时
     if analysis_button:
         with st.spinner("正在生成分析..."):
             try:
                 import io
                 from contextlib import redirect_stdout
-                
+
                 # 捕获 analyze_json 的输出
                 f = io.StringIO()
                 with redirect_stdout(f):
                     analyze_json(json_path)
-                
+
                 output_log = f.getvalue()
                 st.success("✅ 分析完成！")
-                
+
                 # 显示输出日志
                 with st.expander("📋 分析日志"):
                     st.code(output_log, language="text")
-                
+
             except Exception as e:
                 st.error(f"分析失败: {str(e)}")
                 import traceback
+
                 st.error(traceback.format_exc())
                 return
-    
+
     # 显示生成的分析结果
     from datetime import datetime
-    
+
     # 构造输出目录路径
     date_obj = datetime.strptime(selected_date, "%Y-%m-%d")
     output_dir = Path("output") / selected_date
-    
+
     if not output_dir.exists():
         st.info("👉 请先点击 '🔄 生成分析' 按钮来生成分析结果")
         return
-    
+
     # 查找所有生成的 PNG 图表
     chart_files = sorted(output_dir.glob("*.png"))
-    
+
     if not chart_files:
         st.warning("没有生成的图表")
         return
-    
+
     # 创建选项卡显示各个图表
     st.markdown("### 📊 分析图表")
-    
+
     # 为每个图表创建选项卡
     if len(chart_files) > 0:
-        tabs = st.tabs([f.stem.replace(f"{selected_date}_", "").replace("_", " ") for f in chart_files])
-        
+        tabs = st.tabs(
+            [
+                f.stem.replace(f"{selected_date}_", "").replace("_", " ")
+                for f in chart_files
+            ]
+        )
+
         for tab, chart_file in zip(tabs, chart_files):
             with tab:
                 # 直接使用文件路径显示图片，避免字节流解码问题
-                st.image(str(chart_file), use_column_width=True, caption=chart_file.name)
+                st.image(
+                    str(chart_file), use_column_width=True, caption=chart_file.name
+                )
 
                 # 提供下载按钮（读取字节供下载）
                 try:
@@ -287,27 +321,27 @@ def page_daily_analysis():
                         f"📥 下载 {chart_file.name}",
                         data=image_data,
                         file_name=chart_file.name,
-                        mime="image/png"
+                        mime="image/png",
                     )
                 except Exception as e:
                     st.warning(f"无法提供下载：{e}")
-    
+
     # 显示分析报告
     report_file = output_dir / "analysis_report.txt"
     if report_file.exists():
         st.markdown("### 📄 分析报告")
         with open(report_file, "r", encoding="utf-8") as f:
             report_content = f.read()
-        
+
         with st.expander("展开查看完整报告"):
             st.text(report_content)
-        
+
         # 提供报告下载
         st.download_button(
             "📥 下载分析报告",
             data=report_content.encode("utf-8"),
             file_name=f"{selected_date}_analysis_report.txt",
-            mime="text/plain"
+            mime="text/plain",
         )
 
 
@@ -315,452 +349,486 @@ def page_daily_analysis():
 @register_page("年度关键词网络")
 def page_keyword_network():
     st.title("关键词共现网络分析")
-    
+
     network_data_dir = Path("output/word_networks/data")
-    
+
     if not network_data_dir.exists():
         st.error("网络数据目录不存在，请先运行 word_network.py")
         return
-    
+
     # 获取可用的网络数据
     available_networks = []
     for json_file in sorted(network_data_dir.glob("nodes_*.json")):
         year = json_file.stem.replace("nodes_", "")
         available_networks.append(year)
-    
+
     if not available_networks:
         st.error("没有可用的网络数据")
         return
-    
+
     col1, col2 = st.columns([2, 1])
-    
+
     with col1:
         selected_year = st.selectbox(
-            "选择年份",
-            options=available_networks,
-            format_func=lambda x: f"{x} 年"
+            "选择年份", options=available_networks, format_func=lambda x: f"{x} 年"
         )
-    
+
     with col2:
         if st.button("🔄 刷新", help="重新加载数据"):
             st.rerun()
-    
+
     # 加载节点和边数据
     try:
-        with open(network_data_dir / f"nodes_{selected_year}.json", 'r', encoding='utf-8') as f:
+        with open(
+            network_data_dir / f"nodes_{selected_year}.json", "r", encoding="utf-8"
+        ) as f:
             nodes_data = json.load(f)
-        
-        with open(network_data_dir / f"edges_{selected_year}.json", 'r', encoding='utf-8') as f:
+
+        with open(
+            network_data_dir / f"edges_{selected_year}.json", "r", encoding="utf-8"
+        ) as f:
             edges_data = json.load(f)
     except Exception as e:
         st.error(f"加载失败: {e}")
         return
-    
+
     # ========== TAB 视图 ==========
     tab1, tab2, tab3 = st.tabs(["🖼️ 网络图", "📊 统计", "📋 数据表"])
-    
+
     with tab1:
         st.subheader("关键词共现网络可视化")
-        
+
         # 显示网络图
-        network_img_path = Path("output/word_networks/figures") / f"keyword_network_{selected_year}.png"
+        network_img_path = (
+            Path("output/word_networks/figures")
+            / f"keyword_network_{selected_year}.png"
+        )
         if network_img_path.exists():
             st.image(str(network_img_path), use_column_width=True)
-            
-            with open(network_img_path, 'rb') as f:
-                st.download_button("📥 下载网络图", f.read(), f"keyword_network_{selected_year}.png", "image/png")
+
+            with open(network_img_path, "rb") as f:
+                st.download_button(
+                    "📥 下载网络图",
+                    f.read(),
+                    f"keyword_network_{selected_year}.png",
+                    "image/png",
+                )
         else:
             st.warning("网络图文件不存在")
-    
+
     with tab2:
         st.subheader("网络统计")
-        
+
         nodes_count = len(nodes_data)
         edges_count = len(edges_data)
-        
+
         col1, col2, col3, col4 = st.columns(4)
-        
+
         with col1:
             st.metric("节点数（关键词）", nodes_count)
-        
+
         with col2:
             st.metric("边数（共现关系）", edges_count)
-        
+
         with col3:
             if edges_count > 0:
-                avg_cooccur = np.mean([e['weight'] for e in edges_data])
+                avg_cooccur = np.mean([e["weight"] for e in edges_data])
                 st.metric("平均共现度", f"{avg_cooccur:.2f}")
             else:
                 st.metric("平均共现度", "0")
-        
+
         with col4:
             if nodes_count > 0:
-                avg_freq = np.mean([n['frequency'] for n in nodes_data])
+                avg_freq = np.mean([n["frequency"] for n in nodes_data])
                 st.metric("平均关键词频次", f"{avg_freq:.2f}")
             else:
                 st.metric("平均关键词频次", "0")
-        
+
         # 频次TOP 10
         import plotly.express as px
-        top_nodes = sorted(nodes_data, key=lambda x: x['frequency'], reverse=True)[:10]
-        
+
+        top_nodes = sorted(nodes_data, key=lambda x: x["frequency"], reverse=True)[:10]
+
         fig = px.bar(
-            x=[n['frequency'] for n in top_nodes],
-            y=[n['keyword'] for n in top_nodes],
-            orientation='h',
+            x=[n["frequency"] for n in top_nodes],
+            y=[n["keyword"] for n in top_nodes],
+            orientation="h",
             title="关键词频次 Top 10",
-            color=[n['frequency'] for n in top_nodes],
-            color_continuous_scale="Viridis"
+            color=[n["frequency"] for n in top_nodes],
+            color_continuous_scale="Viridis",
         )
         fig.update_yaxes(automargin=True)
         st.plotly_chart(fig, use_container_width=True)
-        
+
         # 共现度最高的关系
-        top_edges = sorted(edges_data, key=lambda x: x['weight'], reverse=True)[:10]
-        
+        top_edges = sorted(edges_data, key=lambda x: x["weight"], reverse=True)[:10]
+
         edge_labels = [f"{e['source']} - {e['target']}" for e in top_edges]
-        edge_weights = [e['weight'] for e in top_edges]
-        
+        edge_weights = [e["weight"] for e in top_edges]
+
         fig = px.bar(
             x=edge_weights,
             y=edge_labels,
-            orientation='h',
+            orientation="h",
             title="共现关系 Top 10",
             color=edge_weights,
-            color_continuous_scale="Reds"
+            color_continuous_scale="Reds",
         )
         fig.update_yaxes(automargin=True)
         st.plotly_chart(fig, use_container_width=True)
-    
+
     with tab3:
         st.subheader("节点和边数据")
-        
+
         col1, col2 = st.columns(2)
-        
+
         with col1:
             st.markdown("#### 关键词节点")
-            nodes_df = pd.DataFrame(nodes_data).sort_values('frequency', ascending=False)
+            nodes_df = pd.DataFrame(nodes_data).sort_values(
+                "frequency", ascending=False
+            )
             st.dataframe(nodes_df, use_container_width=True, height=400)
-            
-            csv = nodes_df.to_csv(index=False, encoding='utf-8-sig').encode('utf-8')
-            st.download_button("📥 下载节点数据", csv, f"nodes_{selected_year}.csv", "text/csv")
-        
+
+            csv = nodes_df.to_csv(index=False, encoding="utf-8-sig").encode("utf-8")
+            st.download_button(
+                "📥 下载节点数据", csv, f"nodes_{selected_year}.csv", "text/csv"
+            )
+
         with col2:
             st.markdown("#### 共现关系")
-            edges_df = pd.DataFrame(edges_data).sort_values('weight', ascending=False)
+            edges_df = pd.DataFrame(edges_data).sort_values("weight", ascending=False)
             st.dataframe(edges_df, use_container_width=True, height=400)
-            
-            csv = edges_df.to_csv(index=False, encoding='utf-8-sig').encode('utf-8')
-            st.download_button("📥 下载边数据", csv, f"edges_{selected_year}.csv", "text/csv")
+
+            csv = edges_df.to_csv(index=False, encoding="utf-8-sig").encode("utf-8")
+            st.download_button(
+                "📥 下载边数据", csv, f"edges_{selected_year}.csv", "text/csv"
+            )
 
 
 # -------- 2025年度报告页面 -------- #
 @register_page("2025年度报告")
 def page_annual_report():
     st.title("2025年度微博热搜分析报告")
-    
+
     # 导入年度报告模块
     try:
         from src.annual_report import generate_annual_report
     except ImportError:
         from annual_report import generate_annual_report
-    
+
     # 设置字体
     try:
         from src.json_analyzer import setup_font
+
         setup_font()
     except:
         pass
-    
+
     # 标签页
-    tab1, tab2, tab3, tab4 = st.tabs(["📊 数据总览", "📈 热搜排名", "🔗 关键词分析", "📅 时间分布"])
-    
+    tab1, tab2, tab3, tab4 = st.tabs(
+        ["📊 数据总览", "📈 热搜排名", "🔗 关键词分析", "📅 时间分布"]
+    )
+
     # 生成年度报告
     with st.spinner("正在生成年度报告..."):
         report = generate_annual_report("data")
-    
+
     if "error" in report:
         st.error(f"报告生成失败: {report['error']}")
         st.info("请确保 data 目录中有 JSON 数据文件")
         return
-    
+
     summary = report.get("summary", {})
-    
+
     # Tab 1: 数据总览
     with tab1:
         col1, col2, col3, col4 = st.columns(4)
-        
+
         with col1:
             st.metric(
-                "📊 总记录数",
-                f"{summary.get('total_records', 0):,}",
-                delta="条热搜"
+                "📊 总记录数", f"{summary.get('total_records', 0):,}", delta="条热搜"
             )
-        
+
         with col2:
             st.metric(
-                "🎯 独特标题",
-                f"{summary.get('total_unique_titles', 0):,}",
-                delta="个"
+                "🎯 独特标题", f"{summary.get('total_unique_titles', 0):,}", delta="个"
             )
-        
+
         with col3:
-            heat_stats = summary.get('heat_stats', {})
+            heat_stats = summary.get("heat_stats", {})
             st.metric(
                 "🔥 平均热度",
                 f"{heat_stats.get('mean', 0):.1f}",
-                delta=f"中位数: {heat_stats.get('median', 0):.1f}"
+                delta=f"中位数: {heat_stats.get('median', 0):.1f}",
             )
-        
+
         with col4:
-            date_range = summary.get('date_range', {})
+            date_range = summary.get("date_range", {})
             st.metric(
                 "📅 统计周期",
                 f"{date_range.get('start', 'N/A')} ~ {date_range.get('end', 'N/A')}",
-                delta="共计"
+                delta="共计",
             )
-        
+
         st.divider()
-        
+
         # 热度统计详情
         col1, col2 = st.columns(2)
-        
+
         with col1:
             st.subheader("🔥 热度统计详情")
-            heat_stats = summary.get('heat_stats', {})
-            
-            stats_table = pd.DataFrame({
-                "指标": ["最高热度", "最低热度", "平均热度", "中位数", "标准差"],
-                "数值": [
-                    f"{heat_stats.get('max', 0):.1f}",
-                    f"{heat_stats.get('min', 0):.1f}",
-                    f"{heat_stats.get('mean', 0):.1f}",
-                    f"{heat_stats.get('median', 0):.1f}",
-                    f"{heat_stats.get('std', 0):.1f}"
-                ]
-            })
-            
+            heat_stats = summary.get("heat_stats", {})
+
+            stats_table = pd.DataFrame(
+                {
+                    "指标": ["最高热度", "最低热度", "平均热度", "中位数", "标准差"],
+                    "数值": [
+                        f"{heat_stats.get('max', 0):.1f}",
+                        f"{heat_stats.get('min', 0):.1f}",
+                        f"{heat_stats.get('mean', 0):.1f}",
+                        f"{heat_stats.get('median', 0):.1f}",
+                        f"{heat_stats.get('std', 0):.1f}",
+                    ],
+                }
+            )
+
             st.dataframe(stats_table, use_container_width=True, hide_index=True)
-        
+
         with col2:
             st.subheader("📅 时间分布")
-            temporal_dist = report.get('temporal_distribution', {})
-            
+            temporal_dist = report.get("temporal_distribution", {})
+
             if temporal_dist:
                 # 创建时间分布图
                 months = sorted(temporal_dist.keys())
                 counts = [temporal_dist[m] for m in months]
-                
+
                 import plotly.express as px
-                
+
                 fig = px.line(
                     x=months,
                     y=counts,
                     markers=True,
                     title="每月热搜数量趋势",
-                    labels={"x": "月份", "y": "热搜数量"}
+                    labels={"x": "月份", "y": "热搜数量"},
                 )
                 fig.update_xaxes(tickangle=45)
                 st.plotly_chart(fig, use_container_width=True)
-    
+
     # Tab 2: 热搜排名
     with tab2:
         st.subheader("🏆 全年热度最高的10条热搜")
-        
-        top_titles = summary.get('top_10_titles', [])
-        
+
+        top_titles = summary.get("top_10_titles", [])
+
         if top_titles:
             # 创建排名表
             rank_data = []
             for i, item in enumerate(top_titles, 1):
-                rank_data.append({
-                    "排名": i,
-                    "标题": item.get('title', ''),
-                    "热度": f"{item.get('heat', 0):.1f}",
-                    "在榜排名": item.get('rank', 'N/A')
-                })
-            
+                rank_data.append(
+                    {
+                        "排名": i,
+                        "标题": item.get("title", ""),
+                        "热度": f"{item.get('heat', 0):.1f}",
+                        "在榜排名": item.get("rank", "N/A"),
+                    }
+                )
+
             df_top = pd.DataFrame(rank_data)
             st.dataframe(df_top, use_container_width=True, hide_index=True)
-            
+
             # 热度柱状图
             import plotly.express as px
-            
+
             fig = px.bar(
                 x=list(range(1, len(top_titles) + 1)),
-                y=[item.get('heat', 0) for item in top_titles],
+                y=[item.get("heat", 0) for item in top_titles],
                 labels={"x": "排名", "y": "热度值"},
                 title="热度排名前10的热搜",
-                color=[item.get('heat', 0) for item in top_titles],
+                color=[item.get("heat", 0) for item in top_titles],
                 color_continuous_scale="Reds",
-                text=[item.get('title', '')[:20] for item in top_titles]
+                text=[item.get("title", "")[:20] for item in top_titles],
             )
-            fig.update_traces(textposition='outside')
+            fig.update_traces(textposition="outside")
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("暂无热搜排名数据")
-    
+
     # Tab 3: 关键词分析
     with tab3:
         st.subheader("🔑 关键词频率分析")
-        
-        keyword_freq = summary.get('keyword_frequency', {})
-        
+
+        keyword_freq = summary.get("keyword_frequency", {})
+
         if keyword_freq:
             # 关键词排行
             col1, col2 = st.columns([2, 1])
-            
+
             with col1:
                 # 热力图
                 import plotly.express as px
-                
-                top_keywords = dict(sorted(keyword_freq.items(), key=lambda x: x[1], reverse=True)[:20])
-                
+
+                top_keywords = dict(
+                    sorted(keyword_freq.items(), key=lambda x: x[1], reverse=True)[:20]
+                )
+
                 fig = px.bar(
                     x=list(top_keywords.values()),
                     y=list(top_keywords.keys()),
-                    orientation='h',
+                    orientation="h",
                     title="关键词频率 Top 20",
                     labels={"x": "出现次数", "y": "关键词"},
                     color=list(top_keywords.values()),
-                    color_continuous_scale="Viridis"
+                    color_continuous_scale="Viridis",
                 )
                 fig.update_yaxes(automargin=True)
                 st.plotly_chart(fig, use_container_width=True)
-            
+
             with col2:
                 st.metric("总关键词数", len(keyword_freq))
-                st.metric("最频繁关键词", max(keyword_freq, key=keyword_freq.get) if keyword_freq else "N/A")
+                st.metric(
+                    "最频繁关键词",
+                    max(keyword_freq, key=keyword_freq.get) if keyword_freq else "N/A",
+                )
                 st.metric("最高频率", max(keyword_freq.values()) if keyword_freq else 0)
-            
+
             # 关键词表
             st.markdown("#### 📋 关键词列表")
-            keyword_df = pd.DataFrame([
-                {"关键词": k, "频率": v} 
-                for k, v in sorted(keyword_freq.items(), key=lambda x: x[1], reverse=True)
-            ])
+            keyword_df = pd.DataFrame(
+                [
+                    {"关键词": k, "频率": v}
+                    for k, v in sorted(
+                        keyword_freq.items(), key=lambda x: x[1], reverse=True
+                    )
+                ]
+            )
             st.dataframe(keyword_df, use_container_width=True, height=400)
         else:
             st.info("暂无关键词数据")
-        
+
         # 关键词网络
         st.markdown("---")
         st.subheader("🔗 关键词共现网络")
-        
-        keyword_network = report.get('keyword_network', {})
-        
+
+        keyword_network = report.get("keyword_network", {})
+
         if keyword_network:
             st.info(f"共检测到 {len(keyword_network)} 个核心关键词节点")
-            
+
             # 显示网络数据
             network_data = []
             for keyword, related in keyword_network.items():
-                network_data.append({
-                    "中心词": keyword,
-                    "相关词": ", ".join(related),
-                    "连接数": len(related)
-                })
-            
-            df_network = pd.DataFrame(network_data).sort_values('连接数', ascending=False)
+                network_data.append(
+                    {
+                        "中心词": keyword,
+                        "相关词": ", ".join(related),
+                        "连接数": len(related),
+                    }
+                )
+
+            df_network = pd.DataFrame(network_data).sort_values(
+                "连接数", ascending=False
+            )
             st.dataframe(df_network, use_container_width=True, hide_index=True)
         else:
             st.info("暂无关键词网络数据")
-    
+
     # Tab 4: 时间分布
     with tab4:
         st.subheader("📅 按时间分布统计")
-        
-        temporal_dist = report.get('temporal_distribution', {})
-        
+
+        temporal_dist = report.get("temporal_distribution", {})
+
         if temporal_dist:
             col1, col2 = st.columns([2, 1])
-            
+
             with col1:
                 # 月度分布表
                 months = sorted(temporal_dist.keys())
-                month_data = [
-                    {"月份": m, "热搜数": temporal_dist[m]}
-                    for m in months
-                ]
-                
+                month_data = [{"月份": m, "热搜数": temporal_dist[m]} for m in months]
+
                 df_temporal = pd.DataFrame(month_data)
                 st.dataframe(df_temporal, use_container_width=True, hide_index=True)
-            
+
             with col1:
                 # 累积图
                 import plotly.graph_objects as go
-                
+
                 cumulative = np.cumsum([temporal_dist[m] for m in months])
-                
+
                 fig = go.Figure()
-                fig.add_trace(go.Scatter(
-                    x=months,
-                    y=cumulative,
-                    mode='lines+markers',
-                    fill='tozeroy',
-                    name='累积热搜数'
-                ))
+                fig.add_trace(
+                    go.Scatter(
+                        x=months,
+                        y=cumulative,
+                        mode="lines+markers",
+                        fill="tozeroy",
+                        name="累积热搜数",
+                    )
+                )
                 fig.update_layout(
                     title="热搜数累积趋势",
                     xaxis_title="月份",
                     yaxis_title="累积数量",
-                    hovermode='x unified'
+                    hovermode="x unified",
                 )
                 fig.update_xaxes(tickangle=45)
                 st.plotly_chart(fig, use_container_width=True)
-            
+
             with col2:
                 st.metric("平均月度", f"{np.mean(list(temporal_dist.values())):.0f}")
                 st.metric("最高月份", f"{max(temporal_dist.values())}")
                 st.metric("最低月份", f"{min(temporal_dist.values())}")
         else:
             st.info("暂无时间分布数据")
-    
+
     # 底部下载报告
     st.divider()
     st.markdown("### 💾 导出报告")
-    
+
     col1, col2 = st.columns(2)
-    
+
     with col1:
         # 导出 JSON
         json_report = json.dumps(report, ensure_ascii=False, indent=2)
         st.download_button(
             label="📥 下载完整报告 (JSON)",
-            data=json_report.encode('utf-8'),
+            data=json_report.encode("utf-8"),
             file_name="annual_report_2025.json",
-            mime="application/json"
+            mime="application/json",
         )
-    
+
     with col2:
         # 导出简要文本
         text_report = f"""
 2025年度微博热搜分析报告
-{'='*60}
+{"=" * 60}
 
-生成时间: {report.get('report_date', 'N/A')}
+生成时间: {report.get("report_date", "N/A")}
 
 【数据概览】
-总热搜记录数: {summary.get('total_records', 0)} 条
-独特热搜数: {summary.get('total_unique_titles', 0)} 个
-统计时间: {summary.get('date_range', {}).get('start', 'N/A')} ~ {summary.get('date_range', {}).get('end', 'N/A')}
+总热搜记录数: {summary.get("total_records", 0)} 条
+独特热搜数: {summary.get("total_unique_titles", 0)} 个
+统计时间: {summary.get("date_range", {}).get("start", "N/A")} ~ {summary.get("date_range", {}).get("end", "N/A")}
 
 【热度统计】
-最高热度: {summary.get('heat_stats', {}).get('max', 0):.1f}
-最低热度: {summary.get('heat_stats', {}).get('min', 0):.1f}
-平均热度: {summary.get('heat_stats', {}).get('mean', 0):.1f}
-中位数: {summary.get('heat_stats', {}).get('median', 0):.1f}
+最高热度: {summary.get("heat_stats", {}).get("max", 0):.1f}
+最低热度: {summary.get("heat_stats", {}).get("min", 0):.1f}
+平均热度: {summary.get("heat_stats", {}).get("mean", 0):.1f}
+中位数: {summary.get("heat_stats", {}).get("median", 0):.1f}
 
 【Top10热搜】
 """
-        for i, item in enumerate(summary.get('top_10_titles', []), 1):
-            text_report += f"{i}. {item.get('title', 'N/A')} (热度: {item.get('heat', 0):.1f})\n"
-        
+        for i, item in enumerate(summary.get("top_10_titles", []), 1):
+            text_report += (
+                f"{i}. {item.get('title', 'N/A')} (热度: {item.get('heat', 0):.1f})\n"
+            )
+
         st.download_button(
             label="📥 下载简要报告 (TXT)",
-            data=text_report.encode('utf-8'),
+            data=text_report.encode("utf-8"),
             file_name="annual_report_2025_summary.txt",
-            mime="text/plain"
+            mime="text/plain",
         )
 
 
@@ -884,6 +952,7 @@ def page_word_cloud_visualization():
             st.error(f"词云图文件不存在：{image_path}")
     else:
         st.warning("请选择要查看的时间范围")
+
 
 @register_page("JSON数据分析")
 def page_json_analysis():
@@ -1259,6 +1328,334 @@ def page_random_hot_today():
         2. **刷新数据**：点击"换一条"按钮重新抽取一条
         3. **导出数据**：支持 JSON、CSV 和 TXT 格式导出
         4. **数据来源**：来自历史热搜数据，可能来自去年或更早的相同日期
+# -------- 高级数据查询页面 -------- #
+@register_page("高级数据查询")
+def page_advanced_query():
+    st.title("高级数据查询系统")
+    st.markdown("""
+    本工具提供多条件数据查询功能，支持日期范围、分类筛选、热度范围、排序等多种条件。
+    查询结果将自动保存为JSON文件，并进行数据分析生成可视化图表。
+    """)
+
+    # 创建查询器实例
+    query = get_data_query()
+
+    # ========== 查询条件设置 ==========
+    st.markdown("### 1. 查询条件设置")
+
+    # 使用多列布局
+    col1, col2 = st.columns(2)
+
+    with col1:
+        # 日期范围
+        st.markdown("#### 📅 日期范围")
+        date_start = st.text_input(
+            "开始日期 (YYYY-MM-DD)", value="2025-01-01", help="例如: 2025-01-01"
+        )
+        date_end = st.text_input(
+            "结束日期 (YYYY-MM-DD)", value="2025-01-31", help="例如: 2025-01-31"
+        )
+
+        # 分类筛选
+        st.markdown("#### 🏷️ 分类筛选")
+        categories_input = st.text_input(
+            "分类 (多个用逗号分隔)",
+            placeholder="明星,综艺,影视",
+            help="例如: 明星,综艺 或留空表示不过滤",
+        )
+
+        # 标题关键词
+        st.markdown("#### 🔍 标题关键词")
+        title_keywords_input = st.text_input(
+            "标题关键词 (多个用逗号分隔)",
+            placeholder="新年,春晚,电影",
+            help="包含任一关键词的标题都会被选中",
+        )
+
+    with col2:
+        # 排名范围
+        st.markdown("#### 🏆 排名范围")
+        rank_min = st.number_input("最小排名", min_value=1, max_value=50, value=1)
+        rank_max = st.number_input("最大排名", min_value=1, max_value=50, value=50)
+
+        # 热度范围
+        st.markdown("#### 🔥 热度范围")
+        heat_min = st.number_input("最小热度", min_value=0.0, value=0.0, step=100.0)
+        heat_max = st.number_input(
+            "最大热度", min_value=0.0, value=10000000.0, step=1000.0
+        )
+
+        # 阅读量范围
+        st.markdown("#### 📖 阅读量范围")
+        reads_min = st.number_input("最小阅读量", min_value=0, value=0, step=1000)
+        reads_max = st.number_input(
+            "最大阅读量", min_value=0, value=50000000, step=1000
+        )
+
+    # 其他范围设置
+    st.markdown("### 2. 其他筛选条件")
+
+    col3, col4 = st.columns(2)
+
+    with col3:
+        # 讨论量范围
+        st.markdown("#### 💬 讨论量范围")
+        discussions_min = st.number_input("最小讨论量", min_value=0, value=0, step=100)
+        discussions_max = st.number_input(
+            "最大讨论量", min_value=0, value=200000, step=100
+        )
+
+        # 原创量范围
+        st.markdown("#### ✍️ 原创量范围")
+        originals_min = st.number_input("最小原创量", min_value=0, value=0, step=100)
+        originals_max = st.number_input(
+            "最大原创量", min_value=0, value=200000, step=100
+        )
+
+    with col4:
+        # 排序方式
+        st.markdown("#### 📊 排序方式")
+        sort_options = {
+            "热度降序": "heat_desc",
+            "热度升序": "heat_asc",
+            "排名降序": "rank_desc",
+            "排名升序": "rank_asc",
+            "日期降序": "date_desc",
+            "日期升序": "date_asc",
+            "阅读量降序": "reads_desc",
+            "阅读量升序": "reads_asc",
+            "讨论量降序": "discussions_desc",
+            "讨论量升序": "discussions_asc",
+            "原创量降序": "originals_desc",
+            "原创量升序": "originals_asc",
+            "标题升序": "title_asc",
+            "标题降序": "title_desc",
+        }
+        selected_sort = st.selectbox("选择排序方式", options=list(sort_options.keys()))
+        sort_by = sort_options[selected_sort]
+
+    # ========== 执行查询 ==========
+    st.markdown("### 3. 执行查询与分析")
+
+    query_button = st.button(
+        "🚀 执行查询并分析", type="primary", use_container_width=True
+    )
+
+    if query_button:
+        with st.spinner("正在执行查询，请稍候..."):
+            try:
+                # 准备查询参数
+                query_params = {}
+
+                # 日期范围
+                if date_start and date_end:
+                    query_params["date_range"] = (date_start, date_end)
+
+                # 分类筛选
+                if categories_input.strip():
+                    categories = [
+                        c.strip() for c in categories_input.split(",") if c.strip()
+                    ]
+                    if categories:
+                        query_params["categories"] = categories
+
+                # 排名范围
+                if rank_min > 0 or rank_max < 50:
+                    query_params["rank_range"] = (rank_min, rank_max)
+
+                # 热度范围
+                if heat_min > 0 or heat_max < 10000000.0:
+                    query_params["heat_range"] = (heat_min, heat_max)
+
+                # 阅读量范围
+                if reads_min > 0 or reads_max < 50000000:
+                    query_params["reads_range"] = (reads_min, reads_max)
+
+                # 讨论量范围
+                if discussions_min > 0 or discussions_max < 200000:
+                    query_params["discussions_range"] = (
+                        discussions_min,
+                        discussions_max,
+                    )
+
+                # 原创量范围
+                if originals_min > 0 or originals_max < 200000:
+                    query_params["originals_range"] = (originals_min, originals_max)
+
+                # 标题关键词
+                if title_keywords_input.strip():
+                    keywords = [
+                        k.strip() for k in title_keywords_input.split(",") if k.strip()
+                    ]
+                    if keywords:
+                        query_params["title_keywords"] = keywords
+
+                # 排序方式
+                query_params["sort_by"] = sort_by
+
+                # 执行查询
+                results = query.query(**query_params)
+
+                if not results:
+                    st.warning("⚠️ 没有找到符合条件的数据")
+                    return
+
+                st.success(f"✅ 查询成功！找到 {len(results)} 条符合条件的数据")
+
+                # 保存查询结果到临时文件
+                import os
+                import tempfile
+                from datetime import datetime
+
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                temp_dir = tempfile.mkdtemp()
+                temp_json_path = os.path.join(
+                    temp_dir, f"query_results_{timestamp}.json"
+                )
+
+                # 保存结果
+                query.save_results(results, temp_json_path)
+
+                # ========== 显示查询结果表格 ==========
+                st.markdown("### 4. 查询结果表格")
+
+                # 转换为DataFrame用于显示
+                df_results = pd.DataFrame(results)
+
+                # 显示数据预览
+                st.dataframe(df_results, use_container_width=True, height=400)
+
+                # 下载按钮
+                col_d1, col_d2 = st.columns(2)
+                with col_d1:
+                    # 下载JSON
+                    with open(temp_json_path, "r", encoding="utf-8") as f:
+                        json_data = f.read()
+                    st.download_button(
+                        label="📥 下载JSON数据",
+                        data=json_data,
+                        file_name=f"query_results_{timestamp}.json",
+                        mime="application/json",
+                    )
+
+                with col_d2:
+                    # 下载CSV
+                    csv_data = df_results.to_csv(index=False, encoding="utf-8-sig")
+                    st.download_button(
+                        label="📥 下载CSV数据",
+                        data=csv_data.encode("utf-8"),
+                        file_name=f"query_results_{timestamp}.csv",
+                        mime="text/csv",
+                    )
+
+                # ========== 数据分析与可视化 ==========
+                st.markdown("### 5. 数据分析与可视化")
+
+                with st.spinner("正在进行数据分析，生成可视化图表..."):
+                    try:
+                        # 创建输出目录
+                        output_dir_name = f"query_analysis_{timestamp}"
+                        output_dir = Path("output") / output_dir_name
+                        output_dir.mkdir(parents=True, exist_ok=True)
+
+                        # 调用json_analyzer分析数据
+                        analysis_result = analyze_data(
+                            results, output_dir_name, temp_json_path
+                        )
+
+                        st.success("✅ 数据分析完成！")
+
+                        # 显示生成的图表
+                        chart_files = list(output_dir.glob("*.png"))
+                        if chart_files:
+                            st.markdown("#### 📈 分析图表")
+
+                            # 创建选项卡显示图表
+                            tabs = st.tabs(
+                                [f"图表{i + 1}" for i in range(len(chart_files))]
+                            )
+
+                            for tab, chart_file in zip(tabs, chart_files):
+                                with tab:
+                                    st.image(
+                                        str(chart_file),
+                                        use_column_width=True,
+                                        caption=chart_file.name,
+                                    )
+
+                            # 显示分析报告
+                            report_file = output_dir / "analysis_report.txt"
+                            if report_file.exists():
+                                with st.expander("📄 查看分析报告"):
+                                    with open(report_file, "r", encoding="utf-8") as f:
+                                        report_content = f.read()
+                                    st.text(report_content)
+
+                        # 显示统计信息
+                        st.markdown("#### 📊 数据统计")
+                        col_s1, col_s2, col_s3, col_s4 = st.columns(4)
+
+                        with col_s1:
+                            st.metric("总记录数", len(results))
+
+                        with col_s2:
+                            if results:
+                                avg_heat = sum(r.get("heat", 0) for r in results) / len(
+                                    results
+                                )
+                                st.metric("平均热度", f"{avg_heat:.1f}")
+
+                        with col_s3:
+                            if results:
+                                unique_categories = set(
+                                    r.get("category", "")
+                                    for r in results
+                                    if r.get("category")
+                                )
+                                st.metric("分类数量", len(unique_categories))
+
+                        with col_s4:
+                            if results and "date" in results[0]:
+                                dates = set(
+                                    r.get("date", "") for r in results if r.get("date")
+                                )
+                                st.metric("日期数量", len(dates))
+
+                    except Exception as e:
+                        st.error(f"数据分析失败: {str(e)}")
+                        import traceback
+
+                        st.error(traceback.format_exc())
+
+                # 清理临时文件
+                try:
+                    os.unlink(temp_json_path)
+                    os.rmdir(temp_dir)
+                except:
+                    pass
+
+            except Exception as e:
+                st.error(f"查询失败: {str(e)}")
+                import traceback
+
+                st.error(traceback.format_exc())
+
+    # ========== 查询示例 ==========
+    with st.expander("📋 查询示例", expanded=False):
+        st.markdown("""
+        **示例1：查询2025年1月所有明星类热搜**
+        - 开始日期: 2025-01-01
+        - 结束日期: 2025-01-31
+        - 分类: 明星
+        - 排序: 热度降序
+
+        **示例2：查询热度大于10000的热搜**
+        - 热度范围: 最小热度 10000
+        - 排序: 热度降序
+
+        **示例3：查询包含"新年"关键词的热搜**
+        - 标题关键词: 新年
+        - 排序: 日期降序
         """)
 
 
@@ -1279,21 +1676,21 @@ def main():
         - 支持缓存加速
         - 可下载 JSON 数据
         """)
-    
+
     with st.sidebar.expander("单日热搜分析", expanded=False):
         st.markdown("""
         - 选择日期分析单日数据
         - 调用 json_analyzer 模块
         - 支持数据导出
         """)
-    
+
     with st.sidebar.expander("年度关键词网络", expanded=False):
         st.markdown("""
         - 查看关键词共现网络
         - 节点和边的统计数据
         - 导出数据为 CSV
         """)
-    
+
     with st.sidebar.expander("词云图可视化", expanded=False):
         st.markdown("""
         - 查看历史词云图
@@ -1324,7 +1721,7 @@ def main():
     data_dir = Path("data")
     output_dir = Path("output/word_clouds")
     network_dir = Path("output/word_networks")
-    
+
     if data_dir.exists():
         json_files = list(data_dir.glob("**/*.json"))
         st.sidebar.success(f"✓ 已存储 {len(json_files)} 个数据文件")
@@ -1336,13 +1733,13 @@ def main():
         st.sidebar.success(f"✓ 已生成 {len(img_files)} 张词云图")
     else:
         st.sidebar.warning("⚠ 词云图目录不存在")
-    
+
     if network_dir.exists():
         network_files = list(network_dir.glob("**/*.json"))
         st.sidebar.success(f"✓ 已生成 {len(network_files) // 2} 个网络图")
     else:
         st.sidebar.warning("⚠ 网络图目录不存在")
-    
+
     PAGES[page_name]()
 
 
