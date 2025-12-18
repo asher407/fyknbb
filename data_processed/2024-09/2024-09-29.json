@@ -1,0 +1,4356 @@
+{
+  "date": "2024-09-29",
+  "count": 435,
+  "data": [
+    {
+      "rank": 1,
+      "title": "何卓佳3比0张本美和",
+      "category": "体育",
+      "heat": 182.84,
+      "reads": 3225.7,
+      "discussions": 1.2,
+      "originals": 0.19,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 2,
+      "title": "国庆请2休10超长假受打工人追捧",
+      "category": "财经",
+      "heat": 152.85,
+      "reads": 122.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 3,
+      "title": "多家房企宣布涨价",
+      "category": "",
+      "heat": 148.43,
+      "reads": 10000.0,
+      "discussions": 2.7,
+      "originals": 0.44,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 4,
+      "title": "12306从未授权第三方平台卖票",
+      "category": "",
+      "heat": 140.41,
+      "reads": 7422.2,
+      "discussions": 1.6,
+      "originals": 0.3,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 5,
+      "title": "大学生兼职泰山陪爬订单排到深秋",
+      "category": "社会",
+      "heat": 112.15,
+      "reads": 4293.2,
+      "discussions": 1.6,
+      "originals": 0.19,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 6,
+      "title": "央媒评淘宝可使用微信支付",
+      "category": "社会",
+      "heat": 111.78,
+      "reads": 4725.7,
+      "discussions": 0.89,
+      "originals": 0.2,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 7,
+      "title": "首套二套存量房贷利率批量下调",
+      "category": "",
+      "heat": 111.19,
+      "reads": 2103.5,
+      "discussions": 0.53,
+      "originals": 0.09,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 8,
+      "title": "赵丽颖不敢跟导演和肖央说难受",
+      "category": "电影",
+      "heat": 106.89,
+      "reads": 3668.0,
+      "discussions": 1.2,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 9,
+      "title": "孙颖莎11比1",
+      "category": "体育",
+      "heat": 94.5,
+      "reads": 7194.0,
+      "discussions": 1.6,
+      "originals": 0.26,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 10,
+      "title": "6岁小孩手腕断裂反安慰母亲",
+      "category": "社会",
+      "heat": 88.33,
+      "reads": 3245.9,
+      "discussions": 0.71,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 11,
+      "title": "韩国人用卷心菜娃娃菜代替大白菜",
+      "category": "社会",
+      "heat": 87.3,
+      "reads": 7428.9,
+      "discussions": 1.5,
+      "originals": 0.29,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 12,
+      "title": "功勋模范铿锵有力唱歌唱祖国",
+      "category": "社会",
+      "heat": 86.23,
+      "reads": 1699.9,
+      "discussions": 0.46,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 13,
+      "title": "保研",
+      "category": "",
+      "heat": 81.63,
+      "reads": 74000.0,
+      "discussions": 26.3,
+      "originals": 5.7,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 14,
+      "title": "中国银行为防诈骗限制储户取款",
+      "category": "",
+      "heat": 77.85,
+      "reads": 3706.8,
+      "discussions": 0.71,
+      "originals": 0.11,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 15,
+      "title": "股民4天人均赚4.7万",
+      "category": "财经",
+      "heat": 71.73,
+      "reads": 9429.3,
+      "discussions": 3.3,
+      "originals": 0.5,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 16,
+      "title": "国家最高礼遇迎接功勋模范",
+      "category": "社会",
+      "heat": 71.62,
+      "reads": 2192.2,
+      "discussions": 0.83,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 17,
+      "title": "河南婚假28天排全国第四",
+      "category": "社会",
+      "heat": 70.68,
+      "reads": 2919.2,
+      "discussions": 0.59,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 18,
+      "title": "喜欢国风的外国小姐姐解释华夏",
+      "category": "社会",
+      "heat": 70.18,
+      "reads": 2881.8,
+      "discussions": 0.58,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 19,
+      "title": "直播国家勋章和国家荣誉称号颁授仪式",
+      "category": "社会",
+      "heat": 69.82,
+      "reads": 3343.3,
+      "discussions": 0.95,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 20,
+      "title": "张本智和说自己算上上签",
+      "category": "",
+      "heat": 64.51,
+      "reads": 4080.1,
+      "discussions": 0.24,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 21,
+      "title": "孙颖莎 认真打的",
+      "category": "",
+      "heat": 63.49,
+      "reads": 1374.2,
+      "discussions": 0.35,
+      "originals": 0.12,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 22,
+      "title": "多家银行大额存单掀起转让潮",
+      "category": "财经",
+      "heat": 62.98,
+      "reads": 3202.8,
+      "discussions": 0.62,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 23,
+      "title": "被王毅认出又被联合国秘书长点赞",
+      "category": "",
+      "heat": 60.66,
+      "reads": 2092.9,
+      "discussions": 0.11,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 24,
+      "title": "王楚钦主动示意没上台",
+      "category": "体育",
+      "heat": 60.47,
+      "reads": 3203.5,
+      "discussions": 0.49,
+      "originals": 0.12,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 25,
+      "title": "这是75年来的青春之声",
+      "category": "社会",
+      "heat": 58.91,
+      "reads": 2163.2,
+      "discussions": 0.47,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 26,
+      "title": "不再区分首套二套房",
+      "category": "社会",
+      "heat": 57.36,
+      "reads": 1613.1,
+      "discussions": 0.22,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 27,
+      "title": "内塔尼亚胡喊话伊朗你打我我就打你",
+      "category": "",
+      "heat": 55.51,
+      "reads": 1480.6,
+      "discussions": 0.33,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 28,
+      "title": "国家勋章国家荣誉称号获得者名单",
+      "category": "社会",
+      "heat": 54.54,
+      "reads": 2038.1,
+      "discussions": 0.37,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 29,
+      "title": "王楚钦vs篠塚大登",
+      "category": "体育",
+      "heat": 52.9,
+      "reads": 2326.9,
+      "discussions": 1.5,
+      "originals": 0.25,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 30,
+      "title": "东北雨姐团队称红薯粉条应该有问题",
+      "category": "社会",
+      "heat": 50.97,
+      "reads": 11000.0,
+      "discussions": 0.83,
+      "originals": 0.12,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 31,
+      "title": "张本美和又哭了",
+      "category": "",
+      "heat": 49.58,
+      "reads": 2138.8,
+      "discussions": 0.18,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 32,
+      "title": "4人获得共和国勋章",
+      "category": "",
+      "heat": 48.44,
+      "reads": 1398.7,
+      "discussions": 0.18,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 33,
+      "title": "孙颖莎3比0巴约",
+      "category": "体育",
+      "heat": 48.43,
+      "reads": 497.6,
+      "discussions": 0.5,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 34,
+      "title": "孙颖莎中国大满贯开门红",
+      "category": "体育",
+      "heat": 48.42,
+      "reads": 819.6,
+      "discussions": 0.26,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 35,
+      "title": "一家四口惨死民警苦苦追凶27年",
+      "category": "",
+      "heat": 48.41,
+      "reads": 8055.9,
+      "discussions": 0.6,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 36,
+      "title": "奔赴山与海征途向未来",
+      "category": "社会",
+      "heat": 48.39,
+      "reads": 1239.3,
+      "discussions": 1.0,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 37,
+      "title": "买到假爱马仕因没开箱视频遭拒退",
+      "category": "",
+      "heat": 48.39,
+      "reads": 3739.3,
+      "discussions": 0.23,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 38,
+      "title": "许嵩 我不配看恋综吗",
+      "category": "",
+      "heat": 48.37,
+      "reads": 2014.4,
+      "discussions": 0.85,
+      "originals": 0.12,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 39,
+      "title": "张碧晨武艺只差一岁被人认成母子",
+      "category": "",
+      "heat": 48.37,
+      "reads": 1562.9,
+      "discussions": 0.79,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 40,
+      "title": "孔子也是Z世代的理想型老师",
+      "category": "",
+      "heat": 47.65,
+      "reads": 434.8,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 41,
+      "title": "今天请记住这些闪亮的名字",
+      "category": "",
+      "heat": 47.52,
+      "reads": 1068.9,
+      "discussions": 0.4,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 42,
+      "title": "你23岁的时候在做什么",
+      "category": "社会",
+      "heat": 46.07,
+      "reads": 3876.3,
+      "discussions": 1.5,
+      "originals": 0.42,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 43,
+      "title": "半熟男女是个巨大的图书馆三十秒",
+      "category": "",
+      "heat": 45.79,
+      "reads": 391.5,
+      "discussions": 0.05,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 44,
+      "title": "张本美和止步首轮",
+      "category": "体育",
+      "heat": 45.77,
+      "reads": 2098.1,
+      "discussions": 0.52,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 45,
+      "title": "孙颖莎vs巴约尔",
+      "category": "体育",
+      "heat": 45.76,
+      "reads": 638.4,
+      "discussions": 0.15,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 46,
+      "title": "何以英雄他们给出了闪亮的答案",
+      "category": "社会",
+      "heat": 45.62,
+      "reads": 887.7,
+      "discussions": 0.38,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 47,
+      "title": "徐锦江送儿子拍封神时嚎啕大哭",
+      "category": "",
+      "heat": 44.14,
+      "reads": 1140.5,
+      "discussions": 0.51,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 48,
+      "title": "俩老人买黄金不问价店员果断报警",
+      "category": "社会",
+      "heat": 43.33,
+      "reads": 2457.6,
+      "discussions": 0.27,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 49,
+      "title": "房企涨价",
+      "category": "",
+      "heat": 42.26,
+      "reads": 2049.5,
+      "discussions": 0.16,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 50,
+      "title": "林孝埈1000米夺冠",
+      "category": "体育",
+      "heat": 42.15,
+      "reads": 2596.9,
+      "discussions": 1.0,
+      "originals": 0.13,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 51,
+      "title": "CP30涨价",
+      "category": "",
+      "heat": 41.56,
+      "reads": 1468.8,
+      "discussions": 0.28,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 52,
+      "title": "A股今天不开盘",
+      "category": "财经",
+      "heat": 40.48,
+      "reads": 197.4,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 53,
+      "title": "全党全国各族人民要以英雄模范为榜样",
+      "category": "",
+      "heat": 40.04,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 54,
+      "title": "国家功勋人物一路红毯入场",
+      "category": "社会",
+      "heat": 39.94,
+      "reads": 1883.8,
+      "discussions": 0.59,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 55,
+      "title": "周雨彤推开刘烨",
+      "category": "综艺",
+      "heat": 39.58,
+      "reads": 2393.0,
+      "discussions": 0.69,
+      "originals": 0.15,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 56,
+      "title": "小水妆造",
+      "category": "明星",
+      "heat": 39.32,
+      "reads": 2127.2,
+      "discussions": 0.57,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 57,
+      "title": "电影749局首映",
+      "category": "电影",
+      "heat": 38.75,
+      "reads": 1674.9,
+      "discussions": 0.75,
+      "originals": 0.11,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 58,
+      "title": "比亚迪召回近10万台电车",
+      "category": "汽车",
+      "heat": 38.56,
+      "reads": 2847.8,
+      "discussions": 0.34,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 59,
+      "title": "投资者线上排队开户",
+      "category": "",
+      "heat": 38.07,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 60,
+      "title": "惠英红 生而为中国人我骄傲自豪",
+      "category": "",
+      "heat": 37.9,
+      "reads": 489.0,
+      "discussions": 0.29,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 61,
+      "title": "张本智和3比1黄镇廷",
+      "category": "体育",
+      "heat": 37.61,
+      "reads": 792.5,
+      "discussions": 0.07,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 62,
+      "title": "机构预期A股有望迎来金九银十",
+      "category": "财经",
+      "heat": 37.6,
+      "reads": 103.1,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 63,
+      "title": "电影这个杀手不太冷定档",
+      "category": "电影",
+      "heat": 37.59,
+      "reads": 5326.9,
+      "discussions": 1.7,
+      "originals": 0.17,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 64,
+      "title": "谁能继续领导黎真主党",
+      "category": "",
+      "heat": 37.56,
+      "reads": 137.7,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 65,
+      "title": "到底是谁抢到了霸王茶姬宠物周边",
+      "category": "美食",
+      "heat": 37.54,
+      "reads": 2947.3,
+      "discussions": 13.8,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 66,
+      "title": "快递柜拿取声吵到婴儿被封",
+      "category": "社会",
+      "heat": 37.4,
+      "reads": 9504.2,
+      "discussions": 0.67,
+      "originals": 0.18,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 67,
+      "title": "上海进一步优化房地产市场政策",
+      "category": "",
+      "heat": 36.94,
+      "reads": 887.9,
+      "discussions": 0.18,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 68,
+      "title": "外地蟹冒充阳澄湖蟹是公开的秘密",
+      "category": "社会",
+      "heat": 36.92,
+      "reads": 142.7,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 69,
+      "title": "女子收到12306八百万退款短信",
+      "category": "社会",
+      "heat": 36.83,
+      "reads": 4010.4,
+      "discussions": 0.23,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 70,
+      "title": "关晓彤华伦天奴大秀",
+      "category": "明星",
+      "heat": 36.8,
+      "reads": 1892.8,
+      "discussions": 1.5,
+      "originals": 0.12,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 71,
+      "title": "杨紫看秀look",
+      "category": "明星",
+      "heat": 36.67,
+      "reads": 3052.7,
+      "discussions": 9.2,
+      "originals": 0.85,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 72,
+      "title": "万元打造高仿小游戏20天可上线",
+      "category": "",
+      "heat": 36.5,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 73,
+      "title": "江慈身世",
+      "category": "",
+      "heat": 36.31,
+      "reads": 1061.5,
+      "discussions": 0.76,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 74,
+      "title": "汪苏泷强行拉走张碧晨",
+      "category": "明星",
+      "heat": 36.26,
+      "reads": 2238.6,
+      "discussions": 0.12,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 75,
+      "title": "双胞胎还在妈妈子宫就把手术做了",
+      "category": "",
+      "heat": 36.23,
+      "reads": 8264.3,
+      "discussions": 0.3,
+      "originals": 0.09,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 76,
+      "title": "王楚钦光速进32强",
+      "category": "体育",
+      "heat": 36.18,
+      "reads": 1572.1,
+      "discussions": 0.56,
+      "originals": 0.13,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 77,
+      "title": "马龙换球衣",
+      "category": "",
+      "heat": 36.16,
+      "reads": 477.6,
+      "discussions": 0.1,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 78,
+      "title": "第一次见房子用毫米来形容",
+      "category": "",
+      "heat": 36.13,
+      "reads": 2135.1,
+      "discussions": 0.19,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 79,
+      "title": "这大概是最费发夹的发型了",
+      "category": "",
+      "heat": 36.08,
+      "reads": 976.8,
+      "discussions": 0.12,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 80,
+      "title": "Jennie新歌概念预告",
+      "category": "明星",
+      "heat": 36.07,
+      "reads": 2172.8,
+      "discussions": 0.82,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 81,
+      "title": "潘展乐大声给陈奕迅纠错",
+      "category": "社会",
+      "heat": 36.05,
+      "reads": 6313.4,
+      "discussions": 0.37,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 82,
+      "title": "上交所测试订单为历史峰值2倍",
+      "category": "财经",
+      "heat": 35.75,
+      "reads": 174.1,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 83,
+      "title": "侯明昊卢昱晓 她在闹他在笑",
+      "category": "",
+      "heat": 35.73,
+      "reads": 859.1,
+      "discussions": 0.74,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 84,
+      "title": "华伦天奴大秀",
+      "category": "时尚",
+      "heat": 35.55,
+      "reads": 2440.0,
+      "discussions": 5.3,
+      "originals": 0.35,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 85,
+      "title": "范思琦vs王艺迪",
+      "category": "",
+      "heat": 35.46,
+      "reads": 82.3,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 86,
+      "title": "商家回应女子买一颗话梅收71.6元",
+      "category": "社会",
+      "heat": 35.05,
+      "reads": 2954.1,
+      "discussions": 0.45,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 87,
+      "title": "10月1日10点01分表白祖国",
+      "category": "社会",
+      "heat": 34.78,
+      "reads": 2975.5,
+      "discussions": 6.2,
+      "originals": 0.18,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 88,
+      "title": "一人一句祝祖国生日快乐",
+      "category": "社会",
+      "heat": 34.12,
+      "reads": 8866.1,
+      "discussions": 14.5,
+      "originals": 0.28,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 89,
+      "title": "21岁男生工作20余天后跳桥身亡",
+      "category": "社会",
+      "heat": 34.1,
+      "reads": 1847.1,
+      "discussions": 0.24,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 90,
+      "title": "贵州教育厅厅长邹联克主动投案",
+      "category": "社会",
+      "heat": 33.91,
+      "reads": 361.7,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 91,
+      "title": "秦岚 分手后我不会和前任做朋友",
+      "category": "",
+      "heat": 33.6,
+      "reads": 12000.0,
+      "discussions": 2.5,
+      "originals": 0.4,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 92,
+      "title": "孙颖莎中国大满贯首场比赛",
+      "category": "体育",
+      "heat": 33.42,
+      "reads": 1022.9,
+      "discussions": 0.14,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 93,
+      "title": "种地吧",
+      "category": "",
+      "heat": 33.41,
+      "reads": 2548000.0,
+      "discussions": 12000.0,
+      "originals": 61.6,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 94,
+      "title": "爸妈疯狂沉迷老年玛丽苏",
+      "category": "社会",
+      "heat": 32.95,
+      "reads": 102.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 95,
+      "title": "如何一眼看出画的是广东",
+      "category": "",
+      "heat": 32.95,
+      "reads": 2684.1,
+      "discussions": 22.4,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 96,
+      "title": "以军投下85枚炸弹轰炸黎真主党总部",
+      "category": "军事",
+      "heat": 32.88,
+      "reads": 257.6,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 97,
+      "title": "孕妇大补的问题燕窝依旧在售",
+      "category": "社会",
+      "heat": 32.85,
+      "reads": 419.4,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 98,
+      "title": "翁青雅彭高好嗑",
+      "category": "综艺",
+      "heat": 32.85,
+      "reads": 6826.0,
+      "discussions": 2.0,
+      "originals": 0.18,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 99,
+      "title": "直击长城巨型鳄鱼",
+      "category": "明星",
+      "heat": 32.82,
+      "reads": 312.6,
+      "discussions": 0.45,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 100,
+      "title": "周深为自己做的生日蛋糕",
+      "category": "",
+      "heat": 32.79,
+      "reads": 2998.0,
+      "discussions": 0.97,
+      "originals": 0.29,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 101,
+      "title": "辛巴和蛋蛋消痛贴违法添加穿山甲",
+      "category": "明星",
+      "heat": 32.78,
+      "reads": 1312.6,
+      "discussions": 0.23,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 102,
+      "title": "3年11幅世界名画被袭击",
+      "category": "社会",
+      "heat": 32.75,
+      "reads": 96.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 103,
+      "title": "香港维多利亚港惊现水龙卷",
+      "category": "社会",
+      "heat": 32.71,
+      "reads": 9088.9,
+      "discussions": 2.0,
+      "originals": 0.28,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 104,
+      "title": "大美中国有多少种色彩",
+      "category": "社会",
+      "heat": 32.7,
+      "reads": 963.0,
+      "discussions": 0.24,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 105,
+      "title": "刘宇宁大张伟slay全场",
+      "category": "综艺",
+      "heat": 32.63,
+      "reads": 61.0,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 106,
+      "title": "王楚钦眼里全是活儿",
+      "category": "",
+      "heat": 32.54,
+      "reads": 1200.9,
+      "discussions": 0.11,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 107,
+      "title": "杭州警方通报网红遭人持刀抢劫",
+      "category": "",
+      "heat": 32.17,
+      "reads": 2064.4,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 108,
+      "title": "战斗英雄黄宗德抵达人民大会堂",
+      "category": "社会",
+      "heat": 31.87,
+      "reads": 563.6,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 109,
+      "title": "倪妮红裙生图",
+      "category": "明星",
+      "heat": 31.7,
+      "reads": 1450.9,
+      "discussions": 0.22,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 110,
+      "title": "黄继光后人有17人参军",
+      "category": "社会",
+      "heat": 31.53,
+      "reads": 1989.1,
+      "discussions": 0.29,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 111,
+      "title": "辽菜是第一个国家级非遗菜系",
+      "category": "",
+      "heat": 31.51,
+      "reads": 5383.8,
+      "discussions": 0.29,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 112,
+      "title": "双开门冰箱突然变大气了",
+      "category": "",
+      "heat": 31.48,
+      "reads": 417.6,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 113,
+      "title": "刘浩存Minnie出发巴黎时装周撞衫",
+      "category": "",
+      "heat": 31.33,
+      "reads": 1693.3,
+      "discussions": 0.17,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 114,
+      "title": "100万房贷每年节约利息5600元",
+      "category": "财经",
+      "heat": 30.78,
+      "reads": 255.5,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 115,
+      "title": "张元英眼睛状态",
+      "category": "明星",
+      "heat": 30.46,
+      "reads": 1596.8,
+      "discussions": 0.3,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 116,
+      "title": "王源妈妈骄傲的先退场了",
+      "category": "",
+      "heat": 30.42,
+      "reads": 245.0,
+      "discussions": 0.38,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 117,
+      "title": "舍不得星星暧昧期见家长",
+      "category": "电视剧",
+      "heat": 30.12,
+      "reads": 72.1,
+      "discussions": 0.58,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 118,
+      "title": "个人住房贷款最低首付比例不低于15%",
+      "category": "社会",
+      "heat": 29.94,
+      "reads": 279.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 119,
+      "title": "著名书法家田英章去世",
+      "category": "",
+      "heat": 29.88,
+      "reads": 203.9,
+      "discussions": 0.05,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 120,
+      "title": "暗恋是蒋时延一个人的兵荒马乱",
+      "category": "",
+      "heat": 29.75,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 121,
+      "title": "客服是否该为主播翻车行为担责",
+      "category": "社会",
+      "heat": 29.71,
+      "reads": 1426.4,
+      "discussions": 0.21,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 122,
+      "title": "赵丽颖不敢对李红樱感同身受",
+      "category": "电影",
+      "heat": 29.61,
+      "reads": 5457.2,
+      "discussions": 0.57,
+      "originals": 0.09,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 123,
+      "title": "林允儿齐刘海包头造型",
+      "category": "",
+      "heat": 29.52,
+      "reads": 1151.0,
+      "discussions": 0.33,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 124,
+      "title": "杨紫张晚意秀场同框",
+      "category": "明星",
+      "heat": 29.3,
+      "reads": 645.1,
+      "discussions": 0.4,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 125,
+      "title": "麦迪娜佟丽娅新疆美女联动了",
+      "category": "",
+      "heat": 29.23,
+      "reads": 2.4,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 126,
+      "title": "刘宇宁歌声里的天高海阔",
+      "category": "综艺",
+      "heat": 29.07,
+      "reads": 324.0,
+      "discussions": 5.4,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 127,
+      "title": "黎真主党证实纳斯鲁拉死亡",
+      "category": "",
+      "heat": 29.06,
+      "reads": 5972.6,
+      "discussions": 2.2,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 128,
+      "title": "拜登称美国完全支持以色列自卫",
+      "category": "社会",
+      "heat": 28.95,
+      "reads": 999.6,
+      "discussions": 0.13,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 129,
+      "title": "70名05后入学婚姻专业",
+      "category": "教育",
+      "heat": 28.91,
+      "reads": 85.4,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 130,
+      "title": "内塔尼亚胡称以色列已到历史转折点",
+      "category": "",
+      "heat": 28.9,
+      "reads": 64.2,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 131,
+      "title": "15人被授予国家勋章国家荣誉称号",
+      "category": "社会",
+      "heat": 28.7,
+      "reads": 1153.0,
+      "discussions": 0.28,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 132,
+      "title": "十一假期来北京遛个弯",
+      "category": "旅游",
+      "heat": 28.62,
+      "reads": 659.1,
+      "discussions": 2.4,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 133,
+      "title": "高鹏冷暴力逼何知南提分手",
+      "category": "",
+      "heat": 28.61,
+      "reads": 613.3,
+      "discussions": 0.61,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 134,
+      "title": "曾黎张博恒合影",
+      "category": "明星",
+      "heat": 28.49,
+      "reads": 153.0,
+      "discussions": 0.23,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 135,
+      "title": "男子为了出气杀害表哥一家四口",
+      "category": "社会",
+      "heat": 28.42,
+      "reads": 2891.6,
+      "discussions": 0.4,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 136,
+      "title": "侃爷听到南京憋不住笑了",
+      "category": "",
+      "heat": 28.41,
+      "reads": 5896.0,
+      "discussions": 0.89,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 137,
+      "title": "赛道上的显眼豹",
+      "category": "",
+      "heat": 28.36,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 138,
+      "title": "保研朋友圈屏蔽了三百多人",
+      "category": "搞笑",
+      "heat": 28.36,
+      "reads": 4964.8,
+      "discussions": 0.28,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 139,
+      "title": "甘孜一油罐车坠崖夫妻身亡",
+      "category": "社会",
+      "heat": 28.24,
+      "reads": 2613.4,
+      "discussions": 0.13,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 140,
+      "title": "林昀儒2比3卡尔伯格",
+      "category": "",
+      "heat": 28.03,
+      "reads": 762.5,
+      "discussions": 0.03,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 141,
+      "title": "范思琦3比2王艺迪",
+      "category": "体育",
+      "heat": 27.11,
+      "reads": 380.6,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 142,
+      "title": "戚薇说北大考试差点写不完",
+      "category": "明星",
+      "heat": 26.99,
+      "reads": 10000.0,
+      "discussions": 0.35,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 143,
+      "title": "机场员工泄露外籍模特照片已被开除",
+      "category": "社会",
+      "heat": 26.98,
+      "reads": 1289.5,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 144,
+      "title": "享界S9我说了算",
+      "category": "汽车",
+      "heat": 26.77,
+      "reads": 2444.1,
+      "discussions": 2.5,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 145,
+      "title": "周斌 你让我觉得恶心",
+      "category": "",
+      "heat": 26.41,
+      "reads": 672.5,
+      "discussions": 0.91,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 146,
+      "title": "东北菜可不止量大",
+      "category": "综艺",
+      "heat": 26.23,
+      "reads": 2318.6,
+      "discussions": 0.31,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 147,
+      "title": "老人被高空坠落的火钳砸中身亡",
+      "category": "",
+      "heat": 26.23,
+      "reads": 2164.6,
+      "discussions": 0.13,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 148,
+      "title": "外交部回应黎真主党领导人遇袭身亡",
+      "category": "社会",
+      "heat": 26.17,
+      "reads": 2078.4,
+      "discussions": 0.33,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 149,
+      "title": "郑钦文早就提醒裁判关顶棚",
+      "category": "体育",
+      "heat": 26.15,
+      "reads": 1213.9,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 150,
+      "title": "内塔尼亚胡称中东无以长臂不及之处",
+      "category": "军事",
+      "heat": 25.99,
+      "reads": 325.3,
+      "discussions": 0.2,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 151,
+      "title": "阴阳师",
+      "category": "",
+      "heat": 25.98,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 152,
+      "title": "银行存10万取3000时被要求第三方证明",
+      "category": "社会",
+      "heat": 25.97,
+      "reads": 4232.2,
+      "discussions": 0.42,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 153,
+      "title": "杭州回应家长强烈要求取消春秋假",
+      "category": "",
+      "heat": 25.97,
+      "reads": 2981.9,
+      "discussions": 0.46,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 154,
+      "title": "车票候补",
+      "category": "",
+      "heat": 25.97,
+      "reads": 766.1,
+      "discussions": 26.0,
+      "originals": 19.2,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 155,
+      "title": "63岁老人守护清水北送",
+      "category": "",
+      "heat": 25.96,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 156,
+      "title": "女子遭遇话梅刺客一斤3580元",
+      "category": "社会",
+      "heat": 25.96,
+      "reads": 308.0,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 157,
+      "title": "疑似有人假冒王鹤棣及其团队",
+      "category": "",
+      "heat": 25.95,
+      "reads": 708.5,
+      "discussions": 0.28,
+      "originals": 0.09,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 158,
+      "title": "女子骑马被教练偷拍发群里开黄腔",
+      "category": "",
+      "heat": 25.95,
+      "reads": 3249.8,
+      "discussions": 0.44,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 159,
+      "title": "网曝女子买一颗话梅被收71.6元",
+      "category": "社会",
+      "heat": 25.95,
+      "reads": 1806.7,
+      "discussions": 0.26,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 160,
+      "title": "孙俪吴慷仁新剧开拍",
+      "category": "电视剧",
+      "heat": 25.94,
+      "reads": 2061.2,
+      "discussions": 0.22,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 161,
+      "title": "你小时候最爱吃哪种水果",
+      "category": "社会",
+      "heat": 25.9,
+      "reads": 258.7,
+      "discussions": 0.47,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 162,
+      "title": "市监局回应南京话梅刺客一颗71元",
+      "category": "",
+      "heat": 25.77,
+      "reads": 1706.2,
+      "discussions": 0.22,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 163,
+      "title": "A股",
+      "category": "财经",
+      "heat": 25.38,
+      "reads": 3530000.0,
+      "discussions": 1372.0,
+      "originals": 56.4,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 164,
+      "title": "张远逆袭陈楚生",
+      "category": "综艺",
+      "heat": 25.16,
+      "reads": 240.3,
+      "discussions": 0.35,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 165,
+      "title": "克隆声音的门槛有多低",
+      "category": "社会",
+      "heat": 24.92,
+      "reads": 109.3,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 166,
+      "title": "为什么是上厕所不是下厕所",
+      "category": "社会",
+      "heat": 24.9,
+      "reads": 3012.4,
+      "discussions": 0.26,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 167,
+      "title": "宁波一厂发生锌水爆炸大量锌水流出",
+      "category": "社会",
+      "heat": 24.41,
+      "reads": 1223.2,
+      "discussions": 0.09,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 168,
+      "title": "8位无名烈士有名字了",
+      "category": "社会",
+      "heat": 24.19,
+      "reads": 574.0,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 169,
+      "title": "SM新女团路透照",
+      "category": "明星",
+      "heat": 23.91,
+      "reads": 1012.6,
+      "discussions": 0.13,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 170,
+      "title": "赵露思沈阳活动",
+      "category": "明星",
+      "heat": 23.86,
+      "reads": 1209.5,
+      "discussions": 0.96,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 171,
+      "title": "摘杨梅的场面原来这么壮观",
+      "category": "综艺",
+      "heat": 23.61,
+      "reads": 927.1,
+      "discussions": 0.54,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 172,
+      "title": "漠风吟开播",
+      "category": "",
+      "heat": 23.58,
+      "reads": 2154.2,
+      "discussions": 10.4,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 173,
+      "title": "伊朗最高领袖称以无法严重伤害真主党",
+      "category": "",
+      "heat": 23.58,
+      "reads": 3035.5,
+      "discussions": 0.51,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 174,
+      "title": "孙颖莎加上赛后握手用时24分钟",
+      "category": "社会",
+      "heat": 23.43,
+      "reads": 284.6,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 175,
+      "title": "黎巴嫩真主党领袖身亡细节披露",
+      "category": "社会",
+      "heat": 23.35,
+      "reads": 66.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 176,
+      "title": "投资者开户爆了中国结算加班审核",
+      "category": "",
+      "heat": 23.35,
+      "reads": 379.9,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 177,
+      "title": "胡塞武装称袭击以色列机场",
+      "category": "",
+      "heat": 23.33,
+      "reads": 27.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 178,
+      "title": "熟悉的旋律把郑州街头氛围拉满",
+      "category": "",
+      "heat": 23.23,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 179,
+      "title": "张帅VS米内恩",
+      "category": "",
+      "heat": 23.16,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 180,
+      "title": "侃爷因中暑演唱会中途退场",
+      "category": "",
+      "heat": 23.13,
+      "reads": 3724.8,
+      "discussions": 0.2,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 181,
+      "title": "心脏撑不住了有什么信号",
+      "category": "健康",
+      "heat": 23.12,
+      "reads": 4930.6,
+      "discussions": 0.68,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 182,
+      "title": "樊振东阿尔卡拉斯拍立得",
+      "category": "体育",
+      "heat": 23.12,
+      "reads": 67.7,
+      "discussions": 0.22,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 183,
+      "title": "纷玩岛",
+      "category": "",
+      "heat": 22.99,
+      "reads": 3287.9,
+      "discussions": 1.3,
+      "originals": 0.25,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 184,
+      "title": "教育局回应鹤壁技师学院打人事件",
+      "category": "社会",
+      "heat": 22.95,
+      "reads": 1365.1,
+      "discussions": 0.25,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 185,
+      "title": "十月最容易脱单的星座",
+      "category": "",
+      "heat": 22.84,
+      "reads": 1175.5,
+      "discussions": 0.47,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 186,
+      "title": "律师碰掉法院信号屏蔽器该被处罚吗",
+      "category": "社会",
+      "heat": 22.76,
+      "reads": 124.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 187,
+      "title": "古巨基向我们的歌剧组致歉",
+      "category": "明星",
+      "heat": 22.75,
+      "reads": 697.5,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 188,
+      "title": "不是上链接吗怎么上警车了",
+      "category": "社会",
+      "heat": 22.7,
+      "reads": 1438.7,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 189,
+      "title": "男子发私照造黄谣报复前女友被抓",
+      "category": "社会",
+      "heat": 22.68,
+      "reads": 139.9,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 190,
+      "title": "以空军控制黎巴嫩贝鲁特机场",
+      "category": "",
+      "heat": 22.66,
+      "reads": 497.2,
+      "discussions": 0.07,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 191,
+      "title": "迪丽热巴慕胥辞路透",
+      "category": "",
+      "heat": 22.65,
+      "reads": 5199.0,
+      "discussions": 16.3,
+      "originals": 1.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 192,
+      "title": "陈梦在周杰伦和黄晓明中选了黄晓明",
+      "category": "",
+      "heat": 22.56,
+      "reads": 3051.5,
+      "discussions": 0.14,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 193,
+      "title": "网红自曝开劳被人持刀携爆炸物抢劫",
+      "category": "",
+      "heat": 22.33,
+      "reads": 1952.7,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 194,
+      "title": "黑神话悟空初版铁扇公主",
+      "category": "",
+      "heat": 22.28,
+      "reads": 1161.1,
+      "discussions": 0.15,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 195,
+      "title": "叶童当年也是很多人的白月光",
+      "category": "",
+      "heat": 22.24,
+      "reads": 13.2,
+      "discussions": 0.14,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 196,
+      "title": "多方回应高校校招现足浴技师招聘",
+      "category": "社会",
+      "heat": 22.12,
+      "reads": 159.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 197,
+      "title": "以威胁若伊朗客机降落将袭黎机场",
+      "category": "",
+      "heat": 21.92,
+      "reads": 782.1,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 198,
+      "title": "业内人士称房企保价涨价是营销手段",
+      "category": "社会",
+      "heat": 21.87,
+      "reads": 1575.1,
+      "discussions": 0.55,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 199,
+      "title": "十个勤天玫瑰酪",
+      "category": "",
+      "heat": 21.82,
+      "reads": 4334.4,
+      "discussions": 47.5,
+      "originals": 0.23,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 200,
+      "title": "年轻人为了省手续费有多拼",
+      "category": "社会",
+      "heat": 21.81,
+      "reads": 519.9,
+      "discussions": 0.45,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 201,
+      "title": "惠州一男子被超2米长蟒蛇缠住",
+      "category": "社会",
+      "heat": 21.8,
+      "reads": 263.2,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 202,
+      "title": "1000人凌晨4点打探照灯摘杨梅",
+      "category": "综艺",
+      "heat": 21.79,
+      "reads": 908.1,
+      "discussions": 0.54,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 203,
+      "title": "黄薇 造型",
+      "category": "",
+      "heat": 21.78,
+      "reads": 75.5,
+      "discussions": 0.07,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 204,
+      "title": "DXMON成员JO退团",
+      "category": "",
+      "heat": 21.71,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 205,
+      "title": "首个中韩选秀节目开播",
+      "category": "明星",
+      "heat": 21.2,
+      "reads": 926.2,
+      "discussions": 0.26,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 206,
+      "title": "黄宗德被颁授共和国勋章",
+      "category": "",
+      "heat": 21.19,
+      "reads": 306.9,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 207,
+      "title": "孙颖莎打笑了",
+      "category": "",
+      "heat": 20.95,
+      "reads": 4080.8,
+      "discussions": 1.7,
+      "originals": 0.23,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 208,
+      "title": "演唱会上的Karina",
+      "category": "",
+      "heat": 20.78,
+      "reads": 285.0,
+      "discussions": 0.1,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 209,
+      "title": "登陆少年暖房仪式",
+      "category": "明星",
+      "heat": 20.77,
+      "reads": 348.1,
+      "discussions": 0.72,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 210,
+      "title": "易烊千玺北京出发巴黎路透",
+      "category": "明星",
+      "heat": 20.75,
+      "reads": 345.4,
+      "discussions": 0.11,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 211,
+      "title": "时团听周深唱爆炸撕裂下坠的反应",
+      "category": "",
+      "heat": 20.69,
+      "reads": 545.0,
+      "discussions": 0.12,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 212,
+      "title": "王楚钦呼吁观众少开点闪光灯",
+      "category": "体育",
+      "heat": 20.63,
+      "reads": 864.9,
+      "discussions": 0.04,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 213,
+      "title": "威少炮轰湖人快船",
+      "category": "体育",
+      "heat": 20.52,
+      "reads": 403.0,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 214,
+      "title": "樊振东观战中网",
+      "category": "体育",
+      "heat": 20.51,
+      "reads": 1714.3,
+      "discussions": 2.0,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 215,
+      "title": "心动的信号7素人返场路透",
+      "category": "综艺",
+      "heat": 20.51,
+      "reads": 3078.1,
+      "discussions": 1.2,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 216,
+      "title": "王楚钦说感受到了大家的热情",
+      "category": "体育",
+      "heat": 20.42,
+      "reads": 127.1,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 217,
+      "title": "战至巅峰",
+      "category": "",
+      "heat": 20.39,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 218,
+      "title": "死亡搁浅2",
+      "category": "游戏",
+      "heat": 20.36,
+      "reads": 4902.6,
+      "discussions": 2.0,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 219,
+      "title": "失去双臂老兵永远想做人民的兵",
+      "category": "",
+      "heat": 20.3,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 220,
+      "title": "张晚意看秀生图",
+      "category": "明星",
+      "heat": 20.3,
+      "reads": 1023.0,
+      "discussions": 0.61,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 221,
+      "title": "罗永浩称已和星巴克和解",
+      "category": "财经",
+      "heat": 20.1,
+      "reads": 1902.8,
+      "discussions": 0.28,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 222,
+      "title": "赵丽颖包十场749局",
+      "category": "",
+      "heat": 20.09,
+      "reads": 3363.8,
+      "discussions": 0.64,
+      "originals": 0.16,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 223,
+      "title": "王一博德约科维奇同框",
+      "category": "明星",
+      "heat": 20.07,
+      "reads": 1451.8,
+      "discussions": 0.88,
+      "originals": 0.17,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 224,
+      "title": "喜儿扮演者获颁人民艺术家",
+      "category": "",
+      "heat": 19.99,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 225,
+      "title": "王一博摩托车后座视角",
+      "category": "明星",
+      "heat": 19.96,
+      "reads": 3431.6,
+      "discussions": 2.4,
+      "originals": 0.36,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 226,
+      "title": "商家回应话梅3580一斤价格正常",
+      "category": "",
+      "heat": 19.92,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 227,
+      "title": "市监局回应网友称住酒店遭临时涨价",
+      "category": "",
+      "heat": 19.89,
+      "reads": 610.6,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 228,
+      "title": "杨超越把沈月当成赖美云",
+      "category": "",
+      "heat": 19.87,
+      "reads": 359.5,
+      "discussions": 0.56,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 229,
+      "title": "AG告别秋季赛",
+      "category": "游戏",
+      "heat": 19.8,
+      "reads": 261.1,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 230,
+      "title": "WTT中国大满贯开幕式",
+      "category": "",
+      "heat": 19.8,
+      "reads": 12.3,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 231,
+      "title": "用人民币视角感受瑞士物价",
+      "category": "",
+      "heat": 19.76,
+      "reads": 75.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 232,
+      "title": "凤凰传奇演唱会",
+      "category": "音乐",
+      "heat": 19.75,
+      "reads": 23000.0,
+      "discussions": 36.4,
+      "originals": 3.3,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 233,
+      "title": "十一如何拍出人生照片",
+      "category": "社会",
+      "heat": 19.74,
+      "reads": 1348.4,
+      "discussions": 3.2,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 234,
+      "title": "全红婵展示什么是痛包",
+      "category": "",
+      "heat": 19.66,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 235,
+      "title": "男孩按摩4次治驼背花近3万",
+      "category": "社会",
+      "heat": 19.59,
+      "reads": 3019.4,
+      "discussions": 0.34,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 236,
+      "title": "周柯宇问程潇和妹妹是不是双胞胎",
+      "category": "综艺",
+      "heat": 19.51,
+      "reads": 577.6,
+      "discussions": 0.71,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 237,
+      "title": "宁德时代",
+      "category": "科技",
+      "heat": 19.39,
+      "reads": 51000.0,
+      "discussions": 13.2,
+      "originals": 1.2,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 238,
+      "title": "房姐李梅87套房开拍仅5人报名",
+      "category": "",
+      "heat": 19.31,
+      "reads": 1145.2,
+      "discussions": 0.01,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 239,
+      "title": "黄子弘凡上海演唱会抢票",
+      "category": "",
+      "heat": 19.3,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 240,
+      "title": "周深在六公主的11次舞台",
+      "category": "音乐",
+      "heat": 19.27,
+      "reads": 200.5,
+      "discussions": 0.27,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 241,
+      "title": "女子帮顾客扫充电宝未归还称寒心了",
+      "category": "社会",
+      "heat": 19.21,
+      "reads": 607.8,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 242,
+      "title": "林园称A股涨到4500点才是牛市起点",
+      "category": "财经",
+      "heat": 19.08,
+      "reads": 1347.1,
+      "discussions": 0.33,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 243,
+      "title": "有人存款利息都不要了转入股市",
+      "category": "",
+      "heat": 19.08,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 244,
+      "title": "上交所启动测试券商替股民模拟下单",
+      "category": "",
+      "heat": 19.05,
+      "reads": 351.4,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 245,
+      "title": "父亲称小孩担心上课迟到扒门自救",
+      "category": "社会",
+      "heat": 19.05,
+      "reads": 840.6,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 246,
+      "title": "田华佩戴奖章敬礼",
+      "category": "社会",
+      "heat": 19.03,
+      "reads": 223.4,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 247,
+      "title": "749局预售票房破3000万",
+      "category": "电影",
+      "heat": 18.95,
+      "reads": 1212.8,
+      "discussions": 0.41,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 248,
+      "title": "王一博高空点外卖",
+      "category": "",
+      "heat": 18.89,
+      "reads": 3273.1,
+      "discussions": 1.6,
+      "originals": 0.32,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 249,
+      "title": "天山南北唱新歌",
+      "category": "社会",
+      "heat": 18.84,
+      "reads": 8086.6,
+      "discussions": 14.9,
+      "originals": 0.23,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 250,
+      "title": "王俊凯回忆19岁拍749局",
+      "category": "电影",
+      "heat": 18.75,
+      "reads": 722.0,
+      "discussions": 1.2,
+      "originals": 0.09,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 251,
+      "title": "人民公安从这里走来",
+      "category": "",
+      "heat": 18.71,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 252,
+      "title": "J1E转会AG",
+      "category": "游戏",
+      "heat": 18.68,
+      "reads": 16.6,
+      "discussions": 0.04,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 253,
+      "title": "蓝盈莹 人在巴黎也要中式复古",
+      "category": "",
+      "heat": 18.62,
+      "reads": 289.3,
+      "discussions": 0.73,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 254,
+      "title": "要推动全社会尊崇英雄",
+      "category": "",
+      "heat": 18.36,
+      "reads": 166.8,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 255,
+      "title": "当男朋友带着小猫来接我时",
+      "category": "情感",
+      "heat": 18.33,
+      "reads": 280.3,
+      "discussions": 0.22,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 256,
+      "title": "商业房贷首付统一为不低于15%",
+      "category": "社会",
+      "heat": 18.32,
+      "reads": 145.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 257,
+      "title": "刘炜珊3比2钱天一",
+      "category": "体育",
+      "heat": 18.29,
+      "reads": 352.5,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 258,
+      "title": "何卓佳说孙颖莎赛前给自己支招",
+      "category": "体育",
+      "heat": 18.18,
+      "reads": 590.8,
+      "discussions": 0.11,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 259,
+      "title": "永辉超市回应背刺胖东来传闻",
+      "category": "财经",
+      "heat": 18.18,
+      "reads": 1046.5,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 260,
+      "title": "10月1至2日在深圳的有福了",
+      "category": "社会",
+      "heat": 18.01,
+      "reads": 848.7,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 261,
+      "title": "迪丽热巴坐三轮车路透",
+      "category": "",
+      "heat": 17.84,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 262,
+      "title": "何广智精修脑子毛坯嘴",
+      "category": "",
+      "heat": 17.77,
+      "reads": 298.0,
+      "discussions": 0.54,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 263,
+      "title": "毛不易带着八杯酒的消愁回来了",
+      "category": "",
+      "heat": 17.73,
+      "reads": 603.4,
+      "discussions": 1.1,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 264,
+      "title": "以军称打死黎真主党领导人纳斯鲁拉",
+      "category": "社会",
+      "heat": 17.71,
+      "reads": 7790.0,
+      "discussions": 4.0,
+      "originals": 0.15,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 265,
+      "title": "看见这幅画隔屏闻见吉林鱼香了",
+      "category": "社会",
+      "heat": 17.55,
+      "reads": 1117.6,
+      "discussions": 23.4,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 266,
+      "title": "离婚不离家可行吗",
+      "category": "社会",
+      "heat": 17.54,
+      "reads": 2795.7,
+      "discussions": 0.29,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 267,
+      "title": "薛之谦 你不要垂头丧气的",
+      "category": "",
+      "heat": 17.38,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 268,
+      "title": "千万别把大拇脚趾头塞进手镯里",
+      "category": "",
+      "heat": 17.33,
+      "reads": 1577.9,
+      "discussions": 0.22,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 269,
+      "title": "潘展乐感谢陈奕迅邀请",
+      "category": "明星",
+      "heat": 17.23,
+      "reads": 946.1,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 270,
+      "title": "Gr战队冠军",
+      "category": "",
+      "heat": 17.23,
+      "reads": 219.8,
+      "discussions": 0.71,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 271,
+      "title": "檀健次 减肥不是说减就减吗",
+      "category": "",
+      "heat": 17.21,
+      "reads": 1493.1,
+      "discussions": 8.8,
+      "originals": 1.2,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 272,
+      "title": "我们的歌",
+      "category": "综艺",
+      "heat": 17.2,
+      "reads": 2808000.0,
+      "discussions": 24000.0,
+      "originals": 87.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 273,
+      "title": "韩国大白菜紧缺",
+      "category": "财经",
+      "heat": 17.15,
+      "reads": 1035.0,
+      "discussions": 0.24,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 274,
+      "title": "刘浩存学院风",
+      "category": "电影",
+      "heat": 17.04,
+      "reads": 1197.3,
+      "discussions": 0.3,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 275,
+      "title": "停车费1小时200元车主质疑太贵",
+      "category": "社会",
+      "heat": 17.03,
+      "reads": 7072.6,
+      "discussions": 0.95,
+      "originals": 0.15,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 276,
+      "title": "游泳队告六人去陈奕迅演唱会",
+      "category": "音乐",
+      "heat": 17.0,
+      "reads": 5543.9,
+      "discussions": 1.3,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 277,
+      "title": "刘学义吴谨言春花焰团综路透",
+      "category": "综艺",
+      "heat": 16.98,
+      "reads": 787.1,
+      "discussions": 0.31,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 278,
+      "title": "专家建议买新能源车可以不买电池",
+      "category": "",
+      "heat": 16.96,
+      "reads": 1073.9,
+      "discussions": 0.67,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 279,
+      "title": "中国从来没有所谓垮掉的一代",
+      "category": "社会",
+      "heat": 16.96,
+      "reads": 900.5,
+      "discussions": 0.14,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 280,
+      "title": "青海有害气体中毒事件1家5口先后去世",
+      "category": "社会",
+      "heat": 16.95,
+      "reads": 2335.3,
+      "discussions": 0.15,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 281,
+      "title": "迪丽热巴慕胥辞新妆造路透",
+      "category": "明星",
+      "heat": 16.94,
+      "reads": 2862.5,
+      "discussions": 3.5,
+      "originals": 0.47,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 282,
+      "title": "戚薇本次时装周用空8罐发胶",
+      "category": "",
+      "heat": 16.93,
+      "reads": 435.7,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 283,
+      "title": "国庆朋友圈已经预制好了",
+      "category": "搞笑",
+      "heat": 16.93,
+      "reads": 21000.0,
+      "discussions": 2.0,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 284,
+      "title": "半熟男女 装深情",
+      "category": "",
+      "heat": 16.93,
+      "reads": 3.4,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 285,
+      "title": "沈月杨超越聊自己医美经历",
+      "category": "",
+      "heat": 16.93,
+      "reads": 1174.0,
+      "discussions": 0.13,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 286,
+      "title": "喻言唱跳舞台",
+      "category": "明星",
+      "heat": 16.92,
+      "reads": 1447.3,
+      "discussions": 6.5,
+      "originals": 0.2,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 287,
+      "title": "李佳琦觉得自己不该被淘汰",
+      "category": "综艺",
+      "heat": 16.92,
+      "reads": 13000.0,
+      "discussions": 2.0,
+      "originals": 0.44,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 288,
+      "title": "毛不易已经开始炫技了",
+      "category": "",
+      "heat": 16.92,
+      "reads": 268.5,
+      "discussions": 0.67,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 289,
+      "title": "Kanye试听会",
+      "category": "",
+      "heat": 16.92,
+      "reads": 2369.0,
+      "discussions": 1.4,
+      "originals": 0.09,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 290,
+      "title": "孙佳俊破亚洲纪录",
+      "category": "体育",
+      "heat": 16.91,
+      "reads": 1344.6,
+      "discussions": 0.22,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 291,
+      "title": "男子听信美容偏方1月不洗脸满脸结痂",
+      "category": "社会",
+      "heat": 16.91,
+      "reads": 2140.7,
+      "discussions": 0.12,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 292,
+      "title": "南部战区部队时刻高度戒备",
+      "category": "社会",
+      "heat": 16.91,
+      "reads": 886.3,
+      "discussions": 0.17,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 293,
+      "title": "印度一校长勾结老师勒死11岁学生",
+      "category": "社会",
+      "heat": 16.91,
+      "reads": 3337.5,
+      "discussions": 0.28,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 294,
+      "title": "登陆少年 清华",
+      "category": "",
+      "heat": 16.9,
+      "reads": 6523.7,
+      "discussions": 20.0,
+      "originals": 1.6,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 295,
+      "title": "苏州人从此不再羡慕湖南人",
+      "category": "社会",
+      "heat": 16.9,
+      "reads": 1332.9,
+      "discussions": 0.1,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 296,
+      "title": "王楚钦做漆扇",
+      "category": "社会",
+      "heat": 16.9,
+      "reads": 2086.8,
+      "discussions": 0.22,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 297,
+      "title": "陈奕迅靠在徐嘉余肩头",
+      "category": "明星",
+      "heat": 16.9,
+      "reads": 624.9,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 298,
+      "title": "何超莲这个背不去拔罐可惜了",
+      "category": "",
+      "heat": 16.9,
+      "reads": 1858.2,
+      "discussions": 0.57,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 299,
+      "title": "青海有害气体中毒家属发声",
+      "category": "社会",
+      "heat": 16.89,
+      "reads": 515.9,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 300,
+      "title": "周深第二张个人专辑",
+      "category": "明星",
+      "heat": 16.89,
+      "reads": 1286.3,
+      "discussions": 3.7,
+      "originals": 0.8,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 301,
+      "title": "唐宫奇案 白鹿",
+      "category": "",
+      "heat": 16.89,
+      "reads": 1529.9,
+      "discussions": 1.8,
+      "originals": 0.23,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 302,
+      "title": "付鹏与男子合影",
+      "category": "明星",
+      "heat": 16.89,
+      "reads": 32000.0,
+      "discussions": 0.81,
+      "originals": 0.21,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 303,
+      "title": "汪苏泷天津演唱会嘉宾是张碧晨",
+      "category": "音乐",
+      "heat": 16.88,
+      "reads": 1364.0,
+      "discussions": 0.66,
+      "originals": 0.08,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 304,
+      "title": "狗子摔出车厢被拖行主人心疼抹泪",
+      "category": "社会",
+      "heat": 16.88,
+      "reads": 1608.6,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 305,
+      "title": "维基奇vs格鲁比奇",
+      "category": "体育",
+      "heat": 16.88,
+      "reads": 5.5,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 306,
+      "title": "郑钦文vs拉希莫娃",
+      "category": "体育",
+      "heat": 16.88,
+      "reads": 3479.0,
+      "discussions": 1.7,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 307,
+      "title": "伊朗最高领袖发声",
+      "category": "军事",
+      "heat": 16.88,
+      "reads": 3924.3,
+      "discussions": 0.48,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 308,
+      "title": "樊振东巴黎男单决赛前不敢看信息",
+      "category": "明星",
+      "heat": 16.87,
+      "reads": 3585.4,
+      "discussions": 0.52,
+      "originals": 0.11,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 309,
+      "title": "张真源 地铁跑酷",
+      "category": "",
+      "heat": 16.87,
+      "reads": 890.1,
+      "discussions": 2.3,
+      "originals": 0.36,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 310,
+      "title": "邓恩熙头纱出场",
+      "category": "综艺",
+      "heat": 16.87,
+      "reads": 241.5,
+      "discussions": 0.3,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 311,
+      "title": "伊拉克数千人冲击美国大使馆",
+      "category": "社会",
+      "heat": 16.87,
+      "reads": 261.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 312,
+      "title": "刘烨回复周雨彤下次我拉拉你",
+      "category": "综艺",
+      "heat": 16.84,
+      "reads": 721.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 313,
+      "title": "老师介绍婚姻本科专业学什么",
+      "category": "教育",
+      "heat": 16.71,
+      "reads": 741.8,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 314,
+      "title": "半熟男女中的一些隐喻",
+      "category": "",
+      "heat": 16.7,
+      "reads": 90.8,
+      "discussions": 0.7,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 315,
+      "title": "我们的歌金曲巅峰夜直播",
+      "category": "综艺",
+      "heat": 16.66,
+      "reads": 244.8,
+      "discussions": 9.4,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 316,
+      "title": "戚薇说终于等到刘忻的乐队了",
+      "category": "综艺",
+      "heat": 16.51,
+      "reads": 164.7,
+      "discussions": 0.72,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 317,
+      "title": "祁煜 敦煌飞天",
+      "category": "",
+      "heat": 16.48,
+      "reads": 60.1,
+      "discussions": 0.13,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 318,
+      "title": "重庆小伙被联合国秘书长点名表扬",
+      "category": "社会",
+      "heat": 16.41,
+      "reads": 699.5,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 319,
+      "title": "倪夏莲3比0简彤娟",
+      "category": "体育",
+      "heat": 16.39,
+      "reads": 922.2,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 320,
+      "title": "周杰伦演唱会",
+      "category": "明星",
+      "heat": 16.37,
+      "reads": 365000.0,
+      "discussions": 184.7,
+      "originals": 22.6,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 321,
+      "title": "孙颖莎许魏洲合照",
+      "category": "体育",
+      "heat": 16.28,
+      "reads": 790.7,
+      "discussions": 0.13,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 322,
+      "title": "张帅晋级中网16强",
+      "category": "",
+      "heat": 16.16,
+      "reads": 628.7,
+      "discussions": 0.24,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 323,
+      "title": "王源演唱会",
+      "category": "音乐",
+      "heat": 16.05,
+      "reads": 77000.0,
+      "discussions": 472.3,
+      "originals": 8.6,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 324,
+      "title": "断崖式降温换季来了",
+      "category": "社会",
+      "heat": 15.9,
+      "reads": 1218.0,
+      "discussions": 0.17,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 325,
+      "title": "NXX海岛疑云",
+      "category": "游戏",
+      "heat": 15.81,
+      "reads": 7209.4,
+      "discussions": 11.4,
+      "originals": 0.4,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 326,
+      "title": "多种水果降价",
+      "category": "财经",
+      "heat": 15.74,
+      "reads": 2695.4,
+      "discussions": 0.39,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 327,
+      "title": "林园称A股现在非常便宜",
+      "category": "财经",
+      "heat": 15.49,
+      "reads": 72.4,
+      "discussions": 0.05,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 328,
+      "title": "中国持有机器人相关有效专利超19万项",
+      "category": "财经",
+      "heat": 15.46,
+      "reads": 126.6,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 329,
+      "title": "恋与制作人天津版",
+      "category": "游戏",
+      "heat": 15.33,
+      "reads": 741.1,
+      "discussions": 1.9,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 330,
+      "title": "宁德时代旗下生产基地着火",
+      "category": "互联网",
+      "heat": 15.27,
+      "reads": 756.4,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 331,
+      "title": "致敬闪亮的名字",
+      "category": "社会",
+      "heat": 15.14,
+      "reads": 384.5,
+      "discussions": 0.37,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 332,
+      "title": "第一次在李赫宰脸上看到愁容",
+      "category": "",
+      "heat": 15.13,
+      "reads": 1099.7,
+      "discussions": 0.19,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 333,
+      "title": "井胧说尤长靖给大家上了一课",
+      "category": "综艺",
+      "heat": 15.06,
+      "reads": 44.1,
+      "discussions": 0.65,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 334,
+      "title": "网文连获8届中国科幻最高奖",
+      "category": "读书",
+      "heat": 14.86,
+      "reads": 79.8,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 335,
+      "title": "张踩铃 大胖媳妇的反焦虑育儿",
+      "category": "",
+      "heat": 14.77,
+      "reads": 12.8,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 336,
+      "title": "诗画江南浙江拍了拍你",
+      "category": "",
+      "heat": 14.75,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 337,
+      "title": "国庆想当熊猫腿替回老家看看",
+      "category": "",
+      "heat": 14.55,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 338,
+      "title": "何知南韩苏谈出轨这段",
+      "category": "",
+      "heat": 14.43,
+      "reads": 48.7,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 339,
+      "title": "罗永浩呼吁互联网公司打破壁垒",
+      "category": "社会",
+      "heat": 14.26,
+      "reads": 333.2,
+      "discussions": 0.18,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 340,
+      "title": "肖战工作室成立5周年",
+      "category": "",
+      "heat": 14.24,
+      "reads": 1280.8,
+      "discussions": 6.1,
+      "originals": 1.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 341,
+      "title": "张子枫盲女哭戏感染力",
+      "category": "电影",
+      "heat": 14.17,
+      "reads": 154.8,
+      "discussions": 0.77,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 342,
+      "title": "梅西破门",
+      "category": "体育",
+      "heat": 14.11,
+      "reads": 108000.0,
+      "discussions": 13.4,
+      "originals": 1.6,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 343,
+      "title": "王源帮我录视频向老板请假",
+      "category": "",
+      "heat": 13.94,
+      "reads": 109.1,
+      "discussions": 0.18,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 344,
+      "title": "沈星回 祝你百岁无忧",
+      "category": "",
+      "heat": 13.92,
+      "reads": 19.4,
+      "discussions": 0.15,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 345,
+      "title": "20个缅北电诈头目和骨干被押解回国",
+      "category": "",
+      "heat": 13.81,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 346,
+      "title": "刘国梁观战孙颖莎",
+      "category": "",
+      "heat": 13.79,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 347,
+      "title": "樊振东为阿尔卡拉斯挑边",
+      "category": "",
+      "heat": 13.76,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 348,
+      "title": "赵丽颖包场肖央出入平安",
+      "category": "",
+      "heat": 13.74,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 349,
+      "title": "周雨彤刘烨互晒合照",
+      "category": "",
+      "heat": 13.72,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 350,
+      "title": "A股上涨你四天赚了多少钱",
+      "category": "",
+      "heat": 13.68,
+      "reads": 1341.1,
+      "discussions": 0.5,
+      "originals": 0.04,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 351,
+      "title": "樊振东中网帅气出场",
+      "category": "",
+      "heat": 13.66,
+      "reads": 8.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 352,
+      "title": "100万房贷每年可节约利息约5600元",
+      "category": "财经",
+      "heat": 13.63,
+      "reads": 175.1,
+      "discussions": 0.02,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 353,
+      "title": "孙楠说宋亚轩是让他吃惊的后辈",
+      "category": "",
+      "heat": 13.63,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 354,
+      "title": "国庆出游的打工人搜爆病号服",
+      "category": "社会",
+      "heat": 13.59,
+      "reads": 101.1,
+      "discussions": 0.12,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 355,
+      "title": "邓紫棋演唱会",
+      "category": "",
+      "heat": 13.4,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 356,
+      "title": "乃万时装周反差感",
+      "category": "明星",
+      "heat": 13.39,
+      "reads": 107.7,
+      "discussions": 0.56,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 357,
+      "title": "虞书欣 允许不开心",
+      "category": "",
+      "heat": 13.33,
+      "reads": 106.3,
+      "discussions": 0.21,
+      "originals": 0.03,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 358,
+      "title": "半熟男女初恋组要be了",
+      "category": "电视剧",
+      "heat": 13.27,
+      "reads": 602.9,
+      "discussions": 0.03,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 359,
+      "title": "檀健次南京演唱会抢票",
+      "category": "",
+      "heat": 13.25,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 360,
+      "title": "表白祖国的N种方式",
+      "category": "",
+      "heat": 13.19,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 361,
+      "title": "如鸢",
+      "category": "游戏",
+      "heat": 13.17,
+      "reads": 139000.0,
+      "discussions": 48.1,
+      "originals": 1.7,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 362,
+      "title": "刘浩存出发巴黎时装周",
+      "category": "",
+      "heat": 13.14,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 363,
+      "title": "酸奶刺客卖不动了吗",
+      "category": "财经",
+      "heat": 13.06,
+      "reads": 333.0,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 364,
+      "title": "最适合懒人的减肥训练",
+      "category": "",
+      "heat": 13.03,
+      "reads": 31.5,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 365,
+      "title": "下调存量房贷利率0.5%左右",
+      "category": "",
+      "heat": 13.01,
+      "reads": 438.8,
+      "discussions": 0.08,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 366,
+      "title": "樊振东奥运会官方8分钟集锦",
+      "category": "社会",
+      "heat": 12.95,
+      "reads": 331.0,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 367,
+      "title": "4天A股市值净增10万亿",
+      "category": "财经",
+      "heat": 12.88,
+      "reads": 932.8,
+      "discussions": 0.48,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 368,
+      "title": "王楚钦给倪夏莲签名",
+      "category": "",
+      "heat": 12.88,
+      "reads": 114.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 369,
+      "title": "王一博攀岩遇暴雨身体险失温",
+      "category": "综艺",
+      "heat": 12.84,
+      "reads": 1427.0,
+      "discussions": 4.8,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 370,
+      "title": "林诗栋3比1博格斯",
+      "category": "",
+      "heat": 12.76,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 371,
+      "title": "以军打死真主党领导人影响有多大",
+      "category": "",
+      "heat": 12.74,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 372,
+      "title": "二十一天 成年人的友情",
+      "category": "",
+      "heat": 12.74,
+      "reads": 157.6,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 373,
+      "title": "罗永浩能分清中杯大杯超大杯了",
+      "category": "财经",
+      "heat": 12.72,
+      "reads": 162.8,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 374,
+      "title": "勋章奖章获得者朴实话语听得泪目",
+      "category": "社会",
+      "heat": 12.69,
+      "reads": 404.4,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 375,
+      "title": "特斯拉德国工厂员工病假率升至17%",
+      "category": "财经",
+      "heat": 12.62,
+      "reads": 231.1,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 376,
+      "title": "镇魂街2穷剧不穷特效",
+      "category": "电视剧",
+      "heat": 12.45,
+      "reads": 83.1,
+      "discussions": 0.45,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 377,
+      "title": "梁洁平衡性好强",
+      "category": "综艺",
+      "heat": 12.32,
+      "reads": 60.4,
+      "discussions": 0.34,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 378,
+      "title": "黄俊捷直播",
+      "category": "",
+      "heat": 12.28,
+      "reads": 1185.8,
+      "discussions": 3.8,
+      "originals": 0.19,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 379,
+      "title": "阿根廷贫困率飙升至近53%",
+      "category": "社会",
+      "heat": 12.21,
+      "reads": 511.6,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 380,
+      "title": "谁教翟潇闻虞书欣这么起名的",
+      "category": "",
+      "heat": 12.11,
+      "reads": 49.9,
+      "discussions": 0.43,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 381,
+      "title": "83岁科学家说要在世界上为国争地位",
+      "category": "社会",
+      "heat": 12.06,
+      "reads": 338.6,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 382,
+      "title": "碧蓝之海第二季",
+      "category": "游戏",
+      "heat": 11.95,
+      "reads": 186.9,
+      "discussions": 0.2,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 383,
+      "title": "孙颖莎首战赛前训练",
+      "category": "体育",
+      "heat": 11.92,
+      "reads": 176.4,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 384,
+      "title": "全力促进房地产市场止跌回稳",
+      "category": "财经",
+      "heat": 11.77,
+      "reads": 130.7,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 385,
+      "title": "华晨宇携中国美院艺术展返场贵阳",
+      "category": "明星",
+      "heat": 11.61,
+      "reads": 422.6,
+      "discussions": 0.42,
+      "originals": 0.07,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 386,
+      "title": "niko锤烂桌子",
+      "category": "游戏",
+      "heat": 11.58,
+      "reads": 219.8,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 387,
+      "title": "王楚钦中国大满贯首战",
+      "category": "",
+      "heat": 11.45,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 388,
+      "title": "Lacoste直播",
+      "category": "",
+      "heat": 11.35,
+      "reads": 67.6,
+      "discussions": 0.2,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 389,
+      "title": "卓沅新疆vlog",
+      "category": "明星",
+      "heat": 11.31,
+      "reads": 145.0,
+      "discussions": 0.08,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 390,
+      "title": "王冰冰 社交破冰技巧",
+      "category": "",
+      "heat": 11.23,
+      "reads": 5.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 391,
+      "title": "警方通报老板将老鼠药注入食品中",
+      "category": "社会",
+      "heat": 11.18,
+      "reads": 64.9,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 392,
+      "title": "哈妮克孜一袭红衣",
+      "category": "",
+      "heat": 10.97,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 393,
+      "title": "成都大风",
+      "category": "",
+      "heat": 10.8,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 394,
+      "title": "cp30",
+      "category": "动漫",
+      "heat": 10.78,
+      "reads": 90000.0,
+      "discussions": 164.7,
+      "originals": 3.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 395,
+      "title": "黎真主党领导人身亡后内塔尼亚胡首发声",
+      "category": "军事",
+      "heat": 10.77,
+      "reads": 527.2,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 396,
+      "title": "半熟男女 渣男装深情",
+      "category": "",
+      "heat": 10.41,
+      "reads": 36.6,
+      "discussions": 0.12,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 397,
+      "title": "李梦偶遇小猪合影被吓到",
+      "category": "",
+      "heat": 10.35,
+      "reads": 278.2,
+      "discussions": 0.63,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 398,
+      "title": "749局北京首映礼",
+      "category": "",
+      "heat": 10.32,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 399,
+      "title": "牛肉价格怎么不牛了",
+      "category": "社会",
+      "heat": 10.31,
+      "reads": 748.0,
+      "discussions": 0.1,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 400,
+      "title": "经常喊累的人建议查查甲状腺",
+      "category": "健康",
+      "heat": 10.08,
+      "reads": 1285.5,
+      "discussions": 0.12,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 401,
+      "title": "执教25年语文老师板书惊艳似印刷",
+      "category": "社会",
+      "heat": 9.98,
+      "reads": 162.9,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 402,
+      "title": "张帅三连胜",
+      "category": "",
+      "heat": 9.98,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 403,
+      "title": "余宇涵打篮球vlog",
+      "category": "明星",
+      "heat": 9.9,
+      "reads": 421.3,
+      "discussions": 1.8,
+      "originals": 0.19,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 404,
+      "title": "孙佳俊真成孤泳者了",
+      "category": "明星",
+      "heat": 8.8,
+      "reads": 1046.4,
+      "discussions": 0.05,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 405,
+      "title": "纳斯鲁拉遇袭身亡后以总理首发声",
+      "category": "",
+      "heat": 8.67,
+      "reads": 892.8,
+      "discussions": 0.06,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 406,
+      "title": "G2逆转",
+      "category": "",
+      "heat": 8.65,
+      "reads": 0.0,
+      "discussions": 0.0,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 407,
+      "title": "金钱至上观念与医院天职存在冲突",
+      "category": "社会",
+      "heat": 8.61,
+      "reads": 265.1,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 408,
+      "title": "周深新歌虚构",
+      "category": "音乐",
+      "heat": 8.41,
+      "reads": 793.3,
+      "discussions": 3.6,
+      "originals": 0.24,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 409,
+      "title": "阿森纳vs莱斯特城",
+      "category": "体育",
+      "heat": 7.42,
+      "reads": 6003.0,
+      "discussions": 2.0,
+      "originals": 0.18,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 410,
+      "title": "77岁老太被野猪咬伤拿刀反杀",
+      "category": "社会",
+      "heat": 7.33,
+      "reads": 5672.4,
+      "discussions": 0.66,
+      "originals": 0.14,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 411,
+      "title": "杨紫收到粉丝编织紫葡萄",
+      "category": "明星",
+      "heat": 7.16,
+      "reads": 1719.6,
+      "discussions": 2.2,
+      "originals": 0.26,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 412,
+      "title": "心动的信号",
+      "category": "综艺",
+      "heat": 6.98,
+      "reads": 2872000.0,
+      "discussions": 5243.8,
+      "originals": 75.4,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 413,
+      "title": "帕尔默半场大四喜",
+      "category": "",
+      "heat": 6.98,
+      "reads": 53.9,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 414,
+      "title": "我国新增工业机器人装机量占全球超50%",
+      "category": "财经",
+      "heat": 6.65,
+      "reads": 220.7,
+      "discussions": 0.02,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 415,
+      "title": "以色列对黎真主党领导人发动空袭现场",
+      "category": "",
+      "heat": 6.5,
+      "reads": 185.2,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 416,
+      "title": "拜仁vs勒沃库森",
+      "category": "体育",
+      "heat": 5.71,
+      "reads": 2385.1,
+      "discussions": 1.2,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 417,
+      "title": "郑钦文中网开门红",
+      "category": "体育",
+      "heat": 5.3,
+      "reads": 2026.2,
+      "discussions": 1.2,
+      "originals": 0.05,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 418,
+      "title": "内塔尼亚胡工作照曝光",
+      "category": "",
+      "heat": 5.18,
+      "reads": 791.5,
+      "discussions": 0.06,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 419,
+      "title": "登月服最动人的设计在手臂和背上",
+      "category": "社会",
+      "heat": 5.18,
+      "reads": 458.3,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 420,
+      "title": "十个勤天熟得让我有些害怕",
+      "category": "",
+      "heat": 5.18,
+      "reads": 104.5,
+      "discussions": 0.04,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 421,
+      "title": "中国登月服上满是中国元素",
+      "category": "社会",
+      "heat": 5.16,
+      "reads": 212.6,
+      "discussions": 0.2,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 422,
+      "title": "以军发言人暗示对黎展开地面行动",
+      "category": "",
+      "heat": 5.15,
+      "reads": 351.7,
+      "discussions": 0.08,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 423,
+      "title": "王俊凯平遥电影展特约策展人",
+      "category": "电影",
+      "heat": 5.15,
+      "reads": 96000.0,
+      "discussions": 1582.8,
+      "originals": 4.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 424,
+      "title": "没有1Tb的胃不敢去山东",
+      "category": "社会",
+      "heat": 5.14,
+      "reads": 397.3,
+      "discussions": 0.06,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 425,
+      "title": "陈少熙 我把自己养的很好",
+      "category": "",
+      "heat": 5.1,
+      "reads": 61.0,
+      "discussions": 0.03,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 426,
+      "title": "金枕榴莲在云南试种成功",
+      "category": "社会",
+      "heat": 5.1,
+      "reads": 1211.6,
+      "discussions": 0.09,
+      "originals": 0.02,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 427,
+      "title": "徐德智称被点名时脑子一片空白",
+      "category": "社会",
+      "heat": 4.99,
+      "reads": 212.4,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 428,
+      "title": "徐德智谈被古特雷斯向王毅会长介绍",
+      "category": "社会",
+      "heat": 4.94,
+      "reads": 193.7,
+      "discussions": 0.01,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 429,
+      "title": "毛不易只在今夜上海演唱会",
+      "category": "音乐",
+      "heat": 4.91,
+      "reads": 3338.5,
+      "discussions": 28.0,
+      "originals": 0.34,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 430,
+      "title": "雪一下任嘉伦的宿命感就来了",
+      "category": "",
+      "heat": 4.88,
+      "reads": 156.2,
+      "discussions": 1.0,
+      "originals": 0.06,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 431,
+      "title": "下一战音乐会",
+      "category": "",
+      "heat": 4.65,
+      "reads": 891.4,
+      "discussions": 3.3,
+      "originals": 0.01,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 432,
+      "title": "英超联赛",
+      "category": "体育",
+      "heat": 3.79,
+      "reads": 1505000.0,
+      "discussions": 351.1,
+      "originals": 9.2,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 433,
+      "title": "五月天成都演唱会",
+      "category": "明星",
+      "heat": 3.78,
+      "reads": 15000.0,
+      "discussions": 12.9,
+      "originals": 2.3,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 434,
+      "title": "披荆斩棘4四公舞台",
+      "category": "综艺",
+      "heat": 3.34,
+      "reads": 1481.8,
+      "discussions": 7.1,
+      "originals": 0.1,
+      "date": "2024-09-29"
+    },
+    {
+      "rank": 435,
+      "title": "乾隆为孔子严选的青铜器太有排面了",
+      "category": "社会",
+      "heat": 2.98,
+      "reads": 279.1,
+      "discussions": 0.06,
+      "originals": 0.0,
+      "date": "2024-09-29"
+    }
+  ]
+}
