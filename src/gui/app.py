@@ -183,9 +183,9 @@ def page_realtime_hot():
 
 
 # -------- 单日数据分析页面 -------- #
-@register_page("单日分析 📈")
+@register_page("单日分析 ")
 def page_daily_analysis():
-    st.title("📈 单日热搜数据分析")
+    st.title("单日热搜数据分析")
     
     # 选择日期
     data_processed_dir = Path("data_processed")
@@ -309,9 +309,9 @@ def page_daily_analysis():
 
 
 # -------- 关键词共现网络页面 -------- #
-@register_page("关键词网络 🌐")
+@register_page("关键词网络")
 def page_keyword_network():
-    st.title("🌐 关键词共现网络分析")
+    st.title("关键词共现网络分析")
     
     network_data_dir = Path("output/word_networks/data")
     

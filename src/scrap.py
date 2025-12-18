@@ -1674,21 +1674,28 @@ with open({repr(tmp_file)}, 'w', encoding='utf-8') as f:
                     try:
                         page.goto(
                             self.base_url,
-                            wait_until="domcontentloaded",
+                            wait_until="networkidle",
                             timeout=60000
                         )
                         self.logger.info("页面加载完成")
                     except Exception as e:
                         self.logger.warning(f"页面加载超时，继续使用已加载内容: {e}")
 
-                    # 等待初始内容加载
-                    page.wait_for_timeout(1500)
+                    # 等待页面完全加载
+                    import random
+                    page.wait_for_timeout(random.randint(3000, 5000))
 
-                    # 榜单页通常无需滚动即可获得 Top50
-                    # 为稳妥，轻微滚动两次触发可能的懒加载
-                    for i in range(2):
-                        page.evaluate("window.scrollBy(0, window.innerHeight)")
-                        page.wait_for_timeout(400)
+                    # 模拟真实用户行为：慢速滚动
+                    for i in range(3):
+                        page.evaluate("window.scrollBy(0, window.innerHeight / 2)")
+                        page.wait_for_timeout(random.randint(800, 1500))
+                    
+                    # 等待表格加载
+                    try:
+                        page.wait_for_selector("table tbody tr", timeout=10000)
+                        self.logger.info("表格元素已加载")
+                    except Exception:
+                        self.logger.warning("未检测到表格元素")
 
                     # 获取最终的页面 HTML
                     html_content = page.content()
