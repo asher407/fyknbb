@@ -8,6 +8,8 @@ from typing import List, Dict, Any
 import pandas as pd
 import streamlit as st
 import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
 
 # 兼容在不同工作目录下运行 Streamlit：确保项目根目录加入 sys.path
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -183,7 +185,7 @@ def page_realtime_hot():
 
 
 # -------- 单日数据分析页面 -------- #
-@register_page("单日分析 ")
+@register_page("单日热搜分析 ")
 def page_daily_analysis():
     st.title("单日热搜数据分析")
     
@@ -309,7 +311,7 @@ def page_daily_analysis():
 
 
 # -------- 关键词共现网络页面 -------- #
-@register_page("关键词网络")
+@register_page("年度关键词网络")
 def page_keyword_network():
     st.title("关键词共现网络分析")
     
@@ -451,10 +453,320 @@ def page_keyword_network():
             st.download_button("📥 下载边数据", csv, f"edges_{selected_year}.csv", "text/csv")
 
 
-# -------- 历史数据可视化页面 -------- #
-@register_page("历史数据可视化")
-def page_history_visualization():
-    st.title("历史数据可视化")
+# -------- 2025年度报告页面 -------- #
+@register_page("2025年度报告")
+def page_annual_report():
+    st.title("2025年度微博热搜分析报告")
+    
+    # 导入年度报告模块
+    try:
+        from src.annual_report import generate_annual_report
+    except ImportError:
+        from annual_report import generate_annual_report
+    
+    # 设置字体
+    try:
+        from src.json_analyzer import setup_font
+        setup_font()
+    except:
+        pass
+    
+    # 标签页
+    tab1, tab2, tab3, tab4 = st.tabs(["📊 数据总览", "📈 热搜排名", "🔗 关键词分析", "📅 时间分布"])
+    
+    # 生成年度报告
+    with st.spinner("正在生成年度报告..."):
+        report = generate_annual_report("data")
+    
+    if "error" in report:
+        st.error(f"报告生成失败: {report['error']}")
+        st.info("请确保 data 目录中有 JSON 数据文件")
+        return
+    
+    summary = report.get("summary", {})
+    
+    # Tab 1: 数据总览
+    with tab1:
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            st.metric(
+                "📊 总记录数",
+                f"{summary.get('total_records', 0):,}",
+                delta="条热搜"
+            )
+        
+        with col2:
+            st.metric(
+                "🎯 独特标题",
+                f"{summary.get('total_unique_titles', 0):,}",
+                delta="个"
+            )
+        
+        with col3:
+            heat_stats = summary.get('heat_stats', {})
+            st.metric(
+                "🔥 平均热度",
+                f"{heat_stats.get('mean', 0):.1f}",
+                delta=f"中位数: {heat_stats.get('median', 0):.1f}"
+            )
+        
+        with col4:
+            date_range = summary.get('date_range', {})
+            st.metric(
+                "📅 统计周期",
+                f"{date_range.get('start', 'N/A')} ~ {date_range.get('end', 'N/A')}",
+                delta="共计"
+            )
+        
+        st.divider()
+        
+        # 热度统计详情
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.subheader("🔥 热度统计详情")
+            heat_stats = summary.get('heat_stats', {})
+            
+            stats_table = pd.DataFrame({
+                "指标": ["最高热度", "最低热度", "平均热度", "中位数", "标准差"],
+                "数值": [
+                    f"{heat_stats.get('max', 0):.1f}",
+                    f"{heat_stats.get('min', 0):.1f}",
+                    f"{heat_stats.get('mean', 0):.1f}",
+                    f"{heat_stats.get('median', 0):.1f}",
+                    f"{heat_stats.get('std', 0):.1f}"
+                ]
+            })
+            
+            st.dataframe(stats_table, use_container_width=True, hide_index=True)
+        
+        with col2:
+            st.subheader("📅 时间分布")
+            temporal_dist = report.get('temporal_distribution', {})
+            
+            if temporal_dist:
+                # 创建时间分布图
+                months = sorted(temporal_dist.keys())
+                counts = [temporal_dist[m] for m in months]
+                
+                import plotly.express as px
+                
+                fig = px.line(
+                    x=months,
+                    y=counts,
+                    markers=True,
+                    title="每月热搜数量趋势",
+                    labels={"x": "月份", "y": "热搜数量"}
+                )
+                fig.update_xaxes(tickangle=45)
+                st.plotly_chart(fig, use_container_width=True)
+    
+    # Tab 2: 热搜排名
+    with tab2:
+        st.subheader("🏆 全年热度最高的10条热搜")
+        
+        top_titles = summary.get('top_10_titles', [])
+        
+        if top_titles:
+            # 创建排名表
+            rank_data = []
+            for i, item in enumerate(top_titles, 1):
+                rank_data.append({
+                    "排名": i,
+                    "标题": item.get('title', ''),
+                    "热度": f"{item.get('heat', 0):.1f}",
+                    "在榜排名": item.get('rank', 'N/A')
+                })
+            
+            df_top = pd.DataFrame(rank_data)
+            st.dataframe(df_top, use_container_width=True, hide_index=True)
+            
+            # 热度柱状图
+            import plotly.express as px
+            
+            fig = px.bar(
+                x=list(range(1, len(top_titles) + 1)),
+                y=[item.get('heat', 0) for item in top_titles],
+                labels={"x": "排名", "y": "热度值"},
+                title="热度排名前10的热搜",
+                color=[item.get('heat', 0) for item in top_titles],
+                color_continuous_scale="Reds",
+                text=[item.get('title', '')[:20] for item in top_titles]
+            )
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("暂无热搜排名数据")
+    
+    # Tab 3: 关键词分析
+    with tab3:
+        st.subheader("🔑 关键词频率分析")
+        
+        keyword_freq = summary.get('keyword_frequency', {})
+        
+        if keyword_freq:
+            # 关键词排行
+            col1, col2 = st.columns([2, 1])
+            
+            with col1:
+                # 热力图
+                import plotly.express as px
+                
+                top_keywords = dict(sorted(keyword_freq.items(), key=lambda x: x[1], reverse=True)[:20])
+                
+                fig = px.bar(
+                    x=list(top_keywords.values()),
+                    y=list(top_keywords.keys()),
+                    orientation='h',
+                    title="关键词频率 Top 20",
+                    labels={"x": "出现次数", "y": "关键词"},
+                    color=list(top_keywords.values()),
+                    color_continuous_scale="Viridis"
+                )
+                fig.update_yaxes(automargin=True)
+                st.plotly_chart(fig, use_container_width=True)
+            
+            with col2:
+                st.metric("总关键词数", len(keyword_freq))
+                st.metric("最频繁关键词", max(keyword_freq, key=keyword_freq.get) if keyword_freq else "N/A")
+                st.metric("最高频率", max(keyword_freq.values()) if keyword_freq else 0)
+            
+            # 关键词表
+            st.markdown("#### 📋 关键词列表")
+            keyword_df = pd.DataFrame([
+                {"关键词": k, "频率": v} 
+                for k, v in sorted(keyword_freq.items(), key=lambda x: x[1], reverse=True)
+            ])
+            st.dataframe(keyword_df, use_container_width=True, height=400)
+        else:
+            st.info("暂无关键词数据")
+        
+        # 关键词网络
+        st.markdown("---")
+        st.subheader("🔗 关键词共现网络")
+        
+        keyword_network = report.get('keyword_network', {})
+        
+        if keyword_network:
+            st.info(f"共检测到 {len(keyword_network)} 个核心关键词节点")
+            
+            # 显示网络数据
+            network_data = []
+            for keyword, related in keyword_network.items():
+                network_data.append({
+                    "中心词": keyword,
+                    "相关词": ", ".join(related),
+                    "连接数": len(related)
+                })
+            
+            df_network = pd.DataFrame(network_data).sort_values('连接数', ascending=False)
+            st.dataframe(df_network, use_container_width=True, hide_index=True)
+        else:
+            st.info("暂无关键词网络数据")
+    
+    # Tab 4: 时间分布
+    with tab4:
+        st.subheader("📅 按时间分布统计")
+        
+        temporal_dist = report.get('temporal_distribution', {})
+        
+        if temporal_dist:
+            col1, col2 = st.columns([2, 1])
+            
+            with col1:
+                # 月度分布表
+                months = sorted(temporal_dist.keys())
+                month_data = [
+                    {"月份": m, "热搜数": temporal_dist[m]}
+                    for m in months
+                ]
+                
+                df_temporal = pd.DataFrame(month_data)
+                st.dataframe(df_temporal, use_container_width=True, hide_index=True)
+            
+            with col1:
+                # 累积图
+                import plotly.graph_objects as go
+                
+                cumulative = np.cumsum([temporal_dist[m] for m in months])
+                
+                fig = go.Figure()
+                fig.add_trace(go.Scatter(
+                    x=months,
+                    y=cumulative,
+                    mode='lines+markers',
+                    fill='tozeroy',
+                    name='累积热搜数'
+                ))
+                fig.update_layout(
+                    title="热搜数累积趋势",
+                    xaxis_title="月份",
+                    yaxis_title="累积数量",
+                    hovermode='x unified'
+                )
+                fig.update_xaxes(tickangle=45)
+                st.plotly_chart(fig, use_container_width=True)
+            
+            with col2:
+                st.metric("平均月度", f"{np.mean(list(temporal_dist.values())):.0f}")
+                st.metric("最高月份", f"{max(temporal_dist.values())}")
+                st.metric("最低月份", f"{min(temporal_dist.values())}")
+        else:
+            st.info("暂无时间分布数据")
+    
+    # 底部下载报告
+    st.divider()
+    st.markdown("### 💾 导出报告")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        # 导出 JSON
+        json_report = json.dumps(report, ensure_ascii=False, indent=2)
+        st.download_button(
+            label="📥 下载完整报告 (JSON)",
+            data=json_report.encode('utf-8'),
+            file_name="annual_report_2025.json",
+            mime="application/json"
+        )
+    
+    with col2:
+        # 导出简要文本
+        text_report = f"""
+2025年度微博热搜分析报告
+{'='*60}
+
+生成时间: {report.get('report_date', 'N/A')}
+
+【数据概览】
+总热搜记录数: {summary.get('total_records', 0)} 条
+独特热搜数: {summary.get('total_unique_titles', 0)} 个
+统计时间: {summary.get('date_range', {}).get('start', 'N/A')} ~ {summary.get('date_range', {}).get('end', 'N/A')}
+
+【热度统计】
+最高热度: {summary.get('heat_stats', {}).get('max', 0):.1f}
+最低热度: {summary.get('heat_stats', {}).get('min', 0):.1f}
+平均热度: {summary.get('heat_stats', {}).get('mean', 0):.1f}
+中位数: {summary.get('heat_stats', {}).get('median', 0):.1f}
+
+【Top10热搜】
+"""
+        for i, item in enumerate(summary.get('top_10_titles', []), 1):
+            text_report += f"{i}. {item.get('title', 'N/A')} (热度: {item.get('heat', 0):.1f})\n"
+        
+        st.download_button(
+            label="📥 下载简要报告 (TXT)",
+            data=text_report.encode('utf-8'),
+            file_name="annual_report_2025_summary.txt",
+            mime="text/plain"
+        )
+
+
+# -------- 词云图可视化页面 -------- #
+@register_page("词云图可视化")
+def page_word_cloud_visualization():
+    st.title("词云图可视化")
 
     import os
     from pathlib import Path
@@ -571,13 +883,6 @@ def page_history_visualization():
             st.error(f"词云图文件不存在：{image_path}")
     else:
         st.warning("请选择要查看的时间范围")
-
-
-@register_page("数据处理工具")
-def page_tools_placeholder():
-    st.title("数据处理工具（占位）")
-    st.info("后续可添加清洗、转换与导出工具。")
-
 
 @register_page("JSON数据分析")
 def page_json_analysis():
@@ -784,21 +1089,21 @@ def main():
         - 可下载 JSON 数据
         """)
     
-    with st.sidebar.expander("单日分析", expanded=False):
+    with st.sidebar.expander("单日热搜分析", expanded=False):
         st.markdown("""
         - 选择日期分析单日数据
         - 调用 json_analyzer 模块
         - 支持数据导出
         """)
     
-    with st.sidebar.expander("关键词网络", expanded=False):
+    with st.sidebar.expander("年度关键词网络", expanded=False):
         st.markdown("""
         - 查看关键词共现网络
         - 节点和边的统计数据
         - 导出数据为 CSV
         """)
     
-    with st.sidebar.expander("历史数据可视化", expanded=False):
+    with st.sidebar.expander("词云图可视化", expanded=False):
         st.markdown("""
         - 查看历史词云图
         - 按关键词/类型分析
