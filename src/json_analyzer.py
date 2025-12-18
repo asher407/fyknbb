@@ -469,9 +469,9 @@ def generate_charts(
         )
 
         # 添加标题和标签
-        plt.title(f"{date_str} 热度排名前20的热搜", fontsize=16, fontweight="bold")
-        plt.xlabel("热度值", fontsize=12)
-        plt.yticks(range(len(top_20)), top_20["title"], fontsize=10)
+        plt.title(f"{date_str} 热度排名前20的热搜", fontsize=16, fontweight="bold", fontproperties=GLOBAL_FONT_PROP)
+        plt.xlabel("热度值", fontsize=12, fontproperties=GLOBAL_FONT_PROP)
+        plt.yticks(range(len(top_20)), top_20["title"], fontsize=10, fontproperties=GLOBAL_FONT_PROP)
 
         # 在条形图上添加数值标签
         for i, (bar, heat) in enumerate(zip(bars, top_20["heat"])):
