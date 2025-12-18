@@ -35,7 +35,7 @@
     {
       "rank": 4,
       "title": "藕饼",
-      "category": "娱乐",
+      "category": "",
       "heat": 192.22,
       "reads": 247000.0,
       "discussions": 126.0,
@@ -55,7 +55,7 @@
     {
       "rank": 6,
       "title": "美国一架客机坠河",
-      "category": "社会",
+      "category": "",
       "heat": 152.86,
       "reads": 7755.2,
       "discussions": 1.0,
@@ -125,7 +125,7 @@
     {
       "rank": 13,
       "title": "网络中国节",
-      "category": "社会",
+      "category": "",
       "heat": 104.11,
       "reads": 146000.0,
       "discussions": 152.7,
