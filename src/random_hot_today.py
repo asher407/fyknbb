@@ -25,7 +25,16 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from data_query import DataQuery
+# 处理导入路径
+try:
+    from .data_query import DataQuery
+except ImportError:
+    try:
+        from data_query import DataQuery
+    except ImportError:
+        # 如果还是找不到，从兄弟目录导入
+        sys.path.insert(0, str(Path(__file__).parent))
+        from data_query import DataQuery
 
 
 class RandomHotToday:
