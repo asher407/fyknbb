@@ -210,9 +210,9 @@ def page_realtime_hot():
 
 
 # -------- 单日数据分析页面 -------- #
-@register_page("单日热搜分析 ")
+@register_page("单日热搜数据可视化")
 def page_daily_analysis():
-    st.title("单日热搜数据分析")
+    st.title("单日热搜数据可视化")
 
     # 选择日期
     data_processed_dir = Path("data_processed")
@@ -344,9 +344,9 @@ def page_daily_analysis():
 
 
 # -------- 关键词共现网络页面 -------- #
-@register_page("年度关键词网络")
+@register_page("年度关键词网络图")
 def page_keyword_network():
-    st.title("关键词共现网络分析")
+    st.title("年度关键词网络图")
 
     network_data_dir = Path("output/word_networks/data")
 
@@ -831,9 +831,9 @@ def page_annual_report():
 
 
 # -------- 词云图可视化页面 -------- #
-@register_page("词云图可视化")
+@register_page("月度热搜词云图")
 def page_word_cloud_visualization():
-    st.title("词云图可视化")
+    st.title("月度热搜词云图")
 
     import os
     from pathlib import Path
@@ -950,193 +950,6 @@ def page_word_cloud_visualization():
             st.error(f"词云图文件不存在：{image_path}")
     else:
         st.warning("请选择要查看的时间范围")
-
-
-@register_page("JSON数据分析")
-def page_json_analysis():
-    st.title("JSON数据分析工具")
-    st.markdown("""
-    本工具用于分析微博热搜JSON数据，生成统计图表和可视化报告。
-
-    **支持的数据格式：**
-    - 原始数据格式（包含 `date`, `count`, `data` 字段）
-    - 查询结果格式（包含 `query_time`, `result_count`, `results` 字段）
-    - 数据列表格式
-    """)
-
-    # 文件上传区域
-    st.markdown("### 1. 选择数据文件")
-    uploaded_file = st.file_uploader(
-        "上传JSON文件", type=["json"], help="选择要分析的JSON数据文件"
-    )
-
-    # 或者输入文件路径
-    col1, col2 = st.columns(2)
-    with col1:
-        file_path = st.text_input(
-            "或输入文件路径",
-            placeholder="例如：data/2025-01/2025-01-01.json",
-            help="相对于项目根目录的路径",
-        )
-
-    with col2:
-        font_name = st.text_input(
-            "图表字体", value="Maple Mono NF CN", help="用于图表显示的字体名称"
-        )
-
-    # 分析选项
-    st.markdown("### 2. 分析选项")
-    col3, col4, col5 = st.columns(3)
-    with col3:
-        generate_charts = st.checkbox("生成图表", value=True)
-    with col4:
-        generate_report = st.checkbox("生成分析报告", value=True)
-    with col5:
-        high_resolution = st.checkbox("高分辨率图表", value=True)
-
-    # 执行分析按钮
-    st.markdown("### 3. 执行分析")
-    analyze_button = st.button("🚀 开始分析", type="primary", use_container_width=True)
-
-    if analyze_button:
-        # 确定要分析的文件
-        json_file = None
-        if uploaded_file is not None:
-            # 保存上传的文件到临时位置
-            import os
-            import tempfile
-
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".json") as tmp_file:
-                tmp_file.write(uploaded_file.getvalue())
-                json_file = tmp_file.name
-                st.info(f"已上传文件: {uploaded_file.name}")
-        elif file_path and os.path.exists(file_path):
-            json_file = file_path
-            st.info(f"使用文件: {file_path}")
-        else:
-            st.error("请上传文件或输入有效的文件路径")
-            return
-
-        if json_file:
-            try:
-                # 设置字体
-                from src.json_analyzer import setup_font
-
-                setup_font(font_name)
-
-                # 执行分析
-                with st.spinner("正在分析数据，请稍候..."):
-                    from src.json_analyzer import analyze_json
-
-                    # 调用分析函数
-                    analyze_json(json_file)
-
-                st.success("✅ 分析完成！")
-
-                # 显示输出信息
-                st.markdown("### 4. 分析结果")
-
-                # 获取输出目录（基于文件名）
-                import datetime
-                from pathlib import Path
-
-                file_name = Path(json_file).stem
-                output_dir = Path("output") / f"{file_name}"
-
-                if output_dir.exists():
-                    st.info(f"分析结果已保存到: `{output_dir}`")
-
-                    # 列出生成的图表文件
-                    png_files = list(output_dir.glob("*.png"))
-                    if png_files:
-                        st.markdown("**生成的图表：**")
-                        cols = st.columns(3)
-                        for idx, png_file in enumerate(png_files[:6]):  # 最多显示6个
-                            with cols[idx % 3]:
-                                st.image(
-                                    str(png_file),
-                                    caption=png_file.name,
-                                    use_column_width=True,
-                                )
-
-                        if len(png_files) > 6:
-                            st.info(f"还有 {len(png_files) - 6} 个图表未显示")
-
-                    # 检查分析报告
-                    report_file = output_dir / "analysis_report.txt"
-                    if report_file.exists():
-                        with open(report_file, "r", encoding="utf-8") as f:
-                            report_content = f.read()
-
-                        with st.expander("📄 查看分析报告", expanded=False):
-                            st.text(report_content)
-
-                        # 下载按钮
-                        st.download_button(
-                            label="📥 下载分析报告",
-                            data=report_content,
-                            file_name="analysis_report.txt",
-                            mime="text/plain",
-                        )
-
-                    # 提供下载所有结果的选项
-                    st.markdown("**下载所有结果：**")
-
-                    # 创建ZIP文件
-                    import io
-                    import zipfile
-
-                    zip_buffer = io.BytesIO()
-                    with zipfile.ZipFile(
-                        zip_buffer, "w", zipfile.ZIP_DEFLATED
-                    ) as zip_file:
-                        for file_path in output_dir.glob("*"):
-                            if file_path.is_file():
-                                zip_file.write(file_path, file_path.name)
-
-                    zip_buffer.seek(0)
-
-                    st.download_button(
-                        label="📦 下载所有图表和报告 (ZIP)",
-                        data=zip_buffer,
-                        file_name=f"analysis_results_{file_name}.zip",
-                        mime="application/zip",
-                    )
-
-                # 清理临时文件
-                if uploaded_file is not None:
-                    import os
-
-                    os.unlink(json_file)
-
-            except Exception as e:
-                st.error(f"分析过程中出错: {str(e)}")
-                import traceback
-
-                with st.expander("查看错误详情"):
-                    st.code(traceback.format_exc())
-
-    # 示例数据
-    with st.expander("📋 查看示例JSON格式", expanded=False):
-        st.code(
-            """{
-    "date": "2025-01-01",
-    "count": 50,
-    "data": [
-        {
-            "rank": 1,
-            "title": "示例热搜标题",
-            "category": "明星",
-            "heat": 1234567.8,
-            "reads": 9876543,
-            "discussions": 12345,
-            "originals": 6789
-        }
-        // ... 更多数据
-    ]
-}""",
-            language="json",
-        )
 
 
 # -------- 去年今日页面 -------- #
@@ -1334,9 +1147,9 @@ def page_random_hot_today():
 
 
 # -------- 高级数据查询页面 -------- #
-@register_page("高级数据查询")
+@register_page("智慧搜索")
 def page_advanced_query():
-    st.title("高级数据查询系统")
+    st.title("智慧搜索系统")
     st.markdown("""
         本工具提供多条件数据查询功能，支持日期范围、分类筛选、热度范围、排序等多种条件。
         查询结果将自动保存为JSON文件，并进行数据分析生成可视化图表。
@@ -1664,10 +1477,214 @@ def page_advanced_query():
         """)
 
 
+# -------- JSON数据分析页面 -------- #
+@register_page("JSON数据分析")
+def page_json_analysis():
+    st.title("JSON数据分析工具")
+    st.markdown("""
+    本工具用于分析微博热搜JSON数据，生成统计图表和可视化报告。
+
+    **支持的数据格式：**
+    - 原始数据格式（包含 `date`, `count`, `data` 字段）
+    - 查询结果格式（包含 `query_time`, `result_count`, `results` 字段）
+    - 数据列表格式
+    """)
+
+    # 文件上传区域
+    st.markdown("### 1. 选择数据文件")
+    uploaded_file = st.file_uploader(
+        "上传JSON文件", type=["json"], help="选择要分析的JSON数据文件"
+    )
+
+    # 或者输入文件路径
+    col1, col2 = st.columns(2)
+    with col1:
+        file_path = st.text_input(
+            "或输入文件路径",
+            placeholder="例如：data/2025-01/2025-01-01.json",
+            help="相对于项目根目录的路径",
+        )
+
+    with col2:
+        font_name = st.text_input(
+            "图表字体", value="Maple Mono NF CN", help="用于图表显示的字体名称"
+        )
+
+    # 分析选项
+    st.markdown("### 2. 分析选项")
+    col3, col4, col5 = st.columns(3)
+    with col3:
+        generate_charts = st.checkbox("生成图表", value=True)
+    with col4:
+        generate_report = st.checkbox("生成分析报告", value=True)
+    with col5:
+        high_resolution = st.checkbox("高分辨率图表", value=True)
+
+    # 执行分析按钮
+    st.markdown("### 3. 执行分析")
+    analyze_button = st.button("🚀 开始分析", type="primary", use_container_width=True)
+
+    if analyze_button:
+        # 确定要分析的文件
+        json_file = None
+        if uploaded_file is not None:
+            # 保存上传的文件到临时位置
+            import os
+            import tempfile
+
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".json") as tmp_file:
+                tmp_file.write(uploaded_file.getvalue())
+                json_file = tmp_file.name
+                st.info(f"已上传文件: {uploaded_file.name}")
+        elif file_path and os.path.exists(file_path):
+            json_file = file_path
+            st.info(f"使用文件: {file_path}")
+        else:
+            st.error("请上传文件或输入有效的文件路径")
+            return
+
+        if json_file:
+            try:
+                # 设置字体
+                from src.json_analyzer import setup_font
+
+                setup_font(font_name)
+
+                # 执行分析
+                with st.spinner("正在分析数据，请稍候..."):
+                    from src.json_analyzer import analyze_json
+
+                    # 调用分析函数
+                    analyze_json(json_file)
+
+                st.success("✅ 分析完成！")
+
+                # 显示输出信息
+                st.markdown("### 4. 分析结果")
+
+                # 获取输出目录（基于文件名）
+                import datetime
+                from pathlib import Path
+
+                file_name = Path(json_file).stem
+                output_dir = Path("output") / f"{file_name}"
+
+                if output_dir.exists():
+                    st.info(f"分析结果已保存到: `{output_dir}`")
+
+                    # 列出生成的图表文件
+                    png_files = list(output_dir.glob("*.png"))
+                    if png_files:
+                        st.markdown("**生成的图表：**")
+                        cols = st.columns(3)
+                        for idx, png_file in enumerate(png_files[:6]):  # 最多显示6个
+                            with cols[idx % 3]:
+                                st.image(
+                                    str(png_file),
+                                    caption=png_file.name,
+                                    use_column_width=True,
+                                )
+
+                        if len(png_files) > 6:
+                            st.info(f"还有 {len(png_files) - 6} 个图表未显示")
+
+                    # 检查分析报告
+                    report_file = output_dir / "analysis_report.txt"
+                    if report_file.exists():
+                        with open(report_file, "r", encoding="utf-8") as f:
+                            report_content = f.read()
+
+                        with st.expander("📄 查看分析报告", expanded=False):
+                            st.text(report_content)
+
+                        # 下载按钮
+                        st.download_button(
+                            label="📥 下载分析报告",
+                            data=report_content,
+                            file_name="analysis_report.txt",
+                            mime="text/plain",
+                        )
+
+                    # 提供下载所有结果的选项
+                    st.markdown("**下载所有结果：**")
+
+                    # 创建ZIP文件
+                    import io
+                    import zipfile
+
+                    zip_buffer = io.BytesIO()
+                    with zipfile.ZipFile(
+                        zip_buffer, "w", zipfile.ZIP_DEFLATED
+                    ) as zip_file:
+                        for file_path in output_dir.glob("*"):
+                            if file_path.is_file():
+                                zip_file.write(file_path, file_path.name)
+
+                    zip_buffer.seek(0)
+
+                    st.download_button(
+                        label="📦 下载所有图表和报告 (ZIP)",
+                        data=zip_buffer,
+                        file_name=f"analysis_results_{file_name}.zip",
+                        mime="application/zip",
+                    )
+
+                # 清理临时文件
+                if uploaded_file is not None:
+                    import os
+
+                    os.unlink(json_file)
+
+            except Exception as e:
+                st.error(f"分析过程中出错: {str(e)}")
+                import traceback
+
+                with st.expander("查看错误详情"):
+                    st.code(traceback.format_exc())
+
+    # 示例数据
+    with st.expander("📋 查看示例JSON格式", expanded=False):
+        st.code(
+            """{
+    "date": "2025-01-01",
+    "count": 50,
+    "data": [
+        {
+            "rank": 1,
+            "title": "示例热搜标题",
+            "category": "明星",
+            "heat": 1234567.8,
+            "reads": 9876543,
+            "discussions": 12345,
+            "originals": 6789
+        }
+        // ... 更多数据
+    ]
+}""",
+            language="json",
+        )
+
+
 # -------- 主入口 -------- #
 def main():
     st.sidebar.title("功能导航")
-    page_name = st.sidebar.selectbox("选择页面", options=list(PAGES.keys()))
+    
+    # 定义页面显示顺序
+    page_order = [
+        "2025年度报告",
+        "智慧搜索",
+        "实时热搜 Top50",
+        "年度关键词网络图",
+        "月度热搜词云图",
+        "去年今日",
+        "单日热搜数据可视化",
+        "JSON数据分析"
+    ]
+    
+    # 只显示已注册的页面
+    available_pages = [page for page in page_order if page in PAGES]
+    
+    page_name = st.sidebar.selectbox("选择页面", options=available_pages)
 
     # 添加侧边栏信息
     st.sidebar.markdown("---")
