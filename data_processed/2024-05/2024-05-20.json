@@ -10,7 +10,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 100.0,
+      "normalized_metrics": {
+        "heat": 1.0,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 2,
@@ -20,7 +27,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 61.32,
+      "normalized_metrics": {
+        "heat": 0.6132,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 3,
@@ -30,7 +44,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 50.27,
+      "normalized_metrics": {
+        "heat": 0.5027,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 4,
@@ -40,7 +61,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 40.83,
+      "normalized_metrics": {
+        "heat": 0.4083,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 5,
@@ -50,7 +78,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 38.63,
+      "normalized_metrics": {
+        "heat": 0.3863,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 6,
@@ -60,7 +95,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 35.67,
+      "normalized_metrics": {
+        "heat": 0.3567,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 7,
@@ -70,7 +112,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 31.28,
+      "normalized_metrics": {
+        "heat": 0.3128,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 8,
@@ -80,7 +129,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 30.91,
+      "normalized_metrics": {
+        "heat": 0.3091,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 9,
@@ -90,7 +146,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 28.18,
+      "normalized_metrics": {
+        "heat": 0.2818,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 10,
@@ -100,7 +163,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 28.07,
+      "normalized_metrics": {
+        "heat": 0.2807,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 11,
@@ -110,7 +180,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 27.69,
+      "normalized_metrics": {
+        "heat": 0.2769,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 12,
@@ -120,7 +197,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 27.51,
+      "normalized_metrics": {
+        "heat": 0.2751,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 13,
@@ -130,7 +214,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 21.02,
+      "normalized_metrics": {
+        "heat": 0.2102,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 14,
@@ -140,7 +231,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 19.84,
+      "normalized_metrics": {
+        "heat": 0.1984,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 15,
@@ -150,7 +248,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 19.23,
+      "normalized_metrics": {
+        "heat": 0.1923,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 16,
@@ -160,7 +265,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 19.13,
+      "normalized_metrics": {
+        "heat": 0.1913,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 17,
@@ -170,7 +282,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 19.06,
+      "normalized_metrics": {
+        "heat": 0.1906,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 18,
@@ -180,7 +299,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 17.72,
+      "normalized_metrics": {
+        "heat": 0.1772,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 19,
@@ -190,7 +316,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 17.34,
+      "normalized_metrics": {
+        "heat": 0.1734,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 20,
@@ -200,7 +333,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 16.77,
+      "normalized_metrics": {
+        "heat": 0.1677,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 21,
@@ -210,7 +350,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 16.06,
+      "normalized_metrics": {
+        "heat": 0.1606,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 22,
@@ -220,7 +367,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 15.71,
+      "normalized_metrics": {
+        "heat": 0.1571,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 23,
@@ -230,7 +384,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 15.41,
+      "normalized_metrics": {
+        "heat": 0.1541,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 24,
@@ -240,7 +401,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 15.23,
+      "normalized_metrics": {
+        "heat": 0.1523,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 25,
@@ -250,7 +418,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 14.84,
+      "normalized_metrics": {
+        "heat": 0.1484,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 26,
@@ -260,7 +435,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 14.23,
+      "normalized_metrics": {
+        "heat": 0.1423,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 27,
@@ -270,7 +452,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 14.1,
+      "normalized_metrics": {
+        "heat": 0.141,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 28,
@@ -280,7 +469,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 14.04,
+      "normalized_metrics": {
+        "heat": 0.1404,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 29,
@@ -290,7 +486,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 13.35,
+      "normalized_metrics": {
+        "heat": 0.1335,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 30,
@@ -300,7 +503,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 11.76,
+      "normalized_metrics": {
+        "heat": 0.1176,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 31,
@@ -310,7 +520,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 11.25,
+      "normalized_metrics": {
+        "heat": 0.1125,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 32,
@@ -320,7 +537,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 10.8,
+      "normalized_metrics": {
+        "heat": 0.108,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 33,
@@ -330,7 +554,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 9.97,
+      "normalized_metrics": {
+        "heat": 0.0997,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 34,
@@ -340,7 +571,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 9.94,
+      "normalized_metrics": {
+        "heat": 0.0994,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 35,
@@ -350,7 +588,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 9.9,
+      "normalized_metrics": {
+        "heat": 0.099,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 36,
@@ -360,7 +605,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 9.89,
+      "normalized_metrics": {
+        "heat": 0.0989,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 37,
@@ -370,7 +622,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 9.87,
+      "normalized_metrics": {
+        "heat": 0.0987,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 38,
@@ -380,7 +639,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 9.09,
+      "normalized_metrics": {
+        "heat": 0.0909,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 39,
@@ -390,7 +656,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 8.84,
+      "normalized_metrics": {
+        "heat": 0.0884,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 40,
@@ -400,7 +673,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 8.81,
+      "normalized_metrics": {
+        "heat": 0.0881,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 41,
@@ -410,7 +690,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 8.79,
+      "normalized_metrics": {
+        "heat": 0.0879,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 42,
@@ -420,7 +707,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 8.77,
+      "normalized_metrics": {
+        "heat": 0.0877,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 43,
@@ -430,7 +724,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 8.61,
+      "normalized_metrics": {
+        "heat": 0.0861,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 44,
@@ -440,7 +741,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 8.2,
+      "normalized_metrics": {
+        "heat": 0.082,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 45,
@@ -450,7 +758,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 8.04,
+      "normalized_metrics": {
+        "heat": 0.0804,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 46,
@@ -460,7 +775,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 7.68,
+      "normalized_metrics": {
+        "heat": 0.0768,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 47,
@@ -470,7 +792,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 7.64,
+      "normalized_metrics": {
+        "heat": 0.0764,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 48,
@@ -480,7 +809,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 7.14,
+      "normalized_metrics": {
+        "heat": 0.0714,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 49,
@@ -490,7 +826,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 6.8,
+      "normalized_metrics": {
+        "heat": 0.068,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 50,
@@ -500,7 +843,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 6.71,
+      "normalized_metrics": {
+        "heat": 0.0671,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 51,
@@ -510,7 +860,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 6.7,
+      "normalized_metrics": {
+        "heat": 0.067,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 52,
@@ -520,7 +877,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 6.69,
+      "normalized_metrics": {
+        "heat": 0.0669,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 53,
@@ -530,7 +894,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 6.58,
+      "normalized_metrics": {
+        "heat": 0.0658,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 54,
@@ -540,7 +911,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 6.54,
+      "normalized_metrics": {
+        "heat": 0.0654,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 55,
@@ -550,7 +928,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 6.44,
+      "normalized_metrics": {
+        "heat": 0.0644,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 56,
@@ -560,7 +945,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 5.5,
+      "normalized_metrics": {
+        "heat": 0.055,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 57,
@@ -570,7 +962,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 5.0,
+      "normalized_metrics": {
+        "heat": 0.05,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 58,
@@ -580,7 +979,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 4.94,
+      "normalized_metrics": {
+        "heat": 0.0494,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 59,
@@ -590,7 +996,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 4.91,
+      "normalized_metrics": {
+        "heat": 0.0491,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 60,
@@ -600,7 +1013,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 4.85,
+      "normalized_metrics": {
+        "heat": 0.0485,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 61,
@@ -610,7 +1030,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 4.77,
+      "normalized_metrics": {
+        "heat": 0.0477,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 62,
@@ -620,7 +1047,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 4.5,
+      "normalized_metrics": {
+        "heat": 0.045,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 63,
@@ -630,7 +1064,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 4.05,
+      "normalized_metrics": {
+        "heat": 0.0405,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 64,
@@ -640,7 +1081,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 4.01,
+      "normalized_metrics": {
+        "heat": 0.0401,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 65,
@@ -650,7 +1098,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.81,
+      "normalized_metrics": {
+        "heat": 0.0381,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 66,
@@ -660,7 +1115,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.67,
+      "normalized_metrics": {
+        "heat": 0.0367,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 67,
@@ -670,7 +1132,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.66,
+      "normalized_metrics": {
+        "heat": 0.0366,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 68,
@@ -680,7 +1149,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.61,
+      "normalized_metrics": {
+        "heat": 0.0361,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 69,
@@ -690,7 +1166,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.54,
+      "normalized_metrics": {
+        "heat": 0.0354,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 70,
@@ -700,7 +1183,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.48,
+      "normalized_metrics": {
+        "heat": 0.0348,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 71,
@@ -710,7 +1200,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.47,
+      "normalized_metrics": {
+        "heat": 0.0347,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 72,
@@ -720,7 +1217,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.43,
+      "normalized_metrics": {
+        "heat": 0.0343,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 73,
@@ -730,7 +1234,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.39,
+      "normalized_metrics": {
+        "heat": 0.0339,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 74,
@@ -740,7 +1251,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.37,
+      "normalized_metrics": {
+        "heat": 0.0337,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 75,
@@ -750,7 +1268,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.24,
+      "normalized_metrics": {
+        "heat": 0.0324,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 76,
@@ -760,7 +1285,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.18,
+      "normalized_metrics": {
+        "heat": 0.0318,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 77,
@@ -770,7 +1302,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 3.05,
+      "normalized_metrics": {
+        "heat": 0.0305,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 78,
@@ -780,7 +1319,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 2.94,
+      "normalized_metrics": {
+        "heat": 0.0294,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 79,
@@ -790,7 +1336,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 2.56,
+      "normalized_metrics": {
+        "heat": 0.0256,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 80,
@@ -800,7 +1353,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 2.43,
+      "normalized_metrics": {
+        "heat": 0.0243,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 81,
@@ -810,7 +1370,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 2.31,
+      "normalized_metrics": {
+        "heat": 0.0231,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 82,
@@ -820,7 +1387,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 2.2,
+      "normalized_metrics": {
+        "heat": 0.022,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 83,
@@ -830,7 +1404,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 2.14,
+      "normalized_metrics": {
+        "heat": 0.0214,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 84,
@@ -840,7 +1421,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 2.07,
+      "normalized_metrics": {
+        "heat": 0.0207,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 85,
@@ -850,7 +1438,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 2.06,
+      "normalized_metrics": {
+        "heat": 0.0206,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 86,
@@ -860,7 +1455,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 1.95,
+      "normalized_metrics": {
+        "heat": 0.0195,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 87,
@@ -870,7 +1472,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 1.93,
+      "normalized_metrics": {
+        "heat": 0.0193,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 88,
@@ -880,7 +1489,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 1.66,
+      "normalized_metrics": {
+        "heat": 0.0166,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 89,
@@ -890,7 +1506,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 1.02,
+      "normalized_metrics": {
+        "heat": 0.0102,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 90,
@@ -900,7 +1523,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.95,
+      "normalized_metrics": {
+        "heat": 0.0095,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 91,
@@ -910,7 +1540,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.88,
+      "normalized_metrics": {
+        "heat": 0.0088,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 92,
@@ -920,7 +1557,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.88,
+      "normalized_metrics": {
+        "heat": 0.0088,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 93,
@@ -930,7 +1574,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.85,
+      "normalized_metrics": {
+        "heat": 0.0085,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 94,
@@ -940,7 +1591,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.75,
+      "normalized_metrics": {
+        "heat": 0.0075,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 95,
@@ -950,7 +1608,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.67,
+      "normalized_metrics": {
+        "heat": 0.0067,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 96,
@@ -960,7 +1625,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.67,
+      "normalized_metrics": {
+        "heat": 0.0067,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 97,
@@ -970,7 +1642,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.58,
+      "normalized_metrics": {
+        "heat": 0.0058,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 98,
@@ -980,7 +1659,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.54,
+      "normalized_metrics": {
+        "heat": 0.0054,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 99,
@@ -990,7 +1676,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.53,
+      "normalized_metrics": {
+        "heat": 0.0053,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 100,
@@ -1000,7 +1693,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.5,
+      "normalized_metrics": {
+        "heat": 0.005,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 101,
@@ -1010,7 +1710,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.28,
+      "normalized_metrics": {
+        "heat": 0.0028,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 102,
@@ -1020,7 +1727,14 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.16,
+      "normalized_metrics": {
+        "heat": 0.0016,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     },
     {
       "rank": 103,
@@ -1030,7 +1744,20 @@
       "reads": 0.0,
       "discussions": 0.0,
       "originals": 0.0,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "heat_index": 0.0,
+      "normalized_metrics": {
+        "heat": 0.0,
+        "reads": 0.0,
+        "discussions": 0.0,
+        "originals": 0.0
+      }
     }
-  ]
+  ],
+  "entropy_weights": {
+    "heat": 1.0,
+    "reads": 0.0,
+    "discussions": 0.0,
+    "originals": 0.0
+  }
 }
