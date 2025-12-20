@@ -1,7 +1,9 @@
+fyknbb/requirements.txt
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
 jieba>=0.42.1
+snownlp>=0.12.3
 wordcloud>=1.9.0
 matplotlib>=3.8.0
 streamlit>=1.30.0

@@ -29,23 +29,39 @@
 
 ### quick start
 
-#### 环境依赖
-
-使用 conda 创建一个虚拟环境。
+#### linux
 
 ```bash
-conda create -n HomeWork python=3.10
-conda activate HomeWork
+# 给脚本添加执行权限（首次运行）
+chmod +x run.sh
+chmod +x run.py
+
+# 使用shell脚本启动
+./run.sh
+
+# 或使用Python脚本启动
+python run.py
 ```
 
-使用 conda 或者 pip 下载需要的依赖。
+#### windows
 
 ```bash
-pip install -r requirement.txt
+# 使用Python脚本启动
+python run.py
 ```
 
-执行
+#### 高级选项
 
 ```bash
-python3 src/main.py gui
+# 只检查环境，不启动GUI
+python run.py --check
+
+# 安装缺失的依赖
+python run.py --install
+
+# 安装playwright浏览器
+python run.py --install-browser
+
+# 跳过环境检查直接启动GUI
+python run.py --no-check
 ```
